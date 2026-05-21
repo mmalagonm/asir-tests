@@ -1,0 +1,250 @@
+{
+  "asignatura": "Administracion de sistemas operativos",
+  "codigo_archivo": "autoevaluacion_2_25-26",
+  "titulo": "2ª Autoevaluación curso 2025-2026",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "Es correcta la siguiente configuración para compartir recursos entre Windows y Ubuntu en el archivo de Samba? [recurso] Path=/home/usuario/Escritorio/recurso Writable = yes Guest ok = yes Browsable = yes",
+      "opciones": {
+        "a": "Si, esta perfectamente escrito",
+        "b": "No, falta la orden 'Browsable = yes'",
+        "c": "Ninguna es cierta",
+        "d": "[recurso] no puede ser igual al parámetro final de la línea del path"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Aunque el enunciado pregunta si es correcta, la opción marcada indica que falta 'Browsable = yes' para que el recurso sea visible en el explorador de red de otros equipos."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Cómo nos informamos de los adaptadores que tenemos desde PowerShell?",
+      "opciones": {
+        "a": "NetAdapter",
+        "b": "New-Netipaddress",
+        "c": "Todas las respuestas dadas son ciertas",
+        "d": "Get-NetAdapter"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "'Get-NetAdapter' es el cmdlet de PowerShell que recupera las propiedades básicas de los adaptadores de red presentes en el sistema."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Cómo se accede al menú de aplicaciones sencillas (Configuración del servidor) en PowerShell?",
+      "opciones": {
+        "a": "Sconfig",
+        "b": "Get-NetAdapter",
+        "c": "Todas son falsas",
+        "d": "install gnome-system-tools"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "'sconfig' (Server Configuration) es una utilidad de línea de comandos en Windows Server que ofrece un menú de texto para realizar tareas administrativas comunes de forma rápida."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Un administrador de Windows Server puede visualizar la contraseña de un usuario que se ha configurado en Active Directory?",
+      "opciones": {
+        "a": "Ninguna es cierta",
+        "b": "Sí, y puede modificarla",
+        "c": "No, pero puede modificarla",
+        "d": "Depende de la configuración de la cuenta"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Las contraseñas en AD están protegidas por hashing. El administrador puede resetearlas pero nunca recuperarlas visualmente."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Cómo se reinicia/restaura el flujo desde PowerShell?",
+      "opciones": {
+        "a": "Restart-computer",
+        "b": "restart",
+        "c": "mod -n",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "'Restart-Computer' es el cmdlet estándar para reiniciar uno o más equipos (locales o remotos) de forma segura."
+    },
+    {
+      "id": 6,
+      "enunciado": "¿Cuál es la orden para escribir una IP con puerta de enlace en PowerShell?",
+      "opciones": {
+        "a": "New-NetIpaddress -interfaceindex 4 -ipaddress 15.0.0.10 -prefixlengt 11 -DefaultGateway 15.0.0.1",
+        "b": "Todas son ciertas",
+        "c": "New-NetIpaddress -interfaceindex 4 -ipaddress 15.0.0.10 -prefixlengt 11",
+        "d": "sconfig"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El cmdlet 'New-NetIPAddress' permite configurar la IP, el prefijo de máscara y la puerta de enlace predeterminada en un solo comando."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Cómo asignamos DNS desde PowerShell?",
+      "opciones": {
+        "a": "Set-dnsclientserveraddress -interfaceindex 4",
+        "b": "Ninguna es cierta",
+        "c": "Set-dnsclientserveraddress -interfaceindex 4 -serveraddress 8.8.8.8",
+        "d": "Set-dnsclientserveraddress -serveraddress 8.8.8.8"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'Set-DnsClientServerAddress' se utiliza para configurar las direcciones de los servidores DNS que utilizará la interfaz especificada por su índice."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Cómo conocemos nuestra MAC desde PowerShell?",
+      "opciones": {
+        "a": "Get-NetMac",
+        "b": "Get-Mac",
+        "c": "Ninguna es cierta",
+        "d": "ipconfig /all"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Aunque existen comandos específicos de PowerShell, 'ipconfig /all' es una herramienta clásica y efectiva que muestra la dirección física (MAC) de todos los adaptadores."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Cómo se ejecuta un script en Ubuntu (desde el directorio actual)?",
+      "opciones": {
+        "a": "Todas son correcta",
+        "b": "/archivo.sh",
+        "c": "./archivo.sh",
+        "d": ".archivo.sh"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El './' indica explícitamente al shell que busque el ejecutable en el directorio actual, ya que por seguridad el directorio actual no suele estar en el PATH de Linux."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Cuál es la extensión que debe tener un script de procesamiento por lotes en Windows?",
+      "opciones": {
+        "a": ".bat",
+        "b": ".sh",
+        "c": ".bah",
+        "d": "Todas las respuestas dadas son falsas."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Los archivos de procesamiento por lotes en Windows utilizan tradicionalmente la extensión .bat (o .cmd) para ser interpretados por el procesador de comandos."
+    },
+    {
+      "id": 11,
+      "enunciado": "¿Cuál es la ruta del archivo de configuración en Ubuntu para compartir recursos con Samba?",
+      "opciones": {
+        "a": "/etc/samba/samba.conf",
+        "b": "Ninguna es cierta",
+        "c": "/samba/smb.conf",
+        "d": "/etc/samba/smb.conf"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El archivo principal de configuración de Samba en la mayoría de distribuciones Linux se encuentra en el directorio de configuración del sistema /etc, dentro de la subcarpeta samba."
+    },
+    {
+      "id": 12,
+      "enunciado": "¿Qué hace la orden chmod RWX --X --X aplicada a un archivo?",
+      "opciones": {
+        "a": "Archivo con control total para el dueño, ejecución para el grupo y resto de usuarios",
+        "b": "Archivo con control total para el dueño, lectura y escritura para el grupo y ejecución para el resto de usuarios",
+        "c": "Carpeta con control total para el dueño, ejecución para el grupo y resto de usuarios",
+        "d": "Archivo con control total para el dueño, lectura para el grupo y ejecución para el resto de usuarios"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "RWX para el dueño (7), --X para el grupo (1) y --X para otros (1). Es equivalente a chmod 711."
+    },
+    {
+      "id": 13,
+      "enunciado": "Benito (grupo 'poetas', control total sobre 'belleza') es añadido al grupo 'informáticos' con permiso 'sin acceso' a dicha carpeta. ¿Qué ocurre?",
+      "opciones": {
+        "a": "No podrá acceder por falta de permisos (denegar prevalece)",
+        "b": "Podrá acceder por tener control total en el otro grupo",
+        "c": "La pregunta está mal formulada",
+        "d": "El sistema no permite esa configuración de grupos"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El permiso de 'Denegar' es restrictivo y tiene prioridad absoluta sobre cualquier permiso de 'Permitir' otorgado a través de otros grupos."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Qué comando se usa para agregar un usuario en Ubuntu Server pidiendo la contraseña interactivamente?",
+      "opciones": {
+        "a": "NewUser",
+        "b": "adduser",
+        "c": "CreateUser",
+        "d": "UserAdd"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "'adduser' es un script de alto nivel en Debian/Ubuntu que guía al administrador en la creación del usuario, solicitando contraseña e información adicional de forma interactiva. 'useradd' es la herramienta de bajo nivel."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Cuántas variables se necesitan para configurar la opción 3 en el script de la imagen?",
+      "fichero_imagen": "autoevaluacion1_pregunta_19.jpg",
+      "opciones": {
+        "a": "Ninguna es cierta",
+        "b": "Dos variables",
+        "c": "Una variable",
+        "d": "3 Variables"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Habitualmente, estas opciones de menú requieren capturar un único valor de entrada (como un número de opción o un parámetro) para el cual basta con una variable."
+    },
+    {
+      "id": 16,
+      "enunciado": "¿Qué valor numérico equivale a la orden 'chmod DR-X R-X --X'?",
+      "opciones": {
+        "a": "770",
+        "b": "551",
+        "c": "761",
+        "d": "775"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Dueño (R-X) = 4+1=5; Grupo (R-X) = 4+1=5; Otros (--X) = 1. Total: 551."
+    },
+    {
+      "id": 17,
+      "enunciado": "Para unir en red Windows 10 en VirtualBox con el sistema operativo físico, ¿qué modo de red se utiliza?",
+      "opciones": {
+        "a": "Adaptador Puente",
+        "b": "Red interna",
+        "c": "Nat",
+        "d": "Red Nat"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El 'Adaptador Puente' (Bridged Adapter) conecta la tarjeta de red de la máquina virtual directamente a la red física del host, haciendo que la VM aparezca como un dispositivo independiente en la red."
+    },
+    {
+      "id": 18,
+      "enunciado": "¿Es estrictamente necesaria la orden Read en la lista 10 que muestra el script de la imagen?",
+      "fichero_imagen": "autoevaluacion1_pregunta_20.jpg",
+      "opciones": {
+        "a": "Sí",
+        "b": "No",
+        "c": "Depende de la versión de Linux",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Dependiendo de la lógica del script, si la lista 10 solo muestra información fija y no requiere interacción, el comando 'read' no es estrictamente necesario."
+    },
+    {
+      "id": 19,
+      "enunciado": "En PowerShell: New-NetIpaddress -interfaceindex 4 -ipaddress 175.0.0.1 -prefixlengt 29. ¿Qué máscara le pertenece?",
+      "opciones": {
+        "a": "255.248.0.0",
+        "b": "255.255.255.248",
+        "c": "255.255.255.252",
+        "d": "255.255.255.0"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Un prefijo de 29 bits significa que los primeros 29 bits son 1. Esto corresponde a 255.255.255.248 en formato decimal."
+    },
+    {
+      "id": 20,
+      "enunciado": "¿Cómo comienza (Shebang) un script estándar en Ubuntu?",
+      "opciones": {
+        "a": "#!/bin/bat",
+        "b": "#!/bin/bash",
+        "c": "#/bash",
+        "d": "#/bin/bash"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La secuencia '#!' (shebang) al inicio de un archivo indica al sistema operativo qué intérprete debe usar para ejecutar el script. Para scripts de Bash, la ruta estándar es /bin/bash."
+    }
+  ]
+}

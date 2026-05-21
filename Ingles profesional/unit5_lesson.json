@@ -1,0 +1,121 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "unit5_lesson",
+  "titulo": "Unit 5: Modal Verbs & Future Passive (RA1, RA2, RA3)",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Objectives & Context (RA1, RA2, RA3)",
+      "contenido": "<div class='lesson-card'>Unit 5 covers the use of modal verbs to express possibility, deduction, and necessity, as well as the passive voice for future actions.</div><ul><li><strong>RA1 & RA2:</strong> Reading technical specifications and possibilities.</li><li><strong>RA3:</strong> Communicating ideas clearly in a professional environment.</li><li><strong>Grammar Goals:</strong> Mastering <strong>Modals</strong> (may, must, could, should), <strong>Future Passive</strong>, and <strong>Adverbs of Manner</strong>.</li></ul><p class='diag-note'>💡 <em>Nota: Los modales de deducción son vitales para formular hipótesis sobre el origen de un fallo técnico.</em></p>"
+    },
+    {
+      "id": 2,
+      "titulo": "Grammar: Modals of Possibility & Deduction",
+      "contenido": "<div class='lesson-card'>How to express how sure you are about something.</div><ul><li><strong>MAY / MIGHT:</strong> Possibility. <em>\"The system <strong>may fail</strong> if there is a power outage.\"</em></li><li><strong>MUST HAVE:</strong> Strong deduction about the past. <em>\"The developer <strong>must have completed</strong> the update by now.\"</em></li><li><strong>COULD HAVE:</strong> Past possibility that didn't happen. <em>\"They <strong>could have fixed</strong> the bug, but they didn't have time.\"</em></li><li><strong>SHOULD HAVE:</strong> Past advice or expectation. <em>\"You <strong>should have backed up</strong> the data.\"</em></li></ul>"
+    },
+    {
+      "id": 3,
+      "titulo": "Grammar: Future Passive",
+      "contenido": "<div class='lesson-card'>Used when the action is more important than the person doing it in the future.</div><h3>Structure:</h3><p>Subject + Will be + Past Participle</p><h3>Examples:</h3><ul><li><em>\"The system <strong>will be upgraded</strong> by the end of this week.\"</em></li><li><em>\"New features <strong>will be implemented</strong> soon.\"</em></li><li><em>\"The bugs <strong>will be fixed</strong> in the next patch.\"</em></li></ul><p class='diag-note'>💡 <em>Nota: En IT, la pasiva se usa mucho para informes técnicos impersonales.</em></p>"
+    },
+    {
+      "id": 4,
+      "titulo": "Grammar: Adverbs of Manner",
+      "contenido": "<div class='lesson-card'>Adverbs describe how an action is performed.</div><ul><li><strong>Quickly:</strong> Rápido. <em>\"He will finish the report <strong>quickly</strong>.\"</em></li><li><strong>Promptly:</strong> Con prontitud. <em>\"The team responds <strong>promptly</strong> to requests.\"</em></li><li><strong>Efficiently:</strong> Eficientemente. <em>\"The application runs <strong>efficiently</strong>.\"</em></li></ul><p class='diag-note'>💡 <em>Nota: Los adverbios suelen ir después del verbo o antes del verbo principal.</em></p>"
+    },
+    {
+      "id": 5,
+      "titulo": "Grammar: Comparatives",
+      "contenido": "<div class='lesson-card'>Comparing hardware or software performance.</div><ul><li><strong>Short Adjectives:</strong> Add <strong>-er</strong>. <em>\"Faster\", \"Slower\"</em>.</li><li><strong>Long Adjectives:</strong> Use <strong>more</strong>. <em>\"This smartphone is <strong>more expensive</strong> than the old one.\"</em></li></ul>"
+    },
+    {
+      "id": 6,
+      "titulo": "Vocabulary: Software Maintenance",
+      "contenido": "<div class='lesson-card'>Key terms for the ongoing support of applications.</div><ul><li><strong>Bug:</strong> An error, flaw, or fault in a computer program.</li><li><strong>Patch:</strong> A set of changes to a computer program to update, fix, or improve it.</li><li><strong>Available:</strong> Able to be used or obtained.</li><li><strong>Efficiency:</strong> The ability to avoid wasting materials, energy, efforts, money, and time.</li></ul>"
+    },
+    {
+      "id": 7,
+      "titulo": "Summary: Unit 5 Takeaways",
+      "contenido": "<div class='lesson-card'>Review these core concepts for Unit 5.</div><ul><li><strong>Modals:</strong> Use 'May' for possibility and 'Must have' for certainty.</li><li><strong>Future Passive:</strong> Focus on the result (<em>\"Will be upgraded\"</em>).</li><li><strong>Adverbs:</strong> Describe how things are done (<em>\"Runs efficiently\"</em>).</li><li><strong>Comparatives:</strong> Compare systems using 'more' for long adjectives.</li></ul>"
+    },
+    {
+      "id": 8,
+      "titulo": "Final Knowledge Assessment",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Complete this test to confirm you have mastered the Unit 5 content.</div>",
+      "preguntas_test": [
+        {
+          "q": "The system __________ (upgrade) by the end of this week.",
+          "options": ["upgrades", "upgrade", "will be upgraded", "will have upgraded"],
+          "correct": 2,
+          "explicacion": "Voz pasiva en futuro (Will be + participio).",
+          "ejemplo": "Ej: 'The data <strong>will be saved</strong>.'"
+        },
+        {
+          "q": "The system __________ (fail) if there is a power outage.",
+          "options": ["may fail", "fail", "should fail", "fails"],
+          "correct": 0,
+          "explicacion": "'May' expresa posibilidad futura.",
+          "ejemplo": "Ej: 'It <strong>may rain</strong> tomorrow.'"
+        },
+        {
+          "q": "The application __________ (run) efficiently on all devices.",
+          "options": ["run", "running", "runned", "runs"],
+          "correct": 3,
+          "explicacion": "Presente simple para un hecho general.",
+          "ejemplo": "Ej: 'Water <strong>boils</strong> at 100°C.'"
+        },
+        {
+          "q": "He __________ (finish/quickly) the report.",
+          "options": ["quickly finishes", "finish quickly", "will finish quickly", "finish quickly"],
+          "correct": 2,
+          "explicacion": "Estructura de futuro con adverbio de modo al final.",
+          "ejemplo": "Ej: 'She works <strong>carefully</strong>.'"
+        },
+        {
+          "q": "The developer __________ (complete) the update by now.",
+          "options": ["complete", "completes", "must have completed", "should have completed"],
+          "correct": 2,
+          "explicacion": "Deducción lógica de que algo ha pasado = 'Must have' + participio.",
+          "ejemplo": "Ej: 'You <strong>must have seen</strong> the news.'"
+        },
+        {
+          "q": "The software update is __________ (available) online.",
+          "options": ["available always", "available", "always available", "availability"],
+          "correct": 1,
+          "explicacion": "Se requiere el adjetivo descriptivo.",
+          "ejemplo": "Ej: 'Is the admin <strong>available</strong>?'"
+        },
+        {
+          "q": "They __________ (fix) the bug, but they didn't have enough time.",
+          "options": ["should fix", "fixes", "may fix", "could have fixed"],
+          "correct": 3,
+          "explicacion": "Posibilidad pasada que no ocurrió = 'Could have' + participio.",
+          "ejemplo": "Ej: 'I <strong>could have won</strong> the race.'"
+        },
+        {
+          "q": "The team __________ (work) on the project since last month.",
+          "options": ["work", "works", "working", "has worked"],
+          "correct": 3,
+          "explicacion": "Presente perfecto para acción que sigue vigente (since).",
+          "ejemplo": "Ej: 'He <strong>has lived</strong> here since 2010.'"
+        },
+        {
+          "q": "The IT team __________ (respond/promptly) to all requests.",
+          "options": ["respond", "respond promptly", "responds", "promptly responds"],
+          "correct": 3,
+          "explicacion": "El adverbio puede ir antes del verbo principal.",
+          "ejemplo": "Ej: 'He <strong>quickly ran</strong> away.'"
+        },
+        {
+          "q": "This smartphone is ______ (expensive) than the one I bought last year.",
+          "options": ["more expensive", "expensive", "expensive", "most expensive"],
+          "correct": 0,
+          "explicacion": "Comparativo de superioridad para adjetivos largos = 'more' + adjetivo.",
+          "ejemplo": "Ej: 'This is <strong>more difficult</strong> than I thought.'"
+        }
+      ]
+    }
+  ]
+}

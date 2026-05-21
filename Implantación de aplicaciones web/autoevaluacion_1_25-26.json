@@ -1,0 +1,246 @@
+{
+  "asignatura": "Implantacion de aplicaciones web",
+  "codigo_archivo": "autoevaluacion_1_25-26",
+  "titulo": "1ª Autoevaluación curso 25/26",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Cuál es la forma correcta de declarar una variable que puede cambiar su valor en JavaScript?",
+      "opciones": {
+        "a": "let numero = 10;",
+        "b": "variable numero = 10",
+        "c": "ar numero; numero == 10;",
+        "d": "const numero = 10;"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "En JavaScript moderno (ES6+), 'let' es la palabra clave recomendada para declarar variables con ámbito de bloque, permitiendo que su valor sea reasignado durante la ejecución."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Qué devuelve la siguiente expresión: \"5\" + 3?",
+      "opciones": {
+        "a": "8",
+        "b": "53",
+        "c": "\"8\"",
+        "d": "error"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Debido a la coerción de tipos, cuando se usa el operador '+' con un String y un Number, JavaScript convierte el número a cadena y realiza una concatenación, resultando en \"53\"."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Qué estructura se utiliza para repetir un bloque de código un número determinado de veces?",
+      "opciones": {
+        "a": "if",
+        "b": "switch",
+        "c": "for",
+        "d": "else"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El bucle 'for' está diseñado para iterar un número conocido de veces, integrando la inicialización, la condición de parada y la expresión de incremento en una sola línea."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Cuál de los siguientes operadores compara valor (sin comparar estrictamente el tipo)?",
+      "opciones": {
+        "a": "!=",
+        "b": "===",
+        "c": "=",
+        "d": "=="
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El operador de igualdad débil (==) compara el valor de dos operandos tras realizar conversiones de tipo si es necesario. Para comparar también el tipo, se usa la igualdad estricta (===)."
+    },
+    {
+      "id": 5,
+      "enunciado": "JavaScript es un lenguaje orientado a objetos y eventos.",
+      "opciones": {
+        "a": "Verdadero",
+        "b": "Falso"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "JavaScript utiliza prototipos para la orientación a objetos y un modelo de ejecución basado en un bucle de eventos, lo que le permite reaccionar a interacciones del usuario en tiempo real."
+    },
+    {
+      "id": 6,
+      "enunciado": "¿Qué valor mostrará la consola? let x = 10; if (x > 20) { console.log(\"Mayor\"); } else { console.log(\"Menor o igual\"); }",
+      "opciones": {
+        "a": "True",
+        "b": "Mayor",
+        "c": "False",
+        "d": "Menor o igual"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Al cumplirse que 10 no es mayor que 20, la condición del 'if' resulta falsa y el flujo del programa se desvía obligatoriamente hacia el bloque 'else'."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Cuál de los siguientes bucles continúa ejecutándose mientras se cumpla una condición (evaluada al principio)?",
+      "opciones": {
+        "a": "for",
+        "b": "do...then",
+        "c": "while",
+        "d": "do while"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El bucle 'while' es una estructura de control de pre-condición: evalúa la expresión lógica antes de cada iteración y solo ejecuta el bloque si el resultado es verdadero."
+    },
+    {
+      "id": 8,
+      "enunciado": "Para declarar una variable de ámbito local, y no consumir excesivos recursos del sistema, podemos utilizar:",
+      "opciones": {
+        "a": "let",
+        "b": "var",
+        "c": "Las dos anteriores son correctas",
+        "d": "declare"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "'let' garantiza que la variable solo exista dentro del bloque donde se declara, optimizando la memoria y evitando errores por colisión de nombres."
+    },
+    {
+      "id": 9,
+      "enunciado": "JavaScript realiza con los tipos de datos en las variables lo que se denomina:",
+      "opciones": {
+        "a": "No realiza ninguna conversión",
+        "b": "Conversión implícita",
+        "c": "Conversión explícita",
+        "d": "Ninguna es correcta"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La coerción o conversión implícita es una característica de JavaScript que transforma automáticamente un tipo de dato en otro para poder realizar una operación entre ellos."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Qué hace addEventListener en JavaScript?",
+      "opciones": {
+        "a": "Ejecutar un evento",
+        "b": "Registrar un escucha para un evento",
+        "c": "Verdadero",
+        "d": "Falso"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'addEventListener' es el estándar moderno para registrar controladores de eventos en elementos del DOM, permitir asociar múltiples funciones a un mismo evento sin sobrescribirse."
+    },
+    {
+      "id": 11,
+      "enunciado": "¿Con qué extensión se guarda un archivo de javascript?",
+      "opciones": {
+        "a": ".php",
+        "b": ".html",
+        "c": ".css",
+        "d": ".js"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Los archivos que contienen exclusivamente código fuente de JavaScript deben guardarse con la extensión .js para ser reconocidos e interpretados correctamente por el navegador o el entorno de ejecución."
+    },
+    {
+      "id": 12,
+      "enunciado": "¿Qué evento gestiona la carga de la estructura del documento HTML sin esperar a hojas de estilo o imágenes?",
+      "opciones": {
+        "a": "DOMContent",
+        "b": "DOMContentReady",
+        "c": "DOMContentLoaded",
+        "d": "DOMReadyLoaded"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Este evento se dispara tan pronto como el navegador termina de construir el árbol jerárquico del documento (DOM), permitiendo manipular elementos sin esperar a que carguen recursos pesados como imágenes."
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Qué tipo de dato se utiliza en JavaScript para los valores de tipo texto?",
+      "opciones": {
+        "a": "Arrays",
+        "b": "chartat",
+        "c": "chart",
+        "d": "String"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "En JavaScript, el tipo 'String' se utiliza para representar y manipular secuencias de caracteres alfanuméricos, admitiendo comillas simples, dobles o backticks."
+    },
+    {
+      "id": 14,
+      "enunciado": "Cuando se declara una variable en JavaScript, es necesario:",
+      "opciones": {
+        "a": "Declarar el ámbito de la variable",
+        "b": "Especificar el tipo de datos",
+        "c": "Especificar el tipo de dato y el ámbito",
+        "d": "No es necesario especificar el tipo de datos"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "JavaScript es un lenguaje de tipado dinámico y débil, lo que significa que las variables no están ligadas a un tipo de dato fijo y pueden cambiar de tipo durante la ejecución."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Qué puede pasar en un bucle for?",
+      "opciones": {
+        "a": "Siempre se ejecuta varias veces",
+        "b": "Nunca se entra en un bucle for",
+        "c": "Por lo menos se ejecuta una vez",
+        "d": "Por defecto, son bucles infinitos"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Si la condición inicial del bucle 'for' es verdadera, el bloque de código entrará en su primera iteración. Si es falsa desde el inicio, el bucle no se ejecutará nunca."
+    },
+    {
+      "id": 16,
+      "enunciado": "¿Qué atributo tiene la etiqueta script para agregar el archivo js?",
+      "opciones": {
+        "a": "type",
+        "b": "src",
+        "c": "hred",
+        "d": "rel"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El atributo 'src' (source) en la etiqueta HTML <script> indica la ruta del archivo externo de JavaScript que el navegador debe descargar y ejecutar."
+    },
+    {
+      "id": 17,
+      "enunciado": "¿Cuál es el propósito principal del método addEventListener() en JavaScript?",
+      "opciones": {
+        "a": "Detener la ejecución de un bloque de código.",
+        "b": "Crear un nuevo elemento HTML en la página.",
+        "c": "Ejecutar una función cuando ocurre un evento específico en un elemento.",
+        "d": "Declarar una variable que escucha cambios"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Su función es \"escuchar\" acciones específicas (como clics, pulsaciones de teclas o movimientos del ratón) y disparar una función de callback asociada de forma asíncrona."
+    },
+    {
+      "id": 18,
+      "enunciado": "En un bucle for, ¿se puede interrumpir aunque la condición se siga cumpliendo?",
+      "opciones": {
+        "a": "break",
+        "b": "interrupted",
+        "c": "continue",
+        "d": "end"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La sentencia 'break' provoca la salida inmediata del bucle más interno en el que se encuentra, transfiriendo el control a la siguiente línea de código tras el bloque del bucle."
+    },
+    {
+      "id": 19,
+      "enunciado": "¿Qué ocurre en este bucle? numero=0; while (numero==0) { window.alert(\"Dentro del bucle\"); }",
+      "opciones": {
+        "a": "El bucle se ejecuta un determinado número de veces",
+        "b": "Nunca se entra al bucle",
+        "c": "Nunca se sale del bucle",
+        "d": "Se entra una vez al bucle"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Dado que la variable 'numero' no se modifica dentro del cuerpo del 'while', la condición (0 == 0) siempre será verdadera, creando un bucle que se repite indefinidamente."
+    },
+    {
+      "id": 20,
+      "enunciado": "¿Para qué se utiliza un Array?",
+      "opciones": {
+        "a": "Un tipo bucle",
+        "b": "Una constante",
+        "c": "Una colección de datos",
+        "d": "Un tipo de variable"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Un Array es un objeto global que permite almacenar una lista ordenada de elementos bajo un único nombre de variable, accesibles mediante un índice numérico que comienza en 0."
+    }
+  ]
+}

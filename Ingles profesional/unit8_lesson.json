@@ -1,0 +1,133 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "unit8_lesson",
+  "titulo": "Unit 8: Professional Technical Communication",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Objectives & Context",
+      "contenido": "<div class='lesson-card'>In this unit, we focus on the skills required to work as a <strong>Junior IT Technician or Developer</strong> in an international company.</div><p class='diag-note'>💡 <em>Nota: Esta unidad te prepara para trabajar en entornos internacionales, especialmente en el Reino Unido.</em></p><h3>Learning Goals:</h3><ul><li>Understand British workplace culture and protocols.</li><li>Identify different types of professional IT documents.</li><li>Master the use of <strong>Relative Clauses</strong> to define technical components.</li><li>Use the <strong>Passive Voice</strong> to write objective technical reports.</li><li>Correctly apply <strong>Prepositions of Place and Time</strong>.</li><li>Expand IT-specific vocabulary with <strong>Phrasal Verbs</strong>.</li></ul>"
+    },
+    {
+      "id": 2,
+      "titulo": "Cultural Awareness: The UK Workplace",
+      "contenido": "<div class='lesson-card'>Communication in the UK is traditionally <strong>polite and indirect</strong>. Avoiding direct confrontation is key.</div><p class='diag-note'>💡 <em>Nota: En el Reino Unido la comunicación es educada e indirecta para evitar conflictos.</em></p><h3>Key Protocols:</h3><ul><li><strong>Softening Expressions:</strong> Use <em>\"Could you possibly...?\"</em> or <em>\"Would you mind...?\"</em> instead of direct commands.</li><li><strong>Punctuality:</strong> Essential. Being late is considered very unprofessional.</li><li><strong>Hierarchies:</strong> Often informal. It's common to use <strong>first names</strong> with supervisors.</li><li><strong>Small Talk:</strong> Common at the start of meetings to build rapport.</li></ul>"
+    },
+    {
+      "id": 3,
+      "titulo": "Professional IT Documents",
+      "contenido": "<div class='lesson-card'>Clarity and accuracy are essential in the IT sector.</div><p class='diag-note'>💡 <em>Nota: Cada documento tiene un propósito y lenguaje específico.</em></p><table><thead><tr><th>Document Type</th><th>Main Purpose</th></tr></thead><tbody><tr><td><strong>Professional Email</strong></td><td>Daily communication with clients/teams.</td></tr><tr><td><strong>Technical Report</strong></td><td>System analysis. Uses <strong>Passive Voice</strong>.</td></tr><tr><td><strong>User Manual</strong></td><td>Step-by-step instructions. Uses <strong>Imperatives</strong>.</td></tr><tr><td><strong>Incident Report</strong></td><td>Describes unexpected events. Uses <strong>Past Simple</strong>.</td></tr><tr><td><strong>CV / Resume</strong></td><td>Summary of Education and Skills.</td></tr></tbody></table>"
+    },
+    {
+      "id": 4,
+      "titulo": "Grammar: Relative Pronouns",
+      "contenido": "<div class='lesson-card'>Relative pronouns link parts of a sentence to provide more info without starting new sentences.</div><p class='diag-note'>💡 <em>Nota: Los pronombres relativos unen oraciones para dar más información sobre alguien o algo.</em></p><ul><li><strong>WHO:</strong> People (subject). <em>\"The admin <strong>who</strong> managed the server...\"</em></li><li><strong>WHOM:</strong> People (object). <em>\"The technician <strong>whom</strong> I called...\"</em></li><li><strong>WHOSE:</strong> Possession. <em>\"The user <strong>whose</strong> password expired...\"</em></li><li><strong>WHICH:</strong> Objects. <em>\"The software <strong>which</strong> was updated...\"</em></li><li><strong>WHERE:</strong> Places. <em>\"The data center <strong>where</strong> we store logs...\"</em></li></ul>"
+    },
+    {
+      "id": 5,
+      "titulo": "Grammar: The Passive Voice",
+      "contenido": "<div class='lesson-card'>Used in reports to sound <strong>objective and formal</strong>. Focuses on the action, not the person.</div><p class='diag-note'>💡 <em>Nota: La voz pasiva se usa para ser objetivo, centrándose en la acción (ej. \"El sistema fue testeado\").</em></p><h3>Structure:</h3><p><strong>Subject + Be + Past Participle</strong></p><h3>Examples:</h3><ul><li><em>\"The system <strong>was tested</strong> under different conditions.\"</em></li><li><em>\"A server outage <strong>has been detected</strong>.\"</em></li><li><em>\"The network <strong>will be upgraded</strong> next weekend.\"</em></li></ul>"
+    },
+    {
+      "id": 6,
+      "titulo": "Prepositions of Place",
+      "fichero_imagen": "unit8_place.jpg",
+      "contenido": "<div class='lesson-card'>Correct prepositions are vital for technical logs and locations. <strong>CLICK IMAGE TO ZOOM.</strong></div><p class='diag-note'>💡 <em>Nota: AT (punto exacto), IN (dentro de), ON (sobre superficie/plataforma).</em></p><ul><li><strong>AT:</strong> A specific point. <em>\"At the door\", \"at the rack\"</em>.</li><li><strong>IN:</strong> Inside a space. <em>\"In the bag\", \"in the server room\"</em>.</li><li><strong>ON:</strong> A surface/platform. <em>\"On the table\", \"on the screen\"</em>.</li></ul>"
+    },
+    {
+      "id": 7,
+      "titulo": "Prepositions of Time",
+      "fichero_imagen": "unit8_time.jpg",
+      "contenido": "<div class='lesson-card'>Essential for scheduling maintenance and SLA logs. <strong>CLICK IMAGE TO ZOOM.</strong></div><p class='diag-note'>💡 <em>Nota: AT (horas), ON (días/fechas), IN (meses/años/periodos).</em></p><ul><li><strong>AT:</strong> Specific times. <em>\"At 7 o'clock\", \"at midnight\"</em>.</li><li><strong>ON:</strong> Days and dates. <em>\"On Monday\", \"on May 3rd\"</em>.</li><li><strong>IN:</strong> Months, years, and periods. <em>\"In 2026\", \"in the morning\"</em>.</li></ul>"
+    },
+    {
+      "id": 8,
+      "titulo": "IT Phrasal Verbs",
+      "contenido": "<div class='lesson-card'>Phrasal verbs are common in technical daily communication.</div><p class='diag-note'>💡 <em>Nota: Verbos compuestos muy comunes en IT. ¡Memorízalos!</em></p><ul><li><strong>Boot off:</strong> To force disconnect. <em>\"The admin had to <strong>boot off</strong> the intruder.\"</em></li><li><strong>Link on:</strong> To connect/attach. <em>\"Try to <strong>link on</strong> the new feature.\"</em></li><li><strong>Log up:</strong> To record progress/time. <em>\"You should <strong>log up</strong> your hours.\"</em></li><li><strong>Hack on:</strong> To work on something (improvised). <em>\"He decided to <strong>hack on</strong> the code.\"</em></li></ul>"
+    },
+    {
+      "id": 9,
+      "titulo": "Summary: Key Takeaways",
+      "contenido": "<div class='lesson-card'>Review these core concepts before the final test.</div><ul><li><strong>Culture:</strong> Indirect, polite, punctual. Managers are addressed by first name.</li><li><strong>Documents:</strong> Reports (Passive), Manuals (Imperative), Emails (Formal).</li><li><strong>Grammar:</strong> Relative clauses define components; Passive voice ensures objectivity.</li><li><strong>Prepositions:</strong> AT (specific), IN (enclosed), ON (surface).</li><li><strong>Vocabulary:</strong> Mastering IT phrasal verbs improves terminal communication.</li></ul>"
+    },
+    {
+      "id": 10,
+      "titulo": "Final Knowledge Assessment",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Complete this test to confirm you have mastered the Unit 8 content. Select the correct answer for each question.</div>",
+      "preguntas_test": [
+        {
+          "q": "Which type of document typically uses imperative verbs such as 'Download' or 'Restart'?",
+          "options": ["Technical report", "User manual", "CV", "Internal notice"],
+          "correct": 1,
+          "explicacion": "Los manuales de usuario dan instrucciones directas paso a paso. Por ello, se usan verbos imperativos.",
+          "ejemplo": "Ej: '<strong>Restart</strong> the server after the installation is complete.'"
+        },
+        {
+          "q": "What is the primary purpose of using Passive Voice in a technical report?",
+          "options": ["To sound informal", "To sound objective and formal", "To shorten the text", "To express personal opinions"],
+          "correct": 1,
+          "explicacion": "La voz pasiva centra la atención en la acción y el objeto, eliminando la subjetividad del autor.",
+          "ejemplo": "Ej: 'The vulnerability <strong>was identified</strong> during the audit' suena más profesional que 'I found a bug'."
+        },
+        {
+          "q": "In a British company, how is it appropriate to address your manager?",
+          "options": ["Only by surname", "By their first name", "Avoid speaking directly", "Using formal titles at all times"],
+          "correct": 1,
+          "explicacion": "A pesar de la jerarquía, la cultura laboral británica es relativamente informal en el trato diario, usando nombres de pila.",
+          "ejemplo": "Ej: 'Morning <strong>John</strong>, could you check the logs?' en lugar de 'Mr. Smith'."
+        },
+        {
+          "q": "Which preposition is correct for a specific day of the week (e.g., Wednesday)?",
+          "options": ["AT", "IN", "ON", "BY"],
+          "correct": 2,
+          "explicacion": "Usamos siempre 'ON' para días de la semana y fechas específicas.",
+          "ejemplo": "Ej: 'The backup is scheduled <strong>on</strong> Wednesday night.'"
+        },
+        {
+          "q": "What does the phrasal verb 'Boot off' mean in an IT context?",
+          "options": ["To start a computer", "To force a user to disconnect", "To install a driver", "To backup data"],
+          "correct": 1,
+          "explicacion": "'Boot off' se usa cuando el sistema o el administrador expulsan a un usuario de la sesión o red.",
+          "ejemplo": "Ej: 'The system will <strong>boot you off</strong> if you remain idle for 10 minutes.'"
+        },
+        {
+          "q": "Which relative pronoun is used to show possession?",
+          "options": ["Who", "Which", "Whose", "Where"],
+          "correct": 2,
+          "explicacion": "'Whose' equivale a 'cuyo/a' y se utiliza para indicar a quién pertenece algo.",
+          "ejemplo": "Ej: 'The user <strong>whose</strong> account was blocked called support.'"
+        },
+        {
+          "q": "Which document is usually concise and includes sections like 'Education' and 'Skills'?",
+          "options": ["CV", "Technical report", "Incident report", "User manual"],
+          "correct": 0,
+          "explicacion": "Un CV (Curriculum Vitae) es el documento estándar para resumir la trayectoria académica y habilidades técnicas.",
+          "ejemplo": "Ej: 'Include your Python certification in the <strong>Skills</strong> section of your CV.'"
+        },
+        {
+          "q": "What is the correct preposition for a specific point in time (e.g., 7 o'clock)?",
+          "options": ["IN", "ON", "AT", "SINCE"],
+          "correct": 2,
+          "explicacion": "Usamos 'AT' para momentos precisos del reloj o periodos muy concretos.",
+          "ejemplo": "Ej: 'The server maintenance starts <strong>at</strong> 02:00 AM.'"
+        },
+        {
+          "q": "Which register is typically used in professional emails?",
+          "options": ["Slang", "Formal", "Colloquial", "Very informal"],
+          "correct": 1,
+          "explicacion": "Los correos profesionales requieren un registro formal, con saludos y despedidas estándar.",
+          "ejemplo": "Ej: Usar 'Dear Sir/Madam' y 'Kind regards' en lugar de 'Hey' o 'Bye'."
+        },
+        {
+          "q": "Which word is used to refer to places in a relative clause?",
+          "options": ["When", "Where", "Why", "What"],
+          "correct": 1,
+          "explicacion": "'Where' es el pronombre relativo específico para referirse a lugares o localizaciones físicas/lógicas.",
+          "ejemplo": "Ej: 'This is the folder <strong>where</strong> the configuration files are stored.'"
+        }
+      ]
+    }
+  ]
+}

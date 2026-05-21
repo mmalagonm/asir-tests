@@ -1,0 +1,176 @@
+{
+  "asignatura": "Bases de datos",
+  "codigo_archivo": "unit2_lesson",
+  "titulo": "Unidad 2: Configuración y Control de Acceso (RA2)",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Seguridad Multicapa en SGBD",
+      "contenido": "<div class='lesson-card'>La seguridad de una base de datos no es una configuración única, sino un conjunto de capas.</div><ul><li><strong>Seguridad a nivel de SO:</strong> Permisos de lectura/escritura sobre los ficheros de datos y el ejecutable del SGBD.</li><li><strong>Seguridad de Red:</strong> Firewall, uso de túneles SSH o SSL/TLS para cifrar el tráfico.</li><li><strong>Seguridad Interna:</strong> Gestión de usuarios, privilegios y auditoría.</li></ul>"
+    },
+    {
+      "id": 2,
+      "titulo": "Autenticación Basada en Host",
+      "contenido": "<div class='lesson-card'>En MySQL/MariaDB, un usuario se identifica por su nombre Y el origen de su conexión.</div><p>Identidad = <code>'usuario'@'host'</code></p><ul><li><code>'admin'@'localhost'</code>: Solo puede conectar desde la misma máquina.</li><li><code>'app'@'192.168.1.10'</code>: Solo desde esa IP específica.</li><li><code>'soporte'@'%'</code>: Desde cualquier ubicación.</li></ul><p class='diag-note'>💡 <em>Seguridad: Se recomienda evitar el uso de '%' para usuarios con privilegios elevados.</em></p>"
+    },
+    {
+      "id": 3,
+      "titulo": "Categorías de Privilegios",
+      "contenido": "<div class='lesson-card'>No todos los permisos afectan a los mismos objetos.</div><ol><li><strong>Privilegios Globales:</strong> Se aplican a todo el servidor (ej. <code>SHUTDOWN</code>, <code>SUPER</code>). Se guardan en la tabla <code>mysql.user</code>.</li><li><strong>Privilegios de Base de Datos:</strong> Se aplican a todas las tablas de una BD específica. Tabla <code>mysql.db</code>.</li><li><strong>Privilegios de Tabla:</strong> Nivel granular sobre tablas concretas. Tabla <code>mysql.tables_priv</code>.</li><li><strong>Privilegios de Columna:</strong> Nivel máximo de detalle. Tabla <code>mysql.columns_priv</code>.</li></ol>"
+    },
+    {
+      "id": 4,
+      "titulo": "Gestión de Usuarios Avanzada",
+      "contenido": "<div class='lesson-card'>Ciclo de vida y políticas de seguridad de cuentas.</div><pre>-- Crear con política de expiración\nCREATE USER 'asir'@'%' \nIDENTIFIED BY 'Pass1234!' \nPASSWORD EXPIRE INTERVAL 90 DAY;</pre><ul><li><code>ACCOUNT LOCK / UNLOCK</code>: Bloquear cuentas temporalmente.</li><li><code>REQUIRE SSL</code>: Obligar al uso de cifrado para ese usuario.</li><li><code>MAX_QUERIES_PER_HOUR</code>: Limitación de recursos por usuario.</li></ul>"
+    },
+    {
+      "id": 5,
+      "titulo": "La Sentencia GRANT en Detalle",
+      "contenido": "<div class='lesson-card'>GRANT es una de las sentencias más potentes del DBA.</div><p>Estructura compleja:</p><pre>GRANT tipo_privilegio \nON nivel_objeto \nTO 'usuario'@'host' \n[WITH GRANT OPTION];</pre><p>Ejemplos:</p><ul><li><code>GRANT SELECT (nombre, email) ON db.clientes TO 'comercial'@'%';</code> (Solo 2 columnas).</li><li><code>GRANT ALL ON *.* TO 'boss'@'localhost' WITH GRANT OPTION;</code> (Admin total con capacidad de delegar).</li></ul>"
+    },
+    {
+      "id": 6,
+      "titulo": "La Sentencia REVOKE y Denegación",
+      "contenido": "<div class='lesson-card'>REVOKE elimina el derecho, pero hay que tener cuidado con las jerarquías.</div><p>Si un usuario tiene permisos globales, un REVOKE a nivel de tabla no tendrá efecto si no se revoca también el global.</p><pre>REVOKE DELETE \nON taller.*\nFROM 'junior'@'%';</pre><p class='diag-note'>⚠️ <em>Nota: Tras realizar cambios manuales en las tablas de permisos de MySQL (vía INSERT), es obligatorio ejecutar 'FLUSH PRIVILEGES;'. Con GRANT/REVOKE no es necesario.</em></p>"
+    },
+    {
+      "id": 7,
+      "titulo": "Implementación de Roles",
+      "contenido": "<div class='lesson-card'>Los roles simplifican la administración en entornos con muchos usuarios.</div><ol><li><code>CREATE ROLE 'desarrollador';</code></li><li><code>GRANT SELECT, INSERT, UPDATE ON app_db.* TO 'desarrollador';</code></li><li><code>GRANT 'desarrollador' TO 'ana'@'%', 'juan'@'%';</code></li><li><code>SET DEFAULT ROLE ALL TO 'ana'@'%';</code> (Para activar el rol al loguear).</li></ol>"
+    },
+    {
+      "id": 8,
+      "titulo": "Auditoría y Logs de Seguridad",
+      "contenido": "<div class='lesson-card'>Saber quién hizo qué es vital para el cumplimiento legal (RGPD/LOPD).</div><ul><li><strong>General Query Log:</strong> Registra cada conexión e instrucción (afecta al rendimiento).</li><li><strong>Audit Plugins:</strong> Registran accesos a datos específicos y fallos de autenticación.</li><li><strong>Error Log:</strong> Registra intentos de acceso fallidos.</li></ul>"
+    },
+    {
+      "id": 9,
+      "titulo": "Seguridad en la Configuración (Hardening)",
+      "contenido": "<div class='lesson-card'>Ajustes iniciales para un servidor seguro.</div><ul><li>Eliminar la base de datos <code>test</code>.</li><li>Eliminar usuarios anónimos.</li><li>Deshabilitar el acceso remoto para el usuario <code>root</code>.</li><li>Cambiar el puerto por defecto (ej. usar el 3307 en vez del 3306).</li></ul>"
+    },
+    {
+      "id": 10,
+      "titulo": "Metadatos de Seguridad",
+      "contenido": "<div class='lesson-card'>Consultar el estado de los permisos desde el propio SQL.</div><pre>-- Ver permisos de un usuario\nSHOW GRANTS FOR 'usuario'@'host';\n\n-- Ver usuarios actuales\nSELECT user, host FROM mysql.user;</pre>"
+    },
+    {
+      "id": 11,
+      "titulo": "Resumen de RA2",
+      "contenido": "<div class='lesson-card'>Resumen para profesionales:</div><ul><li>La identidad es Usuario+Host.</li><li>DCL = GRANT + REVOKE.</li><li>Los roles agrupan permisos.</li><li>La seguridad granular (columna) es posible pero costosa de mantener.</li><li>La auditoría es obligatoria en entornos empresariales.</li></ul>"
+    },
+    {
+      "id": 12,
+      "titulo": "Evaluación Maestra: RA2",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Test de 15 preguntas sobre Control de Acceso y Configuración Segura.</div>",
+      "preguntas_test": [
+        {
+          "q": "En MySQL, ¿cuál es la diferencia entre 'user'@'localhost' y 'user'@'%'?",
+          "options": ["Ninguna", "Localhost solo permite conexión desde la propia máquina", "Localhost es para admin, % para usuarios", "% es más seguro"],
+          "correct": 1,
+          "explicacion": "El host restringe físicamente el origen de la conexión TCP/IP.",
+          "ejemplo": "Ej: Un servidor web en la misma IP que la BD usará 'localhost'."
+        },
+        {
+          "q": "¿Qué tabla del diccionario de datos almacena los privilegios globales?",
+          "options": ["mysql.db", "mysql.tables_priv", "mysql.user", "mysql.global"],
+          "correct": 2,
+          "explicacion": "La tabla mysql.user contiene los flags Y/N para cada privilegio de nivel servidor.",
+          "ejemplo": "Ej: El privilegio 'PROCESS' está en esta tabla."
+        },
+        {
+          "q": "¿Cómo se activa la capacidad de un usuario para dar sus permisos a otros?",
+          "options": ["Mediante SUPER", "Usando WITH GRANT OPTION", "Usando WITH DELEGATE", "No se puede"],
+          "correct": 1,
+          "explicacion": "WITH GRANT OPTION añade esta capacidad al comando GRANT.",
+          "ejemplo": "Ej: GRANT ALL ON db.* TO admin WITH GRANT OPTION;"
+        },
+        {
+          "q": "¿Qué comando es necesario tras modificar manualmente (vía INSERT) las tablas de sistema de MySQL?",
+          "options": ["COMMIT", "SAVE", "FLUSH PRIVILEGES", "RESTART"],
+          "correct": 2,
+          "explicacion": "Obliga al servidor a recargar las tablas de permisos a la memoria.",
+          "ejemplo": "Ej: Tras un 'UPDATE mysql.user SET ...'"
+        },
+        {
+          "q": "¿Qué permiso se requiere para crear roles?",
+          "options": ["CREATE USER", "CREATE ROLE", "CREATE", "SUPER"],
+          "correct": 1,
+          "explicacion": "Es el privilegio específico para la gestión de roles.",
+          "ejemplo": "Ej: CREATE ROLE 'viewer';"
+        },
+        {
+          "q": "¿Es posible dar permiso de SELECT solo sobre una columna específica?",
+          "options": ["No, es por tabla completa", "Sí, indicándola entre paréntesis en el GRANT", "Solo en Oracle", "Solo para el usuario root"],
+          "correct": 1,
+          "explicacion": "Se llama seguridad a nivel de columna.",
+          "ejemplo": "Ej: GRANT SELECT (precio) ON productos TO 'vendedor';"
+        },
+        {
+          "q": "¿Qué sucede si ejecutas REVOKE sobre un permiso que el usuario nunca tuvo?",
+          "options": ["El sistema da error", "No ocurre nada, simplemente informa", "Se borra al usuario", "Se bloquea la tabla"],
+          "correct": 1,
+          "explicacion": "SQL informa de que el privilegio no existía, pero no es un error crítico.",
+          "ejemplo": "Ej: 'Theres no such grant defined for user...'"
+        },
+        {
+          "q": "¿Qué comando muestra los privilegios exactos de un usuario?",
+          "options": ["LIST GRANTS", "SHOW GRANTS FOR...", "SELECT * FROM PERMISOS", "CHECK USER"],
+          "correct": 1,
+          "explicacion": "Devuelve los comandos GRANT necesarios para recrear esos permisos.",
+          "ejemplo": "Ej: SHOW GRANTS FOR 'marty'@'localhost';"
+        },
+        {
+          "q": "¿Cuál es la función del 'General Query Log'?",
+          "options": ["Guardar errores", "Registrar cada instrucción enviada por los clientes", "Guardar backups", "Acelerar la red"],
+          "correct": 1,
+          "explicacion": "Útil para debug y auditoría total, aunque consume recursos.",
+          "ejemplo": "Ej: Ver quién ejecutó un DROP TABLE sospechoso."
+        },
+        {
+          "q": "¿Qué significa el permiso 'ALL PRIVILEGES'?",
+          "options": ["Todos los permisos menos GRANT", "Todos los permisos del nivel especificado", "Acceso total al SO", "Solo lectura y escritura"],
+          "correct": 1,
+          "explicacion": "Otorga todos los privilegios disponibles para el objeto u objetos indicados.",
+          "ejemplo": "Ej: GRANT ALL PRIVILEGES ON db.* ..."
+        },
+        {
+          "q": "¿Cómo se bloquea temporalmente una cuenta de usuario sin borrarla?",
+          "options": ["DROP USER", "ALTER USER ... ACCOUNT LOCK", "SET USER OFF", "REVOKE ALL"],
+          "correct": 1,
+          "explicacion": "Impide el login pero mantiene los permisos configurados.",
+          "ejemplo": "Ej: ALTER USER 'hacker'@'%' ACCOUNT LOCK;"
+        },
+        {
+          "q": "¿Qué plugin de MySQL se suele usar para la autenticación?",
+          "options": ["auth_socket o mysql_native_password", "ssh_plugin", "win_auth", "md5_auth"],
+          "correct": 0,
+          "explicacion": "Define cómo el servidor valida la contraseña recibida.",
+          "ejemplo": "Ej: mysql_native_password es el más compatible históricamente."
+        },
+        {
+          "q": "¿Para qué sirve el comando 'DROP ROLE'?",
+          "options": ["Quitar un permiso a un rol", "Borrar la definición del rol del sistema", "Quitar un rol a un usuario", "Limpiar los logs"],
+          "correct": 1,
+          "explicacion": "Elimina el objeto rol del catálogo.",
+          "ejemplo": "Ej: DROP ROLE 'desarrollador_junior';"
+        },
+        {
+          "q": "¿Qué propiedad de seguridad obliga a usar TLS/SSL?",
+          "options": ["ENCRYPTED", "REQUIRE SSL", "SECURE", "ONLY HTTPS"],
+          "correct": 1,
+          "explicacion": "Requisito de transporte seguro para la conexión.",
+          "ejemplo": "Ej: GRANT ... TO user REQUIRE SSL;"
+        },
+        {
+          "q": "¿Cuál de estos NO se considera un privilegio de administración?",
+          "options": ["SHUTDOWN", "SUPER", "RELOAD", "SELECT"],
+          "correct": 2,
+          "explicacion": "SELECT es un privilegio de nivel de datos, no de gestión del servidor.",
+          "ejemplo": "Ej: Un usuario normal tiene SELECT, pero no SHUTDOWN."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "asignatura": "Seguridad",
+  "codigo_archivo": "cuestionario_tema_2",
+  "titulo": "Cuestionario - Seguridad activa y acceso remoto",
+  "tipo": "cuestionario",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "Marca la afirmación que NO es una ventaja de las VPNs:",
+      "opciones": {
+        "a": "Ahorro en costes.",
+        "b": "El cliente remoto adquiere la condición de miembro de la LAN.",
+        "c": "No garantiza la disponibilidad.",
+        "d": "No se compromete la seguridad de la red empresarial."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Las ventajas de una VPN incluyen el ahorro de costes frente a líneas dedicadas, la integración del cliente remoto en la LAN local y el mantenimiento de la seguridad. El hecho de que no garantice por sí misma la disponibilidad del enlace (que depende de la red pública subyacente) no es una ventaja, sino una característica o limitación."
+    },
+    {
+      "id": 2,
+      "enunciado": "Una VPN es:",
+      "opciones": {
+        "a": "Red privada y segura establecida sobre una infraestructura pública (no segura y compartida) usando tecnologías de cifrado o autenticación.",
+        "b": "Red privada y segura establecida sobre una infraestructura pública (segura y compartida) usando tecnologías de cifrado o autenticación.",
+        "c": "Red privada y segura establecida sobre una infraestructura pública (segura y compartida) sin necesidad de usar tecnologías de cifrado."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Una Red Privada Virtual (VPN) crea un 'túnel' seguro sobre una red pública como Internet. Utiliza el cifrado para garantizar la confidencialidad y la autenticación para asegurar la identidad de los extremos, permitiendo que el tráfico viaje de forma segura por un medio hostil."
+    },
+    {
+      "id": 3,
+      "enunciado": "Un túnel es:",
+      "opciones": {
+        "a": "Un sistema de comunicación que oculta los mensajes a los usuarios que no están conectados al túnel.",
+        "b": "Un procedimiento de comunicación que permite encapsular un protocolo dentro de otro protocolo, para hacer inaccesible la información.",
+        "c": "Un procedimiento de comunicación que permite ocultar un mensaje dentro de otro mensaje."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El túnel o 'tunneling' consiste en encapsular un protocolo de red (el protocolo pasajero) dentro de las unidades de datos de otro protocolo (el protocolo de transporte). Esto permite, por ejemplo, enviar protocolos no enrutables por Internet o añadir una capa de cifrado al tráfico original."
+    },
+    {
+      "id": 4,
+      "enunciado": "Indicar cuál definición se ajusta a un IDS (Sistema de detección de intrusiones):",
+      "opciones": {
+        "a": "Analiza las conexiones y los protocolos en tiempo real para determinar si se va a producir un incidente.",
+        "b": "Recoge y analiza información procedente de distintas áreas de un equipo o red con el objetivo de identificar posibles fallos de seguridad.",
+        "c": "Emite alarmas y pueden descartar paquetes y desconectar conexiones."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Un IDS (Intrusion Detection System) es una herramienta de seguridad pasiva que monitoriza el tráfico de red o los eventos del sistema en busca de patrones sospechosos o violaciones de políticas, generando alertas cuando detecta una posible intrusión, pero sin detenerla necesariamente."
+    },
+    {
+      "id": 6,
+      "enunciado": "Crear una red privada sobre una red pública es:",
+      "opciones": {
+        "a": "Una VPN.",
+        "b": "No se puede realizar.",
+        "c": "Una VLAN."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Esta es la definición fundamental de VPN (Virtual Private Network). A diferencia de una VLAN, que segmenta una red física local, la VPN permite extender la red privada a través de infraestructuras públicas geográficamente distantes."
+    }
+  ]
+}

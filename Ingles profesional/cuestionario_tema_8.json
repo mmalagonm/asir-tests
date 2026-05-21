@@ -1,0 +1,18 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "cuestionario_tema_8",
+  "titulo": "UNIT 8. Quiz - compulsory",
+  "tipo": "cuestionario",
+  "preguntas": [
+    { "id": 1, "enunciado": "Don't forget to ___ after you finish your work.", "opciones": { "a": "log up", "b": "hack on", "c": "log off", "d": "link on" }, "respuesta_correcta": "c", "retroalimentacion": "'Log off' (o 'log out') es el phrasal verb que significa cerrar la sesión en un sistema informático." },
+    { "id": 2, "enunciado": "The new software, _____ we were excited to test, has been released.", "opciones": { "a": "who", "b": "which", "c": "whom", "d": "that" }, "respuesta_correcta": "b", "retroalimentacion": "En oraciones de relativo explicativas (entre comas), usamos 'which' para objetos o cosas ('software'). En este caso, no se puede usar 'that'." },
+    { "id": 3, "enunciado": "The book, _____ I borrowed from the library, is on the desk.", "opciones": { "a": "which", "b": "who", "c": "whose", "d": "whom" }, "respuesta_correcta": "a", "retroalimentacion": "Utilizamos el pronombre relativo 'which' para referirnos a objetos inanimados o animales." },
+    { "id": 4, "enunciado": "The consultant _____ we spoke to was very knowledgeable about the latest technology trends.", "opciones": { "a": "who", "b": "which", "c": "whose", "d": "whom" }, "respuesta_correcta": "a", "retroalimentacion": "Para personas, el pronombre relativo más común es 'who'. También podría usarse 'whom' tras preposición o en lenguaje formal." },
+    { "id": 5, "enunciado": "The girl _________boyfriend is shorter than her is my new neighbour.", "opciones": { "a": "whose", "b": "that", "c": "who", "d": "which" }, "respuesta_correcta": "a", "retroalimentacion": "'Whose' es el pronombre relativo posesivo (equivalente a 'cuyo/a' en español). Se usa para indicar posesión o relación." },
+    { "id": 6, "enunciado": "The city __________ she grew up is known for its historical landmarks.", "opciones": { "a": "whose", "b": "which", "c": "where", "d": "who" }, "respuesta_correcta": "c", "retroalimentacion": "'Where' es un adverbio relativo que se utiliza para referirse a lugares." },
+    { "id": 7, "enunciado": "Updates ___ automatically if the system settings allow.", "opciones": { "a": "install", "b": "installing", "c": "installed", "d": "are installed" }, "respuesta_correcta": "d", "retroalimentacion": "Se utiliza la voz pasiva en presente simple ('are installed') para describir algo que sucede regularmente o de forma automática." },
+    { "id": 8, "enunciado": "My colleague, _____ I worked with on the project, has left the company.", "opciones": { "a": "which", "b": "whose", "c": "who", "d": "whom" }, "respuesta_correcta": "d", "retroalimentacion": "Aunque 'who' es común, 'whom' es técnicamente más correcto aquí por ser el objeto de la preposición 'with' en un registro formal." },
+    { "id": 9, "enunciado": "The programmer ___ fixed the bug is very skilled.", "opciones": { "a": "which", "b": "whose", "c": "whom", "d": "who" }, "respuesta_correcta": "d", "retroalimentacion": "Utilizamos 'who' para referirnos a una persona que realiza la acción del verbo (en este caso, arreglar el fallo)." },
+    { "id": 10, "enunciado": "The system, _____ the developers are currently working on, will be launched next month.", "opciones": { "a": "whom", "b": "whose", "c": "who", "d": "which" }, "respuesta_correcta": "d", "retroalimentacion": "Se utiliza 'which' para referirse al 'sistema' (objeto) en una oración de relativo explicativa." }
+  ]
+}

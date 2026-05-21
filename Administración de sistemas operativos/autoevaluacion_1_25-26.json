@@ -1,0 +1,250 @@
+{
+  "asignatura": "Administracion de sistemas operativos",
+  "codigo_archivo": "autoevaluacion_1_25-26",
+  "titulo": "1ª Autoevaluación curso 25/26",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Recién instalado un Windows Server 2019 en modo local con las opciones predeterminadas pertenece a algún dominio?",
+      "opciones": {
+        "a": "No",
+        "b": "Sí",
+        "c": "Ninguna es cierta",
+        "d": "Depende de los parámetros de la instalación"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Un servidor recién instalado se encuentra por defecto en un 'Grupo de trabajo' (WORKGROUP). Para que pertenezca a un dominio, debe ser promovido a Controlador de Dominio o unido a uno existente mediante una configuración explícita."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Qué puertos deshabilita NetBIOS?",
+      "opciones": {
+        "a": "136,137 y 138",
+        "b": "137, 138 y 139",
+        "c": "Ninguna respuesta es cierta",
+        "d": "80 y 53"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "NetBIOS sobre TCP/IP utiliza los puertos UDP 137 (Servicio de nombres), UDP 138 (Servicio de datagramas) y TCP 139 (Servicio de sesión). Deshabilitar estos puertos mejora la seguridad al reducir la superficie de ataque para descubrimiento de red."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Qué hace la orden chgrp?",
+      "opciones": {
+        "a": "Cambia el grupo de usuarios de un archivo o carpeta en un sistema Linux",
+        "b": "Cambia el grupo de usuarios de un archivo o carpeta en Windows",
+        "c": "Ninguna es cierta",
+        "d": "Permite cambiar la Password en Linux"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El comando 'chgrp' (change group) en Linux se utiliza para cambiar la propiedad de grupo de un archivo o directorio. Solo el propietario o el superusuario (root) pueden realizar este cambio."
+    },
+    {
+      "id": 4,
+      "enunciado": "Instalas dos sistemas operativos Windows 10 cada uno de ellos en su PC correspondiente con IPs 192.168.1.2 y 192.168.1.3. ¿Por defecto pueden verse en red?",
+      "opciones": {
+        "a": "Todas las respuestas son falsas",
+        "b": "Sí, pues los dos Pc están en la misma red",
+        "c": "No, es necesario configurar la red correspondiente",
+        "d": "Depende de la versión de Windows 10"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Aunque estén en la misma subred física y lógica, Windows 10 suele tener el Firewall activado y la detección de redes desactivada por defecto en perfiles públicos. Es necesario configurar el perfil de red y permitir el tráfico ICMP (ping) o compartir recursos."
+    },
+    {
+      "id": 5,
+      "enunciado": "Tenemos 50 ordenadores Windows 10 (IPs 192.168.1.2 a 192.168.1.70). Nos solicitan conectar 2 PC nuevos con las IPs 192.168.25.7/24 y 172.172.0.44/16. ¿Podemos conseguirlo con Windows?",
+      "opciones": {
+        "a": "Con Windows 10 Home NO, sin embargo, con Windows 10 PRO Si.",
+        "b": "Todas las respuestas son falsas",
+        "c": "No, deberíamos configurar VLAN con Cisco",
+        "d": "Sí"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Windows permite configurar múltiples direcciones IP y diferentes máquinas de subred en una misma interfaz de red física mediante las opciones avanzadas de TCP/IPv4. Esto permite que el equipo se comunique simultáneamente con diferentes redes lógicas."
+    },
+    {
+      "id": 6,
+      "enunciado": "Un administrador de Windows Server puede visualizar la contraseña de un usuario en Active Directory...",
+      "opciones": {
+        "a": "Sí, y puede modificarla",
+        "b": "No, pero puede modificarla",
+        "c": "Ninguna es cierta",
+        "d": "Depende de la configuración de la cuenta"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Por seguridad, Active Directory almacena las contraseñas utilizando hashes unidireccionales. Nadie, incluido el administrador, puede ver la contraseña en texto claro, pero el administrador tiene privilegios para resetearla (establecer una nueva)."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Qué orden cambia el nombre de un grupo en Linux?",
+      "opciones": {
+        "a": "Mod -n",
+        "b": "Group -n",
+        "c": "Groupmod -n",
+        "d": "Todas son ciertas"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'groupmod' es la utilidad para modificar la definición de un grupo. El parámetro '-n' (new-name) permite especificar el nuevo nombre para el grupo existente."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Qué orden visualiza la versión de Linux que estamos utilizando?",
+      "opciones": {
+        "a": "Ninguna es cierta",
+        "b": "lusrmgr.msc",
+        "c": "mste.msc",
+        "d": "Uname"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El comando 'uname' (unix name) muestra información del sistema. 'uname -a' proporciona detalles sobre el kernel, la arquitectura y la versión del sistema operativo."
+    },
+    {
+      "id": 9,
+      "enunciado": "Para un archivo de texto en 'mis documentos' de Windows 10, ¿qué atributo no debemos utilizar nunca?",
+      "opciones": {
+        "a": "Attrib +A",
+        "b": "Attrib +S",
+        "c": "Attrib + R",
+        "d": "Attrib +H"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El atributo 'S' identifica archivos del Sistema. Marcar un archivo personal como de sistema puede causar que se oculte de las búsquedas normales y que el sistema operativo lo proteja de forma innecesaria, complicando su gestión."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Qué hace la orden touch en Linux?",
+      "opciones": {
+        "a": "Crea un archivo vacío",
+        "b": "Crea un directorio con texto",
+        "c": "Crea un archivo con texto",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "'touch' se usa principalmente para actualizar las marcas de tiempo de un archivo. Si el archivo no existe, el comando lo crea automáticamente como un archivo vacío."
+    },
+    {
+      "id": 11,
+      "enunciado": "¿Puede un usuario del grupo 'Operadores de Cuentas' visualizar la contraseña de un nuevo usuario una vez iniciada la sesión?",
+      "opciones": {
+        "a": "Depende de los permisos de la cuenta del operador",
+        "b": "Sí",
+        "c": "No",
+        "d": "Depende de la configuración de la cuenta del usuario nuevo"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El grupo 'Operadores de cuentas' tiene permisos para gestionar cuentas de usuario, pero Active Directory nunca permite visualizar contraseñas existentes debido al cifrado hash."
+    },
+    {
+      "id": 12,
+      "enunciado": "¿Qué hace la orden less en Linux?",
+      "opciones": {
+        "a": "Muestra un archivo pero sí deja editarlo",
+        "b": "Crea archivos",
+        "c": "Muestra un archivo pero no deja editarlo",
+        "d": "La orden no es correcta"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'less' es un paginador que permite visualizar el contenido de archivos de texto de forma interactiva (permite desplazarse hacia adelante y hacia atrás), pero no es un editor de texto."
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Cómo se crea un archivo en la consola de Windows 10?",
+      "opciones": {
+        "a": "copy com",
+        "b": "touch",
+        "c": "Nano",
+        "d": "copy con"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "'copy con [nombre_archivo]' redirige la entrada de la consola (teclado) directamente a un archivo. Para finalizar la escritura, se pulsa Ctrl+Z (o F6) y Enter."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Qué valor numérico equivale a la orden 'chmod DRWX RWX --X'?",
+      "opciones": {
+        "a": "640",
+        "b": "771",
+        "c": "770",
+        "d": "761"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Los permisos se calculan sumando: R=4, W=2, X=1. Dueño (RWX) = 4+2+1=7; Grupo (RWX) = 4+2+1=7; Otros (--X) = 1. El resultado es 771. (La 'D' inicial indica que es un Directorio)."
+    },
+    {
+      "id": 15,
+      "enunciado": "Carmen (grupo 'costura') tiene control total sobre 'trajes'. Se le añade al grupo 'modas' con 'sin acceso' a dicha carpeta. Al intentar acceder, no tiene permiso. ¿Causa probable?",
+      "opciones": {
+        "a": "Carmen no esta en el grupo costura",
+        "b": "Carmen no tiene permisos",
+        "c": "Carmen no esta en el grupo modas",
+        "d": "Se ha producido un error en LDAP de Windows Server"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En el modelo de permisos de Windows (NTFS/AD), los permisos de 'Denegar' (Deny) siempre prevalecen sobre los permisos de 'Permitir' (Allow), independientemente de la pertenencia a múltiples grupos."
+    },
+    {
+      "id": 16,
+      "enunciado": "Hemos configurado en Windows Server la red 150.150.0.0/18. ¿Cuántos host quedan disponibles?",
+      "opciones": {
+        "a": "512",
+        "b": "16.384",
+        "c": "32.768",
+        "d": "254"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Una máscara /18 deja 14 bits para hosts (32-18=14). 2^14 = 16.384. Aunque estrictamente son 16.382 útiles (restando red y broadcast), la opción más cercana en el examen es el total de direcciones del bloque."
+    },
+    {
+      "id": 17,
+      "enunciado": "¿Cuál de los siguientes elementos es un tipo de ámbito de grupo en Windows Server?",
+      "opciones": {
+        "a": "Regional",
+        "b": "Super usuario",
+        "c": "Global",
+        "d": "Seguridad"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Los ámbitos de grupo en Active Directory son: Local de dominio, Global y Universal. Determinan dónde se puede usar el grupo y qué miembros puede contener."
+    },
+    {
+      "id": 18,
+      "enunciado": "Desde el punto de vista de seguridad, ¿qué es más seguro respecto al conocimiento de una contraseña?",
+      "opciones": {
+        "a": "Usuario y Administrador",
+        "b": "Usuario, Administrador y Administrador del dominio",
+        "c": "Solo el usuario",
+        "d": "Solo el Administrador"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El principio de seguridad de \"no repudio\" y privacidad dicta que solo el usuario debe conocer su clave secreta. Si otros la conocen, el usuario ya no es el único responsable de las acciones realizadas con su cuenta."
+    },
+    {
+      "id": 19,
+      "enunciado": "Se necesita la orden Read para configurar la opción 5 que muestra la siguiente imagen en un script en Ubuntu:",
+      "fichero_imagen": "autoevaluacion1_pregunta_19.jpg",
+      "opciones": {
+        "a": "Sí, concretamente dos variables",
+        "b": "No",
+        "c": "Sí, concretamente una variable",
+        "d": "Sí, concretamente tres variables"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La opción 5 suele requerir que el usuario introduzca un dato (como un nombre de archivo o de usuario) para ser procesado por el script, lo cual se captura mediante 'read nombre_variable'."
+    },
+    {
+      "id": 20,
+      "enunciado": "¿Es estrictamente necesario la orden Read en la lista 6 que muestra la siguiente imagen en un script en Ubuntu?",
+      "fichero_imagen": "autoevaluacion1_pregunta_20.jpg",
+      "opciones": {
+        "a": "Ninguna es cierta",
+        "b": "No",
+        "c": "Sí",
+        "d": "Depende de la versión de Linux"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Para que un script se detenga y espere una entrada del usuario antes de continuar (por ejemplo, para que el usuario pueda leer un resultado), es necesario el comando 'read'."
+    }
+  ]
+}

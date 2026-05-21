@@ -1,0 +1,148 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "autoevaluacion_3_25-26",
+  "titulo": "Self-Assessment - MAY - COURSE 25/26",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "A software company introduced a new cybersecurity system after several employees received suspicious emails. The IT department organised a training session to teach staff how to identify phishing attempts and create stronger passwords. As a result, the number of security incidents decreased significantly over the following months. What was one result of the training session?",
+      "opciones": { "a": "The number of security incidents decreased.", "b": "The company changed its office location.", "c": "The company hired more technicians.", "d": "Employees stopped using email." },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El texto indica explícitamente que tras la sesión de formación, el número de incidentes de seguridad disminuyó significativamente."
+    },
+    {
+      "id": 2,
+      "enunciado": "A program that detects and removes malicious software is called:",
+      "opciones": { "a": "motherboard", "b": "spreadsheet", "c": "antivirus", "d": "browser" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Un antivirus es la herramienta diseñada específicamente para detectar y eliminar software malicioso (malware)."
+    },
+    {
+      "id": 3,
+      "enunciado": "She ___ in the company for five years before she became a project manager.",
+      "opciones": { "a": "has worked", "b": "had worked", "c": "worked", "d": "works" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Se utiliza el pasado perfecto ('had worked') para describir una acción que ocurrió antes de otro momento o acción en el pasado ('became')."
+    },
+    {
+      "id": 4,
+      "enunciado": "When assembling a computer, you should always ___ the case carefully before touching any components.",
+      "opciones": { "a": "check", "b": "connect", "c": "remove", "d": "run" },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Es fundamental revisar o abrir la carcasa con cuidado para acceder a los componentes internos."
+    },
+    {
+      "id": 5,
+      "enunciado": "Which type of document is normally used to describe an unexpected technical problem?",
+      "opciones": { "a": "Presentation", "b": "Job offer", "c": "Incident report", "d": "User manual" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Un 'incident report' (informe de incidencias) es el documento estándar para registrar y describir fallos técnicos inesperados."
+    },
+    {
+      "id": 6,
+      "enunciado": "The new graphics card is ___ than the previous model.",
+      "opciones": { "a": "powerful", "b": "most powerful", "c": "more powerful", "d": "powerfully" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Para adjetivos largos como 'powerful', el comparativo se forma usando 'more' delante del adjetivo."
+    },
+    {
+      "id": 7,
+      "enunciado": "A field that contains a unique value for each record is called a:",
+      "opciones": { "a": "footer", "b": "primary key", "c": "column", "d": "transition" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En bases de datos, la 'primary key' (clave primaria) es el campo que identifica de forma única cada registro de una tabla."
+    },
+    {
+      "id": 8,
+      "enunciado": "You ___ interrupt your colleagues during a meeting.",
+      "opciones": { "a": "should", "b": "can", "c": "mustn't", "d": "may" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'Mustn't' expresa una prohibición o algo que no se debe hacer por ser inapropiado o estar prohibido."
+    },
+    {
+      "id": 9,
+      "enunciado": "The application update was delayed ___ an unexpected technical problem.",
+      "opciones": { "a": "however", "b": "because", "c": "due to", "d": "although" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'Due to' significa 'debido a' y se utiliza para introducir la causa de un retraso o problema."
+    },
+    {
+      "id": 10,
+      "enunciado": "A printed message placed at the bottom of each page in a document is called a:",
+      "opciones": { "a": "record", "b": "footer", "c": "column", "d": "range" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El 'footer' (pie de página) es el área en la parte inferior de un documento donde se suele colocar información repetitiva como el número de página."
+    },
+    {
+      "id": 11,
+      "enunciado": "At this moment, the technicians ___ the cause of the server outage.",
+      "opciones": { "a": "are investigating", "b": "have investigated", "c": "investigated", "d": "investigate" },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La expresión 'at this moment' indica que la acción está ocurriendo ahora, por lo que se requiere el presente continuo ('are investigating')."
+    },
+    {
+      "id": 12,
+      "enunciado": "If I had more time, I ___ an advanced programming course.",
+      "opciones": { "a": "would take", "b": "took", "c": "will take", "d": "take" },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Se trata de una condicional de segundo tipo (hipotética), que utiliza 'if + pasado simple' seguido de 'would + verbo'."
+    },
+    {
+      "id": 13,
+      "enunciado": "In British workplace culture, being late to a meeting is considered:",
+      "opciones": { "a": "friendly", "b": "unprofessional", "c": "acceptable", "d": "professional" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En la cultura laboral británica, la puntualidad es muy valorada y llegar tarde se percibe como una falta de profesionalidad."
+    },
+    {
+      "id": 14,
+      "enunciado": "A device that stores all the data and the operating system is called a:",
+      "opciones": { "a": "socket", "b": "hard drive", "c": "motherboard", "d": "heat sink" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El 'hard drive' (disco duro) es el componente de almacenamiento principal donde se guardan los datos y el sistema operativo de forma permanente."
+    },
+    {
+      "id": 15,
+      "enunciado": "The report ___ by the manager before the meeting started.",
+      "opciones": { "a": "checked", "b": "was checked", "c": "has checking", "d": "was checking" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Se requiere la voz pasiva en pasado simple ('was checked') porque el informe recibe la acción de ser revisado."
+    },
+    {
+      "id": 16,
+      "enunciado": "A professional email should normally end with:",
+      "opciones": { "a": "Bye", "b": "No problem", "c": "Kind regards", "d": "See you soon" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'Kind regards' es una forma estándar y profesional de cerrar un correo electrónico en un entorno laboral."
+    },
+    {
+      "id": 17,
+      "enunciado": "By this time next year, they ___ the new software.",
+      "opciones": { "a": "developed", "b": "develop", "c": "will have developed", "d": "are developing" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El futuro perfecto ('will have developed') se usa para acciones que habrán concluido en un momento específico del futuro."
+    },
+    {
+      "id": 18,
+      "enunciado": "A small portable storage device that connects to a USB port is called a:",
+      "opciones": { "a": "flash drive", "b": "byte", "c": "browser", "d": "motherboard" },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Un 'flash drive' (memoria USB o pendrive) es un dispositivo pequeño y portátil para almacenar y transportar datos."
+    },
+    {
+      "id": 19,
+      "enunciado": "The technician is the person ___ repaired the network server.",
+      "opciones": { "a": "which", "b": "where", "c": "whose", "d": "who" },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Se utiliza el pronombre relativo 'who' para referirse a personas (en este caso, el técnico)."
+    },
+    {
+      "id": 20,
+      "enunciado": "Which expression is the most appropriate when asking a manager for help?",
+      "opciones": { "a": "Help me now.", "b": "Could you please help me with this issue?", "c": "I need this immediately.", "d": "You have to solve this." },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Al dirigirse a un superior, es importante usar un lenguaje formal y educado, como el uso de 'Could you please...?'."
+    }
+  ]
+}

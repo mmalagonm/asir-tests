@@ -1,0 +1,129 @@
+{
+  "asignatura": "Administracion de sistemas operativos",
+  "codigo_archivo": "examen_ra1",
+  "titulo": "Examen Resultado de aprendizaje 1",
+  "tipo": "examen",
+  "ra": [1],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Recién instalado un Windows Server 2019 en modo local con las opciones predeterminadas pertenece a algún dominio?",
+      "opciones": {
+        "a": "No",
+        "b": "Sí",
+        "c": "Depende de los parámetros de la instalación",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Un servidor recién instalado pertenece a un grupo de trabajo por defecto. La unión a un dominio requiere una configuración posterior del rol de Active Directory o la unión manual al dominio."
+    },
+    {
+      "id": 2,
+      "enunciado": "Instalas dos Windows 10 con IPs 192.168.1.2 y 192.168.1.3. ¿Por defecto pueden verse en red?",
+      "opciones": {
+        "a": "Depende de la versión de Windows 10",
+        "b": "Todas las respuestas son falsas",
+        "c": "Sí, pues los dos Pc están en la misma red",
+        "d": "No, es necesario configurar la red correspondiente"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Debido a las políticas de seguridad por defecto de Windows (Firewall), la comunicación de red (como el ping) suele estar bloqueada hasta que se configura el perfil de red como 'Privado' o se habilitan las excepciones correspondientes."
+    },
+    {
+      "id": 3,
+      "enunciado": "Empresa con 50 PCs (192.168.1.2-70). ¿Podemos conectar 2 PC nuevos con IPs 192.168.25.7/24 y 172.172.0.44/16 usando Windows?",
+      "opciones": {
+        "a": "No, debemos configurar VLAN",
+        "b": "Ninguna es cierta",
+        "c": "Con Windows 10 Home NO, sin embargo, con Windows 10 PRO Si.",
+        "d": "Sí"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Windows soporta el multi-homing lógico, permitiendo asignar múltiples direcciones IP de diferentes subredes a una sola tarjeta de red física."
+    },
+    {
+      "id": 4,
+      "enunciado": "Para un archivo personal en 'mis documentos', ¿qué atributo no debemos utilizar nunca?",
+      "opciones": {
+        "a": "Attrib +S",
+        "b": "Attrib +A",
+        "c": "Attrib +H",
+        "d": "Attrib + R"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El atributo de Sistema (+S) está reservado para archivos críticos del SO. Usarlo en documentos personales puede provocar comportamientos inesperados en la gestión de archivos."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Puede un 'Operador de Cuentas' visualizar la contraseña de un nuevo usuario tras iniciar sesión?",
+      "opciones": {
+        "a": "Depende de la configuración de la cuenta",
+        "b": "Depende de los permisos del operador",
+        "c": "No",
+        "d": "Sí"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Nadie puede ver las contraseñas en Active Directory porque se guardan como hashes. Los operadores solo pueden resetearlas."
+    },
+    {
+      "id": 6,
+      "enunciado": "Carmen (grupo 'costura', control total) es añadida a 'modas' (sin acceso) para la carpeta 'trajes'. No puede acceder. ¿Causa?",
+      "opciones": {
+        "a": "lin no tiene permisos",
+        "b": "lin no esta en el grupo costura",
+        "c": "lin no esta en el grupo modas",
+        "d": "Error en LDAP"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La denegación explícita (Deny) prevalece sobre cualquier permiso de permitir (Allow) heredado de otros grupos."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Cuál de los siguientes es un tipo de ámbito de grupo en Windows Server?",
+      "opciones": {
+        "a": "Super usuario",
+        "b": "Regional",
+        "c": "Global",
+        "d": "Seguridad"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Los grupos Globales se utilizan para organizar usuarios con funciones similares y pueden ser miembros de grupos Locales de Dominio para otorgar permisos a recursos."
+    },
+    {
+      "id": 8,
+      "enunciado": "Desde el punto de vista de seguridad, ¿quién debe conocer la contraseña de un usuario de dominio?",
+      "opciones": {
+        "a": "Usuario, Administrador y Admin del dominio",
+        "b": "Usuario y Administrador",
+        "c": "Solo el usuario",
+        "d": "Solo el Administrador"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Por motivos de seguridad y responsabilidad (no repudio), la contraseña es personal e intransferible."
+    },
+    {
+      "id": 9,
+      "enunciado": "Un cliente no tiene la pestaña de seguridad en sus archivos. ¿Cuál puede ser la causa?",
+      "opciones": {
+        "a": "Error de instalación",
+        "b": "Ninguna es cierta",
+        "c": "No se especificó en la instalación",
+        "d": "La partición no está en NTFS"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Los permisos detallados de seguridad son una característica propia del sistema de archivos NTFS. En particiones FAT32 o exFAT, esta pestaña no aparece porque el sistema de archivos no soporta dichas listas de control de acceso (ACLs)."
+    },
+    {
+      "id": 10,
+      "enunciado": "Para agregar un Windows 10 a un dominio, es necesario:",
+      "opciones": {
+        "a": "Ninguna es cierta",
+        "b": "Misma red, Default-Gateway con IP del Server y nombre de dominio",
+        "c": "Misma red, DNS preferido con IP del Server, nombre de dominio y pass de admin",
+        "d": "Misma red, Default-Gateway con IP del Server, nombre de dominio y pass de admin"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El paso más crítico es configurar el DNS de la estación de trabajo para que apunte a la IP del Controlador de Dominio, ya que sin resolución DNS el equipo no podrá localizar los servicios del dominio."
+    }
+  ]
+}

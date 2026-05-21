@@ -1,0 +1,88 @@
+{
+  "asignatura": "Seguridad",
+  "codigo_archivo": "cuestionario_tema_3",
+  "titulo": "Cuestionario - Cortafuegos y servidores intermediarios",
+  "tipo": "cuestionario",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Qué hace este comando: iptables -A INPUT -p tcp -i eth0 --dport 80 -j DROP?",
+      "opciones": {
+        "a": "Cerrar las conexiones entrantes por el interfaz eth0 y hacia el puerto (local) 80 (HTTP)",
+        "b": "Cerrar todas las conexiones excepto desde eth0 hasta el puerto (local) 80 (HTTP)",
+        "c": "Cerrar todas las conexiones desde eth0 y hacia el puerto (local) 80 (HTTP)"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El comando añade (-A) una regla a la cadena de entrada (INPUT) para el protocolo TCP (-p tcp), que entre por la interfaz eth0 (-i eth0) con destino al puerto 80 (--dport 80), y cuya acción sea descartar el paquete (-j DROP). Esto efectivamente bloquea el acceso web externo por esa interfaz."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Cuál de las siguientes afirmaciones define una subred protegida débil?:",
+      "opciones": {
+        "a": "Sitúa a la DMZ entre dos cortafuegos.",
+        "b": "No tiene equipo bastión.",
+        "c": "Tiene un equipo bastión sin proteger.",
+        "d": "Sitúa a la DMZ detrás de un router."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Una subred protegida débil (Screened Subnet simple) suele utilizar un único dispositivo (router o firewall) para separar la red externa de la DMZ y la interna. Es 'débil' porque si el dispositivo de borde se ve comprometido, toda la infraestructura queda expuesta, a diferencia de la arquitectura de doble cortafuegos."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Cuál es la política más aconsejable para disponer de máxima seguridad al configurar un cortafuegos?",
+      "opciones": {
+        "a": "Denegarlo todo sería lo más seguro.",
+        "b": "Tanto ACEPTAR, como DENEGAR cumplen la integridad total.",
+        "c": "La más aconsejable sería DENEGAR, siempre y cuando sepamos configurar correctamente el sistema.",
+        "d": "La más aconsejable sería ACEPTAR."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "En seguridad, se recomienda la política de 'Denegación por Defecto' (Whitelist). Se cierra todo el tráfico y solo se abren explícitamente aquellos puertos y protocolos estrictamente necesarios. Esto minimiza la superficie de ataque."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Dónde debería ubicarse un servidor que contiene información confidencial de empleados y acceso solo interno?",
+      "opciones": {
+        "a": "En la red interna, donde solo los empleados puedan acceder.",
+        "b": "En la Zona Desmilitarizada (DMZ).",
+        "c": "En un servidor web para acceder cómodamente.",
+        "d": "En una VPN."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La red interna o Intranet es la zona de mayor confianza. Los servidores que no necesitan ser accedidos desde el exterior (como bases de datos de RRHH o archivos internos) deben permanecer aquí, protegidos por el cortafuegos de cualquier acceso desde la DMZ o Internet."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Qué tipo de cortafuegos se ha de utilizar para filtrar ataques por IP, protocolos y puertos?",
+      "opciones": {
+        "a": "Cortafuegos de capa de red y transporte.",
+        "b": "Cortafuegos de web.",
+        "c": "No se utiliza un cortafuegos, se utiliza un IDS."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Los cortafuegos de filtrado de paquetes trabajan en las capas 3 (Red) y 4 (Transporte) del modelo OSI. Toman decisiones basándose en las direcciones IP de origen/destino, el protocolo (TCP/UDP/ICMP) y los números de puerto."
+    },
+    {
+      "id": 6,
+      "enunciado": "¿Qué hace este comando: iptables -A INPUT -s 0.0.0.0/0 -p tcp --dport 1:1024 -j DROP?",
+      "opciones": {
+        "a": "Deshabilita los puertos del 1 al 1024.",
+        "b": "Deshabilita la salida a los puertos del 1 al 1024 para las IPs exteriores.",
+        "c": "Deshabilita el acceso a los puertos del 1 al 1024 para las IPs exteriores."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Este comando bloquea el tráfico TCP entrante (INPUT) desde cualquier dirección IP de origen (-s 0.0.0.0/0) hacia el rango de puertos del 1 al 1024 (--dport 1:1024). Estos puertos se conocen como 'puertos bien conocidos' y suelen alojar servicios críticos del sistema."
+    },
+    {
+      "id": 10,
+      "enunciado": "Marca la opción que corresponde a los cortafuegos de aplicación:",
+      "opciones": {
+        "a": "Interceptan los mensajes entre aplicaciones y bloquean las no permitidas.",
+        "b": "Seleccionan la información en función de los datos del paquete.",
+        "c": "Comprueban las IPs, los puertos y números de secuencia."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Los cortafuegos de nivel de aplicación (o Gateways de aplicación) operan en la capa 7 de OSI. Son capaces de entender el protocolo específico (como HTTP, FTP o SMTP) e inspeccionar el contenido de los datos para bloquear comandos o comportamientos maliciosos específicos de esa aplicación."
+    }
+  ]
+}

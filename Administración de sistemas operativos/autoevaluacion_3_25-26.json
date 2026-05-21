@@ -1,0 +1,246 @@
+{
+  "titulo": "3ª Autoevaluación SSOO 25/26",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "Al crear un usuario en Windows Server ¿por defecto el usuario puede iniciar sesión localmente en el misma máquina donde esta instalado el server?",
+      "opciones": {
+        "a": "Depende de la versión de Windows Server que se este utilizando",
+        "b": "Sí, sin ningún problema",
+        "c": "No",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Por motivos de seguridad, los usuarios estándar de un dominio no tienen permitido el inicio de sesión local en los Controladores de Dominio por defecto."
+    },
+    {
+      "id": 2,
+      "enunciado": "Se puede configurar Windows Server para que un usuario del dominio sin pertenecer a grupos importantes como: ADMINISTRADORES, OPERADORES DE CUENTAS, OPERADORES DE SERVIDORES, OPERADORES DE IMPRESIÓN, y cualquier otro grupo, pueda iniciar sesión en Windows Server.",
+      "opciones": {
+        "a": "No",
+        "b": "Sí",
+        "c": "Ninguna es cierta",
+        "d": "Depende de la versión del Server"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Se puede configurar mediante Directivas de Grupo (GPO) en 'Asignación de derechos de usuario' permitiendo el 'Inicio de sesión local' a usuarios específicos."
+    },
+    {
+      "id": 3,
+      "enunciado": "En el historial de contraseñas de Windows Server. como máximo que valor podemos configurar.",
+      "opciones": {
+        "a": "30",
+        "b": "7",
+        "c": "1007",
+        "d": "24"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El historial de contraseñas de Windows permite recordar hasta un máximo de 24 contraseñas anteriores para evitar la reutilización inmediata."
+    },
+    {
+      "id": 4,
+      "enunciado": "En PowerShell que se consigue con la orden \"Get-NetAdapter\"",
+      "opciones": {
+        "a": "Nos muestra el nombre del único adaptador que debemos utilizar",
+        "b": "Nos muestra de cuantos adaptadores disponemos",
+        "c": "Ninguna es cierta",
+        "d": "Nos muestra el nombre de los dos únicos adaptador que debemos utilizar"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El comando Get-NetAdapter enumera todos los adaptadores de red (físicos y virtuales) presentes en el sistema con su estado básico."
+    },
+    {
+      "id": 5,
+      "enunciado": "En PowerShell como se muestran los elementos compartidos...",
+      "opciones": {
+        "a": "Get-smbShare",
+        "b": "SmbShare",
+        "c": "Ninguna es cierta",
+        "d": "Set.smbShare"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Get-SmbShare es el cmdlet de PowerShell que muestra los recursos compartidos mediante el protocolo SMB en el equipo."
+    },
+    {
+      "id": 6,
+      "enunciado": "En PowerShell cual es la orden correcta para escribir una IP con puerta de enlace...",
+      "opciones": {
+        "a": "netipaddress -interface 4 -ipaddress 192.168.1.2 -prefixlength 24",
+        "b": "New-netipaddress -interface 4 -ipaddress 192.168.1.2 -prefixlength 24",
+        "c": "New-netipaddress -interface 4 -ipaddress 192.168.1.2 -prefixlength 24 -defaultgateway 192.168.1.1",
+        "d": "New-netipaddress -interface 4 -ipaddress 192.168.1.2 -defaultgateway 192.168.1.1"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La sintaxis correcta requiere el cmdlet New-NetIPAddress seguido de los parámetros de IP, longitud de prefijo (máscara) y puerta de enlace."
+    },
+    {
+      "id": 7,
+      "enunciado": "Instalas dos sistemas operativos Windows 10 cada uno de ellos como es lógico en su PC correspondiente. El primer Pc tiene la IP 192.168.1.2 el segundo Pc tiene la IP 192.168.1.3 ¿por defecto pueden conectarse en red?",
+      "opciones": {
+        "a": "Ninguna es correcta",
+        "b": "Sí",
+        "c": "No",
+        "d": "Depende de la versión de Windows"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Al estar en la misma subred (por defecto /24 en este rango) y conectarse físicamente, los equipos tienen conectividad básica IP inmediata."
+    },
+    {
+      "id": 8,
+      "enunciado": "Se puede restringir configurando una GPO a los Administradores y a los Administradores del dominio",
+      "opciones": {
+        "a": "Sí",
+        "b": "Depende de la versión de Windows Server",
+        "c": "No",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Aunque no es una práctica recomendada, es técnicamente posible aplicar restricciones de GPO a grupos de administradores mediante el filtrado de seguridad."
+    },
+    {
+      "id": 9,
+      "enunciado": "El sistema de archivo NTFS: \"Escoge la respuesta correcta\"",
+      "opciones": {
+        "a": "Ninguna es cierta",
+        "b": "NTFS es compatible para Windows y Linux",
+        "c": "Se creo con el objetivo de aumentar la integridad de los datos y así aumentar la seguridad.",
+        "d": "Acentúa la fragmentación de discos que presentaba el sistema FAT"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "NTFS (New Technology File System) fue diseñado para ofrecer mayor fiabilidad, permisos a nivel de archivo e integridad de datos mediante el journaling."
+    },
+    {
+      "id": 10,
+      "enunciado": "El rendimiento de un servidor...",
+      "opciones": {
+        "a": "Es la cantidad de procesos que se pueden realizar por unidad de tiempo con la riqueza de las características de una red centralizada.",
+        "b": "Es la rapidez con la que se ejecutan todas las tareas o procesos haciendo hincapié en redes de igual a igual.",
+        "c": "Ninguna es cierta",
+        "d": "Es la cantidad de servicios diferentes que se ejecutan en una red de igual a igual"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "En entornos de servidor, el rendimiento se mide por el throughput (capacidad de proceso) y la eficiencia de los recursos en un modelo centralizado."
+    },
+    {
+      "id": 11,
+      "enunciado": "Se debe configurar un DHCP e Windows Server con la Network 192.168.1.0/27 ¿Cuál es la ultima IP disponible?",
+      "opciones": {
+        "a": "192.168.1.254",
+        "b": "192.168.1.32",
+        "c": "192.168.1.30",
+        "d": "192.168.1.255"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "En una red /27 (32 IPs), la red es .0 y el broadcast es .31. Por lo tanto, la última dirección utilizable para un host es la .30."
+    },
+    {
+      "id": 12,
+      "enunciado": "Configuramos un DHCP en Windows Server con la Network 192.168.10.0/28 ¿Cuál es su dirección de Broadcast?",
+      "opciones": {
+        "a": "192.168.10.254",
+        "b": "192.168.1.14",
+        "c": "192.168.10.255",
+        "d": "192.168.10.15"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "En una red /28 (16 IPs), la red es .0 y la última dirección (broadcast) es la .15."
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Es posible degradar un Windows Server una vez que se ha subido a controlador de dominio sin necesidad de formatear el equipo?",
+      "opciones": {
+        "a": "No",
+        "b": "Ninguna es correcta",
+        "c": "Depende de la versión de Windows Server",
+        "d": "Sí"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Se puede realizar la degradación mediante el Asistente para eliminación de roles y características o usando el comando Uninstall-ADDSDomainController."
+    },
+    {
+      "id": 14,
+      "enunciado": "En Windows Server se sabe que podemos cambiar el nombre de un dominio por otro, sin embargo, cuando se crea el dominio también se crea un identificador el llamado \"el Identificador de Seguridad (SID)\" ¿Cambia el identificador al cambiar el nombre del dominio?",
+      "opciones": {
+        "a": "Sí",
+        "b": "Depende de la versión de Windows",
+        "c": "Ninguna es cierta",
+        "d": "No"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El SID del dominio es un identificador único y permanente que se genera al crear el dominio y no cambia aunque se realice un proceso de renombramiento (rendom)."
+    },
+    {
+      "id": 15,
+      "enunciado": "El visor de evento:",
+      "opciones": {
+        "a": "Informa de varios niveles de gravedad en diferente registros: Seguridad e instalación",
+        "b": "informa de varios niveles de gravedad en diferente registros: Seguridad y Sistema",
+        "c": "Informa de varios niveles de gravedad en diferente registros: Aplicación, Seguridad, instalación y Sistema",
+        "d": "Informa de varios niveles de gravedad en diferente registros: Aplicación y Seguridad"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Los registros estándar de Windows incluyen Aplicación, Seguridad, Instalación (Setup) y Sistema, cada uno con niveles como Información, Advertencia y Error."
+    },
+    {
+      "id": 16,
+      "enunciado": "Características de instalar Windows Server Core...",
+      "opciones": {
+        "a": "Versión con todos los recursos de sistema de Windows Server",
+        "b": "Versión ligera de Windows Server que no incluye interfaz gráfica",
+        "c": "Ninguna es cierta",
+        "d": "Versión completa con características de Seguridad añadidas de Windows Server que incluye interfaz gráfica"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Server Core es una opción de instalación de bajo mantenimiento que prescinde de la GUI para ahorrar recursos y reducir la superficie de ataque."
+    },
+    {
+      "id": 17,
+      "enunciado": "¿Qué sucede al cerrar una sesión local en un servidor?",
+      "opciones": {
+        "a": "Todos los procesos del servidor son totalmente terminados",
+        "b": "Dependiendo de la versión de Windows Server el usuario podrá continuar trabajando aun cerrando la sesión local en un servidor",
+        "c": "Ninguna es cierta",
+        "d": "Todas las aplicaciones iniciadas localmente por ese usuario son terminadas, sin embargo, los servicios del sistema continúan funcionando"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Al cerrar sesión (Log off), las aplicaciones del usuario se cierran, pero el sistema operativo y sus servicios (DHCP, AD, DNS, etc.) siguen operando en segundo plano."
+    },
+    {
+      "id": 18,
+      "enunciado": "Que hace la orden chgrp en Linux",
+      "opciones": {
+        "a": "Agrega un usuario o grupo a un archivo o carpeta",
+        "b": "Ninguna es cierta",
+        "c": "Es similar a la orden echo@",
+        "d": "Nos muestra la ruta de donde estamos"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El comando 'chgrp' (change group) se utiliza en Linux para cambiar el grupo propietario de un archivo o directorio."
+    },
+    {
+      "id": 19,
+      "enunciado": "En Linux la orden que se consigue con chmod - --- RW- --X ¿Qué valor numérico le corresponde?",
+      "opciones": {
+        "a": "041",
+        "b": "070",
+        "c": "001",
+        "d": "061"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "En formato octal: --- (propietario) = 0, RW- (grupo) = 4+2=6, --X (otros) = 1. El resultado es 061."
+    },
+    {
+      "id": 20,
+      "enunciado": "Estableciendo relación de confianza entre dos Windows Server puede hacerse de forma ...",
+      "opciones": {
+        "a": "Unidireccional o bidireccional",
+        "b": "Ninguna es correcta porque las relaciones de confianza en Server son únicamente transitivas",
+        "c": "Únicamente bidireccional",
+        "d": "Únicamente unidireccional"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Las relaciones de confianza pueden ser de una vía (unidireccionales) o de dos vías (bidireccionales), además de poder ser transitivas o no transitivas."
+    }
+  ]
+}

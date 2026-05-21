@@ -1,0 +1,248 @@
+{
+  "asignatura": "Bases de datos",
+  "codigo_archivo": "autoevaluacion_3_25-26",
+  "titulo": "3ª Autoevaluación curso 25/26",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "Una transacción sobre una base de datos debe cumplir lo que se conoce como las propiedades ACID. ¿Qué significa la A?",
+      "opciones": {
+        "a": "Atomicidad.",
+        "b": "Aislamiento.",
+        "c": "Array de datos.",
+        "d": "Alternativa."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: Atomicidad."
+    },
+    {
+      "id": 2,
+      "enunciado": "La sentencia correcta para ejecutar una función  es:",
+      "opciones": {
+        "a": "Ninguna de las demás es correcta.",
+        "b": "FUNCTION nombre_funcion(parámetros):",
+        "c": "SELECT nombre_funcion(parámetros):",
+        "d": "CALL nombre_funcion(parámetros):"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La respuesta correcta es: SELECT nombre_funcion(parámetros):"
+    },
+    {
+      "id": 3,
+      "enunciado": "Marca el concepto correcto de punto de recuperación en una transacción:",
+      "opciones": {
+        "a": "Marca el final de una transacción correcta, implícita o explícita. ",
+        "b": "Revierte una transacción explícita o implícita hasta el inicio de la transacción o hasta un punto de retorno dentro de la transacción.",
+        "c": "Permiten manejar las transacciones por pasos, pudiendo hacer rollbacks o retrocesos hasta un punto marcado por el savepoint y no por toda la transacción.",
+        "d": "Marca el punto de inicio de una transacción local explícita. "
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La respuesta correcta es: Permiten manejar las transacciones por pasos, pudiendo hacer rollbacks o retrocesos hasta un punto marcado por el savepoint y no por toda la transacción."
+    },
+    {
+      "id": 4,
+      "enunciado": "Una transacción sobre una base de datos debe cumplir lo que se conoce como las propiedades ACID. ¿Qué significa la D?",
+      "opciones": {
+        "a": "Descripción",
+        "b": "Database",
+        "c": "Delete",
+        "d": "Durabilidad"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La respuesta correcta es: Durabilidad"
+    },
+    {
+      "id": 5,
+      "enunciado": "Marca el concepto correcto de punto de recuperación en una transacción:",
+      "opciones": {
+        "a": "Marca el final de una transacción correcta, implícita o explícita. ",
+        "b": "Marca el punto de inicio de una transacción local explícita. ",
+        "c": "Permiten manejar las transacciones por pasos, pudiendo hacer rollbacks o retrocesos hasta un punto marcado por el savepoint y no por toda la transacción.",
+        "d": "Revierte una transacción explícita o implícita hasta el inicio de la transacción o hasta un punto de retorno dentro de la transacción."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La respuesta correcta es: Permiten manejar las transacciones por pasos, pudiendo hacer rollbacks o retrocesos hasta un punto marcado por el savepoint y no por toda la transacción."
+    },
+    {
+      "id": 6,
+      "enunciado": "Las sentencias que pueden disparar el trigger de una tabla son:",
+      "opciones": {
+        "a": "CREATE, UPDATE, DELETE",
+        "b": "INSERT, SELECT, DELETE",
+        "c": "INSERT, UPDATE, DELETE",
+        "d": "INSERT, CREATE, DELETE"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La respuesta correcta es: INSERT, UPDATE, DELETE"
+    },
+    {
+      "id": 7,
+      "enunciado": "Marca la afirmación correcta aplicable a las funciones: ",
+      "opciones": {
+        "a": "Las funciones disponen siempre de al menos un parámetro de entrada y al menos uno de salida.",
+        "b": "Las funciones no necesitan tener parámetros de entrada, pero sí es obligatorio uno de salida.",
+        "c": "En las funciones, es necesario tener parámetros de entrada, pero no de salida.",
+        "d": "Ninguna de las demás es correcta."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La respuesta correcta es: Las funciones no necesitan tener parámetros de entrada, pero sí es obligatorio uno de salida."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Qué operación no se necesita para el trabajo con cursores?",
+      "opciones": {
+        "a": "CREATE",
+        "b": "CLOSE",
+        "c": "FETCH",
+        "d": "DECLARE"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: CREATE"
+    },
+    {
+      "id": 9,
+      "enunciado": "En un procedimiento:",
+      "opciones": {
+        "a": "Como mínimo hay que tener un parámetro de entrada.",
+        "b": "No es obligatorio definir parámetros.",
+        "c": "Como mínimo hay que tener un parámetro de salida.",
+        "d": "Cómo mínimo hay que definir un parámetro de entrada y uno de salida."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La respuesta correcta es: No es obligatorio definir parámetros."
+    },
+    {
+      "id": 10,
+      "enunciado": "El comando COMMIT dentro de una transacción sirve para:",
+      "opciones": {
+        "a": "Marca el final de una transacción correcta, implícita o explícita. ",
+        "b": "Revierte una transacción explícita o implícita hasta el inicio de la transacción o hasta un punto de retorno dentro de la transacción.",
+        "c": "Permiten manejar las transacciones por pasos, pudiendo hacer rollbacks o retrocesos hasta un punto marcado por el savepoint y no por toda la transacción.",
+        "d": "Marca el punto de inicio de una transacción local explícita. "
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: Marca el final de una transacción correcta, implícita o explícita. "
+    },
+    {
+      "id": 11,
+      "enunciado": "Una transacción sobre una base de datos debe cumplir lo que se conoce como las propiedades ACID. ¿Qué significa la I?",
+      "opciones": {
+        "a": "Durabilidad.",
+        "b": "Aislamiento.",
+        "c": "Consistencia.",
+        "d": "Atomicidad."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La respuesta correcta es: Aislamiento."
+    },
+    {
+      "id": 12,
+      "enunciado": "Una transacción sobre una base de datos debe cumplir lo que se conoce como las propiedades ACID. ¿Qué significa la C?",
+      "opciones": {
+        "a": "Ninguna es correcta.",
+        "b": "Compatibilidad.",
+        "c": "Concurrencia",
+        "d": "Consistencia."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La respuesta correcta es: Consistencia."
+    },
+    {
+      "id": 13,
+      "enunciado": "El comando BEGIN TRANSACTION dentro de una transacción sirve para:",
+      "opciones": {
+        "a": "Revierte una transacción explícita o implícita hasta el inicio de la transacción o hasta un punto de retorno dentro de la transacción.",
+        "b": "Marca el punto de inicio de una transacción local explícita. ",
+        "c": "Permiten manejar las transacciones por pasos, pudiendo hacer rollbacks o retrocesos hasta un punto marcado por el savepoint y no por toda la transacción.",
+        "d": "Marca el final de una transacción correcta, implícita o explícita. "
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La respuesta correcta es: Marca el punto de inicio de una transacción local explícita. "
+    },
+    {
+      "id": 14,
+      "enunciado": "El comando ROLLBACK  dentro de una transacción sirve para:",
+      "opciones": {
+        "a": "Revierte una transacción explícita o implícita hasta el inicio de la transacción o hasta un punto de retorno dentro de la transacción.",
+        "b": "Marca el punto de inicio de una transacción local explícita. ",
+        "c": "Permiten manejar las transacciones por pasos, pudiendo hacer rollbacks o retrocesos hasta un punto marcado por el savepoint y no por toda la transacción.",
+        "d": "Marca el final de una transacción correcta, implícita o explícita. "
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: Revierte una transacción explícita o implícita hasta el inicio de la transacción o hasta un punto de retorno dentro de la transacción."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Con qué claúsula devolvemos el valor en una función SQL?",
+      "opciones": {
+        "a": "CALL",
+        "b": "INOUT",
+        "c": "RETURN",
+        "d": "OUT"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La respuesta correcta es: RETURN"
+    },
+    {
+      "id": 16,
+      "enunciado": "Los triggers se pueden disparar antes (BEFORE) o después (AFTER) de la sentencia que lo activa:",
+      "opciones": {
+        "a": "Es cierto.",
+        "b": "Sólo si en la tabla en la que está el trigger ya hay registros.",
+        "c": "No funcionan con el AFTER y el BEFORE, sino con FORWARD y ROLLBACK.",
+        "d": "Cierto, pero si la tabla no tiene claves foráneas."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: Es cierto."
+    },
+    {
+      "id": 17,
+      "enunciado": "¿Se pueden recuperar los datos que borremos con DELETE?",
+      "opciones": {
+        "a": "Siempre es posible con la opción de UNDO.",
+        "b": "Cuando aún no hayamos cerrado la base de datos, sí se puede.",
+        "c": "Sí, si está dentro de una transacción.",
+        "d": "Nunca, una vez borrado ya no se puede deshacer."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La respuesta correcta es: Sí, si está dentro de una transacción."
+    },
+    {
+      "id": 18,
+      "enunciado": "¿Es posible deshacer parcialmente los cambios realizados por una transacción?",
+      "opciones": {
+        "a": "Sí, estableciendo un punto de restauración y ejecutando la orden de deshacer los cambios hasta ese punto.",
+        "b": "No es posible en ningún caso, una vez grabados los datos, ya no se pueden deshacer.",
+        "c": "Sí, ejecutando la sentencia ROLLBACK",
+        "d": "No, sólo se pueden deshacer todas las operaciones contenidas en la transacción"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: Sí, estableciendo un punto de restauración y ejecutando la orden de deshacer los cambios hasta ese punto."
+    },
+    {
+      "id": 19,
+      "enunciado": "Un disparador (TRIGGER) de una tabla, es un objeto que se activa cuando ocurre un evento de algún comando DML en dicha tabla:",
+      "opciones": {
+        "a": "Falso",
+        "b": "Verdadero",
+        "c": "Sólo si la tabla ya tiene registros",
+        "d": "Sólo si la tabla no tiene claves foráneas"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La respuesta correcta es: Verdadero"
+    },
+    {
+      "id": 20,
+      "enunciado": "Las columnas de la tabla asociada con el disparador, pueden referenciarse utilizando los amplias OLD y NEW. Para hacer referencia a los datos de un atributo de una fila existente, antes de ser actualizada o borrada, utilizaríamos:",
+      "opciones": {
+        "a": "NEW.nombre_atributo",
+        "b": "Es indiferente",
+        "c": "OLD.nombre_atributo",
+        "d": "Ninguna es cierta."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La respuesta correcta es: OLD.nombre_atributo"
+    }
+  ]
+}

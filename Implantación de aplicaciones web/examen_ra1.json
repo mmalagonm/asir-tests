@@ -1,0 +1,105 @@
+{
+  "asignatura": "Implantacion de aplicaciones web",
+  "codigo_archivo": "examen_ra1",
+  "titulo": "Examen Enero 2026 Resultado de aprendizaje 1",
+  "tipo": "examen",
+  "ra": [1],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Qué es JavaScript?",
+      "opciones": {
+        "a": "Un lenguaje compilado",
+        "b": "Un lenguaje interpretado (scripting)",
+        "c": "Un lenguaje de marcas",
+        "d": "Una librería"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "JavaScript no requiere compilación previa por parte del programador; el código fuente es leído y ejecutado directamente por el motor de JS del navegador."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Cómo se crea una variable en JavaScript?",
+      "opciones": {
+        "a": "let nombre;",
+        "b": "$nombrevariable",
+        "c": "def variable1",
+        "d": "int numero1;"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La declaración simple de una variable utiliza la palabra clave 'let' seguida del nombre (identificador) que queramos darle."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Con qué extensión se guarda el archivo de JavaScript?",
+      "opciones": {
+        "a": ".html",
+        "b": ".java",
+        "c": ".js",
+        "d": ".php"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Los archivos de script de JavaScript utilizan por convención la extensión .js para diferenciarse de los documentos de marcado (.html) o de estilo (.css)."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Con qué etiqueta se agrega un archivo JS en un documento HTML?",
+      "opciones": {
+        "a": "<link rel=\"javascript\" src=\"\">",
+        "b": "<script src=\"\"></script>",
+        "c": "<php src=\"\"></php>",
+        "d": "<link src=\"\">"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La etiqueta <script> se utiliza para integrar lógica de programación en el HTML, ya sea de forma embebida o cargando un archivo externo mediante el atributo 'src'."
+    },
+    {
+      "id": 5,
+      "enunciado": "Si en un documento HTML tenemos código JS incrustado, ¿cómo se guarda el archivo?",
+      "opciones": {
+        "a": "java",
+        "b": "php",
+        "c": "js",
+        "d": "html"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Si el archivo contiene etiquetas HTML, el navegador debe procesarlo como un documento HTML. El código JS dentro de etiquetas <script> será interpretado durante el renderizado."
+    },
+    {
+      "id": 6,
+      "enunciado": "Con el método setAttribute, ¿qué tipos de atributos se pueden modificar?",
+      "opciones": {
+        "a": "Todos los atributos css",
+        "b": "Ninguna opción es correcta",
+        "c": "Todas las propiedades javascript",
+        "d": "Todos los atributos html"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El método setAttribute es una herramienta genérica que puede manipular cualquier atributo definido en la especificación HTML para el elemento dado."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Es obligatorio que una estructura if tenga un bloque else?",
+      "opciones": {
+        "a": "Si, dentro de un switch",
+        "b": "No",
+        "c": "Depende donde se declare",
+        "d": "Si"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Una estructura condicional puede constar únicamente de un bloque 'if'. El 'else' solo se añade si queremos definir acciones específicas para cuando la condición no se cumpla."
+    },
+    {
+      "id": 8,
+      "enunciado": "Para declarar una variable de ámbito local sin consumir excesivos recursos:",
+      "opciones": {
+        "a": "let",
+        "b": "declare",
+        "c": "var",
+        "d": "def"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "'let' garantiza que la variable solo exista dentro del bloque donde se declara, optimizando la memoria y evitando errores por colisión de nombres."
+    }
+  ]
+}

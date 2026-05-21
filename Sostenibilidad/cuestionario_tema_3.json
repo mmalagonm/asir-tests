@@ -1,0 +1,127 @@
+{
+  "titulo": "CUESTIONARIO TEMA 3. RETOS AMBIENTALES Y SOCIALES",
+  "tipo": "examen",
+  "ra": ["RA 2"],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Qué se entiende por cambio climático?",
+      "opciones": {
+        "a": "El aumento puntual de calor en verano",
+        "b": "Alteraciones significativas a largo plazo de los patrones climáticos",
+        "c": "La contaminación del agua",
+        "d": "La desaparición de las estaciones"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El cambio climático se refiere a los cambios a largo plazo de las temperaturas y los patrones climáticos. Pueden ser naturales, pero desde el siglo XIX, las actividades humanas han sido el principal motor del mismo."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Qué característica tiene el cambio climático actual?",
+      "opciones": {
+        "a": "Solo modifica las precipitaciones",
+        "b": "Es exclusivamente natural",
+        "c": "Es antropogénico y ocurre a gran velocidad",
+        "d": "Solo afecta a países pobres"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "A diferencia de cambios climáticos pasados, el actual es causado principalmente por el hombre (antropogénico) debido a la quema de combustibles fósiles, y se está produciendo a un ritmo mucho más acelerado que cualquier cambio natural previo."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Cuál de estas actividades contribuye al cambio climático?",
+      "opciones": {
+        "a": "Uso exclusivo de energía solar",
+        "b": "Transporte basado en combustibles fósiles",
+        "c": "Agricultura ecológica tradicional",
+        "d": "Reforestación"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La quema de gasolina y diésel en el transporte libera grandes cantidades de CO2 y otros gases de efecto invernadero (GEI) que atrapan el calor en la atmósfera."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Cuál de estas NO es una consecuencia del cambio climático?",
+      "opciones": {
+        "a": "Mejora automática de los ecosistemas",
+        "b": "Aumento del nivel del mar",
+        "c": "Inundaciones",
+        "d": "Sequías"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El cambio climático estresa los ecosistemas, provocando la pérdida de hábitats y la extinción de especies. Sus efectos físicos incluyen fenómenos meteorológicos extremos y el deshielo de los polos."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Qué es el efecto invernadero natural?",
+      "opciones": {
+        "a": "La principal causa de la lluvia ácida",
+        "b": "Un fenómeno atmosférico que permite una temperatura adecuada para la vida",
+        "c": "Un tipo de contaminación industrial",
+        "d": "Un proceso exclusivamente perjudicial"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El efecto invernadero es un proceso natural necesario. Sin ciertos gases en la atmósfera que retengan parte del calor del sol, la temperatura media de la Tierra sería de unos -18°C. El problema es el aumento artificial de estos gases."
+    },
+    {
+      "id": 6,
+      "enunciado": "¿Qué es la contaminación ambiental?",
+      "opciones": {
+        "a": "La introducción de agentes químicos, físicos o biológicos dañinos en el medio",
+        "b": "La pérdida de especies animales",
+        "c": "La acumulación de residuos orgánicos únicamente",
+        "d": "La explotación forestal"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La contaminación es la presencia de componentes nocivos en el medio ambiente que perjudican a los seres vivos que lo habitan, incluyendo al ser humano."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Cuál de estas es una consecuencia de la contaminación?",
+      "opciones": {
+        "a": "Aumento de la biodiversidad",
+        "b": "Mejora de la salud pública",
+        "c": "Deterioro de ecosistemas",
+        "d": "Reducción del cambio climático"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La contaminación altera el equilibrio químico y biológico de los suelos, el aire y el agua, destruyendo la flora y fauna local y degradando los servicios que los ecosistemas nos prestan."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Qué NO se menciona como consecuencia de la contaminación en el tema?",
+      "opciones": {
+        "a": "Aumento de la fertilidad natural del suelo",
+        "b": "Problemas de salud",
+        "c": "Pérdida de biodiversidad",
+        "d": "Cambio climático"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La contaminación del suelo suele implicar la pérdida de su fertilidad debido a la presencia de metales pesados o sustancias químicas tóxicas que matan a los microorganismos beneficiosos."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Qué significa biodiversidad?",
+      "opciones": {
+        "a": "La variedad de formas de vida del planeta",
+        "b": "El número de árboles de una región",
+        "c": "La cantidad de agua disponible",
+        "d": "La diversidad de climas"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La biodiversidad comprende la diversidad de especies, la diversidad genética dentro de cada especie y la diversidad de ecosistemas de los que forman parte."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Cuál de estos factores favorece la pérdida de biodiversidad?",
+      "opciones": {
+        "a": "Creación de parques naturales",
+        "b": "Sustitución de hábitats naturales por suelo urbano",
+        "c": "Restauración de ecosistemas",
+        "d": "Agricultura orgánica"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La fragmentación y destrucción de hábitats para urbanización o agricultura intensiva es la principal causa de extinción de especies a nivel global."
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "titulo": "3ª Autoevaluación Servicios de red e Internet 25/26",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "La capa 5 del modelo OSI se llama...",
+      "opciones": {
+        "a": "Capa de presentación",
+        "b": "Capa de Enlace de datos",
+        "c": "Capa de Transporte",
+        "d": "Capa de Sesión"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "En el modelo OSI, la Capa 5 corresponde a la Capa de Sesión, encargada de mantener y controlar el enlace establecido entre dos computadores que están transmitiendo datos."
+    },
+    {
+      "id": 2,
+      "enunciado": "La capa de red pertenece a...",
+      "opciones": {
+        "a": "Capa 7",
+        "b": "Capa 3",
+        "c": "Capa 1",
+        "d": "Capa 2"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La Capa de Red (Network Layer) es la tercera capa (Capa 3) del modelo OSI, responsable del enrutamiento y direccionamiento lógico."
+    },
+    {
+      "id": 3,
+      "enunciado": "La capa de presentación pertenece a...",
+      "opciones": {
+        "a": "Capa 7",
+        "b": "Capa 1",
+        "c": "Capa 5",
+        "d": "Capa 6"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La Capa de Presentación es la sexta capa (Capa 6) del modelo OSI, encargada del formato y la representación de los datos (cifrado, compresión, etc)."
+    },
+    {
+      "id": 4,
+      "enunciado": "Que se entiende por estándar OSI...",
+      "opciones": {
+        "a": "Open System interconnection",
+        "b": "System Interconnection",
+        "c": "Todas son ciertas",
+        "d": "Open de sistemas interconectados entre si en red LAN"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "OSI son las siglas de Open Systems Interconnection (Interconexión de Sistemas Abiertos), un modelo de referencia para los protocolos de la red."
+    },
+    {
+      "id": 5,
+      "enunciado": "Para poder escribir una IP en un Swtich de 3 capas se escribe la orden...",
+      "opciones": {
+        "a": "No switchport y añadir la IP que deseemos",
+        "b": "Switchport y añadir la IP que deseemos",
+        "c": "No es necesario hacer nada, solo escribir la IP",
+        "d": "En un swtich de 3 capas no se puede escribir IP solo se pueden configurar VLAN"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Para configurar una dirección IP directamente en una interfaz física de un switch de capa 3, primero se debe convertir en un puerto enrutado mediante el comando 'no switchport'."
+    },
+    {
+      "id": 6,
+      "enunciado": "Resultado de sumarizar las Network: 192.168.10.0, 192.168.20.0, 192.168.30.0",
+      "opciones": {
+        "a": "192.168.10.0 255.255.255.224",
+        "b": "192.168.10.0 255.255.255.0",
+        "c": "192.168.0.0 255.255.224.0",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Análisis binario del tercer octeto: 10 (00001010), 20 (00010100) y 30 (00011110). Coinciden los 3 primeros bits (000). Al sumar estos 3 bits a los 16 bits de los dos primeros octetos, obtenemos un prefijo de /19 (16+3). La red resultante es 192.168.0.0 con máscara 255.255.224.0."
+    },
+    {
+      "id": 7,
+      "enunciado": "Resultado de sumarizar las Network: 172.172.0.0, 172.180.0.0, 172.190.0.0",
+      "opciones": {
+        "a": "172.190.0.0 255.224.0.0",
+        "b": "Ninguna es cierta",
+        "c": "172.160.0.0 255.224.0.0",
+        "d": "172.0.0.0 255.224.0.0"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Análisis binario del segundo octeto: 172 (10101100), 180 (10110100) y 190 (10111110). Coinciden los 3 primeros bits (101). Sumando estos 3 bits al primer octeto (8 bits), tenemos un prefijo de /11. La red base es 172.160.0.0 con máscara 255.224.0.0."
+    },
+    {
+      "id": 8,
+      "enunciado": "Sumarizar las Network: 2001:CAFE:1234:ABCD, 2001:CAFE:1234:ABBB, 2001:CAFE:1234:FFFF Que resultado es el correcto....",
+      "opciones": {
+        "a": "2001:CAFE:1234:AA00::/52",
+        "b": "2001:CAFE:1234:8000::/49",
+        "c": "2001:CAFE:1234:8A00::/52",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Comparando el cuarto hexteto: A (1010) y F (1111). Solo coincide el primer bit (1). Por tanto, al prefijo de 48 bits (3 hextetos) se le añade 1 bit, resultando en /49. El cuarto hexteto comienza con el bit 1 seguido de ceros (1000 0000 0000 0000), que en hexadecimal es 8000. Resultado: 2001:CAFE:1234:8000::/49."
+    },
+    {
+      "id": 9,
+      "enunciado": "Encuentras algún error en el código siguiente de erutación por EIGRP...",
+      "opciones": {
+        "a": "router eigrp 20\nNetwork 192.168.10.0\nNetwork 10.0.0.0",
+        "b": "router eigrp 20\nNetwork 192.168.10.1 255.255.255.0\nNetwork 10.0.0.1 10.0.0.0",
+        "c": "router eigrp 20\nNetwork 192.168.10.0 255.255.255.0\nNetwork 10.0.0.0 10.0.0.0",
+        "d": "router eigrp 20\nNetwork 192.168.10.1\nNetwork 10.0.0.1"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La opción A no presenta errores de sintaxis; usa direcciones classful válidas. EIGRP espera wildcard masks, no máscaras de subred regulares como se muestran en las opciones con máscara."
+    },
+    {
+      "id": 10,
+      "enunciado": "Encuentras algún error en la sintaxis de la siguiente enrutación por RIP...",
+      "opciones": {
+        "a": "Router Rip\nNetwork 192.168.50.0\nNetwork 192.168.1.0\nNetwork 10.0.0.0",
+        "b": "Router Rip\nNetwork 192.168.50.1 0.0.0.255\nNetwork 192.168.1.1 0.0.0.255\nNetwork 10.0.0.1 0.255.255.255",
+        "c": "Router Rip\nNetwork 192.168.50.1 255.255.255.0\nNetwork 192.168.1.1 255.255.255.0\nNetwork 10.0.0.1 255.0.0.0",
+        "d": "Router Rip\nNetwork 192.168.50.0 255.255.255.0\nNetwork 192.168.1.0 255.255.255.0\nNetwork 10.0.0.0 255.0.0.0"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El comando 'network' en RIP solo admite direcciones de red principales con clase (classful) sin ninguna máscara adjunta. Las demás opciones incluyen máscaras, lo cual es incorrecto en RIP."
+    },
+    {
+      "id": 11,
+      "enunciado": "El sistema binario y la MAC pertenecen a la Capa OSI...",
+      "opciones": {
+        "a": "Capa 2",
+        "b": "Capa 3",
+        "c": "Capa 4",
+        "d": "Capa 5"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Las direcciones MAC operan en la Capa 2 (Enlace de datos), donde los bits se organizan en tramas para el direccionamiento físico."
+    },
+    {
+      "id": 12,
+      "enunciado": "Configurar un DHCP con la Network 192.168.10.0/26 ¿Cuál es su primera y ultima IP disponible?",
+      "opciones": {
+        "a": "192.168.10.1 - 192.168.10.62",
+        "b": "192.168.10.0 - 192.168.10.255",
+        "c": "192.168.10.0 - 192.168.10.254",
+        "d": "192.168.10.1 - 192.168.10.64"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Una subred /26 dispone de 64 direcciones. Excluyendo la red (.0) y el broadcast (.63), las IPs útiles van de la .1 a la .62."
+    },
+    {
+      "id": 13,
+      "enunciado": "NetBIOS pertenece a la Capa OSI...",
+      "opciones": {
+        "a": "Capa 1",
+        "b": "Capa 5",
+        "c": "Capa 7",
+        "d": "Capa 2"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "NetBIOS (Network Basic Input/Output System) provee servicios a nivel de la Capa de Sesión (Capa 5) del modelo OSI."
+    },
+    {
+      "id": 14,
+      "enunciado": "Cuando se configuran VLAN para telefonía IP ¿Qué puerto pertenece por defecto los teléfonos IP?",
+      "opciones": {
+        "a": "3000",
+        "b": "1000",
+        "c": "1007",
+        "d": "2000"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El protocolo SCCP (Skinny Client Control Protocol) de Cisco, muy utilizado en sus teléfonos IP, emplea por defecto el puerto TCP 2000."
+    },
+    {
+      "id": 15,
+      "enunciado": "En un router se puede configurar simultáneamente erutaciones por; RIP, EIGRP, OSPF y Estática",
+      "opciones": {
+        "a": "Se puede combinar todas las enrutaciones simultáneamente excepto EIGRP y OSPF a la vez pues son incompatibles",
+        "b": "Sí, sin problema",
+        "c": "No es posible",
+        "d": "Se puede combinar todas las enrutaciones simultáneamente excepto RIP y EIGRP a la vez pues son incompatibles"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En Cisco IOS puedes ejecutar múltiples procesos de enrutamiento dinámico a la vez junto con rutas estáticas; el router elegirá la mejor ruta mediante la Distancia Administrativa."
+    },
+    {
+      "id": 16,
+      "enunciado": "Que puerto utiliza Netflow...",
+      "opciones": {
+        "a": "9996",
+        "b": "9000",
+        "c": "9995",
+        "d": "1007"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "NetFlow suele configurarse utilizando puertos UDP por defecto, siendo 9996 (o 9995) uno de los puertos estándar más habituales para exportar flujos en Cisco."
+    },
+    {
+      "id": 17,
+      "enunciado": "Configurar un DHCP con la Network 192.168.10.0/27 ¿Cuál es su primera y ultima IP disponible?",
+      "opciones": {
+        "a": "192.168.10.0 - 192.168.10.255",
+        "b": "192.168.10.1 - 192.168.10.254",
+        "c": "192.168.10 1 - 192.168.10.32",
+        "d": "192.168.10.1 - 192.168.10.30"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La subred /27 agrupa de a 32 IPs. La red es .0, la primera utilizable .1 y la última útil es la .30 (siendo .31 la de broadcast)."
+    },
+    {
+      "id": 18,
+      "enunciado": "Existe sintácticamente hablando el servicio de \"proxy\" en Cisco",
+      "opciones": {
+        "a": "Sí",
+        "b": "No",
+        "c": "Depende de la versión y modelo del Swtich de Cisco que se utilice",
+        "d": "Depende de la versión y modelo del router de Cisco que se utilice"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Sintácticamente no existe un servicio denominado 'proxy' de forma directa en la configuración global de Cisco."
+    },
+    {
+      "id": 19,
+      "enunciado": "Observa el siguiente código y contesta que hace la segunda orden \"IPV6 add 2001:A:A:A::1/64\"\nint tunnel 1\nIPV6 add 2001:A:A:A::1/64\nIPV6 enable\nTunnel Source s0/3/0\nTunnel destination 10.0.0.2\ntunnel mode ipv6ip",
+      "opciones": {
+        "a": "IPV6 del router de origen, no puede existir en el serial físicamente, sino únicamente se configura dentro del tunnel",
+        "b": "IPV6 del router de destino, tiene que existir físicamente en el serial 0/3/0",
+        "c": "IPV6 del router de destino, no puede existir en el serial físicamente, sino únicamente se configura dentro del tunnel",
+        "d": "IPV6 del router de origen, tiene que existir físicamente en el serial 0/3/0"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La dirección IPv6 corresponde a la interfaz de túnel del router local de origen y existe únicamente de forma lógica encapsulada dentro del túnel, no en la física serial."
+    },
+    {
+      "id": 20,
+      "enunciado": "Observa el siguiente código y contesta que hace la orden \"TUNNEL DESTINATION 10.0.0.2\"\nint tunnel 1\nIPV6 add 2001:A:A:A::1/64\nIPV6 enable\nTunnel Source s0/3/0\nTunnel destination 10.0.0.2\ntunnel mode ipv6ip",
+      "opciones": {
+        "a": "IPV4 del router de destino, tiene que existir físicamente en el serial 0/3/0",
+        "b": "IPV4 del router de destino, no tiene que existir físicamente en el serial 0/3/0 sino únicamente en la configuración del tunnel",
+        "c": "IPV4 del router de origen, no tiene que existir físicamente en el serial 0/3/0 sino únicamente en la configuración del tunnel",
+        "d": "IPV4 del router de origen, tiene que existir físicamente en el serial 0/3/0"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La dirección IP de destino del túnel debe ser la dirección IP de la interfaz física (o loopback) del router remoto que recibe el túnel."
+    }
+  ]
+}

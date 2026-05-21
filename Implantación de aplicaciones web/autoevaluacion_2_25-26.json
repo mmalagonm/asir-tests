@@ -1,0 +1,248 @@
+{
+  "asignatura": "Implantacion de aplicaciones web",
+  "codigo_archivo": "autoevaluacion_2_25-26",
+  "titulo": "2ª Autoevaluación curso 25/26",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Cuál es la extensión de un documento de JavaScript?",
+      "opciones": {
+        "a": "CSS",
+        "b": "xml",
+        "c": "js",
+        "d": "html"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La extensión estándar para los scripts de JavaScript es .js, lo que permite al servidor web servir el archivo con el tipo MIME correcto (application/javascript)."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Qué cláusula se utiliza para crear una variable?",
+      "opciones": {
+        "a": "function",
+        "b": "$",
+        "c": "let",
+        "d": "def"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'let' declara una variable de alcance local, siendo la opción preferida en el desarrollo moderno frente al antiguo 'var'."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Cuándo creamos una variable en JS se especifica el tipo de datos?",
+      "opciones": {
+        "a": "Siempre hay que declarar el tipo de datos",
+        "b": "No, hace conversión implícita",
+        "c": "Sí, es obligatorio",
+        "d": "Si, pero solo cuando se usan funciones"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "No es necesario declarar si una variable será número o texto; el motor de JavaScript lo deduce dinámicamente y puede realizar conversiones automáticas según sea necesario."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Cuál es la sintaxis correcta de un bucle for?",
+      "opciones": {
+        "a": "for( i=0;i<10;i++) {}",
+        "b": "for(def i=0;i<10;i++) {}",
+        "c": "for(let i=0;i<10;i++) {}",
+        "d": "while(let cont==0){}"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La estructura clásica del for consta de: inicialización (let i=0), condición (i<10) e incremento (i++), todo separado por puntos y coma."
+    },
+    {
+      "id": 5,
+      "enunciado": "Un documento de JavaScript independiente:",
+      "opciones": {
+        "a": "Es obligatorio crear un css para su visualización completa",
+        "b": "Necesita un documento php",
+        "c": "Necesita un archivo html que lo incruste",
+        "d": "No necesita un archivo HTML"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "JavaScript es un lenguaje del lado del cliente que se ejecuta dentro del contexto de una página web; el navegador necesita cargar un HTML que llame al script mediante la etiqueta <script>."
+    },
+    {
+      "id": 6,
+      "enunciado": "Un bucle while se caracteriza por:",
+      "opciones": {
+        "a": "Puede que nunca se entre en el bucle",
+        "b": "No es un tipo de bucle en js",
+        "c": "Por el número de vueltas que se ejecuta el código",
+        "d": "Es un tipo de función"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Al ser un bucle de evaluación previa, si la condición es falsa la primera vez que se comprueba, el código del interior se ignora por completo."
+    },
+    {
+      "id": 7,
+      "enunciado": "Una función que devuelve valores necesita declarar:",
+      "opciones": {
+        "a": "parámetros de entrada y salida",
+        "b": "parámetros de salida",
+        "c": "parámetros de entrada",
+        "d": "Necesita variables locales"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Para que una función entregue un resultado al llamador, debe usar la palabra clave 'return', lo cual se considera su salida o valor de retorno."
+    },
+    {
+      "id": 8,
+      "enunciado": "Una función que recibe valores requiere:",
+      "opciones": {
+        "a": "Necesitamos declarar parámetros de salida",
+        "b": "Necesitamos declarar variables locales",
+        "c": "Necesitamos declarar parámetros de entrada",
+        "d": "Necesitamos declarar parámetros de entrada y de salida"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Los parámetros de entrada se definen en la declaración de la función para permitir que reciba datos específicos sobre los que operar."
+    },
+    {
+      "id": 9,
+      "enunciado": "JavaScript es un lenguaje:",
+      "opciones": {
+        "a": "Orientado a objetos y eventos",
+        "b": "Orientado a eventos",
+        "c": "Utiliza lenguaje SQL",
+        "d": "Orientado a objetos"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "JavaScript utiliza objetos para organizar datos y comportamientos, y eventos para manejar la interactividad de la interfaz de usuario."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Qué hace document.getElementById(\"titulo\")?",
+      "opciones": {
+        "a": "Devuelve todos los elementos con clase \"titulo\"",
+        "b": "Devuelve el primer elemento con id \"titulo\"",
+        "c": "Crea un elemento nuevo con id \"titulo\"",
+        "d": "Cambia el texto del elemento \"titulo\""
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Es el método más rápido para acceder a un elemento específico del DOM. Dado que los IDs deben ser únicos en HTML, siempre devuelve un único objeto elemento."
+    },
+    {
+      "id": 11,
+      "enunciado": "¿Qué ocurre si el id buscado no existe en el HTML?",
+      "opciones": {
+        "a": "Da error automáticamente",
+        "b": "Devuelve false",
+        "c": "Devuelve null",
+        "d": "Devuelve un array vacío"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Si el método getElementById no encuentra ninguna coincidencia en el documento actual, retorna el valor 'null' indicando la ausencia de objeto."
+    },
+    {
+      "id": 12,
+      "enunciado": "¿Cuál es la forma correcta de cambiar el texto de un elemento con id \"mensaje\"?",
+      "opciones": {
+        "a": "document.getElementById(\"mensaje\").value = \"Hola\";",
+        "b": "document.getElementById(\"mensaje\").attribute = \"Hola\";",
+        "c": "document.getElementById(\"mensaje\").innerHTML = \"Hola\";",
+        "d": "document.getElementById(\"mensaje\").text = \"Hola\";"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La propiedad innerHTML permite leer o reemplazar el contenido HTML (incluyendo etiquetas) que se encuentra dentro del elemento seleccionado."
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Qué hace el método setAttribute()?",
+      "opciones": {
+        "a": "Crea un nuevo elemento HTML",
+        "b": "Añade o modifica un atributo en un elemento",
+        "c": "Cambia el id de un elemento automáticamente",
+        "d": "Elimina un atributo de un elemento"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Este método permite actualizar de forma dinámica propiedades de las etiquetas HTML como 'src', 'href', 'class' o cualquier atributo personalizado."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Cuál es un ejemplo correcto de setAttribute() para cambiar una imagen?",
+      "opciones": {
+        "a": "img.setAttribute(src = \"foto.jpg\");",
+        "b": "img.setAttribute(\"foto.jpg\", \"src\");",
+        "c": "img.setAttribute(\"img\", \"foto.jpg\");",
+        "d": "img.setAttribute(\"src\", \"foto.jpg\");"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El método recibe dos argumentos de tipo string: el nombre del atributo que queremos cambiar y el nuevo valor que deseamos asignarle."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Cuál es la forma correcta de crear un objeto en JavaScript?",
+      "opciones": {
+        "a": "let persona = (nombre: \"Ana\", edad: 20);",
+        "b": "static",
+        "c": "let persona = <nombre=\"Ana\" edad=\"20\">;",
+        "d": "let persona = {\"nombre\": \"Ana\", \"edad\": 20};"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Un objeto en JavaScript es una colección de pares clave-valor encerrada entre llaves. Las claves pueden ir entre comillas (formato JSON) o sin ellas si son identificadores válidos."
+    },
+    {
+      "id": 16,
+      "enunciado": "¿Cómo se accede correctamente a la propiedad edad del objeto persona?",
+      "opciones": {
+        "a": "persona.edad",
+        "b": "persona[edad]",
+        "c": "persona::edad",
+        "d": "persona:edad"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La notación de punto es la forma más común y legible de acceder a las propiedades de un objeto cuando conocemos el nombre de la clave de antemano."
+    },
+    {
+      "id": 17,
+      "enunciado": "¿Qué devuelve este código? let persona = { nombre: \"Luis\", edad: 30 }; console.log(persona[\"nombre\"]);",
+      "opciones": {
+        "a": "30",
+        "b": "undefined",
+        "c": "persona.nombre",
+        "d": "\"Luis\""
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La notación de corchetes permite acceder a propiedades de un objeto usando una cadena de texto, lo cual es útil cuando el nombre de la propiedad está guardado en otra variable."
+    },
+    {
+      "id": 18,
+      "enunciado": "¿Cuál es la forma correcta de añadir una nueva propiedad a un objeto existente?",
+      "opciones": {
+        "a": "persona(\"altura\") = 180;",
+        "b": "persona.setAttribute(\"altura\", 180);",
+        "c": "persona.add(\"altura\", 180);",
+        "d": "persona.altura = 180;"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "En JavaScript, los objetos son dinámicos; se puede añadir una nueva propiedad en cualquier momento simplemente asignándole un valor mediante el operador de punto o corchetes."
+    },
+    {
+      "id": 19,
+      "enunciado": "¿Qué es un nodo en el DOM?",
+      "opciones": {
+        "a": "Cada elemento, texto o comentario dentro del árbol HTML",
+        "b": "Un método para crear clases",
+        "c": "Un tipo de variable especial",
+        "d": "Un atributo del navegador"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El DOM representa el documento como un árbol de nodos, donde cada etiqueta, fragmento de texto y atributo es un objeto con propiedades y métodos."
+    },
+    {
+      "id": 20,
+      "enunciado": "¿Qué método se usa para crear un nuevo nodo elemento en el DOM?",
+      "opciones": {
+        "a": "document.createNode(\"div\")",
+        "b": "document.createElement(\"div\")",
+        "c": "document.newElement(\"div\")",
+        "d": "document.addElement(\"div\")"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Este método crea un nuevo elemento HTML en memoria. Para que aparezca en la página, deberá ser añadido posteriormente al árbol mediante métodos como appendChild."
+    }
+  ]
+}

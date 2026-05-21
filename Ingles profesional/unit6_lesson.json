@@ -1,0 +1,131 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "unit6_lesson",
+  "titulo": "Unit 6: Peripherals & Conditionals (RA1, RA2, RA3)",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Objectives & Context (RA1-3)",
+      "contenido": "<div class='lesson-card'>In this unit, we explore the essential components of IT hardware and the complex grammar needed for technical troubleshooting and career growth.</div><ul><li><strong>RA1 & RA2:</strong> Hardware identification and reading technical documentation about peripherals.</li><li><strong>RA3:</strong> Social and professional communication, focusing on the creation of a <strong>Professional CV</strong>.</li><li><strong>Grammar Goals:</strong> Mastering all types of <strong>Conditionals</strong> to discuss causes, effects, and hypothetical scenarios.</li></ul><p class='diag-note'>💡 <em>Nota: Esta unidad es fundamental para describir averías (causa-efecto) y para tu futura búsqueda de empleo (CV).</em></p>"
+    },
+    {
+      "id": 2,
+      "titulo": "Vocabulary: Peripheral Devices",
+      "contenido": "<div class='lesson-card'>Peripherals are external devices connected to a computer to expand its functionality. They are classified into Input, Output, or both.</div><table><thead><tr><th>Device</th><th>Primary Use</th><th>Type</th></tr></thead><tbody><tr><td><strong>Webcam</strong></td><td>Video conferencing and recording.</td><td>Input</td></tr><tr><td><strong>Projector</strong></td><td>Displaying images/videos on a wall.</td><td>Output</td></tr><tr><td><strong>Router</strong></td><td>Connecting devices to the Internet.</td><td>Input/Output</td></tr><tr><td><strong>Scanner</strong></td><td>Copying documents or photos to digital.</td><td>Input</td></tr><tr><td><strong>Fax</strong></td><td>Transmission of information over phone lines.</td><td>Input/Output</td></tr><tr><td><strong>Joystick</strong></td><td>Controller for gaming or specialized software.</td><td>Input</td></tr></tbody></table><p class='diag-note'>💡 <em>Nota: Algunos dispositivos como el Router o el Fax son bidireccionales (Input/Output).</em></p>"
+    },
+    {
+      "id": 3,
+      "titulo": "Grammar: The Zero & First Conditionals",
+      "contenido": "<div class='lesson-card'>Conditionals explain the relationship between a condition and its result.</div><h3>Zero Conditional (General Truths)</h3><p><em>Structure: If + Present Simple, Present Simple</em><br>Example: <strong>If</strong> you add two and two, you <strong>get</strong> four.</p><h3>First Conditional (Likely Situations)</h3><p><em>Structure: If + Present Simple, Will + Infinitive</em><br>Example: <strong>If</strong> it rains tomorrow, we <strong>will stay</strong> at home.</p><p class='diag-note'>💡 <em>Nota: El primer condicional se usa para cosas que es muy probable que ocurran en el futuro.</em></p>"
+    },
+    {
+      "id": 4,
+      "titulo": "Grammar: The Second & Third Conditionals",
+      "contenido": "<div class='lesson-card'>Used for hypothetical situations in the present or past.</div><h3>Second Conditional (Impossible/Imaginary Present)</h3><p><em>Structure: If + Past Simple, Would + Infinitive</em><br>Example: <strong>If</strong> I won the lottery, I <strong>would travel</strong> the world.</p><h3>Third Conditional (Past Regrets/Imaginary Past)</h3><p><em>Structure: If + Past Perfect, Would Have + Past Participle</em><br>Example: <strong>If</strong> I had studied harder, I <strong>would have passed</strong> the exam.</p><p class='diag-note'>💡 <em>Nota: El tercer condicional habla de cosas que NO pasaron y sus resultados imaginarios.</em></p>"
+    },
+    {
+      "id": 5,
+      "titulo": "Mixed Conditionals & 'Wish'",
+      "contenido": "<div class='lesson-card'>Sometimes we mix tenses when the condition and the result belong to different times.</div><h3>Mixed Conditionals</h3><p>Used to discuss the present result of a past condition.<br>Example: <strong>If</strong> you hadn't missed the train, you <strong>would be</strong> here on time now.</p><h3>Using 'Wish'</h3><ul><li><strong>Present Wish:</strong> Wish + Past Simple. <em>\"I wish I had a faster CPU.\"</em></li><li><strong>Past Regret:</strong> Wish + Past Perfect. <em>\"I wish I had backed up the data.\"</em></li></ul>"
+    },
+    {
+      "id": 6,
+      "titulo": "Technical Reading: Computer Tools",
+      "contenido": "<div class='lesson-card'>Essential software for any ASIR specialist includes Office Automation and specialized DBMS.</div><ul><li><strong>Spreadsheets:</strong> Help control budgets and financial reports.</li><li><strong>Databases:</strong> Store structured information about clients/products.</li><li><strong>MySQL:</strong> An open-source DBMS popular for its stability and web server compatibility.</li></ul><p class='diag-note'>💡 <em>Nota: MySQL es la tecnología DBMS más exitosa por su rendimiento y comunidad.</em></p>"
+    },
+    {
+      "id": 7,
+      "titulo": "Career Path: The Professional CV",
+      "contenido": "<div class='lesson-card'>A technical CV must be concise and effectively showcase your certifications and experience.</div><h3>Key Sections:</h3><ul><li><strong>Personal Info:</strong> Contact details.</li><li><strong>Education:</strong> Academic background.</li><li><strong>Technical Skills:</strong> Networking, OS management, SQL, etc.</li><li><strong>Experience:</strong> Previous jobs or internships.</li></ul><p class='diag-note'>💡 <em>Nota: Para un perfil ASIR, destaca tus conocimientos en virtualización y seguridad.</em></p>"
+    },
+    {
+      "id": 8,
+      "titulo": "Listening & Phrasal Verbs",
+      "contenido": "<div class='lesson-card'>Understanding spoken technical English requires recognizing standard phrasal verbs.</div><ul><li><strong>Plug in:</strong> Connect a peripheral to a port.</li><li><strong>Back up:</strong> Create a copy of data for security.</li><li><strong>Go down:</strong> When a system or server stops working.</li><li><strong>Set up:</strong> To configure or install a system.</li></ul>"
+    },
+    {
+      "id": 9,
+      "titulo": "Summary: Unit 6 Key Takeaways",
+      "contenido": "<div class='lesson-card'>Review these core concepts before the assessment.</div><ul><li><strong>Hardware:</strong> Know your Input/Output peripherals (Webcam, Router, Projector).</li><li><strong>Conditionals:</strong> 0 (Truths), 1st (Likely), 2nd (Imaginary), 3rd (Past regrets).</li><li><strong>Software:</strong> DBMS (like MySQL) are vital for data integrity.</li><li><strong>CV:</strong> Keep it concise and skill-focused.</li></ul>"
+    },
+    {
+      "id": 10,
+      "titulo": "Final Knowledge Assessment",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Complete this test to confirm you have mastered the Unit 6 content.</div>",
+      "preguntas_test": [
+        {
+          "q": "Which peripheral device is used for retransmission of images or videos on a wall?",
+          "options": ["Scanner", "Projector", "Webcam", "Joystick"],
+          "correct": 1,
+          "explicacion": "El proyector ('Projector') es un dispositivo de salida ('Output') que proyecta luz para mostrar imágenes en una superficie.",
+          "ejemplo": "Ej: 'Connect the <strong>Projector</strong> to the HDMI port for the presentation.'"
+        },
+        {
+          "q": "Conditional: 'If it ___ tomorrow, we will go to the beach.'",
+          "options": ["rains", "rain", "will rain", "is raining"],
+          "correct": 0,
+          "explicacion": "Usamos el primer condicional: If + Present Simple (rains), Will + Infinitive.",
+          "ejemplo": "Ej: 'If the server <strong>overheats</strong>, the alarm will sound.'"
+        },
+        {
+          "q": "Which type of peripheral are both the Router and the Fax?",
+          "options": ["Input only", "Output only", "Input/Output", "Storage only"],
+          "correct": 2,
+          "explicacion": "Ambos dispositivos envían y reciben datos, por lo que son de entrada y salida simultáneamente.",
+          "ejemplo": "Ej: 'The <strong>Router</strong> is handling incoming and outgoing traffic.'"
+        },
+        {
+          "q": "Conditional: 'If I ___ a billionaire, I would travel around the world.'",
+          "options": ["am", "was", "were", "would be"],
+          "correct": 2,
+          "explicacion": "Segundo condicional (hipotético): Usamos 'were' para todas las personas en la cláusula del 'if'.",
+          "ejemplo": "Ej: 'If I <strong>were</strong> the admin, I would change the security policy.'"
+        },
+        {
+          "q": "What does 'DBMS' stand for in an IT context?",
+          "options": ["Data Business Management System", "Database Management System", "Digital Backup Master System", "Data Board Main Software"],
+          "correct": 1,
+          "explicacion": "DBMS es el sistema de gestión de bases de datos, como MySQL o PostgreSQL.",
+          "ejemplo": "Ej: 'The <strong>DBMS</strong> crashed due to a memory leak.'"
+        },
+        {
+          "q": "Conditional: 'She would have passed the exam if she ___ harder.'",
+          "options": ["studied", "studies", "had studied", "has studied"],
+          "correct": 2,
+          "explicacion": "Tercer condicional (pasado imaginario): Usamos 'If + Past Perfect' en la condición.",
+          "ejemplo": "Ej: 'If we <strong>had backed up</strong> the data, we wouldn't have lost it.'"
+        },
+        {
+          "q": "Which pronoun is used with 'Wish' to express a regret about the past?",
+          "options": ["Present Simple", "Past Simple", "Past Perfect", "Future Simple"],
+          "correct": 2,
+          "explicacion": "Para arrepentimientos del pasado con 'wish', usamos el Past Perfect.",
+          "ejemplo": "Ej: 'I wish I <strong>had chosen</strong> a stronger password.'"
+        },
+        {
+          "q": "What is the primary use of a 'Scanner'?",
+          "options": ["To print documents", "To copy a document or photo to digital", "To hear sounds", "To control software with hand"],
+          "correct": 1,
+          "explicacion": "El escáner es un dispositivo de entrada ('Input') que digitaliza documentos físicos.",
+          "ejemplo": "Ej: 'Use the <strong>Scanner</strong> to upload your ID card.'"
+        },
+        {
+          "q": "Mixed Conditional: 'If you hadn't missed the train, you ___ here on time now.'",
+          "options": ["will be", "would be", "would have been", "are"],
+          "correct": 1,
+          "explicacion": "Condicional mixto: Condición pasada (Past Perfect) con resultado en el presente (Would + Infinitive).",
+          "ejemplo": "Ej: 'If they hadn't patched the server, it <strong>would be</strong> vulnerable now.'"
+        },
+        {
+          "q": "Which section of a CV includes your certifications and technical knowledge?",
+          "options": ["Education", "Personal Info", "Technical Skills", "Experience"],
+          "correct": 2,
+          "explicacion": "En el sector IT, la sección 'Technical Skills' es la más importante para listar herramientas y lenguajes.",
+          "ejemplo": "Ej: 'List CCNA and AWS in your <strong>Technical Skills</strong> section.'"
+        }
+      ]
+    }
+  ]
+}

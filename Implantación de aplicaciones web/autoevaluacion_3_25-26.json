@@ -1,0 +1,248 @@
+{
+  "asignatura": "Implantación de aplicaciones web",
+  "codigo_archivo": "autoevaluacion_3_25-26",
+  "titulo": "3ª Autoevaluación curso 25/26",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Qué significa AJAX en el desarrollo web?",
+      "opciones": {
+        "a": "Autority JavaScript and XHTML",
+        "b": "Advanced JavaScript and XHTML",
+        "c": "Asynchronous JavaScript and XML",
+        "d": "Automated JSON and XML"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Asynchronous JavaScript and XML"
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Cuál es el propósito principal de AJAX en el desarrollo web?",
+      "opciones": {
+        "a": "Mejorar la seguridad del sitio web",
+        "b": "Mejorar el rendimiento del procesador",
+        "c": "Optimizar el rendimiento del navegador",
+        "d": "Realizar solicitudes asíncronas al servidor sin recargar toda la página"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Realizar solicitudes asíncronas al servidor sin recargar toda la página"
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Qué objeto de JavaScript se utiliza para realizar solicitudes AJAX?",
+      "opciones": {
+        "a": "XMLHttpRequest",
+        "b": "HTMLRequest",
+        "c": "JSONParser",
+        "d": "Submit"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "XMLHttpRequest"
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Qué función de JavaScript se utiliza para manejar las respuestas de una solicitud AJAX?",
+      "opciones": {
+        "a": "onResponse",
+        "b": "onreadystatechange",
+        "c": "onRelease",
+        "d": "onReceive"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "onreadystatechange"
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Qué método de XMLHttpRequest se utiliza para enviar una solicitud al servidor?",
+      "opciones": {
+        "a": "send()",
+        "b": "open()",
+        "c": "set()",
+        "d": "sendRequest()"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "send()"
+    },
+    {
+      "id": 6,
+      "enunciado": "¿Cuál es el formato de datos comúnmente utilizado para intercambiar información entre el cliente y el servidor en aplicaciones AJAX?",
+      "opciones": {
+        "a": "JS",
+        "b": "JSON",
+        "c": "HTML",
+        "d": "XML"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "JSON"
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Qué significa el término \"callback\" en el contexto de las solicitudes AJAX?",
+      "opciones": {
+        "a": "Una función que se ejecuta después de que se completa una solicitud AJAX",
+        "b": "Una propiedad que se ejecuta cuando se inicia una solicitud AJAX",
+        "c": "Una propiedad que se ejecuta después de que se completa una solicitud AJAX Una función que se ejecuta antes de enviar una solicitud AJAX",
+        "d": "Una función que se ejecuta cuando se inicia una solicitud AJAX"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Una función que se ejecuta después de que se completa una solicitud AJAX"
+    },
+    {
+      "id": 8,
+      "enunciado": "Para visualizar un nodo creado desde Javascript se utiliza el método:",
+      "opciones": {
+        "a": "getElementById()",
+        "b": "appendChild()",
+        "c": "appendchild",
+        "d": "set()"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "appendChild()"
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Se puede eliminar un nodo con la orden deletenode()?",
+      "opciones": {
+        "a": "No",
+        "b": "Si",
+        "c": "delnode()",
+        "d": "Si, pero solo el último declarado"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "No"
+    },
+    {
+      "id": 10,
+      "enunciado": "Un archivo JSON es:",
+      "opciones": {
+        "a": "Una variable de tipo colección de datos",
+        "b": "Un objeto",
+        "c": "No es una dotación octal de objetos",
+        "d": "Una dotación octal de objetos"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Una dotación octal de objetos"
+    },
+    {
+      "id": 11,
+      "enunciado": "¿Qué significa JSON?",
+      "opciones": {
+        "a": "avaScript Object Note",
+        "b": "avaScript Object Notation Notafication",
+        "c": "JavaScript Object Notation",
+        "d": "Data Object Notation"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "JavaScript Object Notation"
+    },
+    {
+      "id": 12,
+      "enunciado": "¿Para qué se utiliza el método appendChild()?",
+      "opciones": {
+        "a": "Para visualizar un nuevo nodo",
+        "b": "Para agregar un nuevo nodo",
+        "c": "Para modificar un nodo",
+        "d": "Para eliminar un nodo"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Para agregar un nuevo nodo"
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Qué es un nodo en el contexto de JavaScript y el DOM?",
+      "opciones": {
+        "a": "Representa un elemento",
+        "b": "Un atributo CSS",
+        "c": "Una función para manipular eventos",
+        "d": "Una función para manipular eventos"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Representa un elemento"
+    },
+    {
+      "id": 14,
+      "enunciado": "XML se utiliza para:",
+      "opciones": {
+        "a": "Permite dibujar datos",
+        "b": "Crear la arquitectura de un documento html",
+        "c": "Crear la arquitectura web de un sitio",
+        "d": "Estructurar un documento visualmente"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Crear la arquitectura de un documento html"
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Cuál de las siguientes opciones es un ejemplo válido de un objeto JSON?",
+      "opciones": {
+        "a": "{\"name\":\"juan\",\"age:30\"}",
+        "b": "{\"name\":\"juan\",age:30}",
+        "c": "{\"name\":\"juan\",\"age\":30}",
+        "d": "{name:\"juan\",age:30}"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "{\"name\":\"juan\",\"age\":30}"
+    },
+    {
+      "id": 16,
+      "enunciado": "¿Para qué se utiliza el método InnerHML?",
+      "opciones": {
+        "a": "Agregar texto a un elemento",
+        "b": "Crear un nodo de imagen",
+        "c": "Crear un archivo JSON",
+        "d": "Crear un archivo XML"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Agregar texto a un elemento"
+    },
+    {
+      "id": 17,
+      "enunciado": "¿Para qué se utiliza el método: newXMLHttpRequest()?",
+      "opciones": {
+        "a": "Permite crear un nodo XML",
+        "b": "Permite navegar y manipular datos XML",
+        "c": "Permite acceder a un archivo JSON",
+        "d": "Permite trabajar con datos XML"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Permite navegar y manipular datos XML"
+    },
+    {
+      "id": 18,
+      "enunciado": "JSON es un lenguaje que trabaja con",
+      "opciones": {
+        "a": "Colección de variables",
+        "b": "Colección de métodos",
+        "c": "Es una dotación de datos",
+        "d": "Dotación octal de objetos"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Dotación octal de objetos"
+    },
+    {
+      "id": 19,
+      "enunciado": "El método getElementById(), se utiliza para:",
+      "opciones": {
+        "a": "Seleccionar y manipular un elemento HTML",
+        "b": "Agregar un nodo nuevo",
+        "c": "Eliminar un nodo",
+        "d": "Modificar un nodo"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Seleccionar y manipular un elemento HTML"
+    },
+    {
+      "id": 20,
+      "enunciado": "Una conexión asincrónica:",
+      "opciones": {
+        "a": "las operaciones se ejecutan de manera independiente con necesidad de actualización",
+        "b": "Es un tipo de petición",
+        "c": "las operaciones se ejecutan de manera independiente sin necesidad de actualización",
+        "d": "las operaciones no se ejecutan de manera independiente sin necesidad de actualización"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "las operaciones se ejecutan de manera independiente sin necesidad de actualización con los resultados indicados"
+    }
+  ]
+}

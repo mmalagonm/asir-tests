@@ -1,0 +1,345 @@
+{
+  "asignatura": "Administracion de sistemas operativos",
+  "codigo_archivo": "repaso_final_2_3",
+  "titulo": "Repaso Autoevaluaciones 2 y 3",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Se pueden crear usuarios y asignarles cualquier tipo de restricción horaria con PowerShell?",
+      "opciones": {
+        "a": "Sí",
+        "b": "No",
+        "c": "Solo en Windows Server Core",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "PowerShell permite una gestión completa de usuarios en Active Directory, incluyendo la configuración de restricciones de inicio de sesión (LogonHours)."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Qué hace la orden 'Get-NetAdapter' en PowerShell?",
+      "opciones": {
+        "a": "Configura una nueva IP",
+        "b": "Informa de los adaptadores que tenemos en nuestro sistema",
+        "c": "Reinicia la tarjeta de red",
+        "d": "Borra la configuración DNS"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "'Get-NetAdapter' recupera las propiedades básicas de los adaptadores de red, como el nombre, la descripción, el índice de interfaz y el estado."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Qué es la orden 'Sconfig' en PowerShell?",
+      "opciones": {
+        "a": "Una herramienta para configurar el firewall",
+        "b": "Una utilidad para gestionar usuarios",
+        "c": "Una ampliación que ofrece configuraciones sencillas del servidor",
+        "d": "El comando para apagar el equipo"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'sconfig' es una herramienta de configuración de servidor basada en texto que facilita tareas comunes en Windows Server, especialmente en versiones Core."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Cómo se agregan varias IP desde PowerShell?",
+      "opciones": {
+        "a": "New-NetIpaddress -interfaceindex 4 -ipaddress 192.168.1.40 -prefixlengt 24",
+        "b": "Add-IPAddress",
+        "c": "Set-NetworkIP",
+        "d": "Netsh interface ip add"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Se utiliza 'New-NetIPAddress' especificando el índice de la interfaz, la dirección IP y la longitud del prefijo (máscara)."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Cómo agregar una IP con puerta de enlace en PowerShell?",
+      "opciones": {
+        "a": "New-NetIpaddress -interfaceindex 4 -ipaddress 192.168.1.40 -prefixlengt 24 -DefaultGateway 192.168.1.1",
+        "b": "Set-Gateway",
+        "c": "New-GatewayAddress",
+        "d": "Route add default"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El parámetro '-DefaultGateway' dentro de 'New-NetIPAddress' permite establecer la puerta de enlace al mismo tiempo que la IP."
+    },
+    {
+      "id": 6,
+      "enunciado": "¿Cómo nos informamos del nombre de nuestro equipo desde la consola?",
+      "opciones": {
+        "a": "Get-Name",
+        "b": "Whoami",
+        "c": "Hostname",
+        "d": "Name-Computer"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El comando 'hostname' devuelve el nombre de red del equipo actual."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Cómo agregamos DNS desde PowerShell?",
+      "opciones": {
+        "a": "Set-dnsclientserveraddress -interfaceindex 4 -serveraddress 8.8.8.8",
+        "b": "Add-DnsServer",
+        "c": "New-DnsAddress",
+        "d": "DNS-Config"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "'Set-DnsClientServerAddress' configura las direcciones de los servidores DNS para una interfaz de red específica."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Cómo visualizamos toda la información detallada de nuestras interfaces IP?",
+      "opciones": {
+        "a": "Show-IP",
+        "b": "Get-IPConfig",
+        "c": "Ipconfig /all",
+        "d": "Netstat"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'ipconfig /all' muestra la configuración completa de TCP/IP para todos los adaptadores, incluyendo MAC, DNS y DHCP."
+    },
+    {
+      "id": 9,
+      "enunciado": "Para que varios equipos clientes en Windows 10 que pertenecen a dominios diferentes puedan compartir recursos es necesario:",
+      "opciones": {
+        "a": "Estar en la misma red física",
+        "b": "Establecer relación de confianza entre ambos dominios",
+        "c": "Usar el mismo grupo de trabajo",
+        "d": "Desactivar el firewall"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La relación de confianza permite que los usuarios de un dominio se autentiquen y accedan a recursos en otro dominio."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Cómo se ejecuta un script en Ubuntu desde el directorio actual?",
+      "opciones": {
+        "a": "run archivo.sh",
+        "b": "./archivo.sh",
+        "c": "bash archivo.sh",
+        "d": "execute archivo.sh"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El prefijo './' indica al shell que debe buscar el archivo en el directorio actual."
+    },
+    {
+      "id": 11,
+      "enunciado": "Según la imagen, ¿es estrictamente necesaria la opción 'read' en la opción 9 del menú?",
+      "fichero_imagen": "repaso_aso_img1.png",
+      "opciones": {
+        "a": "Sí",
+        "b": "No, no es necesario",
+        "c": "Solo si hay errores",
+        "d": "Depende del kernel"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Si la opción del menú solo muestra información y no requiere capturar datos del usuario, el comando 'read' no es indispensable."
+    },
+    {
+      "id": 12,
+      "enunciado": "¿Qué permite el siguiente código en /etc/samba/smb.conf? [carpeta] Path=/home/usuario/Escritorio/carpeta Writable=yes Guest ok=yes Browsable=yes",
+      "opciones": {
+        "a": "Acceder desde Windows a Ubuntu en red y tener acceso a la carpeta con permisos",
+        "b": "Bloquear el acceso a la carpeta",
+        "c": "Solo lectura para usuarios locales",
+        "d": "Configurar el servidor web"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Esta configuración define un recurso compartido en Samba accesible para invitados (guest ok) y con permisos de escritura (writable)."
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Cuál debe ser la extensión de un script de procesamiento por lotes en Windows?",
+      "opciones": {
+        "a": ".sh",
+        "b": ".exe",
+        "c": ".bat",
+        "d": ".txt"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Los archivos .bat (batch) son los scripts tradicionales ejecutados por el intérprete de comandos de Windows (cmd.exe)."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Cuál es la principal diferencia entre 'adduser' y 'useradd' en Ubuntu?",
+      "opciones": {
+        "a": "adduser pide contraseña interactivamente, useradd no",
+        "b": "useradd es para grupos",
+        "c": "adduser es solo para root",
+        "d": "No hay diferencia"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "'adduser' es una herramienta de más alto nivel que guía el proceso, mientras que 'useradd' es la herramienta base del sistema."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Qué hace la orden 'Name resolver order = lmhost hosts wins bcast' en Samba?",
+      "opciones": {
+        "a": "Define el orden de resolución de nombres para compartir recursos",
+        "b": "Configura el servidor DNS",
+        "c": "Establece la IP estática",
+        "d": "Borra la caché de red"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Determina qué servicios de nombres y en qué orden se consultarán para resolver nombres de red NetBIOS."
+    },
+    {
+      "id": 16,
+      "enunciado": "¿Qué debemos instalar en Ubuntu para poder compartir carpetas con equipos Windows?",
+      "opciones": {
+        "a": "Apache",
+        "b": "Samba",
+        "c": "FTP",
+        "d": "SSH"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Samba es la suite de software que implementa el protocolo SMB/CIFS en sistemas tipo Unix para interoperabilidad con Windows."
+    },
+    {
+      "id": 17,
+      "enunciado": "En PowerShell: New-NetIpaddress -prefixlengt 29. ¿Qué máscara le corresponde?",
+      "opciones": {
+        "a": "255.255.255.0",
+        "b": "255.255.255.248",
+        "c": "255.255.255.252",
+        "d": "255.248.0.0"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Un prefijo /29 deja 3 bits para hosts (8 IPs por subred). 256 - 8 = 248."
+    },
+    {
+      "id": 18,
+      "enunciado": "Al configurar New-NetIpaddress con -prefixlengt 27, ¿a qué máscara equivale?",
+      "opciones": {
+        "a": "255.255.255.224",
+        "b": "255.255.255.192",
+        "c": "255.255.255.0",
+        "d": "255.255.255.240"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Un prefijo /27 utiliza 5 bits para hosts (32 IPs). 256 - 32 = 224."
+    },
+    {
+      "id": 19,
+      "enunciado": "Desde el punto de vista de seguridad, ¿recomendarías la ruta: Ip route 0.0.0.0 0.0.0.0 s0/3/0?",
+      "opciones": {
+        "a": "Sí, es lo más eficiente",
+        "b": "No, porque entraría TODO el tráfico de red (riesgo de seguridad)",
+        "c": "Solo en redes locales",
+        "d": "Sí, si el firewall está activo"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Una ruta por defecto sin filtrar puede exponer la red a tráfico no deseado si no hay medidas de seguridad adicionales."
+    },
+    {
+      "id": 20,
+      "enunciado": "Si la red pública cambia a diario, ¿cómo podemos enrutar hacia una red interna (p.ej 192.168.10.0) de forma estática?",
+      "opciones": {
+        "a": "Ip route 192.168.10.0 255.255.255.0 s0/3/0",
+        "b": "Usando DHCP",
+        "c": "Con una ruta estática a la interfaz de salida",
+        "d": "No se puede"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Al especificar la interfaz de salida en lugar de la IP del siguiente salto, la ruta sigue siendo válida aunque la IP del otro extremo cambie."
+    },
+    {
+      "id": 21,
+      "enunciado": "En un DHCP con la red 192.168.1.0/27, ¿cuál sería la última IP disponible para hosts?",
+      "opciones": {
+        "a": "192.168.1.30",
+        "b": "192.168.1.32",
+        "c": "192.168.1.255",
+        "d": "192.168.1.254"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "En /27, el bloque es de 32 IPs (0-31). La 31 es broadcast, por lo que la 30 es la última útil."
+    },
+    {
+      "id": 22,
+      "enunciado": "En un DHCP con la red 192.168.1.0/29, ¿cuál sería la última IP disponible para hosts?",
+      "opciones": {
+        "a": "192.168.1.6",
+        "b": "192.168.1.8",
+        "c": "192.168.1.14",
+        "d": "192.168.1.30"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "En /29, el bloque es de 8 IPs (0-7). La 7 es broadcast, por lo que la 6 es la última útil."
+    },
+    {
+      "id": 23,
+      "enunciado": "En un DHCP con la red 192.168.1.0/30, ¿cuál sería la última IP disponible para hosts?",
+      "opciones": {
+        "a": "192.168.1.2",
+        "b": "192.168.1.3",
+        "c": "192.168.1.1",
+        "d": "192.168.1.4"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "En /30, el bloque es de 4 IPs (0-3). La 3 es broadcast, por lo que la 2 es la última útil."
+    },
+    {
+      "id": 24,
+      "enunciado": "¿Puede un usuario estándar del dominio iniciar sesión localmente en el Windows Server por defecto?",
+      "opciones": {
+        "a": "Sí",
+        "b": "NO",
+        "c": "Solo si es Administrador del esquema",
+        "d": "Depende de la unidad organizativa"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Por seguridad, Windows Server restringe el inicio de sesión local a grupos administrativos (Administradores, Operadores de copia, etc.)."
+    },
+    {
+      "id": 25,
+      "enunciado": "¿Es posible configurar el Server para permitir el inicio de sesión local a usuarios sin privilegios?",
+      "opciones": {
+        "a": "Sí, se puede",
+        "b": "No, es imposible",
+        "c": "Solo en modo a prueba de fallos",
+        "d": "Solo mediante directivas de grupo locales"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Se puede modificar a través de Directivas de Grupo (GPO) en la sección 'Asignación de derechos de usuario' -> 'Permitir inicio de sesión local'."
+    },
+    {
+      "id": 26,
+      "enunciado": "En las directivas de Windows Server, ¿cuál es el número máximo de contraseñas recordadas en el historial?",
+      "opciones": {
+        "a": "24",
+        "b": "30",
+        "c": "100",
+        "d": "7"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El historial de contraseñas de Windows permite recordar hasta 24 contraseñas anteriores para evitar que el usuario repita una reciente."
+    },
+    {
+      "id": 27,
+      "enunciado": "¿Qué información nos devuelve el cmdlet 'Get-NetAdapter'?",
+      "opciones": {
+        "a": "Cuántos adaptadores tenemos y su estado",
+        "b": "La configuración DNS",
+        "c": "El estado del firewall",
+        "d": "La tabla de rutas"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Muestra una lista de todos los adaptadores de red instalados, indicando si están activos, su velocidad y su MTU."
+    },
+    {
+      "id": 28,
+      "enunciado": "¿Cómo podemos listar los recursos compartidos mediante SMB en PowerShell?",
+      "opciones": {
+        "a": "Get-smbshare",
+        "b": "Show-Shares",
+        "c": "List-Shared",
+        "d": "Net share"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "'Get-SmbShare' es el cmdlet de PowerShell para ver las carpetas y recursos compartidos en el servidor."
+    }
+  ]
+}

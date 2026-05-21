@@ -1,0 +1,695 @@
+{
+  "asignatura": "Administración de sistemas operativos",
+  "codigo_archivo": "test_aso_master_review",
+  "titulo": "EXAMEN MAESTRO: Repaso Integral ASO (RA1 a RA7)",
+  "tipo": "examen",
+  "ra": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Recién instalado un Windows Server 2019 en modo local con las opciones predeterminadas pertenece a algún dominio?",
+      "opciones": {
+        "a": "Sí, pertenece al dominio predeterminado local.",
+        "b": "No, pertenece a un Grupo de Trabajo (WORKGROUP) por defecto.",
+        "c": "Sí, se autoconfigura en el dominio de la red local.",
+        "d": "No, pero pertenece al dominio de Azure Active Directory."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Al realizar una instalación limpia de Windows Server 2019 en modo local, el servidor se une inicialmente a un grupo de trabajo (WORKGROUP) por defecto. Para que pertenezca a un dominio de Active Directory, es necesario unirlo a uno existente o promover el servidor a Controlador de Dominio."
+    },
+    {
+      "id": 2,
+      "enunciado": "Instalas dos sistemas operativos Windows 10 cada uno en su PC correspondiente. El primer PC tiene la IP 192.168.1.2 y el segundo PC tiene la IP 192.168.1.3. ¿Por defecto pueden conectarse en red?",
+      "opciones": {
+        "a": "Sí, porque están en la misma subred de red local.",
+        "b": "No, ya que Windows 10 tiene por defecto la detección de redes desactivada en sus perfiles de red.",
+        "c": "Sí, el protocolo NetBIOS permite la comunicación automática sin configuración.",
+        "d": "No, porque requieren obligatoriamente un servidor DNS o DHCP local para encaminar el tráfico."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Aunque compartan el mismo rango de IPs y máscara, por defecto Windows 10 viene con el cortafuegos configurado para bloquear la detección de redes y el compartimiento de recursos. Hay que habilitar manualmente la detección de redes y el uso compartido de archivos en el Centro de redes y recursos compartidos."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Puede degradarse un Controlador de Dominio (DC) en Windows Server?",
+      "opciones": {
+        "a": "No, una vez promovido, el rol de AD DS es irreversible.",
+        "b": "Sí, desinstalando el rol de Servicios de dominio de Active Directory (AD DS) para convertirlo en servidor miembro.",
+        "c": "Solo si es un controlador de dominio secundario de tipo RODC.",
+        "d": "No, requiere formatear e instalar el sistema operativo desde cero."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Sí, un Controlador de Dominio se puede degradar (demote) quitando los servicios de dominio de Active Directory desde el Administrador del Servidor (Server Manager) o mediante comandos de PowerShell como 'Uninstall-ADDSDomainController'."
+    },
+    {
+      "id": 4,
+      "enunciado": "Al crear un usuario estándar en Active Directory de Windows Server, ¿por defecto dicho usuario puede iniciar sesión localmente en la máquina física donde está el servidor?",
+      "opciones": {
+        "a": "Sí, cualquier cuenta creada en el dominio tiene inicio de sesión local.",
+        "b": "No, por defecto el inicio de sesión local en un Controlador de Dominio está restringido a administradores y grupos específicos.",
+        "c": "Sí, a menos que el administrador le bloquee explícitamente el acceso de consola.",
+        "d": "Solo si el servidor se encuentra en modo Core (sin interfaz gráfica)."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Por razones de seguridad, las directivas predeterminadas de Windows Server (especialmente los Controladores de Dominio) restringen el derecho de inicio de sesión local. Los usuarios comunes del dominio no pueden sentarse en la consola física e iniciar sesión a menos que se les otorgue este permiso especial."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Se puede configurar Windows Server para que un usuario del dominio, sin pertenecer a grupos de administración importantes (como Administradores, Operadores de cuentas, de servidores, etc.), pueda iniciar sesión localmente en el servidor?",
+      "opciones": {
+        "a": "No, es una directiva de seguridad del kernel de Windows que no se puede alterar.",
+        "b": "Sí, editando la directiva de grupo (GPO) en la sección 'Permitir el inicio de sesión local' para ese usuario o un grupo personalizado.",
+        "c": "Sí, pero requiere habilitar el modo de compatibilidad de seguridad heredada.",
+        "d": "No, solo los miembros del grupo 'Administradores del dominio' tienen ese derecho exclusivo."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Se puede conceder el derecho de inicio de sesión local a cualquier usuario o grupo editando las directivas correspondientes (en Directiva de seguridad local o mediante GPO vinculada a la unidad organizativa del DC) en 'Configuración de equipo -> Directivas -> Configuración de Windows -> Configuración de seguridad -> Directivas locales -> Asignación de derechos de usuario -> Permitir el inicio de sesión local'."
+    },
+    {
+      "id": 6,
+      "enunciado": "En la directiva de historial de contraseñas de Windows Server, ¿cuál es el valor máximo de contraseñas anteriores que podemos configurar para recordar?",
+      "opciones": {
+        "a": "12 contraseñas.",
+        "b": "24 contraseñas.",
+        "c": "50 contraseñas.",
+        "d": "Ilimitado."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El valor máximo permitido para la directiva de historial de contraseñas en Windows Server es 24. Esto obliga a los usuarios a cambiar a contraseñas verdaderamente nuevas en lugar de alternar entre unas pocas antiguas."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Se pueden aplicar y restringir directivas configuradas mediante GPO a las cuentas de Administradores locales y a los Administradores del dominio?",
+      "opciones": {
+        "a": "No, las cuentas con rol de administrador omiten automáticamente todas las directivas.",
+        "b": "Sí, las GPOs se aplican a nivel de equipo y de usuario, por lo que afectan a los administradores a menos que se configure una exclusión en el filtrado de seguridad.",
+        "c": "Solo a los administradores locales, pero las cuentas del grupo 'Administradores del dominio' son inmunes.",
+        "d": "No, las políticas de grupo están diseñadas para aplicarse exclusivamente a usuarios estándar."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Las directivas de grupo afectan a todos los objetos (usuarios y equipos) bajo la Unidad Organizativa a la que están vinculadas, incluidos los administradores. Si se requiere que no se aplique a los administradores, se debe modificar el filtrado de seguridad de la GPO, denegando el permiso de 'Aplicar directiva de grupo' para dicho grupo."
+    },
+    {
+      "id": 8,
+      "enunciado": "Si al hacer clic derecho en las propiedades de una carpeta en nuestro Windows Server no visualizamos la pestaña 'Seguridad', ¿cuál es la causa más probable?",
+      "opciones": {
+        "a": "El usuario no ha iniciado sesión con privilegios administrativos.",
+        "b": "La partición o disco donde se aloja la carpeta no está formateado en el sistema de archivos NTFS.",
+        "c": "La carpeta no se ha compartido previamente en la red.",
+        "d": "El servicio de cifrado de archivos (EFS) está deshabilitado."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La pestaña 'Seguridad' muestra la lista de control de acceso (ACL) de NTFS. Si la partición está formateada en FAT32, exFAT u otro sistema de archivos antiguo, la pestaña no estará disponible porque estos sistemas no soportan la seguridad avanzada a nivel de archivos."
+    },
+    {
+      "id": 9,
+      "enunciado": "El sistema de archivos NTFS se creó con la finalidad primordial de:",
+      "opciones": {
+        "a": "Reducir la latencia de las tarjetas de red de área local.",
+        "b": "Incrementar la seguridad de los archivos, mejorar la fiabilidad del almacenamiento y dar soporte a mayores capacidades de disco.",
+        "c": "Reemplazar los sistemas de archivos Ext4 de Linux.",
+        "d": "Facilitar la compresión y descompresión de archivos multimedia por defecto."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "NTFS (New Technology File System) fue diseñado por Microsoft para superar las limitaciones de FAT, agregando seguridad mediante listas de control de acceso (ACLs), tolerancia a fallos mediante transacciones, soporte de archivos de gran tamaño, compresión y cuotas de disco."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Cuáles son las características y ventajas principales de realizar una instalación de Windows Server Core?",
+      "opciones": {
+        "a": "Disponer de una interfaz visual más ligera con soporte básico de animaciones.",
+        "b": "Instalación mínima sin interfaz gráfica (GUI), optimizada para ahorrar recursos de hardware y reducir la superficie de ataque frente a virus o vulnerabilidades.",
+        "c": "Una versión optimizada que solo permite ejecutar contenedores e hipervisores Hyper-V.",
+        "d": "Un entorno diseñado exclusivamente para terminales clientes de baja potencia."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Windows Server Core elimina la interfaz gráfica tradicional (explorer.exe, menús visuales, etc.). Esto ahorra RAM y procesador, reduce significativamente el espacio en disco utilizado y disminuye la cantidad de actualizaciones y parches de seguridad críticos necesarios."
+    },
+    {
+      "id": 11,
+      "enunciado": "¿Puede un usuario pertenecer a dos grupos diferentes? En caso afirmativo, ¿qué sucedería si pertenece a un grupo con privilegios de Administrador (Permitir acceso) y a otro sin privilegios (Denegar acceso), y otorgáramos permisos a una carpeta a ese usuario?",
+      "opciones": {
+        "a": "No, las cuentas de Active Directory solo pueden tener un grupo principal asignado.",
+        "b": "Sí, y en caso de conflicto, la denegación explícita (Denegar) prevalece sobre el permitir.",
+        "c": "Sí, y el permiso de mayor privilegio (Permitir) es el que se aplica.",
+        "d": "Sí, pero se produce un error en el Explorador de Windows bloqueando el acceso al recurso."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Un usuario en Windows puede pertenecer a múltiples grupos de seguridad. Cuando los permisos heredados o explícitos entran en conflicto, la regla general de NTFS indica que el permiso de Denegar (Deny) tiene prioridad absoluta sobre Permitir (Allow)."
+    },
+    {
+      "id": 12,
+      "enunciado": "En Windows Server es posible cambiar el nombre de un dominio por otro. Sabiendo esto, ¿cambia el Identificador de Seguridad (SID) único del dominio creado originalmente?",
+      "opciones": {
+        "a": "Sí, el SID se actualiza y regenera automáticamente al cambiar el nombre.",
+        "b": "No, el identificador único de seguridad (SID) del dominio se mantiene igual y no cambia.",
+        "c": "Sí, a menos que el servidor esté en modo funcional de Windows Server 2008.",
+        "d": "No existe SID para el dominio, solo se asigna a usuarios y equipos de forma individual."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El Identificador de Seguridad (SID) del dominio identifica de forma única la raíz del dominio dentro de Active Directory. Aunque renombres el dominio (ej. de empresa.local a corporativo.es), el SID permanece inalterado para evitar romper los enlaces de confianza y las relaciones de seguridad de los objetos existentes."
+    },
+    {
+      "id": 13,
+      "enunciado": "La relación de confianza (trust relationship) entre dos dominios de Windows Server puede establecerse de forma:",
+      "opciones": {
+        "a": "Únicamente de forma unidireccional.",
+        "b": "Únicamente de forma bidireccional.",
+        "c": "Tanto de forma unidireccional como de forma bidireccional, según el diseño de la infraestructura.",
+        "d": "No se pueden conectar dominios diferentes en Windows Server."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Las relaciones de confianza pueden ser unidireccionales (el dominio A confía en el dominio B, por lo que los usuarios de B pueden acceder a A, pero no viceversa) o bidireccionales (los dos dominios confían recíprocamente entre sí)."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Qué sucede con los equipos clientes del dominio si se apaga el único servidor de controlador de dominio (DC)?",
+      "opciones": {
+        "a": "Los equipos clientes ejecutan un apagado automático por seguridad.",
+        "b": "Los usuarios pierden acceso a recursos compartidos y servicios del dominio, pudiendo usar únicamente recursos locales e iniciar sesión con credenciales almacenadas en caché.",
+        "c": "El cliente asume el control del dominio gracias a una copia temporal sincronizada.",
+        "d": "Las interfaces de red se desconectan para evitar fugas de información."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Si el DC no está disponible, los clientes no pueden validar nuevas credenciales contra el Active Directory. No obstante, Windows permite el inicio de sesión local mediante contraseñas guardadas en la memoria caché local del equipo cliente, aunque no tendrán acceso a carpetas compartidas del servidor ni a políticas de grupo actualizadas."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Qué derecho otorga el permiso especial de NTFS de 'Toma de posesión' (Take Ownership) sobre un archivo o directorio?",
+      "opciones": {
+        "a": "Eliminar de forma permanente el recurso saltando la papelera de reciclaje.",
+        "b": "Convertirse en el propietario legal del recurso, lo que permite modificar sus listas de control de acceso (permisos) incluso si previamente no se tenía acceso.",
+        "c": "Duplicar la carpeta en un servidor de respaldo en la nube.",
+        "d": "Ocultar por completo la existencia del recurso al Administrador del Dominio."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La toma de posesión es un permiso que permite a un usuario (usualmente administradores) reclamar la propiedad de un recurso. Ser el propietario le otorga el derecho incondicional de leer y modificar los permisos de seguridad de dicho recurso."
+    },
+    {
+      "id": 16,
+      "enunciado": "Relaciona correctamente los modificadores del comando 'attrib' en Windows CMD según su función:",
+      "opciones": {
+        "a": "`+r` asigna lectura, `-h` quita oculto, `-r -h` quita lectura y oculto, `+s` asigna atributo de sistema.",
+        "b": "`+r` asigna oculto, `-h` quita lectura, `-r -h` quita lectura, `+s` quita atributo de sistema.",
+        "c": "`+r` asigna sistema, `-h` quita oculto, `-r -h` asigna lectura, `+s` quita oculto.",
+        "d": "`+r` asigna lectura, `-h` asigna oculto, `-r -h` quita sistema, `+s` quita lectura."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "En el comando `attrib` de Windows: `+r` asigna el atributo de sólo lectura, `-h` elimina el atributo de oculto, `-r -h` limpia de manera conjunta ambos atributos, y `+s` asigna el atributo de archivo de sistema."
+    },
+    {
+      "id": 17,
+      "enunciado": "¿Cómo se visualiza el contenido de un archivo de texto plano directamente desde la consola de comandos de Windows (CMD)?",
+      "opciones": {
+        "a": "cat nombre_archivo",
+        "b": "type nombre_archivo",
+        "c": "show nombre_archivo",
+        "d": "print nombre_archivo"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El comando `type` en CMD es la orden nativa de Windows diseñada para volcar y mostrar en pantalla el contenido de un archivo de texto, realizando la misma función que `cat` en sistemas Unix/Linux."
+    },
+    {
+      "id": 18,
+      "enunciado": "La dirección MAC (Media Access Control) de una tarjeta de interfaz de red está compuesta por:",
+      "opciones": {
+        "a": "32 bits organizados en 4 grupos decimales.",
+        "b": "48 bits, organizados en 6 grupos de 2 dígitos hexadecimales, donde los 3 primeros grupos representan al fabricante y los 3 últimos al número de serie único.",
+        "c": "64 bits que indican el protocolo físico de conexión.",
+        "d": "128 bits expresados en el formato extendido de IPv6."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La dirección MAC consta de 48 bits (6 bytes) comúnmente separados por dos puntos o guiones. La primera mitad (3 octetos) es el OUI asignado al fabricante de hardware y la segunda mitad identifica de forma única la tarjeta específica."
+    },
+    {
+      "id": 19,
+      "enunciado": "¿Qué información representan los primeros 3 pares de dígitos de una dirección MAC?",
+      "opciones": {
+        "a": "El número de serie del componente físico.",
+        "b": "El fabricante de la tarjeta de red (OUI - Organizationally Unique Identifier).",
+        "c": "La máscara de red de la interfaz física.",
+        "d": "El país donde se ensambló el componente."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Los primeros 3 bytes (24 bits) de una MAC constituyen el OUI, un código asignado por la IEEE que identifica de manera única a la compañía fabricante del hardware de red."
+    },
+    {
+      "id": 20,
+      "enunciado": "¿Qué información representan los últimos 3 pares de dígitos de una dirección MAC?",
+      "opciones": {
+        "a": "La marca comercial del chip de red.",
+        "b": "El número de serie único del dispositivo de interfaz de red (NIC).",
+        "c": "El código del controlador de red (Driver).",
+        "d": "La dirección de broadcast asociada al adaptador."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Los últimos 3 bytes de una dirección MAC corresponden a la dirección asignada por el fabricante al circuito específico, funcionando como un número de serie único a nivel mundial para esa interfaz."
+    },
+    {
+      "id": 21,
+      "enunciado": "¿Cómo debe comenzar de forma obligatoria un script en Bash para poder ejecutarse en un entorno Ubuntu?",
+      "opciones": {
+        "a": "`#!/bin/bash`",
+        "b": "`#!/bash`",
+        "c": "`#!/bin/`",
+        "d": "Ninguna es correcta."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Un script de Linux debe comenzar con la línea shebang `#!/bin/bash`. Esto le dice al kernel de Linux que debe invocar el shell Bash (ubicado en `/bin/bash`) para interpretar las líneas de comandos que contiene el archivo."
+    },
+    {
+      "id": 22,
+      "enunciado": "Observando el menú del script en la imagen, ¿cuántas variables de entrada se necesitan para configurar la opción 9?",
+      "fichero_imagen": "repaso_final_aso_image1.png",
+      "opciones": {
+        "a": "Ninguna variable.",
+        "b": "Una variable.",
+        "c": "Dos variables.",
+        "d": "Tres variables."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Como se observa en la imagen, la opción 9 corresponde a la acción de 'Salir'. En la programación de scripts, esta acción suele realizarse directamente con el comando 'exit 0' o similares, por lo que no es necesario solicitar datos del usuario ni almacenar variables."
+    },
+    {
+      "id": 23,
+      "enunciado": "Observando el menú de la imagen, ¿cuántas variables de entrada se necesitan para configurar y operar la opción 2 (Calculadora)?",
+      "fichero_imagen": "repaso_final_aso_image1.png",
+      "opciones": {
+        "a": "Ninguna variable.",
+        "b": "Una variable (para capturar la opción del menú u operandos).",
+        "c": "Dos variables.",
+        "d": "Tres variables."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Para procesar un submenú o una calculadora básica interactiva en Bash, se requiere como mínimo una variable que capture la opción seleccionada por el usuario (generalmente a través del comando `read`)."
+    },
+    {
+      "id": 24,
+      "enunciado": "En un script de Linux, ¿qué se consigue al ejecutar el siguiente fragmento de código?\n\n```bash\necho \"mensaje\"\nread variable\ncat /etc/group $variable\n```",
+      "opciones": {
+        "a": "Filtrar todos los grupos que coincidan con el valor de la variable.",
+        "b": "Mostrar el contenido del archivo `/etc/group` y seguidamente intentar abrir un archivo cuyo nombre coincide con el valor de la variable leída.",
+        "c": "Crear un nuevo grupo en el sistema utilizando el nombre de la variable.",
+        "d": "Eliminar la cuenta del usuario de la variable del sistema."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El comando `cat` toma múltiples argumentos de archivos y los concatena en pantalla. Aquí mostrará el contenido del archivo de grupos del sistema (`/etc/group`) e intentará concatenar el archivo local cuyo nombre sea el guardado en `$variable`. De esta forma, sirve para visualizar la información de grupos."
+    },
+    {
+      "id": 25,
+      "enunciado": "En Linux Bash, ¿cuál es la función de las palabras clave 'esac', 'done' y la instrucción 'exit 0'?",
+      "opciones": {
+        "a": "`esac` cierra un bloque case, `done` cierra un bucle (while/for), y `exit 0` termina la ejecución del script indicando que no hubo errores.",
+        "b": "`esac` cierra un if, `done` finaliza una función, y `exit 0` reinicia los servicios del sistema.",
+        "c": "`esac` define variables locales, `done` cierra un case, y `exit 0` genera un archivo de log.",
+        "d": "`esac` inicializa un bucle de eventos, `done` cierra un bloque if, y `exit 0` suspende temporalmente el proceso."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "En Bash: `esac` (case al revés) cierra la estructura de control condicional `case`, `done` cierra las estructuras repetitivas como `for` y `while`, y `exit 0` termina el script devolviendo un código de salida exitoso (0)."
+    },
+    {
+      "id": 26,
+      "enunciado": "¿Cómo se ejecuta un script de comandos en Ubuntu si estamos situados en la misma carpeta donde está guardado y posee permisos de ejecución?",
+      "opciones": {
+        "a": "run nombre.sh",
+        "b": "./nombre.sh",
+        "c": "execute nombre.sh",
+        "d": "sh //nombre.sh"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Para ejecutar un script o ejecutable en Linux que está en el directorio de trabajo actual, se debe anteponer `./` (ej. `./nombre.sh`). Esto evita que el sistema intente buscarlo en los directorios de la variable global de entorno $PATH."
+    },
+    {
+      "id": 27,
+      "enunciado": "El Administrador crea un script en Ubuntu para que lo usen los empleados. ¿Qué debe hacer para que los usuarios puedan ejecutar el script sin problemas?",
+      "opciones": {
+        "a": "Copiar obligatoriamente el script en el directorio `/bin` de sistema.",
+        "b": "Otorgar permisos de ejecución al archivo del script usando el comando `chmod` (ejemplo: `chmod +x`).",
+        "c": "Instalar el compilador de Bash en cada equipo cliente.",
+        "d": "Cambiar la extensión del archivo a .exe para que Linux lo reconozca."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En Linux, los archivos de texto creados no tienen privilegios de ejecución por defecto. Para que un usuario pueda iniciarlo, el administrador u propietario debe añadir el permiso de ejecución usando `chmod` con la sintaxis `chmod +x nombre_script.sh` o su equivalente octal (como 755)."
+    },
+    {
+      "id": 28,
+      "enunciado": "¿Qué comando debemos utilizar en la terminal de Ubuntu para visualizar detalladamente los permisos (lectura, escritura y ejecución) de los archivos?",
+      "opciones": {
+        "a": "ls",
+        "b": "ls -l",
+        "c": "show perm",
+        "d": "chmod -v"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El comando `ls` con el parámetro `-l` (formato largo) lista los archivos mostrando sus permisos detallados (rwx para usuario, grupo y otros), el propietario, el grupo, el tamaño del archivo y la fecha de última modificación."
+    },
+    {
+      "id": 29,
+      "enunciado": "¿Qué extensión predeterminada debe tener un archivo de script por lotes en Windows para poder iniciarlo directamente por consola?",
+      "opciones": {
+        "a": ".sh",
+        "b": ".bat",
+        "c": ".ps1",
+        "d": ".bin"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Los scripts clásicos de consola en Windows (archivos de procesamiento por lotes) utilizan la extensión `.bat` (o `.cmd`) para ser interpretados por el procesador de comandos del sistema (cmd.exe)."
+    },
+    {
+      "id": 30,
+      "enunciado": "Analizando el código Batch en Windows, ¿cuál es el error que impedirá que las sentencias condicionales 'if' se evalúen correctamente?\n\n```cmd\n@echo off\nTitle mi script\n:menú\nPause\nCls\nEcho mensaje\necho 1- www.google.es\necho 2- salir\necho elegir una opción\nset /p variable=\nif %caceres% ==1 goto opcion1\nif %caceres% ==2 goto opcion2\n```",
+      "opciones": {
+        "a": "El menú debe llamarse ':menu' sin utilizar tilde.",
+        "b": "El comando `set /p` define la variable como 'variable', pero las condiciones 'if' posteriores buscan evaluar '%caceres%' (la cual no existe).",
+        "c": "No se pueden usar enlaces URL con el comando 'start'.",
+        "d": "Las condicionales 'if' requieren el uso de paréntesis obligatoriamente."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El comando `set /p variable=` solicita la entrada al usuario y la guarda en la variable `variable`. Sin embargo, las siguientes líneas condicionales evalúan `%caceres%`, por lo que las condiciones nunca se cumplirán al no coincidir el nombre de la variable de entrada con el evaluado."
+    },
+    {
+      "id": 31,
+      "enunciado": "¿El protocolo SSH encripta los datos en tránsito y a qué puerto pertenece de forma estándar?",
+      "opciones": {
+        "a": "No encripta las comunicaciones y utiliza el puerto TCP 23.",
+        "b": "Sí encripta las comunicaciones de forma segura y utiliza el puerto TCP 22.",
+        "c": "Sí encripta las comunicaciones de forma segura y utiliza el puerto TCP 80.",
+        "d": "No encripta y utiliza el puerto TCP 22."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "SSH (Secure Shell) es un protocolo diseñado para acceder de forma remota y segura a servidores e interfaces CLI de red. Cifra toda la información transmitida (incluyendo credenciales) y utiliza por defecto el puerto TCP 22."
+    },
+    {
+      "id": 32,
+      "enunciado": "¿El protocolo Telnet encripta sus comunicaciones y a qué puerto pertenece por defecto?",
+      "opciones": {
+        "a": "Sí encripta y pertenece al puerto 23.",
+        "b": "No encripta (transmite los datos en texto plano) y pertenece al puerto TCP 23.",
+        "c": "No encripta y pertenece al puerto TCP 22.",
+        "d": "Sí encripta y pertenece al puerto TCP 443."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Telnet es un protocolo de administración remota antiguo e inseguro. Envía todos los datos (incluyendo contraseñas en claro) sin encriptar, por lo que es vulnerable a escuchas en red. Trabaja sobre el puerto TCP 23."
+    },
+    {
+      "id": 33,
+      "enunciado": "¿Cuál es la orden que invoca al cliente de conexión de Escritorio Remoto (RDP) integrado en Windows?",
+      "opciones": {
+        "a": "rdpclient",
+        "b": "mstsc",
+        "c": "remotecontrol",
+        "d": "winrdp"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La aplicación de escritorio remoto de Microsoft se inicia ejecutando `mstsc` (Microsoft Terminal Services Client) desde la caja de ejecutar (`Win + R`) o consola de comandos."
+    },
+    {
+      "id": 34,
+      "enunciado": "Indica una herramienta de acceso remoto muy utilizada que ofrece uso gratuito para fines personales pero de pago para empresas, y otra de carácter predominantemente de pago comercial:",
+      "opciones": {
+        "a": "SSH es gratuita y Telnet es comercial.",
+        "b": "TeamViewer (gratuito doméstico / de pago comercial) y AnyDesk / Splashtop (de pago comercial habitual).",
+        "c": "Microsoft Teams (gratuito) y Rdesktop (de pago).",
+        "d": "Ninguna de las opciones es correcta."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "TeamViewer es conocido por permitir el uso gratuito a usuarios domésticos no comerciales y exigir licenciamiento en empresas. AnyDesk y Splashtop son alternativas comúnmente comercializadas mediante planes de pago profesional."
+    },
+    {
+      "id": 35,
+      "enunciado": "¿Permite una herramienta de acceso remoto (como RDP, TeamViewer, AnyDesk o SSH) instalar o desinstalar programas en el equipo de destino?",
+      "opciones": {
+        "a": "No, está estrictamente bloqueado por motivos de seguridad de red.",
+        "b": "Sí, siempre que el usuario remoto que haya iniciado sesión disponga de los privilegios administrativos (Administrador) en el sistema operativo local.",
+        "c": "Solo si la conexión se realiza a través de un navegador web.",
+        "d": "No, las conexiones remotas solo permiten la lectura de archivos."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Las conexiones remotas te permiten interactuar con el sistema como si estuvieras físicamente allí. Si el usuario autenticado tiene permisos de administrador, tendrá el control total para instalar o remover software en la máquina remota."
+    },
+    {
+      "id": 36,
+      "enunciado": "Analizando la configuración de Cisco IOS para SSH, ¿cuál de las siguientes opciones describe una anomalía o error común en esta configuración?\n\n```ios\nHostname valencia\nIp domain-name Valencia.es\nCrypto key generate rsa\nUsername router1 privilege 15 secret icarly 1234\nLine vty 0 5\nTransport input SSH\nLogin local\n```",
+      "opciones": {
+        "a": "El puerto SSH está deshabilitado por defecto.",
+        "b": "El comando 'line vty 0 5' configura 6 líneas virtuales, mientras que el rango estándar más habitual y recomendado es 'line vty 0 4' para las primeras 5 líneas.",
+        "c": "Falta agregar la contraseña global del sistema 'enable secret'.",
+        "d": "El comando 'crypto key generate rsa' no funciona si no se especifica el tamaño de la clave en esa misma línea."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En equipos Cisco, la configuración por defecto de terminales virtuales comúnmente se acota a `line vty 0 4` (5 sesiones concurrentes). El uso de `0 5` define 6 sesiones. En Cisco IOS, la sintaxis correcta para configurar el acceso remoto es `line vty 0 4` en modelos de entrada."
+    },
+    {
+      "id": 37,
+      "enunciado": "¿Cuál es el comando estándar para conectarse vía SSH a un router con la IP de destino con el nombre de usuario 'valencia'?",
+      "opciones": {
+        "a": "ssh -u valencia <IP>",
+        "b": "ssh -l valencia <IP_destino>",
+        "c": "ssh connect valencia",
+        "d": "ssh valencia connect"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El comando SSH de terminal utiliza el parámetro `-l` (abreviación de login) seguido del usuario (en este caso `valencia`) y luego la dirección IP de destino (ej: `ssh -l valencia 192.168.1.1`). También es equivalente `ssh valencia@192.168.1.1`."
+    },
+    {
+      "id": 38,
+      "enunciado": "¿Es posible configurar acceso remoto (SSH/Telnet) a un Switch de capa 2 o únicamente se puede configurar en routers?",
+      "opciones": {
+        "a": "No, los switches de capa 2 no entienden de IPs y solo se configuran localmente por consola física.",
+        "b": "Sí, configurando y levantando una dirección IP en una interfaz virtual (SVI), típicamente sobre la VLAN de administración (ej. interface Vlan 1).",
+        "c": "Solo si el switch tiene puertos WAN activos en sus interfaces principales.",
+        "d": "Sí, pero requiere instalar un módulo externo de enrutamiento."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Aunque un Switch de Capa 2 no enruta paquetes, cuenta con soporte para asignarle una dirección IP de administración a nivel de interfaz virtual de VLAN (SVI - Switch Virtual Interface). Al habilitar la VLAN con IP y una puerta de enlace (`ip default-gateway`), podemos gestionarlo de forma remota."
+    },
+    {
+      "id": 39,
+      "enunciado": "Observando el diagrama de red de la imagen, ¿cuál es el comando exacto para acceder por SSH al router de CADIZ desde el router de MADRID (donde trabaja el usuario JULIAN)?",
+      "fichero_imagen": "repaso_final_aso_image2.png",
+      "opciones": {
+        "a": "ssh -l cadiz 192.168.1.1",
+        "b": "ssh -l cadiz 150.150.0.2",
+        "c": "ssh -l madrid 150.150.0.1",
+        "d": "ssh -l julian 192.168.2.1"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El enlace serial WAN entre ambos routers utiliza la red 150.150.0.0. La IP del extremo de CADIZ es 150.150.0.2. Para conectar por SSH de MADRID a CADIZ, se apunta a esa IP pública/WAN utilizando el usuario de inicio de sesión 'cadiz'."
+    },
+    {
+      "id": 40,
+      "enunciado": "Observando el diagrama de red de la imagen, ¿cuál es el comando para acceder por SSH al router de CADIZ desde el equipo de la red local LAN del usuario ANA?",
+      "fichero_imagen": "repaso_final_aso_image2.png",
+      "opciones": {
+        "a": "ssh -l cadiz 192.168.2.1",
+        "b": "ssh -l cadiz 150.150.0.2",
+        "c": "ssh -l ana 192.168.1.2",
+        "d": "ssh -l madrid 150.150.0.1"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El equipo de ANA está en la red local interna de CADIZ (192.168.2.0/24). La IP de la puerta de enlace interna del router CADIZ es la 192.168.2.1. Por tanto, para conectarse al router de CADIZ desde esa red interna LAN, ANA debe usar esa IP."
+    },
+    {
+      "id": 41,
+      "enunciado": "¿Cuál es el puerto TCP estándar predeterminado utilizado para la conexión Raw TCP (JetDirect/AppSocket) en impresoras de red?",
+      "opciones": {
+        "a": "Puerto TCP 515",
+        "b": "Puerto TCP 9100",
+        "c": "Puerto TCP 631",
+        "d": "Puerto TCP 443"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El puerto TCP 9100 es el puerto estándar por defecto utilizado para la impresión directa a nivel de socket (impresión RAW o HP JetDirect). La mayoría de impresoras de red modernas escuchan en este puerto."
+    },
+    {
+      "id": 42,
+      "enunciado": "¿Para qué se reserva comúnmente el puerto TCP 515 en servicios de impresión de red?",
+      "opciones": {
+        "a": "Para cifrar trabajos de impresión en redes inalámbricas.",
+        "b": "Para sistemas antiguos y colas de impresión basadas en el protocolo LPD/LPR.",
+        "c": "Para consultas de diagnóstico SNMP sobre el estado de la impresora.",
+        "d": "Para imprimir páginas web directamente desde navegadores."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El puerto TCP 515 se asocia tradicionalmente al protocolo LPR/LPD (Line Printer Remote / Line Printer Daemon), originario de entornos Unix/Linux, utilizado para el envío de trabajos a servidores de impresión y colas."
+    },
+    {
+      "id": 43,
+      "enunciado": "¿Cuál es la función principal del puerto TCP 631 en servidores de impresión?",
+      "opciones": {
+        "a": "Impresión a través de redes locales o Internet mediante el protocolo IPP (Internet Printing Protocol).",
+        "b": "Comunicación remota segura SSH hacia el switch de la impresora.",
+        "c": "Sincronización de reloj mediante NTP de la impresora.",
+        "d": "Agregar la impresora a las directivas de seguridad local de Windows Server."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El protocolo IPP (Internet Printing Protocol) utiliza el puerto TCP 631. CUPS (el sistema de impresión de Linux/macOS) y las tecnologías de impresión modernas de red usan este puerto para enviar trabajos y administrar impresoras en red."
+    },
+    {
+      "id": 44,
+      "enunciado": "¿Qué utilidad tiene el protocolo SNMP a través del puerto UDP 161 en relación con una impresora de red?",
+      "opciones": {
+        "a": "Enviar los archivos y hojas de impresión en formato binario.",
+        "b": "Monitorear e informar remotamente el estado físico (si tiene papel, tóner, tinta o si hay atasco).",
+        "c": "Suministrar la configuración IP de manera dinámica al iniciar el equipo.",
+        "d": "Cifrar la cola de trabajos de impresión en red."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "SNMP (Simple Network Management Protocol) en el puerto UDP 161 no sirve para transferir los trabajos de impresión, sino para gestionar y monitorear el hardware de red, permitiendo conocer remotamente niveles de consumibles u alertas de la impresora."
+    },
+    {
+      "id": 45,
+      "enunciado": "En entornos modernos con alta necesidad de seguridad y encriptación de datos de impresión, ¿qué puerto y protocolo se utilizan?",
+      "opciones": {
+        "a": "Puerto TCP 443 mediante el protocolo IPPS (IPP sobre HTTPS).",
+        "b": "Puerto LPT1 (conexión física DB25).",
+        "c": "Puerto serial RS-232.",
+        "d": "Puerto UDP 69 mediante TFTP."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El protocolo IPPS (Internet Printing Protocol Secure) utiliza seguridad SSL/TLS encapsulada en el puerto HTTPS TCP 443 estándar de web para proteger los documentos impresos confidenciales en su trayecto por la red local o Internet."
+    },
+    {
+      "id": 46,
+      "enunciado": "¿Cuál es la ruta exacta y nombre del archivo de configuración principal de Samba en Ubuntu para definir los recursos compartidos?",
+      "opciones": {
+        "a": "/etc/samba.conf",
+        "b": "/etc/samba/smb.conf",
+        "c": "/var/samba/config.xml",
+        "d": "/etc/nsswitch.conf"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El archivo `/etc/samba/smb.conf` centraliza toda la configuración del demonio Samba en entornos Linux, incluyendo los directorios compartidos, los permisos, impresoras y la asociación de grupo de trabajo."
+    },
+    {
+      "id": 47,
+      "enunciado": "¿Qué paquete debemos instalar en sistemas operativos Linux para poder compartir archivos e impresoras de forma compatible con redes Windows?",
+      "opciones": {
+        "a": "apache2",
+        "b": "samba",
+        "c": "openssh-server",
+        "d": "nfs-kernel-server"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Samba es el paquete de software libre que implementa de forma nativa la suite de protocolos de comunicación SMB/CIFS de Microsoft, permitiendo que sistemas Linux colaboren y compartan recursos en redes de Windows."
+    },
+    {
+      "id": 48,
+      "enunciado": "Observando la configuración de la imagen en Samba, ¿qué línea debemos añadir al archivo `/etc/samba/smb.conf` para establecer el orden de prioridad en la resolución de nombres NetBIOS?",
+      "fichero_imagen": "repaso_final_aso_image3.png",
+      "opciones": {
+        "a": "`name resolve order = lmhosts hosts wins bcast`",
+        "b": "`hosts: files dns wins`",
+        "c": "`domain resolve = local dns`",
+        "d": "`dns-nameserver = 8.8.8.8`"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La directiva `name resolve order` en el archivo `smb.conf` de Samba especifica qué métodos (y en qué orden de precedencia) se usarán para resolver los nombres de computadoras NetBIOS (lmhosts, el archivo hosts local, servidores WINS y emisiones broadcast)."
+    },
+    {
+      "id": 49,
+      "enunciado": "Para establecer red e interoperar nombres y recursos compartidos de forma bidireccional entre Windows y Linux (Samba), debemos editar dos archivos en Linux. Uno es `/etc/samba/smb.conf`. Observando la imagen, ¿cuál es el segundo archivo de configuración del sistema a modificar?",
+      "fichero_imagen": "repaso_final_aso_image4.png",
+      "opciones": {
+        "a": "`/etc/nsswitch.conf`",
+        "b": "`/etc/resolv.conf`",
+        "c": "`/etc/fstab`",
+        "d": "`/etc/network/interfaces`"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El archivo `/etc/nsswitch.conf` controla el orden de las búsquedas en las bases de datos del sistema (usuarios, grupos, hosts, etc.). Para resolver nombres NetBIOS de Windows, se debe agregar el soporte 'wins' en la línea de 'hosts' de este archivo, junto a 'files' y 'dns'."
+    },
+    {
+      "id": 50,
+      "enunciado": "Cita tres de los lenguajes de programación más populares y extendidos en la actualidad para desarrollo general, web y automatización:",
+      "opciones": {
+        "a": "Assembly, COBOL, Fortran",
+        "b": "JavaScript, Python, PHP",
+        "c": "Cisco IOS, Bash, Powershell",
+        "d": "HTML, CSS, XML"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "JavaScript es el pilar fundamental del desarrollo web moderno (frontend/backend). Python es muy popular en IA, Big Data y scripting, y PHP sigue impulsando una gran proporción de los servicios backend de la web."
+    },
+    {
+      "id": 51,
+      "enunciado": "¿En qué lenguaje de programación para macros y automatización interna de aplicaciones está basado el paquete ofimático de Microsoft Office?",
+      "opciones": {
+        "a": "Python",
+        "b": "Visual Basic (VBA - Visual Basic para Aplicaciones)",
+        "c": "Java",
+        "d": "C++"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Microsoft Office utiliza internamente el dialecto de programación VBA (Visual Basic for Applications), derivado del histórico Visual Basic, para la creación de macros, automatizaciones y scripts de usuario en Excel, Word y Access."
+    },
+    {
+      "id": 52,
+      "enunciado": "¿A qué compañía informática le pertenecía el lenguaje de programación Java antes de ser adquirido por Oracle en 2010?",
+      "opciones": {
+        "a": "Microsoft",
+        "b": "Sun Microsystems",
+        "c": "IBM",
+        "d": "Apple"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Java fue concebido y desarrollado originalmente en 1995 por la empresa Sun Microsystems. Posteriormente, Oracle Corporation adquirió Sun Microsystems en enero de 2010, asumiendo la propiedad y gestión de Java."
+    },
+    {
+      "id": 53,
+      "enunciado": "¿Es posible realizar tareas de programación y automatización sobre los sistemas operativos de dispositivos de red Cisco?",
+      "opciones": {
+        "a": "No, los sistemas Cisco solo soportan configuración manual interactiva por CLI.",
+        "b": "Sí, mediante el uso de scripts de Python integrados, automatización remota con herramientas como Ansible, y el uso de APIs programables como RESTCONF/NETCONF.",
+        "c": "Solo si se instala previamente Windows Server dentro del router.",
+        "d": "Sí, pero se requiere flashear el equipo con una ROM modificada de Ubuntu."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En el marco de redes definidas por software (SDN) y NetDevOps, los dispositivos Cisco IOS modernos soportan la integración nativa y ejecución de scripts de Python, interactuar mediante llamadas de API REST y orquestación masiva con plataformas como Ansible."
+    },
+    {
+      "id": 54,
+      "enunciado": "¿Cuál es la diferencia principal en cuanto a las aplicaciones integradas entre la versión Standard y la versión Professional de Microsoft Office?",
+      "opciones": {
+        "a": "La edición Standard no contiene el procesador de texto Microsoft Word.",
+        "b": "La versión Professional incluye la base de datos Microsoft Access, mientras que la versión Standard carece de ella.",
+        "c": "La versión Professional tiene soporte exclusivo para conexiones web en red.",
+        "d": "La versión Standard no tiene soporte para la automatización de macros con VBA."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La diferencia clásica entre las licencias de Office Estándar y Office Profesional (u Office Pro Plus) es la inclusión de la base de datos relacional de escritorio Microsoft Access en la edición profesional."
+    },
+    {
+      "id": 55,
+      "enunciado": "Convierte y asocia de forma correcta los siguientes permisos numéricos creados con `chmod` en Linux con su representación en letras:\n\n1. `chmod 071 ...`\n2. `chmod 217 ...`\n3. `chmod 764 ...`",
+      "opciones": {
+        "a": "1: `--- rwx --x` | 2: `-w- --x rwx` | 3: `rwx rw- r--`",
+        "b": "1: `rwx --- --x` | 2: `-w- --x r-x` | 3: `rwx r-- rw-`",
+        "c": "1: `--- r-x rwx` | 2: `rwx -w- --x` | 3: `rw- r-- rwx`",
+        "d": "1: `--- --x rwx` | 2: `-w- --x rwx` | 3: `rwx rw- r--`"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El cálculo octal de permisos en Linux es: 4=Lectura(r), 2=Escritura(w), 1=Ejecución(x). Por ende: 071 es `--- rwx --x` (sin permisos para dueño, todos para grupo, ejecutar para otros); 217 es `-w- --x rwx` (escribir para dueño, ejecutar para grupo, todos para otros); y 764 es `rwx rw- r--` (todos para dueño, leer/escribir para grupo, leer para otros)."
+    },
+    {
+      "id": 56,
+      "enunciado": "¿Es posible eliminar (con 'del') o copiar (con 'copy') un archivo desde la consola de comandos de Windows (CMD) si dicho archivo tiene activado el atributo de 'oculto' (+h)?",
+      "opciones": {
+        "a": "Sí, los comandos 'del' y 'copy' ignoran cualquier atributo de archivo por defecto.",
+        "b": "No, el sistema devolverá error de acceso o archivo no encontrado. Primero se debe remover el atributo de oculto mediante el comando `attrib -h`.",
+        "c": "Sí, pero se requiere abrir la consola de CMD con privilegios elevados de Administrador.",
+        "d": "No, los archivos ocultos de Windows sólo se pueden copiar y borrar desde el entorno gráfico de Windows Explorer."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "CMD protege los archivos ocultos (`+h`) y de sistema (`+s`) de operaciones accidentales. Los comandos básicos `del` y `copy` fallarán indicando que no encuentran el archivo a menos que usemos modificadores especiales o eliminemos primero el atributo mediante el comando `attrib -h <archivo>`."
+    }
+  ]
+}

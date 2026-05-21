@@ -1,0 +1,246 @@
+{
+  "titulo": "2ª Autoevaluación curso 25/26",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Cuál es la primera etapa del ciclo de vida del producto?",
+      "opciones": {
+        "a": "Introducción",
+        "b": "Declive",
+        "c": "Crecimiento",
+        "d": "Madurez"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La fase de Introducción ocurre cuando el producto se lanza al mercado por primera vez. Es una etapa crítica donde se realizan grandes esfuerzos de comunicación y el volumen de ventas suele ser bajo."
+    },
+    {
+      "id": 2,
+      "enunciado": "Según el documento, reciclar aluminio permite ahorrar aproximadamente…",
+      "opciones": {
+        "a": "25% de la energía",
+        "b": "50% de la energía",
+        "c": "10% de la energía",
+        "d": "95% de la energía"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El aluminio es uno de los materiales más eficientes para reciclar. Producir aluminio a partir de chatarra reciclada requiere solo el 5% de la energía necesaria para extraerlo del mineral (bauxita), lo que supone un ahorro del 95%."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Cuál es la diferencia principal entre sostenibilidad y desarrollo sostenible?",
+      "opciones": {
+        "a": "El desarrollo sostenible excluye las generaciones futuras.",
+        "b": "La sostenibilidad solo se aplica a las empresas.",
+        "c": "La sostenibilidad incluye aspectos económicos, el desarrollo sostenible no.",
+        "d": "El desarrollo sostenible es más amplio e integra economía, medio ambiente y bienestar social."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Mientras que la sostenibilidad puede referirse a la capacidad de un sistema para mantenerse, el Desarrollo Sostenible es un concepto político y social que busca el equilibrio entre el crecimiento económico, la inclusión social y la protección ambiental (Informe Brundtland)."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Qué documento introdujo por primera vez el concepto moderno de desarrollo sostenible?",
+      "opciones": {
+        "a": "Cumbre de París",
+        "b": "Pacto Mundial",
+        "c": "Informe Brundtland",
+        "d": "Agenda 2030"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Publicado en 1987 por la Comisión Mundial sobre Medio Ambiente y Desarrollo de la ONU, el Informe Brundtland ('Nuestro Futuro Común') definió el desarrollo sostenible como el que satisface las necesidades presentes sin comprometer las futuras."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Cuál es el objetivo principal del Acuerdo de París (2016)?",
+      "opciones": {
+        "a": "Limitar el calentamiento global y reducir emisiones",
+        "b": "Regular el comercio mundial",
+        "c": "Financiar proyectos sociales",
+        "d": "Proteger la biodiversidad marina"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Es un tratado internacional vinculante que busca limitar el aumento de la temperatura global a menos de 2°C (preferiblemente 1,5°C) respecto a los niveles preindustriales mediante la reducción de emisiones de gases de efecto invernadero."
+    },
+    {
+      "id": 6,
+      "enunciado": "¿Qué significan las siglas ASG en el ámbito empresarial?",
+      "opciones": {
+        "a": "Ambiente, Sociedad y Gestión",
+        "b": "Actividad, Seguridad y Gestión",
+        "c": "Ambientales, Sociales y de Gobernanza",
+        "d": "Aprovechamiento, Sostenibilidad y Gobierno"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Los criterios ASG (en inglés ESG) son los tres factores principales para medir la sostenibilidad y el impacto ético de una inversión o empresa: gestión ambiental, compromiso social y transparencia en la gobernanza."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Cuál de los siguientes es un criterio SOCIAL dentro de los ASG?",
+      "opciones": {
+        "a": "Gestión ética de compras",
+        "b": "Políticas de igualdad y diversidad",
+        "c": "Reducción de emisiones",
+        "d": "Transparencia en decisiones"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El pilar Social evalúa la relación de la empresa con las personas: empleados (salud, seguridad, igualdad), proveedores, clientes y las comunidades donde opera."
+    },
+    {
+      "id": 8,
+      "enunciado": "Las empresas que aplican criterios ASG…",
+      "opciones": {
+        "a": "Mejoran su imagen corporativa y reducen costes",
+        "b": "Dificultan la conciliación de los empleados",
+        "c": "Corren más riesgos legales",
+        "d": "Eliminan la necesidad de auditorías"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Adoptar estos criterios no solo es ético, sino rentable. Mejora la eficiencia energética (menos costes), atrae talento, reduce riesgos regulatorios y mejora la valoración de los inversores."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Cuál de las 5 P del desarrollo sostenible se relaciona con alianzas internacionales?",
+      "opciones": {
+        "a": "Partenariado (Alianzas)",
+        "b": "Personas",
+        "c": "Paz",
+        "d": "Prosperidad"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Las 5 P son: Personas, Planeta, Prosperidad, Paz y Partenariado (Alianzas). El Partenariado destaca la necesidad de movilizar los medios necesarios para implementar la Agenda 2030 mediante una alianza global."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Quiénes son los stakeholders de una empresa?",
+      "opciones": {
+        "a": "Personas o grupos afectados por decisiones de la empresa",
+        "b": "Únicamente los trabajadores",
+        "c": "Solo los propietarios",
+        "d": "Solo clientes y proveedores"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Los stakeholders (o partes interesadas) incluyen a cualquier actor que influye o es influido por la empresa: empleados, accionistas, clientes, proveedores, sindicatos, el gobierno y la comunidad local."
+    },
+    {
+      "id": 11,
+      "enunciado": "¿Qué tipo de inversión financia exclusivamente proyectos que ayudan al medioambiente?",
+      "opciones": {
+        "a": "Capital de riesgo social",
+        "b": "Fondos tradicionales",
+        "c": "Bonos verdes",
+        "d": "Préstamos ordinarios"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Los bonos verdes son instrumentos de deuda emitidos por instituciones para financiar exclusivamente proyectos 'verdes' como energías renovables, transporte limpio o gestión de residuos."
+    },
+    {
+      "id": 12,
+      "enunciado": "En la fase de introducción, ¿qué acción está relacionada con la sostenibilidad?",
+      "opciones": {
+        "a": "Reducción de la producción para evitar excedentes",
+        "b": "Retirar el producto del mercado",
+        "c": "Diseñar envases ecológicos y reciclables",
+        "d": "Aumentar la obsolescencia programada"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Desde el inicio del ciclo de vida (Introducción), aplicar el ecodiseño y elegir envases sostenibles marca la diferencia en la huella ambiental que dejará el producto en el futuro."
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Cuál de los siguientes es un indicador clave de sostenibilidad?",
+      "opciones": {
+        "a": "Consumo de energía y agua",
+        "b": "Coste de marketing",
+        "c": "Nivel de ventas internacionales",
+        "d": "Número de productos en catálogo"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Los indicadores (KPIs) de sostenibilidad permiten cuantificar el desempeño ambiental: emisiones de CO2, volumen de agua consumida, porcentaje de residuos reciclados y consumo energético."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Qué característica define la fase de crecimiento del ciclo de vida?",
+      "opciones": {
+        "a": "Estabilización de ventas",
+        "b": "Reducción de la demanda",
+        "c": "Aumento de la demanda",
+        "d": "Fin del producto en el mercado"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "En la fase de Crecimiento, el producto es aceptado por el mercado, las ventas suben rápidamente y se alcanza el punto de equilibrio. Es el momento de optimizar la distribución sostenible."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Qué objetivo principal tiene la fase de madurez?",
+      "opciones": {
+        "a": "Eliminar los residuos generados",
+        "b": "Retirar el producto del mercado",
+        "c": "Dar a conocer el producto",
+        "d": "Mantener la demanda estable y diferenciarse"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "En la Madurez, el mercado está saturado y las ventas se estabilizan. La empresa busca eficiencia de costes y diferenciarse (por ejemplo, mediante certificaciones de sostenibilidad) para mantener su cuota."
+    },
+    {
+      "id": 16,
+      "enunciado": "En la fase de declive, una estrategia sostenible correcta es…",
+      "opciones": {
+        "a": "Destruir los excedentes para liberar inventario",
+        "b": "Incrementar el gasto publicitario",
+        "c": "Reciclar componentes para fabricar nuevos productos",
+        "d": "Aumentar la extracción de materias primas"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "En el Declive, las ventas caen. Una empresa responsable debe gestionar el fin de vida del producto, recuperando materiales y componentes valiosos para reinsertarlos en la economía circular."
+    },
+    {
+      "id": 17,
+      "enunciado": "¿Qué criterio de sostenibilidad busca minimizar el consumo energético durante la fabricación?",
+      "opciones": {
+        "a": "Economía colaborativa",
+        "b": "Obsolescencia programada",
+        "c": "Ecodiseño",
+        "d": "Eficiencia energética"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La eficiencia energética consiste en optimizar los procesos para obtener los mismos resultados usando menos energía, lo que reduce las emisiones de GEI y los costes operativos."
+    },
+    {
+      "id": 18,
+      "enunciado": "¿Cuál de las siguientes opciones es un material sostenible mencionado en los criterios de sostenibilidad?",
+      "opciones": {
+        "a": "Poliestireno expandido",
+        "b": "Vidrio reciclado",
+        "c": "Plástico de un solo uso",
+        "d": "Carbón mineral"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El vidrio reciclado mantiene sus propiedades infinitamente, ahorra energía en su fundición y evita el uso de arena virgen, siendo un ejemplo perfecto de material circular."
+    },
+    {
+      "id": 19,
+      "enunciado": "¿Qué normativa establece la obligación de separar residuos textiles antes de 2025?",
+      "opciones": {
+        "a": "Directiva (UE) 2018/851",
+        "b": "Protocolo de Kioto",
+        "c": "Acuerdo de París",
+        "d": "Ley 7/2022 de residuos de España"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La Directiva Europea de Residuos 2018/851 obliga a los estados miembros a establecer una recogida separada para los textiles antes del 1 de enero de 2025 para fomentar el reciclaje en la industria de la moda."
+    },
+    {
+      "id": 20,
+      "enunciado": "¿Cuál es una de las ventajas del reciclaje mencionadas?",
+      "opciones": {
+        "a": "Disminuye la contaminación y protege hábitats",
+        "b": "Aumentar la extracción de recursos naturales",
+        "c": "Reduce la vida útil de los productos reciclados",
+        "d": "Requiere más energía que producir desde cero"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Reciclar evita que los residuos terminen en vertederos o en la naturaleza, reduciendo la contaminación del suelo y el agua, y conservando los ecosistemas de donde se extraen los recursos."
+    }
+  ]
+}

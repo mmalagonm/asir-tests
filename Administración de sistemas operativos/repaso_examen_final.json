@@ -1,0 +1,416 @@
+{
+  "asignatura": "Administracion de sistemas operativos",
+  "codigo_archivo": "repaso_examen_final",
+  "titulo": "Repaso Examen Final",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Recién instalado un Windows Server 2019 en modo local con las opciones predeterminadas pertenece a algún dominio?",
+      "opciones": {
+        "a": "No",
+        "b": "Sí",
+        "c": "Depende de la edición",
+        "d": "Solo si se instala con red"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Por defecto, un servidor recién instalado se encuentra en un grupo de trabajo (WORKGROUP) y no pertenece a ningún dominio hasta que es promovido o unido a uno."
+    },
+    {
+      "id": 2,
+      "enunciado": "Instalas dos Windows 10 con IPs 192.168.1.2 y 192.168.1.3. ¿Por defecto pueden verse en red?",
+      "opciones": {
+        "a": "Sí, al estar en la misma subred",
+        "b": "No",
+        "c": "Depende del router",
+        "d": "Solo si tienen el mismo nombre de equipo"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Por defecto, Windows 10 puede tener bloqueado el descubrimiento de redes o el ICMP (ping) en el firewall, impidiendo que se vean inicialmente."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Puede degradarse un Controlador de Dominio?",
+      "opciones": {
+        "a": "No, es una operación irreversible",
+        "b": "Sí",
+        "c": "Solo si hay otro controlador en la red",
+        "d": "Solo en versiones anteriores a 2016"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Un controlador de dominio puede ser degradado a servidor miembro utilizando el Asistente para quitar roles y características o mediante PowerShell."
+    },
+    {
+      "id": 4,
+      "enunciado": "Al crear un usuario en Windows Server, ¿puede este iniciar sesión localmente por defecto en el servidor?",
+      "opciones": {
+        "a": "Sí",
+        "b": "Solo si es Administrador",
+        "c": "No, por defecto no",
+        "d": "Solo si pertenece al grupo Usuarios"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Por seguridad, los usuarios estándar no tienen permiso de inicio de sesión local en controladores de dominio por defecto."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Se puede configurar Windows Server para que un usuario del dominio sin pertenecer a grupos importantes pueda iniciar sesión localmente?",
+      "opciones": {
+        "a": "Sí",
+        "b": "No, es obligatorio ser Administrador",
+        "c": "Solo mediante Escritorio Remoto",
+        "d": "No, va en contra de las políticas de Microsoft"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Se puede otorgar el derecho de 'Permitir inicio de sesión local' a través de Directivas de Grupo (GPO) a cualquier usuario o grupo."
+    },
+    {
+      "id": 6,
+      "enunciado": "¿Cuál es el valor máximo que podemos configurar en el historial de contraseñas de Windows Server?",
+      "opciones": {
+        "a": "12",
+        "b": "24",
+        "c": "50",
+        "d": "Ilimitado"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El historial de contraseñas permite recordar hasta 24 contraseñas anteriores para evitar que el usuario reutilice las mismas rápidamente."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Se puede restringir configurando una GPO a los Administradores y a los Administradores del dominio?",
+      "opciones": {
+        "a": "No, los administradores siempre saltan las GPO",
+        "b": "Sí",
+        "c": "Solo a los locales, no a los de dominio",
+        "d": "Solo en Windows 10, no en Server"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Las directivas de grupo pueden aplicarse a todos los usuarios y equipos dentro de su ámbito, incluidos los administradores si no se excluyen explícitamente."
+    },
+    {
+      "id": 8,
+      "enunciado": "Si no disponemos de la pestaña de 'SEGURIDAD' en las propiedades de una carpeta en Windows Server, ¿cuál es la causa más probable?",
+      "opciones": {
+        "a": "El usuario no es administrador",
+        "b": "La partición no está en formato NTFS",
+        "c": "El servicio de seguridad está detenido",
+        "d": "La carpeta está compartida"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La pestaña de Seguridad (permisos ACL) solo está disponible en sistemas de archivos que la soporten, como NTFS o ReFS. FAT32 no dispone de esta funcionalidad."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Con qué finalidad principal se creó el sistema de archivos NTFS?",
+      "opciones": {
+        "a": "Para ser compatible con Linux",
+        "b": "Para incrementar la seguridad y estabilidad",
+        "c": "Para reducir el espacio ocupado por el SO",
+        "d": "Para permitir nombres de archivo cortos"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "NTFS fue diseñado para proporcionar características avanzadas como permisos de seguridad, cuotas de disco, compresión y transacciones."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Cuáles son las características principales de instalar Windows Server Core?",
+      "opciones": {
+        "a": "Incluye entorno gráfico completo",
+        "b": "Es para instalaciones con recursos limitados y equipos con pocos recursos",
+        "c": "Solo sirve para servidores de archivos",
+        "d": "No permite el uso de PowerShell"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Server Core reduce la superficie de ataque y el consumo de recursos al eliminar la interfaz gráfica de usuario (GUI)."
+    },
+    {
+      "id": 11,
+      "enunciado": "¿Qué sucede si un usuario pertenece a un grupo con privilegios de administrador y a otro sin privilegios, y aplicamos permisos restrictivos?",
+      "opciones": {
+        "a": "Prevalece el permiso de administrador",
+        "b": "El permiso más restrictivo es el que prevalece",
+        "c": "Se bloquea el acceso al usuario",
+        "d": "Se hace una media de ambos permisos"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En el modelo de seguridad de Windows, las denegaciones explícitas o los permisos más restrictivos suelen tener prioridad sobre los permisivos."
+    },
+    {
+      "id": 12,
+      "enunciado": "Al cambiar el nombre de un dominio, ¿cambia su Identificador de Seguridad (SID)?",
+      "opciones": {
+        "a": "Sí, obligatoriamente",
+        "b": "El identificador no cambia",
+        "c": "Cambia solo si el dominio tiene más de 10 usuarios",
+        "d": "Depende de la versión del nivel funcional"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El SID es único y permanece constante para el objeto aunque se cambien otros atributos como el nombre."
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Cómo puede configurarse la relación de confianza entre dos Windows Server?",
+      "opciones": {
+        "a": "Solo unidireccional",
+        "b": "Solo bidireccional",
+        "c": "Se pueden configurar de las dos maneras",
+        "d": "Es automática y no se puede configurar"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Las relaciones de confianza pueden ser de una sola vía (unidireccional) o de dos vías (bidireccional) según las necesidades de acceso entre dominios."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Qué sucede a las máquinas clientes si cerramos una sesión local o apagamos el servidor principal?",
+      "opciones": {
+        "a": "Pierden todo acceso al equipo local",
+        "b": "Nos quedamos con los recursos locales únicamente",
+        "c": "Se reinician automáticamente",
+        "d": "No sucede nada, siguen trabajando igual"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Al no estar disponible el servidor, los recursos de red (carpetas compartidas, perfiles móviles) dejan de estar accesibles, quedando solo lo local."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Qué se consigue con el permiso de 'Toma de posesión'?",
+      "opciones": {
+        "a": "Poder leer el archivo solamente",
+        "b": "Convertirnos en dueños de la carpeta o archivo",
+        "c": "Borrar el archivo sin ser administradores",
+        "d": "Cambiar el nombre del servidor"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La toma de posesión permite a un usuario con los privilegios adecuados convertirse en el propietario (owner) de un objeto para gestionar sus permisos."
+    },
+    {
+      "id": 16,
+      "enunciado": "¿Qué hace la orden 'attrib +r'?",
+      "opciones": {
+        "a": "Asigna atributo de lectura",
+        "b": "Borra el archivo",
+        "c": "Asigna atributo de sistema",
+        "d": "Quita el atributo de oculto"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El comando 'attrib' con '+r' establece el atributo de 'Sólo lectura' (Read-only)."
+    },
+    {
+      "id": 17,
+      "enunciado": "¿Cómo se visualiza el contenido de un archivo de texto desde la consola de comandos de Windows?",
+      "opciones": {
+        "a": "cat",
+        "b": "view",
+        "c": "type",
+        "d": "show"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El comando 'type' muestra el contenido de uno o más archivos de texto en la salida estándar de CMD."
+    },
+    {
+      "id": 18,
+      "enunciado": "¿De cuántos bits está compuesta la dirección MAC de un equipo?",
+      "opciones": {
+        "a": "32 bits",
+        "b": "48 bits",
+        "c": "64 bits",
+        "d": "128 bits"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Una dirección MAC consta de 48 bits, representados generalmente por 6 grupos de dos dígitos hexadecimales."
+    },
+    {
+      "id": 19,
+      "enunciado": "¿Qué representan los primeros 3 pares de datos de una dirección MAC?",
+      "opciones": {
+        "a": "El número de serie",
+        "b": "El fabricante (OUI)",
+        "c": "El tipo de protocolo",
+        "d": "La velocidad de la tarjeta"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Los primeros 24 bits (3 primeros pares) identifican de forma única al fabricante del hardware."
+    },
+    {
+      "id": 20,
+      "enunciado": "¿Cómo comienza correctamente un script de Bash en Ubuntu?",
+      "opciones": {
+        "a": "#!/bin/bash",
+        "b": "#!/bash",
+        "c": "#/bin/sh",
+        "d": "!#/bin/bash"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La línea 'shebang' #!/bin/bash indica al sistema que debe usar el intérprete de Bash para ejecutar el archivo."
+    },
+    {
+      "id": 21,
+      "enunciado": "¿Qué se consigue con 'cat /etc/group $variable' dentro de un script en Linux?",
+      "opciones": {
+        "a": "Borrar un grupo",
+        "b": "Listar o buscar información de grupos",
+        "c": "Cambiar la contraseña de un grupo",
+        "d": "Crear un nuevo grupo"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El comando 'cat' sobre /etc/group muestra la información de los grupos definidos en el sistema."
+    },
+    {
+      "id": 22,
+      "enunciado": "¿Cómo se ejecuta habitualmente un script llamado 'nombre.sh' en Ubuntu desde el directorio actual?",
+      "opciones": {
+        "a": "run nombre.sh",
+        "b": "./nombre.sh",
+        "c": "execute nombre.sh",
+        "d": "sh /nombre.sh"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Se requiere anteponer './' para indicar que el ejecutable se encuentra en el directorio actual, siempre que tenga permisos de ejecución."
+    },
+    {
+      "id": 23,
+      "enunciado": "Para que los usuarios puedan ejecutar un script creado por el SuperUsuario, ¿qué debe hacer este?",
+      "opciones": {
+        "a": "Nada, los scripts son públicos",
+        "b": "Otorgar permisos con chmod",
+        "c": "Copiarlo a la carpeta de cada usuario",
+        "d": "Cambiarle el nombre a .exe"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Es necesario asignar permisos de ejecución (ej. chmod +x) para que un archivo pueda ser ejecutado como programa."
+    },
+    {
+      "id": 24,
+      "enunciado": "¿Qué extensión debe tener un script en Windows (procesamiento por lotes)?",
+      "opciones": {
+        "a": ".sh",
+        "b": ".bat",
+        "c": ".script",
+        "d": ".exe"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Los archivos .bat o .cmd son los utilizados para scripts de procesamiento por lotes en Windows."
+    },
+    {
+      "id": 25,
+      "enunciado": "¿SSH encripta la comunicación y a qué puerto pertenece por defecto?",
+      "opciones": {
+        "a": "No encripta, puerto 23",
+        "b": "Sí encripta, puerto 22",
+        "c": "Sí encripta, puerto 21",
+        "d": "No encripta, puerto 22"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "SSH (Secure Shell) proporciona un canal seguro sobre una red insegura y usa el puerto TCP 22."
+    },
+    {
+      "id": 26,
+      "enunciado": "¿Cuál es la orden para llamar al escritorio remoto en Windows?",
+      "opciones": {
+        "a": "remote",
+        "b": "mstsc",
+        "c": "rdp",
+        "d": "desktop"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "mstsc (Microsoft Terminal Services Client) es el ejecutable de la Conexión a Escritorio remoto."
+    },
+    {
+      "id": 27,
+      "enunciado": "¿Qué puerto utiliza el protocolo Telnet y es seguro?",
+      "opciones": {
+        "a": "Puerto 23, no es seguro (no encripta)",
+        "b": "Puerto 22, es seguro",
+        "c": "Puerto 23, es seguro",
+        "d": "Puerto 80, no es seguro"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Telnet envía toda la información, incluidas contraseñas, en texto plano a través del puerto 23."
+    },
+    {
+      "id": 28,
+      "enunciado": "¿Cuál es el código para acceder por SSH a un dispositivo con el usuario 'valencia'?",
+      "opciones": {
+        "a": "ssh -u valencia",
+        "b": "ssh -l valencia",
+        "c": "ssh @valencia",
+        "d": "ssh valencia:login"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El parámetro '-l' en el comando ssh especifica el nombre de usuario para iniciar sesión."
+    },
+    {
+      "id": 29,
+      "enunciado": "¿Cuál es el puerto estándar para impresoras de red mediante TCP?",
+      "opciones": {
+        "a": "80",
+        "b": "9100",
+        "c": "443",
+        "d": "515"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El puerto 9100 es el utilizado habitualmente por el protocolo RAW para impresión directa."
+    },
+    {
+      "id": 30,
+      "enunciado": "¿Qué protocolo se utiliza para informar si la impresora tiene papel o tinta (aunque no imprima)?",
+      "opciones": {
+        "a": "HTTP",
+        "b": "SNMP (UDP 161)",
+        "c": "FTP",
+        "d": "SMTP"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "SNMP permite la gestión y monitorización de dispositivos de red, como el estado de consumibles en impresoras."
+    },
+    {
+      "id": 31,
+      "enunciado": "¿Cuál es el nombre del archivo principal de configuración de Samba en Ubuntu?",
+      "opciones": {
+        "a": "/etc/samba.conf",
+        "b": "/etc/samba/smb.conf",
+        "c": "/usr/local/samba.cfg",
+        "d": "/etc/smb/samba.conf"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "smb.conf es el archivo donde se definen los recursos compartidos y la configuración del servidor Samba."
+    },
+    {
+      "id": 32,
+      "enunciado": "A qué compañía le pertenece actualmente el lenguaje de programación Java?",
+      "opciones": {
+        "a": "Microsoft",
+        "b": "Oracle (antes Sun Microsystems)",
+        "c": "Google",
+        "d": "IBM"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Java fue creado por Sun Microsystems, la cual fue adquirida por Oracle Corporation en 2010."
+    },
+    {
+      "id": 33,
+      "enunciado": "Convierte a formato de letras el permiso CHMOD '764'",
+      "opciones": {
+        "a": "RWX - RW- R--",
+        "b": "RWX - R-X - R--",
+        "c": "RW- - RW- - R--",
+        "d": "RWX - RW- - RW-"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "7=RWX (4+2+1), 6=RW- (4+2), 4=R-- (4)."
+    },
+    {
+      "id": 34,
+      "enunciado": "¿Se puede eliminar o copiar un archivo oculto desde la consola de Windows directamente?",
+      "opciones": {
+        "a": "Sí, sin problemas",
+        "b": "No, hay que quitar primero el atributo de oculto",
+        "c": "Solo si usamos /f",
+        "d": "Solo con PowerShell, no con CMD"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Muchos comandos de CMD no actúan sobre archivos con el atributo 'H' (Hidden) a menos que se especifique o se cambie el atributo."
+    }
+  ]
+}

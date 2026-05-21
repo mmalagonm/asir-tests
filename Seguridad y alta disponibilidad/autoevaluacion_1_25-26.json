@@ -1,0 +1,248 @@
+{
+  "asignatura": "Seguridad",
+  "codigo_archivo": "autoevaluacion_1_25-26",
+  "titulo": "1ª Autoevaluación Curso 2025/2026",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "De las siguientes afirmaciones indica cuál no es un malware:",
+      "opciones": {
+        "a": "Bug",
+        "b": "Rootkit",
+        "c": "Troyano",
+        "d": "Virus"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Un 'bug' es un error o fallo en el diseño o programación de un software. Aunque puede ser explotado, no es software malicioso (malware) creado intencionadamente para causar daño, a diferencia de los rootkits, troyanos o virus."
+    },
+    {
+      "id": 2,
+      "enunciado": "Marca la opción que representa el concepto de CONFIDENCIALIDAD:",
+      "opciones": {
+        "a": "Garantiza que el acceso a la información no se produce de forma no autorizada.",
+        "b": "Garantiza que la información sólo puede ser modificada si se dispone de la autorización para ello.",
+        "c": "Garantiza que la información llega al destinatario con los permisos adecuados.",
+        "d": "Garantiza que las personas o sistemas autorizados para acceder a los datos, puedan hacerlo cuando lo necesiten."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La confidencialidad es el pilar de la seguridad que asegura que la información sea accesible únicamente por aquellos usuarios o sistemas que tengan la debida autorización."
+    },
+    {
+      "id": 3,
+      "enunciado": "Marca la opción que incluye los principios básicos de la Seguridad Informática:",
+      "opciones": {
+        "a": "Confidencialidad, Autenticación y Seguridad",
+        "b": "Confidencialidad, Integridad y Autenticación",
+        "c": "Confidencialidad, Integridad y Autorización",
+        "d": "Confidencialidad, Integridad y Disponibilidad"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Los tres pilares fundamentales (la Tríada CIA) son: Confidencialidad (privacidad), Integridad (exactitud) y Disponibilidad (acceso cuando se requiera)."
+    },
+    {
+      "id": 4,
+      "enunciado": "De las siguientes afirmaciones indica cuál no es una amenaza lógica:",
+      "opciones": {
+        "a": "Malware",
+        "b": "Ingeniería social.",
+        "c": "Ataque de puertos.",
+        "d": "Desgaste de un dispositivo."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El desgaste de un dispositivo es una amenaza física o de hardware. Las amenazas lógicas son aquellas que atacan al software o a la información a través de la red o del propio sistema (virus, ataques, etc.)."
+    },
+    {
+      "id": 5,
+      "enunciado": "Marca la opción que representa el concepto de DISPONIBILIDAD:",
+      "opciones": {
+        "a": "Garantiza que las personas o sistemas autorizados para acceder a los datos, puedan hacerlo cuando lo necesiten.",
+        "b": "Garantiza que la información sólo puede ser modificada si se dispone de la autorización para ello.",
+        "c": "Garantiza que el acceso a la información se realiza de forma controlada.",
+        "d": "Garantiza que el acceso a la información no se produce de forma no autorizada."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La disponibilidad garantiza que tanto los sistemas como los datos estén operativos y accesibles para los usuarios autorizados en el momento en que los necesiten."
+    },
+    {
+      "id": 6,
+      "enunciado": "Marca la opción que representa el concepto de INTEGRIDAD:",
+      "opciones": {
+        "a": "Garantiza el acceso adecuado a la información.",
+        "b": "Garantiza que la información sólo puede ser modificada si se dispone de la autorización para ello.",
+        "c": "Garantiza que el acceso a la información no se produce de forma no autorizada.",
+        "d": "Garantiza que las personas o sistemas autorizados para acceder a los datos, puedan hacerlo cuando lo necesiten."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La integridad asegura que la información se mantenga exacta y completa, y que no haya sido alterada por personas o procesos no autorizados."
+    },
+    {
+      "id": 7,
+      "enunciado": "Marca la opción que representa el concepto de TRAZABILIDAD:",
+      "opciones": {
+        "a": "Garantiza la participación de las partes en una comunicación.",
+        "b": "Característica de los sistemas informáticos que mide el tiempo de funcionamiento sin fallos.",
+        "c": "Característica de los sistemas informáticos que busca detectar por dónde van pasando los paquetes en las comunicaciones.",
+        "d": "Busca asegurar qué en todo momento se podrá determinar quién hizo qué y en qué momento."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La trazabilidad (o auditoría) permite registrar y seguir la pista de todas las acciones realizadas en un sistema, asociándolas unívocamente a un usuario o proceso."
+    },
+    {
+      "id": 8,
+      "enunciado": "De las siguientes afirmaciones indica cuál no es una vulnerabilidad de hardware:",
+      "opciones": {
+        "a": "Error de programación de un dispositivo.",
+        "b": "Error de fabricación de un dispositivo.",
+        "c": "Mal diseño del dispositivo.",
+        "d": "Fallo en el suministro de energía eléctrica."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Un error de programación es una vulnerabilidad de software o lógica, no de hardware físico, aunque el software resida en el firmware de un dispositivo."
+    },
+    {
+      "id": 9,
+      "enunciado": "Marca la opción que representa el concepto de AUTENTICACION:",
+      "opciones": {
+        "a": "Define, mantiene y elimina las autorizaciones de los usuarios del sistema.",
+        "b": "Busca verificar la identidad del usuario al acceder a los sistemas o información.",
+        "c": "Determina qué, cómo y cuándo, un usuario autenticado puede utilizar los recursos de la organización.",
+        "d": "Establece el mecanismo por el que el usuario se va a identificar en el sistema"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La autenticación es el proceso de verificar que alguien es quien dice ser, generalmente mediante algo que sabe (password), algo que tiene (token) o algo que es (biometría)."
+    },
+    {
+      "id": 10,
+      "enunciado": "Marca la opción que representa el concepto de FIABILIDAD:",
+      "opciones": {
+        "a": "Garantiza la participación de las partes en una comunicación.",
+        "b": "Garantiza el acceso adecuado a la información.",
+        "c": "Característica de los sistemas informáticos que mide el tiempo de funcionamiento sin fallos.",
+        "d": "Busca asegurar qué en todo momento se podrá determinar quién hizo qué y en qué momento."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La fiabilidad se refiere a la probabilidad de que un sistema realice su función prevista de manera correcta durante un período de tiempo determinado sin fallos."
+    },
+    {
+      "id": 11,
+      "enunciado": "De las siguientes afirmaciones indicar cuál de ellas es correcta dentro del ámbito de la seguridad:",
+      "opciones": {
+        "a": "Riesgo para un sistema informático es lo mismo que amenaza.",
+        "b": "El riesgo mide las pérdidas económicas provocadas por una amenaza.",
+        "c": "En el sistema debe existir y utilizarse un perfil de usuario con privilegios restringidos.",
+        "d": "Respecto a posibles ataques a realizados por personas, la ingeniería social es un acto tipificado como delito por la ley."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El principio de mínimo privilegio dicta que los usuarios deben operar con el nivel de acceso más bajo posible necesario para su trabajo, reduciendo así la superficie de ataque y el impacto de posibles errores o ataques."
+    },
+    {
+      "id": 12,
+      "enunciado": "De las siguientes afirmaciones indica cuál no corresponde a un ataque pasivo:",
+      "opciones": {
+        "a": "En la mayoría de los casos el afectado no percibe el ataque",
+        "b": "Producen cambios en el sistema.",
+        "c": "Se limitan a extraer información.",
+        "d": "No producen cambios"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Los ataques pasivos (como el sniffing) se caracterizan por no alterar los datos ni el estado del sistema; su objetivo es solo la obtención de información de forma silenciosa."
+    },
+    {
+      "id": 13,
+      "enunciado": "De las siguientes afirmaciones indica cuál indica el concepto correcto de troyano:",
+      "opciones": {
+        "a": "Malware que se propaga insertando una copia de sí mismo dentro de otro programa.",
+        "b": "Malware cuyo funcionamiento se basa en la ejecución de otro programa anfitrión, ejecutado por el usuario casi siempre por engaño, que lo activa.",
+        "c": "Malware que ofrece un modo de acceso al sistema esquivando las medidas de seguridad cerrando puertos.",
+        "d": "Malware con capacidad de autorréplica y que actúan en entornos de red explotando alguna vulnerabilidad de algún protocolo o servicio."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Un troyano es un programa malicioso que se presenta al usuario como algo legítimo e inofensivo para engañarle y lograr su ejecución, permitiendo así el control remoto o el robo de datos."
+    },
+    {
+      "id": 14,
+      "enunciado": "De las siguientes afirmaciones indicar cuál de ellas es la correcta.",
+      "opciones": {
+        "a": "Un ataque es la realización de una amenaza.",
+        "b": "Hay riesgo en el sistema, aunque no exista amenaza.",
+        "c": "El impacto mide la probabilidad de que se produzca una vulnerabilidad",
+        "d": "Vulnerabilidad es lo mismo que amenaza."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Una amenaza es un peligro potencial, una vulnerabilidad es una debilidad, y el ataque es la materialización o ejecución de esa amenaza explotando la debilidad."
+    },
+    {
+      "id": 15,
+      "enunciado": "Marca la opción que representa el concepto de NO REPUDIO:",
+      "opciones": {
+        "a": "Característica de los sistemas informáticos que busca evitar ser rechazado en las comunicaciones.",
+        "b": "Busca asegurar qué en todo momento se podrá determinar quién hizo qué y en qué momento.",
+        "c": "Característica de los sistemas informáticos que mide el tiempo de funcionamiento sin fallos.",
+        "d": "Garantiza la participación de las partes en una comunicación."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El no repudio asegura que ninguna de las partes implicadas en una comunicación o transacción pueda negar haber participado en ella (no repudio en origen o en destino)."
+    },
+    {
+      "id": 16,
+      "enunciado": "De las siguientes afirmaciones indica cuál indica el concepto correcto de gusano:",
+      "opciones": {
+        "a": "Malware que se propaga insertando una copia de sí mismo dentro de otro programa.",
+        "b": "Malware cuyo funcionamiento se basa en la ejecución de otro programa anfitrión, ejecutado por el usuario casi siempre por engaño, que lo activa.",
+        "c": "Malware que ofrece un modo de acceso al sistema esquivando las medidas de seguridad dejando puertos activos abiertos.",
+        "d": "Malware con capacidad de autorréplica y que actúan en entornos de red explotando alguna vulnerabilidad de algún protocolo o servicio."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Los gusanos (worms) se diferencian de los virus en que no necesitan infectar otros archivos para propagarse; usan la red para replicarse de forma autónoma aprovechando fallos de seguridad."
+    },
+    {
+      "id": 17,
+      "enunciado": "Marca la opción que representa el concepto de ALTA DISPONIBILIDAD:",
+      "opciones": {
+        "a": "Garantiza el acceso a la información en todo momento.",
+        "b": "Mide la capacidad de que la información se encuentre operativo para los usuarios autorizados en todo momento y sin interrupciones.",
+        "c": "Garantiza los cambios que se realizan a la información en todo momento.",
+        "d": "Ninguna es correcta."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La alta disponibilidad busca que los servicios críticos estén operativos el mayor porcentaje de tiempo posible (los famosos 'nueves', ej. 99,99%), minimizando los tiempos de inactividad."
+    },
+    {
+      "id": 18,
+      "enunciado": "De las siguientes afirmaciones indica cuál corresponde a un ataque activo de interrupción:",
+      "opciones": {
+        "a": "Puede provocar que un objeto del sistema se pierda, quede no utilizable o no disponible.",
+        "b": "Sucede cuando hay un acceso no autorizado que cambia el entorno para su beneficio.",
+        "c": "Ocurre si un elemento no autorizado consigue un acceso a un determinado objeto del sistema.",
+        "d": "Consigue un objeto similar al atacado de forma que no resulte sencillo distinguir entre el objeto original y el fabricado."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Un ataque de interrupción atenta contra la disponibilidad. Ejemplos comunes son el borrado de archivos, la destrucción de hardware o los ataques de Denegación de Servicio (DoS)."
+    },
+    {
+      "id": 19,
+      "enunciado": "De las siguientes afirmaciones indica cuál indica el concepto correcto de virus:",
+      "opciones": {
+        "a": "Malware cuyo funcionamiento se basa en la ejecución de otro programa anfitrión, ejecutado por el usuario casi siempre por engaño, que lo activa.",
+        "b": "Malware que ofrece un modo de acceso al sistema esquivando las medidas de seguridad dejando puertos activos abiertos.",
+        "c": "Malware con capacidad de autorréplica y que actúan en entornos de red explotando alguna vulnerabilidad de algún protocolo o servicio.",
+        "d": "Malware que se propaga insertando una copia de sí mismo dentro de otro programa."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Los virus necesitan un 'anfitrión' (un archivo ejecutable) para vivir y propagarse. Cuando el usuario ejecuta el programa infectado, el virus se activa e intenta infectar otros archivos."
+    },
+    {
+      "id": 20,
+      "enunciado": "El tiempo medio entre fallos o MTTF (Mean Time To Failure) mide:",
+      "opciones": {
+        "a": "Ninguna es correcta.",
+        "b": "El tiempo medio tomado en restablecer la situación normal una vez que se ha producido un incidente.",
+        "c": "El tiempo en el que un sistema está fuera de servicio.",
+        "d": "El tiempo medio transcurrido hasta que un dispositivo falla."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El MTTF es una métrica de fiabilidad que indica cuánto tiempo se espera que dure un componente antes de fallar. Es habitual para dispositivos que no se reparan, como bombillas o discos duros."
+    }
+  ]
+}

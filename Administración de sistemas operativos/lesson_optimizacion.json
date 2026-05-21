@@ -1,0 +1,81 @@
+{
+  "asignatura": "Administración de sistemas operativos",
+  "codigo_archivo": "lesson_optimizacion",
+  "titulo": "Unidad: Optimización del Rendimiento del Sistema Operativo",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Conceptos Fundamentales de Rendimiento",
+      "contenido": "<div class='lesson-card'>La optimización no es solo 'hacer que vaya rápido', sino maximizar el uso de los recursos disponibles según la carga de trabajo.</div><p>Debemos identificar los 4 pilares básicos de recursos:</p><ul><li><strong>CPU (Procesamiento):</strong> El cerebro del sistema. Los cuellos de botella suelen medirse por el 'Load Average' o '% de uso'.</li><li><strong>Memoria RAM:</strong> Espacio de trabajo. La falta de RAM provoca el uso excesivo de la memoria virtual (paginación/swap), ralentizando todo.</li><li><strong>E/S de Disco (I/O):</strong> A menudo el mayor cuello de botella. Se mide en IOPS y latencia.</li><li><strong>Red:</strong> Capacidad de transmisión de datos entre sistemas.</li></ul>"
+    },
+    {
+      "id": 2,
+      "titulo": "Identificación de Cuellos de Botella",
+      "contenido": "<div class='lesson-card'>Un sistema es tan rápido como su componente más lento.</div><p>Herramientas esenciales para el diagnóstico:</p><ul><li><strong>Windows:</strong> Administrador de Tareas (Ctrl+Shift+Esc), Monitor de Rendimiento (perfmon.msc), Monitor de Recursos (resmon.exe).</li><li><strong>Linux:</strong> <code>top</code>/<code>htop</code> (procesos/CPU/RAM), <code>iotop</code> (disco), <code>iostat</code>, <code>free -m</code> (memoria).</li></ul><p class='diag-note'>💡 <em>Consejo: Si el uso de CPU es bajo pero el sistema va lento, sospecha del disco o de la latencia de red.</em></p>"
+    },
+    {
+      "id": 3,
+      "titulo": "Optimización en Windows Server",
+      "contenido": "<div class='lesson-card'>Windows permite ajustes finos tanto visuales como de bajo nivel.</div><ul><li><strong>Servicios:</strong> Deshabilitar servicios no necesarios (Print Spooler si no hay impresoras, etc.) mediante <code>services.msc</code>.</li><li><strong>Inicio:</strong> Gestionar aplicaciones de arranque automático.</li><li><strong>Memoria Virtual:</strong> Configurar el archivo de paginación (Pagefile.sys) en una unidad física diferente a la del SO si es posible.</li><li><strong>Opciones de Rendimiento:</strong> Ajustar para 'Mejor rendimiento' en lugar de 'Mejor apariencia'.</li></ul>"
+    },
+    {
+      "id": 4,
+      "titulo": "Optimización en Sistemas Linux",
+      "contenido": "<div class='lesson-card'>Linux destaca por su capacidad de ajuste mediante el sistema de archivos /proc y /sys.</div><ul><li><strong>Sysctl:</strong> Ajuste de parámetros del Kernel en tiempo de ejecución (ej: <code>sysctl -w net.ipv4.ip_forward=1</code>).</li><li><strong>Swappiness:</strong> Controla qué tan agresivamente el Kernel mueve procesos a la swap. Un valor de 10 es ideal para servidores (<code>vm.swappiness=10</code>).</li><li><strong>Límites de Usuario:</strong> Configuración de <code>/etc/security/limits.conf</code> para permitir más archivos abiertos (nofile) por proceso.</li><li><strong>Planificadores de E/S:</strong> Cambiar el scheduler (noop, deadline, cfq) según el tipo de disco (SSD vs HDD).</li></ul>"
+    },
+    {
+      "id": 5,
+      "titulo": "Mantenimiento y Automatización",
+      "contenido": "<div class='lesson-card'>La optimización debe ser un proceso continuo, no puntual.</div><ul><li><strong>Desfragmentación:</strong> Solo en discos HDD (mecánicos). En SSD se usa TRIM.</li><li><strong>Limpieza de Logs:</strong> Evitar que el disco se llene (rotación de logs con <code>logrotate</code> en Linux).</li><li><strong>Monitorización Remota:</strong> Uso de protocolos como SNMP o agentes (Zabbix, Nagios) para detectar tendencias de saturación antes de que ocurran fallos.</li></ul>"
+    },
+    {
+      "id": 6,
+      "titulo": "Técnicas Avanzadas y Virtualización",
+      "contenido": "<div class='lesson-card'>En entornos modernos, la optimización pasa por la gestión de la virtualización y el kernel.</div><ul><li><strong>ZRAM/ZSWAP:</strong> Tecnologías en Linux que comprimen la RAM para evitar el uso del disco lento para swap.</li><li><strong>HugePages:</strong> Configuración de memoria en bloques más grandes para bases de datos (Oracle/MySQL) reduciendo la sobrecarga del TLB.</li><li><strong>Afinidad de CPU:</strong> Asignar procesos críticos a núcleos específicos para evitar cambios de contexto.</li><li><strong>Overprovisioning en SSD:</strong> Dejar un espacio sin particionar para que la controladora del SSD tenga más margen para el 'Garbage Collection'.</li></ul><p class='diag-note'>⚠️ <em>Aviso: Las optimizaciones agresivas pueden comprometer la estabilidad. Probar siempre en entornos de desarrollo.</em></p>"
+    },
+    {
+      "id": 7,
+      "titulo": "Autoevaluación: Optimización",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Comprueba tus conocimientos sobre optimización de sistemas.</div>",
+      "preguntas_test": [
+        {
+          "q": "¿Qué componente suele ser el cuello de botella más común en sistemas con discos mecánicos?",
+          "options": ["La CPU", "La Memoria RAM", "La E/S de Disco (I/O)", "La Red"],
+          "correct": 2,
+          "explicacion": "La velocidad de rotación y el movimiento de cabezales de los HDD limitan severamente el rendimiento en comparación con la CPU o RAM.",
+          "ejemplo": "Ej: Un servidor de BD con discos de 7.2k RPM frente a uno con SSD NVMe."
+        },
+        {
+          "q": "En Linux, ¿qué parámetro controla la tendencia del Kernel a usar la memoria de intercambio (swap)?",
+          "options": ["vm.dirty_ratio", "vm.swappiness", "net.core.somaxconn", "fs.file-max"],
+          "correct": 1,
+          "explicacion": "Swappiness (0-100) define cuándo el sistema prefiere liberar RAM o usar swap.",
+          "ejemplo": "Ej: Un valor de 10 significa que solo usará swap cuando sea estrictamente necesario."
+        },
+        {
+          "q": "¿Cuál es la herramienta gráfica avanzada en Windows para ver el uso detallado de archivos y red por proceso?",
+          "options": ["Administrador de Tareas", "msconfig", "Monitor de Recursos (resmon)", "services.msc"],
+          "correct": 2,
+          "explicacion": "Resource Monitor permite ver qué archivos específicos está leyendo/escribiendo un proceso en tiempo real.",
+          "ejemplo": "Ej: Detectar qué proceso está saturando el ancho de banda del disco."
+        },
+        {
+          "q": "¿Qué comando de Linux permite ver el uso de memoria en megabytes de forma rápida?",
+          "options": ["memshow", "free -m", "show ram", "top -mem"],
+          "correct": 1,
+          "explicacion": "El comando 'free' con el flag '-m' muestra la memoria total, usada y libre en MiB.",
+          "ejemplo": "Ej: 'free -h' lo muestra en formato legible por humanos (GB, MB)."
+        },
+        {
+          "q": "En un SSD, ¿qué operación es fundamental para mantener el rendimiento a largo plazo comunicando al disco qué bloques están libres?",
+          "options": ["Desfragmentación", "Chkdsk", "TRIM", "Compresión NTFS"],
+          "correct": 2,
+          "explicacion": "TRIM permite que el SO informe al SSD sobre bloques de datos que ya no se consideran en uso, mejorando la velocidad de escritura futura.",
+          "ejemplo": "Ej: Comando 'fstrim' en Linux."
+        }
+      ]
+    }
+  ]
+}

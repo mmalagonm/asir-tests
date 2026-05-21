@@ -1,0 +1,121 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "unit4_lesson",
+  "titulo": "Unit 4: Future Tenses & Project Planning (RA1-4)",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Objectives & Context (RA1-4)",
+      "contenido": "<div class='lesson-card'>Unit 4 focuses on planning for the future, whether it's scheduled maintenance, long-term projects, or predictions.</div><ul><li><strong>RA1 & RA2:</strong> Reading technical plans and timelines.</li><li><strong>RA3:</strong> Discussing future plans in professional meetings.</li><li><strong>RA4:</strong> Writing technical proposals and schedules.</li><li><strong>Grammar Goals:</strong> Mastering <strong>Future Perfect</strong>, <strong>Future Continuous</strong>, and connectors.</li></ul><p class='diag-note'>💡 <em>Nota: El futuro perfecto es esencial para prometer plazos a clientes o jefes.</em></p>"
+    },
+    {
+      "id": 2,
+      "titulo": "Grammar: Future Continuous",
+      "contenido": "<div class='lesson-card'>Used for actions that will be <strong>in progress</strong> at a specific time in the future.</div><h3>Structure:</h3><p>Subject + Will be + Verb-ing</p><h3>Examples:</h3><ul><li><em>\"We <strong>will be testing</strong> the new software all next week.\"</em></li><li><em>\"This time tomorrow, I <strong>will be presenting</strong> the project plan.\"</em></li><li><em>\"The team <strong>will be working</strong> on additional features while we test.\"</em></li></ul><p class='diag-note'>💡 <em>Nota: Lo usamos para dar una idea de continuidad en el futuro.</em></p>"
+    },
+    {
+      "id": 3,
+      "titulo": "Grammar: Future Perfect",
+      "contenido": "<div class='lesson-card'>Used for actions that <strong>will have finished</strong> before a certain point in the future.</div><h3>Structure:</h3><p>Subject + Will have + Past Participle</p><h3>Examples:</h3><ul><li><em>\"By the end of this month, we <strong>will have completed</strong> the update.\"</em></li><li><em>\"He <strong>will have finished</strong> the report by the time the meeting starts.\"</em></li><li><em>\"By tomorrow, the IT department <strong>will have resolved</strong> all issues.\"</em></li></ul><p class='diag-note'>💡 <em>Nota: Solemos usarlo con la preposición 'By' (para antes de).</em></p>"
+    },
+    {
+      "id": 4,
+      "titulo": "Grammar: Connectors",
+      "contenido": "<div class='lesson-card'>Connectors help you link ideas and create complex sentences.</div><ul><li><strong>Although:</strong> (Aunque) - Used for contrast. <em>\"Although it was outdated, they kept the server.\"</em></li><li><strong>While:</strong> (Mientras) - For simultaneous actions. <em>\"Testing while the team works.\"</em></li><li><strong>Because / So:</strong> (Porque / Así que) - For cause and effect.</li><li><strong>Despite:</strong> (A pesar de) - Followed by a noun or -ing. <em>\"Despite the issues, we finished.\"</em></li></ul>"
+    },
+    {
+      "id": 5,
+      "titulo": "Future Plans: 'Going to' vs Present Continuous",
+      "contenido": "<div class='lesson-card'>How to express different types of future plans.</div><ul><li><strong>Going to:</strong> Intentions or plans not yet fully organized. <em>\"I am going to study for the CCNA.\"</em></li><li><strong>Present Continuous:</strong> Fixed arrangements (date and time set). <em>\"We are meeting with the developers next Monday.\"</em></li></ul>"
+    },
+    {
+      "id": 6,
+      "titulo": "Vocabulary: Planning & Diagnostics",
+      "contenido": "<div class='lesson-card'>Essential terms for the preparation phase of IT projects.</div><ul><li><strong>Diagnostic Test:</strong> A procedure to identify the nature of a system problem.</li><li><strong>Project Plan:</strong> A document outlining the scope, goals, and steps of a project.</li><li><strong>Timeline:</strong> A graphical representation of a period of time.</li><li><strong>Deadline:</strong> The final date for completion.</li></ul>"
+    },
+    {
+      "id": 7,
+      "titulo": "Summary: Unit 4 Takeaways",
+      "contenido": "<div class='lesson-card'>Review these core concepts for Unit 4.</div><ul><li><strong>Future Continuous:</strong> Progress in future (<em>\"Will be testing\"</em>).</li><li><strong>Future Perfect:</strong> Finished before a deadline (<em>\"Will have completed\"</em>).</li><li><strong>Connectors:</strong> Use 'Although' for contrast and 'Despite' for hurdles.</li><li><strong>Plans:</strong> Use Present Continuous for confirmed meetings (<em>\"Are meeting\"</em>).</li></ul>"
+    },
+    {
+      "id": 8,
+      "titulo": "Final Knowledge Assessment",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Complete this test to confirm you have mastered the Unit 4 content.</div>",
+      "preguntas_test": [
+        {
+          "q": "By the end of this month, we __________ (complete) the system update.",
+          "options": ["completes", "completing", "will complete", "will have completed"],
+          "correct": 3,
+          "explicacion": "Acción que habrá terminado para un momento futuro = Future Perfect.",
+          "ejemplo": "Ej: 'By 5 PM, I <strong>will have finished</strong>.'"
+        },
+        {
+          "q": "They decided to upgrade the system __________ it was outdated.",
+          "options": ["although", "but", "so", "because"],
+          "correct": 0,
+          "explicacion": "'Although' expresa contraste (aunque estaba anticuado).",
+          "ejemplo": "Ej: '<strong>Although</strong> it is raining, I will go out.'"
+        },
+        {
+          "q": "We __________ (meet) with the developers next Monday.",
+          "options": ["meet", "are meeting", "meeting", "meets"],
+          "correct": 1,
+          "explicacion": "Plan organizado con fecha específica = Present Continuous.",
+          "ejemplo": "Ej: 'I <strong>am flying</strong> to Paris tomorrow.'"
+        },
+        {
+          "q": "He __________ (finish) the report by the time the meeting starts.",
+          "options": ["finishing", "finish", "will have finished", "finishes"],
+          "correct": 2,
+          "explicacion": "Terminará antes de otro evento futuro = Future Perfect.",
+          "ejemplo": "Ej: 'He <strong>will have arrived</strong> before us.'"
+        },
+        {
+          "q": "We __________ (test) the new software all week, __________ the development team works on features.",
+          "options": ["will be testing / while", "testing / so", "tests / although", "test / because"],
+          "correct": 0,
+          "explicacion": "Futuro continuo para duración y 'while' para simultaneidad.",
+          "ejemplo": "Ej: 'I <strong>will be sleeping</strong> while you work.'"
+        },
+        {
+          "q": "By tomorrow, the IT department __________ (resolve) all the network issues.",
+          "options": ["will resolve", "resolving", "resolves", "will have resolved"],
+          "correct": 3,
+          "explicacion": "Estructura estándar de Future Perfect con 'By tomorrow'.",
+          "ejemplo": "Ej: 'I <strong>will have resolved</strong> the ticket by then.'"
+        },
+        {
+          "q": "The technician __________ (fix) the issue by tomorrow, __________ there are no unexpected problems.",
+          "options": ["fixing / because", "fix / unless", "will have fixed / despite", "fixes / while"],
+          "correct": 2,
+          "explicacion": "Future perfect combined with 'despite' (a pesar de).",
+          "ejemplo": "Ej: 'He <strong>will have fixed</strong> it despite the heat.'"
+        },
+        {
+          "q": "They __________ (test) the new system later today.",
+          "options": ["tests", "test", "testing", "are testing"],
+          "correct": 3,
+          "explicacion": "Planes futuros cercanos = Present Continuous.",
+          "ejemplo": "Ej: 'They <strong>are testing</strong> the server tonight.'"
+        },
+        {
+          "q": "We ran a diagnostic test __________ found several issues.",
+          "options": ["but", "so", "and", "or"],
+          "correct": 2,
+          "explicacion": "'And' une acciones que siguen una secuencia lógica.",
+          "ejemplo": "Ej: 'I checked the log <strong>and</strong> saw the error.'"
+        },
+        {
+          "q": "She __________ (present) the new project plan in the meeting.",
+          "options": ["presents", "presenting", "won't present", "is going to present"],
+          "correct": 3,
+          "explicacion": "'Going to' para intenciones o planes.",
+          "ejemplo": "Ej: 'I <strong>am going to</strong> learn Linux.'"
+        }
+      ]
+    }
+  ]
+}

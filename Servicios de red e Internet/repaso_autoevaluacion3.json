@@ -1,0 +1,189 @@
+{
+  "asignatura": "Servicios de red e Internet",
+  "codigo_archivo": "repaso_autoevaluacion3",
+  "titulo": "Repaso 3ª Autoevaluación",
+  "tipo": "repaso",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "La capa 3 del modelo OSI se llama...",
+      "opciones": {
+        "a": "Capa red",
+        "b": "Capa enlace",
+        "c": "Capa transporte",
+        "d": "Capa sesión"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La Capa 3 del modelo OSI es la capa de Red. Su función principal es el enrutamiento de paquetes a través de diferentes redes, utilizando direcciones lógicas (como IP) para determinar el mejor camino hacia el destino."
+    },
+    {
+      "id": 2,
+      "enunciado": "La capa 5 del modelo OSI se llama...",
+      "opciones": {
+        "a": "Capa física",
+        "b": "Capa de sesión",
+        "c": "Capa de presentación",
+        "d": "Capa de red"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La Capa 5 es la capa de Sesión. Se encarga de establecer, gestionar y finalizar las sesiones de comunicación entre aplicaciones en diferentes dispositivos, permitiendo el diálogo y la sincronización."
+    },
+    {
+      "id": 3,
+      "enunciado": "Como se escribe una IP en un Switch de 3 capas en la salida fa0/15 con la IP 192.168.1.1. Escribe el código:",
+      "opciones": {
+        "a": "Int fa0/15, No switchport, Ip add 192.168.1.1 255.255.255.0",
+        "b": "Int fa0/15, switchport mode access, Ip add 192.168.1.1 255.255.255.0",
+        "c": "Int fa0/15, ip add 192.168.1.1 255.255.255.0",
+        "d": "Int fa0/15, no switchport, ip address 192.168.1.1 255.255.0.0"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "En un switch multicapa (Layer 3), los puertos son por defecto de Capa 2. Para asignar una dirección IP a un puerto físico, primero se debe usar el comando 'no switchport' para convertirlo en un puerto enrutable. Luego se asigna la IP con 'ip address'."
+    },
+    {
+      "id": 4,
+      "enunciado": "Resultado de sumarizar: 192.168.10.0, 192.168.30.0, 192.168.40.0",
+      "opciones": {
+        "a": "192.168.0.0 255.255.192.0",
+        "b": "192.168.0.0 255.255.255.0",
+        "c": "192.168.10.0 255.255.0.0",
+        "d": "192.168.0.0 255.255.128.0"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Para sumarizar estas redes, buscamos el prefijo común más largo. 192.168.10.0 (/24), 192.168.30.0 (/24) y 192.168.40.0 (/24) coinciden en los dos primeros octetos. En el tercer octeto, los bits varían significativamente. La máscara 255.255.192.0 (/18) engloba estas redes dentro del rango 192.168.0.0 a 192.168.63.255."
+    },
+    {
+      "id": 5,
+      "enunciado": "Resultado de sumarizar: 2000:B:C:D:E:1234::, 2000:B:C:D:E:12A4::, 2000:B:C:D:E:12FF::",
+      "opciones": {
+        "a": "2000:B:C:D:E:1200::/88",
+        "b": "2000:B:C:D:E:1200::/64",
+        "c": "2000:B:C:D:E:1234::/88",
+        "d": "2000:B:C:D:E::/88"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "En IPv6, cada hexteto tiene 16 bits. Los primeros 5 hextetos (2000:B:C:D:E) son idénticos (80 bits). El sexto hexteto empieza por '12' en todos los casos. '12' representa 8 bits (4 por cada dígito hexadecimal). Por tanto, 80 + 8 = 88 bits coinciden. La dirección resumida es 2000:B:C:D:E:1200::/88."
+    },
+    {
+      "id": 6,
+      "enunciado": "Enruta por EIGRP la topología de la imagen para el router SEGOVIA:",
+      "fichero_imagen": "repaso_autoevaluacion3_p6.png",
+      "opciones": {
+        "a": "router eigrp 20, network 192.168.50.0, network 20.0.0.0, network 30.0.0.0",
+        "b": "router eigrp 20, network 192.168.50.0, network 20.0.0.0, network 40.0.0.0",
+        "c": "router eigrp 10, network 192.168.50.0, network 20.0.0.0, network 30.0.0.0",
+        "d": "router rip, network 192.168.50.0, network 20.0.0.0, network 30.0.0.0"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Para configurar EIGRP, se inicia el proceso con 'router eigrp [AS]' (donde el AS debe coincidir en todos los routers). El comando 'network' declara qué interfaces participarán en el proceso de enrutamiento basándose en sus direcciones IP."
+    },
+    {
+      "id": 7,
+      "enunciado": "Configurar un DHCP con la Network 192.168.10.0/29 ¿Cuál es su primera y última IP disponible?",
+      "opciones": {
+        "a": "192.168.10.1 – 192.168.10.6",
+        "b": "192.168.10.1 – 192.168.10.7",
+        "c": "192.168.10.0 – 192.168.10.6",
+        "d": "192.168.10.1 – 192.168.10.14"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Una máscara /29 (255.255.255.248) proporciona bloques de 8 direcciones. Para 192.168.10.0/29: la red es .0, el broadcast es .7. Las IPs útiles (asignables a hosts) van desde la .1 hasta la .6."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Qué puerto utiliza monitorizar por Netflow?",
+      "opciones": {
+        "a": "9996",
+        "b": "2000",
+        "c": "53",
+        "d": "80"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "NetFlow es un protocolo desarrollado por Cisco para recolectar información de tráfico IP. Aunque puede configurarse, el puerto UDP 9996 es el estándar de facto utilizado habitualmente por los colectores de NetFlow."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Qué puerto utiliza la telefonía IP?",
+      "opciones": {
+        "a": "2000",
+        "b": "5060",
+        "c": "1720",
+        "d": "21"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El puerto 2000 es utilizado por el protocolo SCCP (Skinny Client Control Protocol), un protocolo propietario de Cisco para la comunicación entre teléfonos IP y terminales con CallManager."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Qué puerto utiliza DNS?",
+      "opciones": {
+        "a": "53",
+        "b": "25",
+        "c": "22",
+        "d": "443"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El protocolo DNS (Domain Name System) utiliza el puerto 53, tanto sobre UDP (para consultas estándar) como sobre TCP (para transferencias de zona y respuestas largas)."
+    },
+    {
+      "id": 11,
+      "enunciado": "¿Qué puerto utiliza HTTP?",
+      "opciones": {
+        "a": "80",
+        "b": "443",
+        "c": "8080",
+        "d": "21"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El protocolo HTTP (Hypertext Transfer Protocol) utiliza por defecto el puerto 80 para la transferencia de información en la web sin cifrado."
+    },
+    {
+      "id": 12,
+      "enunciado": "¿Qué puerto utiliza SSH?",
+      "opciones": {
+        "a": "22",
+        "b": "23",
+        "c": "21",
+        "d": "25"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "SSH (Secure Shell) utiliza el puerto 22 para proporcionar un acceso remoto seguro y cifrado a dispositivos de red y servidores."
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Qué puerto utiliza FTP?",
+      "opciones": {
+        "a": "21",
+        "b": "20",
+        "c": "22",
+        "d": "25"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "FTP (File Transfer Protocol) utiliza el puerto 21 para el canal de control (establecimiento de sesión y comandos). El puerto 20 se utiliza para el canal de datos en modo activo."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Qué puerto utiliza SMTP?",
+      "opciones": {
+        "a": "25",
+        "b": "110",
+        "c": "143",
+        "d": "587"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "SMTP (Simple Mail Transfer Protocol) es el protocolo estándar para el envío de correo electrónico entre servidores, utilizando tradicionalmente el puerto 25."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Qué hace la línea 'IPV6 add 2001:A:A:A::1/64' en la configuración de un túnel?",
+      "opciones": {
+        "a": "Establece la IPV6 del router origen y la IP solo existe en el tunnel NO EN EL SERIAL",
+        "b": "Establece la IPV6 del router destino",
+        "c": "Activa el servicio del tunnel",
+        "d": "Define el modo del tunnel como ipv6ip"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Al configurar un túnel (como 6to4 o GRE), la dirección IPv6 asignada a la interfaz Tunnel es una dirección lógica que identifica el extremo del túnel. No sustituye ni afecta a la configuración IP de la interfaz física subyacente (como la Serial)."
+    }
+  ]
+}

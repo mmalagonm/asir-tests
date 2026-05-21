@@ -1,0 +1,59 @@
+{
+  "asignatura": "Administración de sistemas operativos",
+  "codigo_archivo": "lesson_ra1_ejercicios",
+  "titulo": "RA1: Laboratorio Práctico de Administración de Usuarios y Permisos",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Escenario de Laboratorio: Empresa de Servicios",
+      "contenido": "<div class='lesson-card'>El objetivo de este laboratorio es implementar una estructura de seguridad basada en grupos y permisos sobre carpetas compartidas.</div><p>Contamos con las siguientes delegaciones:</p><ul><li><strong>Mazarron:</strong> maria, Mario, mary.</li><li><strong>Calpe:</strong> Jose, Josefa, joselin.</li><li><strong>Salamanca:</strong> Charly, Carlangas, carlos.</li><li><strong>Toledo:</strong> Belen, Belencita, belenchu.</li></ul><p><em>Tarea: Crear todos los grupos y usuarios en un sistema Ubuntu Server.</em></p>"
+    },
+    {
+      "id": 2,
+      "titulo": "Implementación de la Estructura de Directorios",
+      "contenido": "<div class='lesson-card'>La organización de archivos debe reflejar la estructura de la organización.</div><pre># Crear carpetas base\nsudo mkdir /home/prioridad /home/alta /home/baja /home/media\n# Crear subcarpetas especializadas\nsudo mkdir /home/medicos /home/enfermeras /home/estadistica</pre><p>Es fundamental usar <code>sudo</code> para estas operaciones ya que se realizan fuera de la carpeta personal del usuario.</p>"
+    },
+    {
+      "id": 3,
+      "titulo": "Asignación de Propiedad y Grupos",
+      "contenido": "<div class='lesson-card'>Una vez creadas las carpetas, debemos asignarles el grupo correspondiente para gestionar el acceso.</div><p>Comando <strong>chgrp</strong>:</p><ul><li><code>sudo chgrp mazarron /home/prioridad</code></li><li><code>sudo chgrp calpe /home/alta</code></li></ul><p>Comando <strong>chown</strong> (Cambiar dueño):</p><ul><li><code>sudo chown root /home/prioridad</code></li></ul>"
+    },
+    {
+      "id": 4,
+      "titulo": "Configuración Detallada de Permisos (CHMOD)",
+      "contenido": "<div class='lesson-card'>Aplicaremos permisos específicos según los requerimientos del ejercicio.</div><p><strong>Caso 1: Carpeta 'Prioridad'</strong><br/>Dueño y Grupo: Control Total. Resto: Sin acceso.<br/><code>sudo chmod 770 /home/prioridad</code></p><p><strong>Caso 2: Carpeta 'Alta'</strong><br/>Dueño: Sin acceso. Grupo: Control Total. Otros: Solo ejecutar.<br/><code>sudo chmod 071 /home/alta</code></p><p><strong>Caso 3: Carpeta 'Media'</strong><br/>Dueño y Resto: Sin acceso. Grupo: Control Total.<br/><code>sudo chmod 070 /home/media</code></p>"
+    },
+    {
+      "id": 5,
+      "titulo": "Verificación y Troubleshooting",
+      "contenido": "<div class='lesson-card'>La verificación es el paso más importante para asegurar que la seguridad es efectiva.</div><p>Pasos de validación:</p><ol><li>Iniciar sesión como un usuario del grupo: <code>su - maria</code></li><li>Intentar crear un archivo: <code>touch /home/prioridad/test.txt</code></li><li>Intentar acceder a una carpeta prohibida: <code>cd /home/media</code> (debe dar 'Permiso denegado').</li></ol><p>Si un usuario no puede escribir pese a tener permisos de grupo, verifica que el bit de ejecución (X) esté activo en todas las carpetas superiores del path.</p>"
+    },
+    {
+      "id": 6,
+      "titulo": "Quiz de Validación Práctica",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Pon a prueba tus conocimientos sobre la implementación práctica de permisos.</div>",
+      "preguntas_test": [
+        {
+          "q": "¿Qué comando usarías para que solo el grupo 'medicos' pueda leer y escribir en '/home/medicos' y nadie más (incluido el dueño) pueda hacer nada?",
+          "options": ["chmod 770", "chmod 060", "chmod 070", "chgrp medicos"],
+          "correct": 1,
+          "explicacion": "0 (Dueño: nada), 6 (Grupo: Read+Write=4+2), 0 (Otros: nada). chmod 060 es la respuesta correcta."
+        },
+        {
+          "q": "Si queremos borrar un usuario 'jose' y su carpeta de inicio, ¿cuál es el comando correcto?",
+          "options": ["userdel jose", "rm -rf /home/jose", "userdel -r jose", "deluser jose"],
+          "correct": 2,
+          "explicacion": "El flag '-r' (remove) indica a userdel que debe eliminar el directorio home y la cola de correo del usuario."
+        },
+        {
+          "q": "Para cambiar el nombre de un grupo 'salamanca' a 'salmantinos', usamos:",
+          "options": ["groupmod -n salmantinos salamanca", "groupmod -name salmantinos salamanca", "rename group salamanca salmantinos", "usermod -g salmantinos salamanca"],
+          "correct": 0,
+          "explicacion": "groupmod con el parámetro -n (new-name) es la utilidad estándar para esta tarea."
+        }
+      ]
+    }
+  ]
+}

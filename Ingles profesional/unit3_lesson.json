@@ -1,0 +1,121 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "unit3_lesson",
+  "titulo": "Unit 3: Perfect Tenses & System Monitoring (RA1, RA2, RA4)",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Objectives & Context (RA1, RA2, RA4)",
+      "contenido": "<div class='lesson-card'>Unit 3 focuses on actions that have a connection between the past and the present, or actions that happened before another past event.</div><ul><li><strong>RA1 & RA2:</strong> Technical reading and documentation.</li><li><strong>RA4:</strong> Writing more complex technical descriptions and reports.</li><li><strong>Grammar Goals:</strong> Mastering <strong>Present Perfect Continuous</strong>, <strong>Past Perfect Simple</strong>, and <strong>Past Perfect Continuous</strong>.</li><li><strong>Vocabulary:</strong> Prepositions of place (at/in/on) and monitoring tasks.</li></ul><p class='diag-note'>💡 <em>Nota: El pasado perfecto es fundamental para explicar la causa de un problema que ya se ha resuelto.</em></p>"
+    },
+    {
+      "id": 2,
+      "titulo": "Grammar: Present Perfect Continuous",
+      "contenido": "<div class='lesson-card'>Used for actions that started in the past and <strong>continue in the present</strong>, focusing on the duration.</div><h3>Structure:</h3><p>Subject + Have/Has + Been + Verb-ing</p><h3>Examples:</h3><ul><li><em>\"We <strong>have been monitoring</strong> the network traffic since morning.\"</em></li><li><em>\"The IT team <strong>has been implementing</strong> new features gradually.\"</em></li><li><em>\"I <strong>have been working</strong> here for five years.\"</em></li></ul><p class='diag-note'>💡 <em>Nota: Usamos 'since' para un punto en el tiempo y 'for' para una duración.</em></p>"
+    },
+    {
+      "id": 3,
+      "titulo": "Grammar: Past Perfect Simple",
+      "contenido": "<div class='lesson-card'>Used for an action that happened <strong>before</strong> another action in the past.</div><h3>Structure:</h3><p>Subject + Had + Past Participle</p><h3>Examples:</h3><ul><li><em>\"The server <strong>had crashed</strong> by the time the technician arrived.\"</em></li><li><em>\"He <strong>had worked</strong> there for five years before he resigned.\"</em></li><li><em>\"They <strong>had finished</strong> the project before the deadline.\"</em></li></ul><p class='diag-note'>💡 <em>Nota: El Past Perfect es el 'pasado del pasado'.</em></p>"
+    },
+    {
+      "id": 4,
+      "titulo": "Grammar: Past Perfect Continuous",
+      "contenido": "<div class='lesson-card'>Used to describe an action that was <strong>in progress</strong> up to a certain point in the past.</div><h3>Structure:</h3><p>Subject + Had + Been + Verb-ing</p><h3>Examples:</h3><ul><li><em>\"The system <strong>had been running</strong> smoothly until the power outage.\"</em></li><li><em>\"I <strong>had been testing</strong> the code for hours when I found the bug.\"</em></li></ul>"
+    },
+    {
+      "id": 5,
+      "titulo": "Grammar: Prepositions of Place (In, On, At)",
+      "contenido": "<div class='lesson-card'>Prepositions can be tricky. Here is how we use them in an office/IT context.</div><ul><li><strong>IN:</strong> Inside a space. <em>\"In the corner of the office\", \"In the server room\"</em>.</li><li><strong>ON:</strong> On a surface or digital platform. <em>\"On the server\", \"On all the computers\", \"On the table\"</em>.</li><li><strong>AT:</strong> A specific point or geographical location. <em>\"At the corner of 5th Ave\", \"At the desk\"</em>.</li></ul><p class='diag-note'>💡 <em>Nota: 'In the corner' es dentro de una habitación, 'At the corner' es un cruce de calles.</em></p>"
+    },
+    {
+      "id": 6,
+      "titulo": "Vocabulary: Monitoring & Implementation",
+      "contenido": "<div class='lesson-card'>Key terms for maintaining systems and deploying updates.</div><ul><li><strong>Monitor:</strong> To observe and check the progress or quality of something over time.</li><li><strong>Implement:</strong> To put a decision, plan, or agreement into effect.</li><li><strong>Deadline:</strong> The latest time or date by which something should be completed.</li><li><strong>Outage:</strong> A period when a service or system is unavailable.</li></ul>"
+    },
+    {
+      "id": 7,
+      "titulo": "Summary: Unit 3 Takeaways",
+      "contenido": "<div class='lesson-card'>Review these core concepts for Unit 3.</div><ul><li><strong>Present Perfect Continuous:</strong> Past to Present (duration). <em>\"Have been working\"</em>.</li><li><strong>Past Perfect:</strong> Before another past action. <em>\"Had finished\"</em>.</li><li><strong>Past Perfect Continuous:</strong> In progress until a past point. <em>\"Had been running\"</em>.</li><li><strong>Prepositions:</strong> ON the server, IN the corner (room), AT the corner (street).</li></ul>"
+    },
+    {
+      "id": 8,
+      "titulo": "Final Knowledge Assessment",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Complete this test to confirm you have mastered the Unit 3 content.</div>",
+      "preguntas_test": [
+        {
+          "q": "He __________ (work) at the company for five years before he resigned.",
+          "options": ["worked", "had worked", "work", "works"],
+          "correct": 1,
+          "explicacion": "Acción que terminó antes de otra en el pasado (resigned) = Past Perfect.",
+          "ejemplo": "Ej: 'I <strong>had eaten</strong> before they arrived.'"
+        },
+        {
+          "q": "The new software was installed __________ all the computers.",
+          "options": ["on", "inside", "in", "at"],
+          "correct": 0,
+          "explicacion": "Usamos 'on' para instalaciones en sistemas o dispositivos.",
+          "ejemplo": "Ej: 'It runs <strong>on</strong> Windows.'"
+        },
+        {
+          "q": "We __________ (monitor) the network traffic since the last upgrade.",
+          "options": ["monitors", "have been monitoring", "had monitored", "monitor"],
+          "correct": 1,
+          "explicacion": "Acción que empezó en el pasado y sigue (since) = Present Perfect Continuous.",
+          "ejemplo": "Ej: 'I <strong>have been waiting</strong> for an hour.'"
+        },
+        {
+          "q": "The printer is __________ the corner of the office.",
+          "options": ["at", "on", "in", "inside"],
+          "correct": 2,
+          "explicacion": "Dentro de una habitación usamos 'in the corner'.",
+          "ejemplo": "Ej: 'The desk is <strong>in the corner</strong>.'"
+        },
+        {
+          "q": "The system __________ (run) smoothly until the power outage.",
+          "options": ["runs", "had been running", "have running", "run"],
+          "correct": 1,
+          "explicacion": "Acción en desarrollo hasta un punto pasado = Past Perfect Continuous.",
+          "ejemplo": "Ej: 'It <strong>had been snowing</strong> for hours.'"
+        },
+        {
+          "q": "The main office is __________ the corner of 5th Avenue and Main Street.",
+          "options": ["in", "at", "on", "inside"],
+          "correct": 1,
+          "explicacion": "En un cruce de calles usamos 'at the corner'.",
+          "ejemplo": "Ej: 'Wait for me <strong>at the corner</strong>.'"
+        },
+        {
+          "q": "By the time the technician arrived, the server __________ (crash).",
+          "options": ["crash", "had crashed", "crashes", "was crashing"],
+          "correct": 1,
+          "explicacion": "El fallo ocurrió antes de la llegada (pasado) = Past Perfect.",
+          "ejemplo": "Ej: 'The movie <strong>had started</strong> when we arrived.'"
+        },
+        {
+          "q": "The files are stored __________ a secure server.",
+          "options": ["on", "at", "inside", "in"],
+          "correct": 0,
+          "explicacion": "Los datos se almacenan 'on a server'.",
+          "ejemplo": "Ej: 'The database is <strong>on</strong> the cloud.'"
+        },
+        {
+          "q": "The team __________ (implement) new features gradually over the past few months.",
+          "options": ["has been implementing", "implemented", "implements", "was implementing"],
+          "correct": 0,
+          "explicacion": "Proceso gradual que continúa = Present Perfect Continuous.",
+          "ejemplo": "Ej: 'She <strong>has been studying</strong> lately.'"
+        },
+        {
+          "q": "The team __________ (finish) the project before the deadline.",
+          "options": ["was finishing", "finishes", "finish", "had finished"],
+          "correct": 3,
+          "explicacion": "Completado antes de un tiempo pasado = Past Perfect.",
+          "ejemplo": "Ej: 'I <strong>had finished</strong> my homework by 8 PM.'"
+        }
+      ]
+    }
+  ]
+}

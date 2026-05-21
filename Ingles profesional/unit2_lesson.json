@@ -1,0 +1,121 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "unit2_lesson",
+  "titulo": "Unit 2: Past Tenses & Professional Travel (RA1, RA2)",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Objectives & Context (RA1, RA2)",
+      "contenido": "<div class='lesson-card'>Unit 2 covers past actions and the vocabulary needed for professional travel and giving directions within a technical facility.</div><ul><li><strong>RA1 & RA2:</strong> Understanding technical instructions and documentation about past incidents or configurations.</li><li><strong>Grammar Goals:</strong> Mastering the <strong>Past Simple</strong> and <strong>Past Continuous</strong>, and the structure <strong>'Used to'</strong> for past habits.</li><li><strong>Vocabulary:</strong> Giving directions, travel-related phrasal verbs, and IT maintenance tasks.</li></ul><p class='diag-note'>💡 <em>Nota: Esta unidad es clave para redactar informes de incidencias (lo que pasó) y para moverte en entornos laborales.</em></p>"
+    },
+    {
+      "id": 2,
+      "titulo": "Vocabulary: Giving Directions",
+      "contenido": "<div class='lesson-card'>When working in a large data center or office, you need to know how to guide colleagues.</div><ul><li><strong>Go straight on:</strong> Sigue recto.</li><li><strong>Turn left/right:</strong> Gira a la izquierda/derecha.</li><li><strong>Opposite:</strong> Enfrente de (no lleva 'to').</li><li><strong>Next to:</strong> Al lado de.</li><li><strong>At the intersection:</strong> En el cruce/intersección.</li></ul><p class='diag-note'>💡 <em>Nota: 'The office is opposite the server room' significa que están una frente a la otra.</em></p>"
+    },
+    {
+      "id": 3,
+      "titulo": "Vocabulary: Professional Travel & Phrasal Verbs",
+      "contenido": "<div class='lesson-card'>Common verbs used when traveling for business or attending conferences.</div><ul><li><strong>Set off:</strong> To begin a journey (partir).</li><li><strong>Check in:</strong> To register at a hotel or airport.</li><li><strong>Hold up:</strong> To delay (retrasar). <em>\"The flight was held up.\"</em></li><li><strong>Get in:</strong> To arrive (llegar).</li></ul>"
+    },
+    {
+      "id": 4,
+      "titulo": "Grammar: Past Simple",
+      "contenido": "<div class='lesson-card'>Used for completed actions in the past.</div><h3>Structure:</h3><p>Subject + Verb-ed (or irregular form)</p><h3>Examples:</h3><ul><li><em>\"The IT team <strong>backed up</strong> all the files.\"</em></li><li><em>\"I <strong>finished</strong> the report yesterday.\"</em></li><li><em>\"The system <strong>crashed</strong> last night.\"</em></li></ul><p class='diag-note'>💡 <em>Nota: Usamos el Past Simple con marcas de tiempo como 'yesterday', 'last week' o 'two hours ago'.</em></p>"
+    },
+    {
+      "id": 5,
+      "titulo": "Grammar: Past Continuous",
+      "contenido": "<div class='lesson-card'>Used for actions that were <strong>in progress</strong> at a specific time in the past, or interrupted by another action.</div><h3>Structure:</h3><p>Subject + Was/Were + Verb-ing</p><h3>Examples:</h3><ul><li><em>\"While the team <strong>was testing</strong> the software, they found bugs.\"</em></li><li><em>\"They <strong>were installing</strong> the update when the power went out.\"</em></li><li><em>\"I <strong>was working</strong> in the lab at 10 PM.\"</em></li></ul><p class='diag-note'>💡 <em>Nota: 'While' suele ir con Past Continuous y 'When' con Past Simple.</em></p>"
+    },
+    {
+      "id": 6,
+      "titulo": "Grammar: 'Used to'",
+      "contenido": "<div class='lesson-card'>Used for past habits or states that are <strong>no longer true</strong>.</div><h3>Structure:</h3><p>Subject + Used to + Verb (infinitive)</p><h3>Examples:</h3><ul><li><em>\"She <strong>used to work</strong> as a network admin.\"</em> (She doesn't anymore).</li><li><em>\"The company <strong>used to have</strong> older servers.\"</em></li></ul><p class='diag-note'>💡 <em>Nota: No lo confundas con 'be used to' (estar acostumbrado).</em></p>"
+    },
+    {
+      "id": 7,
+      "titulo": "Summary: Unit 2 Takeaways",
+      "contenido": "<div class='lesson-card'>Review these core concepts for Unit 2.</div><ul><li><strong>Directions:</strong> 'Opposite' (enfrente), 'Next to' (al lado).</li><li><strong>Travel:</strong> 'Set off' (partir), 'Check in' (registrarse), 'Held up' (retrasado).</li><li><strong>Past Simple:</strong> Completed actions (<em>\"I installed it\"</em>).</li><li><strong>Past Continuous:</strong> Actions in progress (<em>\"I was installing it\"</em>).</li><li><strong>Used to:</strong> Past habits (<em>\"I used to study IT\"</em>).</li></ul>"
+    },
+    {
+      "id": 8,
+      "titulo": "Final Knowledge Assessment",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Complete this test to confirm you have mastered the Unit 2 content.</div>",
+      "preguntas_test": [
+        {
+          "q": "To get to the main office, you need to __________ (turn) left at the next intersection.",
+          "options": ["turning", "turned", "turn", "turns"],
+          "correct": 2,
+          "explicacion": "Después de 'need to' usamos el infinitivo.",
+          "ejemplo": "Ej: 'I need to <strong>fix</strong> this server.'"
+        },
+        {
+          "q": "They __________ (install) the new software when the system crashed.",
+          "options": ["installs", "were installing", "install", "was installing"],
+          "correct": 1,
+          "explicacion": "Acción larga interrumpida por una puntual (crashed) = Past Continuous.",
+          "ejemplo": "Ej: 'We <strong>were working</strong> when the alarm rang.'"
+        },
+        {
+          "q": "The data center is __________ to the security office.",
+          "options": ["opposites", "opposite", "nexts", "in front"],
+          "correct": 1,
+          "explicacion": "'Opposite' no lleva 'to'. 'Next to' sí lo lleva.",
+          "ejemplo": "Ej: 'The rack is <strong>opposite</strong> the door.'"
+        },
+        {
+          "q": "The flight was __________ (hold up) due to technical issues.",
+          "options": ["held up", "hold up", "holding up", "holds up"],
+          "correct": 0,
+          "explicacion": "Voz pasiva en pasado (was + participio). 'Held' es el participio de 'hold'.",
+          "ejemplo": "Ej: 'The project was <strong>held up</strong> by the manager.'"
+        },
+        {
+          "q": "She __________ (use) to work as a network administrator before switching careers.",
+          "options": ["was using", "uses", "used", "use"],
+          "correct": 2,
+          "explicacion": "'Used to' indica un hábito pasado que ya no ocurre.",
+          "ejemplo": "Ej: 'I <strong>used to</strong> play video games.'"
+        },
+        {
+          "q": "While the team __________ (test) the new software, they found several bugs.",
+          "options": ["was testing", "tests", "test", "tested"],
+          "correct": 0,
+          "explicacion": "Con 'while' solemos usar el Past Continuous.",
+          "ejemplo": "Ej: 'While I <strong>was reading</strong>, the phone rang.'"
+        },
+        {
+          "q": "The IT team __________ (backup) all the files before the system update.",
+          "options": ["backup", "backups", "backed up", "backing up"],
+          "correct": 2,
+          "explicacion": "Acción completada en el pasado = Past Simple.",
+          "ejemplo": "Ej: 'He <strong>backed up</strong> the database.'"
+        },
+        {
+          "q": "We are __________ (plan) to upgrade the network next month.",
+          "options": ["plans", "planned", "planing", "planning"],
+          "correct": 3,
+          "explicacion": "Presente continuo con doblado de consonante (CVC).",
+          "ejemplo": "Ej: 'They are <strong>planning</strong> a meeting.'"
+        },
+        {
+          "q": "We will __________ (set off) on our business trip early tomorrow.",
+          "options": ["setted off", "sets off", "setting off", "set off"],
+          "correct": 3,
+          "explicacion": "Después de 'will' usamos la forma base. 'Set' es irregular.",
+          "ejemplo": "Ej: 'We will <strong>set off</strong> at 8 AM.'"
+        },
+        {
+          "q": "Make sure to __________ (check in) at the hotel by 3 PM.",
+          "options": ["checks in", "check in", "checked in", "checking in"],
+          "correct": 1,
+          "explicacion": "Imperativo / infinitivo tras 'to'.",
+          "ejemplo": "Ej: 'Don't forget to <strong>check in</strong>.'"
+        }
+      ]
+    }
+  ]
+}

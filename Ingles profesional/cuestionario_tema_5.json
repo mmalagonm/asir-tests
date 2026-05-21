@@ -1,0 +1,18 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "cuestionario_tema_5",
+  "titulo": "UNIT 5. Quiz - compulsory",
+  "tipo": "cuestionario",
+  "preguntas": [
+    { "id": 1, "enunciado": "The system __________ (upgrade) by the end of this week.", "opciones": { "a": "upgrades", "b": "upgrade", "c": "will be upgraded", "d": "will have upgraded" }, "respuesta_correcta": "c", "retroalimentacion": "La voz pasiva en futuro ('will be upgraded') se utiliza cuando el sujeto recibe la acción en lugar de realizarla." },
+    { "id": 2, "enunciado": "The system __________ (fail) if there is a power outage.", "opciones": { "a": "may fail", "b": "fail", "c": "should fail", "d": "fails" }, "respuesta_correcta": "a", "retroalimentacion": "El verbo modal 'may' expresa una posibilidad de que algo ocurra en el futuro." },
+    { "id": 3, "enunciado": "The application __________ (run) efficiently on all devices.", "opciones": { "a": "run", "b": "running", "c": "runned", "d": "runs" }, "respuesta_correcta": "d", "retroalimentacion": "Se utiliza el presente simple ('runs') para expresar un hecho general o una característica permanente de la aplicación." },
+    { "id": 4, "enunciado": "He __________ (finish/quickly) the report.", "opciones": { "a": "quickly finishes", "b": "finish quickly", "c": "will finish quickly", "d": "finish quickly" }, "respuesta_correcta": "c", "retroalimentacion": "El adverbio 'quickly' suele colocarse después del verbo en este tipo de estructuras de futuro con 'will'." },
+    { "id": 5, "enunciado": "The developer __________ (complete) the update by now.", "opciones": { "a": "complete", "b": "completes", "c": "must have completed", "d": "should have completed" }, "respuesta_correcta": "c", "retroalimentacion": "'Must have completed' es un modal de deducción en el pasado, indicando que estamos casi seguros de que la acción ha finalizado." },
+    { "id": 6, "enunciado": "The software update is __________ (available) online.", "opciones": { "a": "available always", "b": "available", "c": "always available", "d": "availability" }, "respuesta_correcta": "b", "retroalimentacion": "Aquí se requiere simplemente el adjetivo 'available' para describir el estado de la actualización." },
+    { "id": 7, "enunciado": "They __________ (fix) the bug, but they didn't have enough time.", "opciones": { "a": "should fix", "b": "fixes", "c": "may fix", "d": "could have fixed" }, "respuesta_correcta": "d", "retroalimentacion": "'Could have fixed' expresa una posibilidad o capacidad en el pasado que no llegó a realizarse." },
+    { "id": 8, "enunciado": "The team __________ (work) on the project since last month.", "opciones": { "a": "work", "b": "works", "c": "working", "d": "has worked" }, "respuesta_correcta": "d", "retroalimentacion": "Se usa el presente perfecto ('has worked') para una acción que comenzó en el pasado y continúa o tiene relevancia ahora, indicado por 'since'." },
+    { "id": 9, "enunciado": "The IT team __________ (respond/promptly) to all requests.", "opciones": { "a": "respond", "b": "respond promptly", "c": "responds", "d": "promptly responds" }, "respuesta_correcta": "d", "retroalimentacion": "Con adverbios de modo, una posición común en presente simple es colocarlo justo antes del verbo principal ('promptly responds')." },
+    { "id": 10, "enunciado": "This smartphone is ______ (expensive) than the one I bought last year.", "opciones": { "a": "more expensive", "b": "expensive", "c": "expensive", "d": "most expensive" }, "respuesta_correcta": "a", "retroalimentacion": "Para adjetivos largos (más de dos sílabas), el comparativo de superioridad se forma con 'more' + adjetivo + 'than'." }
+  ]
+}

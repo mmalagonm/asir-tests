@@ -1,0 +1,117 @@
+{
+  "asignatura": "Implantacion de aplicaciones web",
+  "codigo_archivo": "examen_ra3",
+  "titulo": "Examen Enero 2026 Resultado de aprendizaje 3",
+  "tipo": "examen",
+  "ra": [3],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Qué propiedad se utiliza para acceder al contenido de texto de un nodo?",
+      "opciones": {
+        "a": "innerTex",
+        "b": "innerText",
+        "c": "inerText",
+        "d": "inertext"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La propiedad 'innerText' permite obtener o modificar el contenido textual visible de un nodo elemento, ignorando el marcado HTML interno."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Con qué cláusula se puede interrumpir un bucle for?",
+      "opciones": {
+        "a": "end",
+        "b": "continue",
+        "c": "interrupted",
+        "d": "break"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "'break' es la instrucción de control de flujo que fuerza la salida inmediata de estructuras iterativas (for, while) o selectivas (switch)."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Qué ocurre en este bucle? numero=0; while (numero==0) { alert(\"...\"); }",
+      "opciones": {
+        "a": "Se ejecuta un número fijo de veces",
+        "b": "Nunca se sale del bucle",
+        "c": "Nunca se entra",
+        "d": "Se entra una vez"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Si la condición de un bucle while siempre es verdadera y no hay un 'break' interno, el programa se quedará atrapado en ese bloque, pudiendo bloquear el navegador."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Para qué se utiliza un Array?",
+      "opciones": {
+        "a": "Tipo de variable",
+        "b": "Constante",
+        "c": "Tipo bucle",
+        "d": "Colección de datos"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Los arreglos o arrays son estructuras de datos que permiten agrupar múltiples valores bajo un mismo identificador, manteniendo un orden indexado."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Qué falta en este código? if(resto==0){...} _______ (resto>0){...}",
+      "opciones": {
+        "a": "Ninguna es correcta",
+        "b": "elif",
+        "c": "else if",
+        "d": "elseif"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Para encadenar múltiples condiciones excluyentes en JavaScript, se utiliza la secuencia de palabras clave 'else if' tras el primer bloque 'if'."
+    },
+    {
+      "id": 6,
+      "enunciado": "¿Qué ocurre en este bucle? int numero=0; while (numero==0) { System.out... }",
+      "opciones": {
+        "a": "Nunca entra",
+        "b": "Nunca saldremos del bucle",
+        "c": "Se ejecuta n veces",
+        "d": "Entra una vez y sale"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Al igual que en JS, si la condición del while se mantiene constante y verdadera, la ejecución se repite cíclicamente sin fin."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Qué valor tiene i al salir del bucle? i=1; while(i<=3){... i++;}",
+      "opciones": {
+        "a": "6",
+        "b": "4",
+        "c": "2",
+        "d": "3"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Tras la tercera iteración (i=3), el contador se incrementa a 4. Al volver a evaluar la condición (4 <= 3), esta resulta falsa y se sale del bucle con i valiendo 4."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Qué método falta para añadir un elemento creado al cuerpo del documento?",
+      "opciones": {
+        "a": "createElements()",
+        "b": "appendChild()",
+        "c": "append()",
+        "d": "parse"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Este método es fundamental en la manipulación del DOM para insertar un nuevo nodo como el último hijo de un elemento padre existente."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Qué devuelve document.getElementById(\"contenido\") si el elemento existe?",
+      "opciones": {
+        "a": "Un nodo de texto",
+        "b": "Un nodo elemento",
+        "c": "Una colección HTML",
+        "d": "Un array de nodos"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Si el ID existe, el método retorna una referencia al objeto que representa esa etiqueta específica en el árbol del DOM, permitiendo acceder a sus propiedades y métodos."
+    }
+  ]
+}

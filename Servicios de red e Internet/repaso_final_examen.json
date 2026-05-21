@@ -1,0 +1,431 @@
+{
+  "asignatura": "Servicios de red e Internet",
+  "codigo_archivo": "repaso_final_examen",
+  "titulo": "Repaso Final para Examen - SRI",
+  "tipo": "repaso",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "El puerto que pertenece al servicio DNS es:",
+      "opciones": {
+        "a": "21",
+        "b": "53",
+        "c": "80",
+        "d": "443"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El puerto 53 es el estándar para consultas DNS."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Qué describe a una red con topología en estrella?",
+      "opciones": {
+        "a": "Es una red donde todos los nodos están conectados en serie.",
+        "b": "Es una red centralizada donde todos los nodos se conectan a un dispositivo central (switch o hub).",
+        "c": "Es una red donde cada nodo está conectado a otros dos formando un anillo.",
+        "d": "Es una red sin punto central."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La topología en estrella centraliza las conexiones, facilitando la gestión y el aislamiento de fallos."
+    },
+    {
+      "id": 3,
+      "enunciado": "Si una red local funciona por DHCP pero pierde internet al asignar IPs estáticas correctas, ¿cuál suele ser la solución?",
+      "opciones": {
+        "a": "Cambiar el cable de red.",
+        "b": "Escribir las DNS alternativa y preferida manualmente.",
+        "c": "Reiniciar el switch.",
+        "d": "Desactivar el firewall de Windows."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Al configurar IP estática, es imprescindible especificar los servidores DNS para que el equipo pueda resolver nombres de dominio."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Cuál es la diferencia entre el DNS preferido y el DNS alternativo?",
+      "opciones": {
+        "a": "El preferido es para internet y el alternativo para la red local.",
+        "b": "El preferido (primario) se utiliza principalmente; el alternativo (secundario) sirve de respaldo si el primero falla.",
+        "c": "El alternativo es más rápido que el preferido.",
+        "d": "No hay diferencia, se pueden usar indistintamente sin jerarquía."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El sistema siempre intenta primero el DNS preferido y solo recurre al alternativo en caso de error."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Qué herramienta en Windows permite consultar servidores DNS manualmente?",
+      "opciones": {
+        "a": "ipconfig",
+        "b": "ping",
+        "c": "nslookup",
+        "d": "netstat"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "nslookup es la utilidad de línea de comandos para diagnosticar la infraestructura DNS."
+    },
+    {
+      "id": 6,
+      "enunciado": "¿Cómo puedo vaciar la caché DNS en mi equipo Windows?",
+      "opciones": {
+        "a": "ipconfig /release",
+        "b": "ipconfig /flushdns",
+        "c": "ipconfig /renew",
+        "d": "cls"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "/flushdns elimina las entradas almacenadas localmente, obligando al sistema a realizar nuevas consultas."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Qué es la resolución DNS directa?",
+      "opciones": {
+        "a": "Se introduce la IP y el sistema devuelve el nombre.",
+        "b": "Se escribe el nombre de la página Web y el servidor devuelve la IP.",
+        "c": "Es cuando el DNS está en la misma red local.",
+        "d": "Es la conexión sin pasar por un proxy."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Es el uso más común: traducir nombres amigables (ej: google.com) a direcciones IP."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Qué es la resolución DNS indirecta (o inversa)?",
+      "opciones": {
+        "a": "Se introduce la IP y el sistema devuelve el nombre del dominio.",
+        "b": "Es cuando el DNS falla y se usa el archivo hosts.",
+        "c": "Es la resolución entre dos servidores DNS externos.",
+        "d": "No existe tal concepto en redes."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Permite identificar el nombre de host asociado a una dirección IP conocida."
+    },
+    {
+      "id": 9,
+      "enunciado": "Al configurar un DHCP-RELAY, ¿qué comando es obligatorio asignar en la interfaz del router de destino?",
+      "opciones": {
+        "a": "ip address dhcp",
+        "b": "ip helper-address [IP_DEL_SERVIDOR_DHCP]",
+        "c": "service dhcp",
+        "d": "ip forward-protocol"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "ip helper-address permite que el router reenvíe las solicitudes de broadcast DHCP (que normalmente no cruzan routers) al servidor específico."
+    },
+    {
+      "id": 10,
+      "enunciado": "Observa la imagen. ¿Es correcta la siguiente configuración teniendo en cuenta la máscara de red?",
+      "fichero_imagen": "repaso_final_img1.png",
+      "opciones": {
+        "a": "Sí, es correcta.",
+        "b": "No, hay un error en la máscara.",
+        "c": "No, la IP no pertenece a esa red.",
+        "d": "Falta la puerta de enlace."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Basado en la imagen 1 del examen, se verifica la coherencia entre IP y máscara."
+    },
+    {
+      "id": 11,
+      "enunciado": "Observa la imagen. ¿Es correcta esta otra configuración de red?",
+      "fichero_imagen": "repaso_final_img2.png",
+      "opciones": {
+        "a": "Sí.",
+        "b": "No.",
+        "c": "Faltan las DNS.",
+        "d": "La máscara es inválida."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Validación visual de parámetros de red según la imagen 2."
+    },
+    {
+      "id": 12,
+      "enunciado": "¿Qué diferencia existe entre el DHCP y DHCP-RELAY?",
+      "opciones": {
+        "a": "DHCP es para IPs fijas; RELAY para dinámicas.",
+        "b": "DHCP entrega IPs en la misma red local; RELAY permite entregar IPs a clientes en redes remotas a través de un agente.",
+        "c": "No hay diferencia, son sinónimos.",
+        "d": "RELAY es una versión más lenta de DHCP."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "RELAY actúa como intermediario para saltar la limitación de broadcast de los routers."
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Qué se entiende por IIS?",
+      "opciones": {
+        "a": "Un sistema de detección de intrusos.",
+        "b": "Internet Information Services: servidor web y servicios de internet de Microsoft para Windows.",
+        "c": "Un protocolo de transferencia de archivos seguro.",
+        "d": "Un tipo de base de datos relacional."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "IIS es la alternativa de Microsoft a servidores web como Apache o Nginx."
+    },
+    {
+      "id": 14,
+      "enunciado": "Si el puerto 80 (HTTP) está ocupado, ¿por qué puertos alternativos se suele reemplazar?",
+      "opciones": {
+        "a": "21 o 22",
+        "b": "8080 o 8081",
+        "c": "443 o 8443",
+        "d": "3306 o 5432"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Los puertos 808x son los estándares de facto para servidores web secundarios o de desarrollo."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Cómo se pueden gestionar máquinas virtuales en Windows de forma nativa (sin instalar software de terceros como VirtualBox)?",
+      "opciones": {
+        "a": "VMware Player",
+        "b": "Hyper-V",
+        "c": "KVM",
+        "d": "Docker"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Hyper-V es el hipervisor nativo incluido en las versiones Pro y Server de Windows."
+    },
+    {
+      "id": 16,
+      "enunciado": "En un ASA 5505 sin DNS configurado, si los PCs de la zona 0 quieren acceder a la web en la zona 100, ¿qué IP deben teclear?",
+      "opciones": {
+        "a": "La IP pública del router.",
+        "b": "La puerta de enlace de los PC de la seguridad 0.",
+        "c": "La IP 127.0.0.1.",
+        "d": "No pueden acceder sin DNS."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En el escenario planteado, el tráfico se dirige a la IP de la interfaz del cortafuegos que actúa como gateway."
+    },
+    {
+      "id": 17,
+      "enunciado": "Tienes un DNS con la IP 172.0.0.0/25. ¿Qué máscara wildcard le corresponde para configurarlo en OSPF?",
+      "opciones": {
+        "a": "0.0.0.255",
+        "b": "0.0.0.127",
+        "c": "255.255.255.128",
+        "d": "0.0.0.63"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La máscara /25 es 255.255.255.128. La wildcard es la inversa: 0.0.0.127."
+    },
+    {
+      "id": 18,
+      "enunciado": "¿Cómo se define un servidor DNS dentro de un pool DHCP en Cisco CLI?",
+      "opciones": {
+        "a": "dns-server 8.8.8.8",
+        "b": "set dns 8.8.8.8",
+        "c": "ip dns primary 8.8.8.8",
+        "d": "helper-address 8.8.8.8"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Dentro del contexto 'ip dhcp pool', el comando es 'dns-server' seguido de la(s) IP(s)."
+    },
+    {
+      "id": 19,
+      "enunciado": "¿Cómo se comprueba si IIS está instalado y funcionando correctamente en el equipo local?",
+      "opciones": {
+        "a": "Escribiendo 'iis' en la consola.",
+        "b": "Accediendo a http://localhost en el navegador.",
+        "c": "Mirando el administrador de tareas.",
+        "d": "Haciendo ping a 127.0.0.1."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Si IIS funciona, mostrará una página de bienvenida predeterminada al acceder a la dirección local."
+    },
+    {
+      "id": 20,
+      "enunciado": "¿Qué puerto utiliza Netflow por defecto?",
+      "opciones": {
+        "a": "514",
+        "b": "9996",
+        "c": "161",
+        "d": "22"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El puerto 9996 es el habitual para exportar flujos de datos Netflow."
+    },
+    {
+      "id": 21,
+      "enunciado": "¿Qué puerto utiliza Syslog?",
+      "opciones": {
+        "a": "514",
+        "b": "601 (con cifrado)",
+        "c": "Ambas son correctas",
+        "d": "80"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Syslog usa el puerto UDP 514 por defecto, y el 601 (TCP) para transmisiones seguras."
+    },
+    {
+      "id": 22,
+      "enunciado": "¿Cuántos permisos básicos se pueden configurar en un servidor FTP?",
+      "opciones": {
+        "a": "2 (Leer y Escribir)",
+        "b": "5 (WRITE, READ, DELETE, RENAME Y LIST)",
+        "c": "Ilimitados",
+        "d": "Sólo uno por usuario"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Estos cinco permisos cubren las operaciones fundamentales sobre archivos y directorios."
+    },
+    {
+      "id": 23,
+      "enunciado": "Si el puerto 21 está ocupado, ¿cuál es un puerto alternativo común para FTP?",
+      "opciones": {
+        "a": "2121",
+        "b": "2222 (Seguro/SSH)",
+        "c": "8021 (para saltar firewalls)",
+        "d": "Todas las anteriores según el caso"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Se pueden usar diversos puertos alternativos para evitar conflictos o mejorar la seguridad por oscuridad."
+    },
+    {
+      "id": 24,
+      "enunciado": "En un cliente FTP, ¿qué hace el comando 'PUT'?",
+      "opciones": {
+        "a": "Descarga un archivo del servidor.",
+        "b": "Sube un archivo al servidor remoto.",
+        "c": "Muestra el contenido del directorio.",
+        "d": "Crea una carpeta nueva."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "'PUT' envía datos al servidor, mientras que 'GET' los recupera."
+    },
+    {
+      "id": 25,
+      "enunciado": "¿Para qué sirve el comando 'PWD' en FTP?",
+      "opciones": {
+        "a": "Para cambiar la contraseña.",
+        "b": "Para mostrar la ruta completa del directorio actual en el servidor remoto.",
+        "c": "Para ver los permisos del archivo.",
+        "d": "Para salir de la sesión."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "PWD significa 'Print Working Directory'."
+    },
+    {
+      "id": 26,
+      "enunciado": "¿Qué puertos se utilizan para el envío seguro de correo (SMTP)?",
+      "opciones": {
+        "a": "25",
+        "b": "587 o 465 (con cifrado seguro)",
+        "c": "110",
+        "d": "143"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El puerto 25 es para transferencia entre servidores, mientras que 587/465 son para clientes con autenticación y cifrado."
+    },
+    {
+      "id": 27,
+      "enunciado": "¿Qué puertos se utilizan para la recepción de correo?",
+      "opciones": {
+        "a": "993 (IMAP) o 995 (POP3) con cifrado.",
+        "b": "80 y 443.",
+        "c": "21 y 22.",
+        "d": "53 y 67."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "IMAP y POP3 son los protocolos estándar para descargar o sincronizar el buzón."
+    },
+    {
+      "id": 28,
+      "enunciado": "¿Es necesario configurar un DNS para que funcione un servidor de correos?",
+      "opciones": {
+        "a": "No, se pueden usar IPs.",
+        "b": "Sí, es imprescindible (registros MX).",
+        "c": "Sólo si es una cuenta de Gmail.",
+        "d": "Sólo en redes locales."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Sin DNS y registros MX, los servidores de correo no sabrían a qué dirección física entregar los mensajes de un dominio."
+    },
+    {
+      "id": 29,
+      "enunciado": "Observa la imagen. ¿Qué error encuentras en la configuración del servidor de correos en Cisco?",
+      "fichero_imagen": "repaso_final_img3.png",
+      "opciones": {
+        "a": "IP incorrecta.",
+        "b": "Falta el nombre de dominio o el registro MX no apunta correctamente.",
+        "c": "El puerto está cerrado.",
+        "d": "No hay error."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Validación de errores comunes en laboratorios de Cisco Packet Tracer según imagen 3."
+    },
+    {
+      "id": 30,
+      "enunciado": "¿Qué puerto utiliza habitualmente WhatsApp para su comunicación?",
+      "opciones": {
+        "a": "80",
+        "b": "443 (HTTPS) y otros como 6667.",
+        "c": "25",
+        "d": "53"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "WhatsApp usa HTTPS para la mayoría de sus conexiones, evitando bloqueos de red."
+    },
+    {
+      "id": 31,
+      "enunciado": "¿Qué comando de IPv6 habilita el protocolo en una interfaz de Cisco?",
+      "opciones": {
+        "a": "ipv6 enable",
+        "b": "ipv6 address auto",
+        "c": "ipv6 on",
+        "d": "ip address v6"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Es el comando básico para activar el procesamiento IPv6 en una interfaz."
+    },
+    {
+      "id": 32,
+      "enunciado": "En la configuración 'tunnel mode ipv6ip', ¿qué se está realizando?",
+      "opciones": {
+        "a": "Cifrado de datos.",
+        "b": "Encapsulamiento de tráfico IPv6 dentro de paquetes IPv4 (Túnel 6to4).",
+        "c": "Un túnel VPN para internet.",
+        "d": "Compresión de paquetes."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Es un mecanismo de transición para enviar tráfico IPv6 a través de infraestructuras que solo soportan IPv4."
+    },
+    {
+      "id": 33,
+      "enunciado": "¿Qué puertos utiliza Microsoft Teams para audio, vídeo y compartir pantalla?",
+      "opciones": {
+        "a": "80 y 443",
+        "b": "3478, 3479, 3480 y 3481 (UDP/TCP).",
+        "c": "137, 138, 139",
+        "d": "3389"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Teams utiliza puertos específicos de medios para optimizar el tráfico de tiempo real."
+    },
+    {
+      "id": 34,
+      "enunciado": "¿Cuál de estos es un programa lector de pantalla para invidentes?",
+      "opciones": {
+        "a": "JAWS",
+        "b": "VLC",
+        "c": "Winamp",
+        "d": "Chrome"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "JAWS es el software estándar de la industria para accesibilidad de personas ciegas."
+    },
+    {
+      "id": 35,
+      "enunciado": "¿Cuál es la aplicación nativa clásica de video en Windows?",
+      "opciones": {
+        "a": "VLC",
+        "b": "Windows Media Player",
+        "c": "QuickTime",
+        "d": "RealPlayer"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Aunque existen muchas alternativas, Media Player es el reproductor integrado por defecto."
+    }
+  ]
+}

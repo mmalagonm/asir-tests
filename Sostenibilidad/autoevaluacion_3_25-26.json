@@ -1,0 +1,246 @@
+{
+  "titulo": "3ª Autoevaluación curso 25/26",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "La deforestación consiste en:",
+      "opciones": {
+        "a": "La construcción de carreteras rurales",
+        "b": "La contaminación del suelo agrícola",
+        "c": "La eliminación de bosques y selvas",
+        "d": "El aumento de la masa forestal"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La deforestación es el proceso de desaparición de las masas forestales, fundamentalmente causada por la actividad humana mediante la tala o quema selectiva."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Cuál de estas NO es una causa de la escasez de agua?",
+      "opciones": {
+        "a": "Sequías",
+        "b": "Deforestación y degradación del suelo",
+        "c": "Uso de sistemas eficientes de ahorro de agua",
+        "d": "Despilfarro de agua"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Los sistemas eficientes de ahorro de agua ayudan a combatir la escasez, no son una causa de la misma."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Qué actividad pertenece al sector primario?",
+      "opciones": {
+        "a": "Pesca",
+        "b": "Turismo",
+        "c": "Comercio",
+        "d": "Transporte"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El sector primario incluye actividades relacionadas con la extracción de recursos naturales, como la agricultura, ganadería y pesca."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Qué es el estrés hídrico?",
+      "opciones": {
+        "a": "Contaminación por aguas residuales",
+        "b": "Pérdida de peces en ríos",
+        "c": "Falta de lluvias durante un día",
+        "d": "Situación en la que la demanda de agua supera la cantidad disponible"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El estrés hídrico ocurre cuando la demanda de agua es más alta que la cantidad disponible durante un periodo determinado o cuando su uso se ve restringido por su baja calidad."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Cuál de estas es una medida de eficiencia energética?",
+      "opciones": {
+        "a": "Mantener luces encendidas",
+        "b": "Instalar iluminación LED",
+        "c": "Usar más climatización",
+        "d": "Cargar dispositivos innecesariamente"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La iluminación LED consume significativamente menos energía que las bombillas tradicionales para producir la misma cantidad de luz."
+    },
+    {
+      "id": 6,
+      "enunciado": "¿Qué puede provocar la desaparición de una especie?",
+      "opciones": {
+        "a": "Alteración de la cadena alimentaria",
+        "b": "Más recursos para todas las especies",
+        "c": "Mayor estabilidad ecológica",
+        "d": "Ningún cambio importante"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La extinción de una especie puede desequilibrar todo el ecosistema y afectar a otras especies que dependen de ella en la cadena trófica."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Cuál de estos efectos afecta al sector primario?",
+      "opciones": {
+        "a": "Disminución de polinizadores",
+        "b": "Menor dependencia del clima",
+        "c": "Reducción de la necesidad de agua en cultivos",
+        "d": "Mejora espontánea de los pastos"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La pérdida de polinizadores como las abejas tiene un impacto directo y negativo en la producción agrícola."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Cuál de estas es una causa de la erosión del suelo?",
+      "opciones": {
+        "a": "Instalación de placas solares",
+        "b": "Reciclaje doméstico",
+        "c": "Agricultura no sostenible",
+        "d": "Uso de transporte público"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Prácticas como el monocultivo intenso o el uso excesivo de químicos degradan el suelo y facilitan su erosión."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Qué problema puede sufrir el sector secundario?",
+      "opciones": {
+        "a": "Escasez de materias primas por sobreexplotación de recursos",
+        "b": "Aumento del atractivo turístico",
+        "c": "Reducción de costes energéticos por calor extremo",
+        "d": "Menor dependencia de materias primas"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La industria (sector secundario) depende de materias primas que, si se sobreexplotan, pueden agotarse o encarecerse drásticamente."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Qué sector se ve muy afectado por huracanes, inundaciones o pérdida del paisaje?",
+      "opciones": {
+        "a": "Sector minero",
+        "b": "Sector terciario, especialmente el turismo",
+        "c": "Sector agrícola",
+        "d": "Sector industrial"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El turismo depende fuertemente de la integridad del paisaje y las infraestructuras, que pueden ser destruidas por fenómenos climáticos extremos."
+    },
+    {
+      "id": 11,
+      "enunciado": "¿Qué ocurrió en Yellowstone al desaparecer los lobos?",
+      "opciones": {
+        "a": "Se redujo la población de herbívoros",
+        "b": "Aumentó la población de ciervos y alces y se degradó la vegetación",
+        "c": "Mejoró el equilibrio natural",
+        "d": "Aumentó la vegetación ribereña"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Sin depredadores naturales, las poblaciones de grandes herbívoros crecieron sin control, sobrepastoreando el parque y dañando gravemente la flora."
+    },
+    {
+      "id": 12,
+      "enunciado": "¿Qué representa el día del sobregiro de la Tierra?",
+      "opciones": {
+        "a": "El día con más contaminación del año",
+        "b": "El momento en que la humanidad agota los recursos que la Tierra puede regenerar en un año",
+        "c": "El inicio del verano climático",
+        "d": "El día mundial del reciclaje"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Es la fecha en la que la demanda de recursos naturales de la humanidad supera la capacidad de regeneración del planeta para ese año."
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Qué es la pobreza?",
+      "opciones": {
+        "a": "Ausencia temporal de empleo únicamente",
+        "b": "Falta de estudios superiores",
+        "c": "Situación en la que no se pueden cubrir necesidades básicas",
+        "d": "Carencia exclusiva de vivienda"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La pobreza es una situación multidimensional que impide a las personas acceder a recursos esenciales como alimentación, agua potable, sanidad o educación."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Qué es la movilidad sostenible?",
+      "opciones": {
+        "a": "Desplazamiento eficiente, accesible y seguro minimizando el impacto ambiental",
+        "b": "Uso exclusivo del coche privado",
+        "c": "Eliminación del transporte público",
+        "d": "Desplazamiento rápido sin importar el impacto ambiental"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Busca satisfacer las necesidades de transporte reduciendo el consumo de energía y las emisiones contaminantes."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Qué es un residuo según el tema?",
+      "opciones": {
+        "a": "Solo los restos orgánicos domésticos",
+        "b": "Cualquier material generado por la actividad humana que se desecha o abandona",
+        "c": "Un material que siempre puede reutilizarse",
+        "d": "Solo basura industrial peligrosa"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Legalmente, un residuo es cualquier sustancia u objeto del cual su poseedor se desprenda o tenga la intención u obligación de desprenderse."
+    },
+    {
+      "id": 16,
+      "enunciado": "¿Qué significa mitigación del cambio climático?",
+      "opciones": {
+        "a": "Adaptarse sin cambiar el modelo energético",
+        "b": "Aumentar la producción industrial",
+        "c": "Construir más carreteras",
+        "d": "Acciones para reducir emisiones de gases de efecto invernadero"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La mitigación consiste en reducir las fuentes o potenciar los sumideros de gases de efecto invernadero para frenar el calentamiento global."
+    },
+    {
+      "id": 17,
+      "enunciado": "¿Qué significa \"España vaciada\"?",
+      "opciones": {
+        "a": "El aumento del turismo rural",
+        "b": "El abandono de las zonas costeras",
+        "c": "El crecimiento industrial en pueblos",
+        "d": "Zonas con despoblación intensa, envejecimiento y falta de servicios"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Se refiere a las regiones del interior peninsular que han sufrido un proceso histórico de emigración y falta de inversión."
+    },
+    {
+      "id": 18,
+      "enunciado": "¿Qué es la sobreexplotación de los recursos naturales?",
+      "opciones": {
+        "a": "El uso eficiente del agua",
+        "b": "La protección de especies amenazadas",
+        "c": "La recuperación de ecosistemas",
+        "d": "El uso insostenible de recursos a mayor ritmo del que la naturaleza los regenera"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Ocurre cuando se extraen recursos renovables por encima de su tasa de renovación, lo que conduce a su agotamiento."
+    },
+    {
+      "id": 19,
+      "enunciado": "¿Qué modelo económico genera muchos residuos?",
+      "opciones": {
+        "a": "Economía colaborativa",
+        "b": "Economía lineal",
+        "c": "Economía verde",
+        "d": "Economía circular"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La economía lineal sigue el esquema \"extraer, fabricar, usar y tirar\", generando grandes cantidades de desperdicios."
+    },
+    {
+      "id": 20,
+      "enunciado": "¿Qué es la transición energética?",
+      "opciones": {
+        "a": "La reducción del transporte público",
+        "b": "El cierre de toda actividad industrial",
+        "c": "El aumento del uso de petróleo",
+        "d": "La sustitución progresiva de energías no renovables por renovables"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Es el cambio estructural del sistema energético hacia la descarbonización, priorizando fuentes limpias e inagotables."
+    }
+  ]
+}

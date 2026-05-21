@@ -1,0 +1,218 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "test_2_grammar",
+  "titulo": "Grammar Review TEST 2 - OPTIONAL",
+  "tipo": "test",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "If the company had invested more in security, it _______ the cyberattack.",
+      "opciones": { "a": "avoided", "b": "would avoid", "c": "would have avoided", "d": "had avoided" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Se trata de la tercera condicional (Third Conditional), que se utiliza para hablar de situaciones hipotéticas en el pasado. La estructura es 'If + past perfect, would have + past participle'."
+    },
+    {
+      "id": 2,
+      "enunciado": "The data _______ every evening automatically.",
+      "opciones": { "a": "backs up", "b": "is backed up", "c": "backed up", "d": "backing up" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Se utiliza la voz pasiva en presente simple ('is backed up') porque el sujeto (the data) recibe la acción y es un proceso regular."
+    },
+    {
+      "id": 3,
+      "enunciado": "At this time next week, they _______ the final tests.",
+      "opciones": { "a": "complete", "b": "completed", "c": "will be completing", "d": "have completed" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El futuro continuo ('will be completing') se utiliza para acciones que estarán en desarrollo en un momento específico del futuro."
+    },
+    {
+      "id": 4,
+      "enunciado": "She asked me where I _______ the previous day.",
+      "opciones": { "a": "was", "b": "had been", "c": "have been", "d": "am" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En el estilo indirecto (Reported Speech), el pasado simple ('was/were') suele cambiar a pasado perfecto ('had been') cuando el verbo introductor está en pasado."
+    },
+    {
+      "id": 5,
+      "enunciado": "The employee, _______ laptop was stolen, informed the police.",
+      "opciones": { "a": "who", "b": "which", "c": "where", "d": "whose" },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El pronombre relativo 'whose' se utiliza para indicar posesión ('cuyo/a' o 'del cual/de la cual')."
+    },
+    {
+      "id": 6,
+      "enunciado": "You _______ interrupt people during a formal presentation.",
+      "opciones": { "a": "shouldn’t", "b": "should", "c": "may", "d": "can" },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "'Shouldn't' se utiliza para dar consejos negativos o indicar que algo no es recomendable."
+    },
+    {
+      "id": 7,
+      "enunciado": "We haven’t had _______ complaints from customers this month.",
+      "opciones": { "a": "much", "b": "many", "c": "little", "d": "any of" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "'Many' se utiliza con sustantivos contables en plural (complaints) en frases negativas e interrogativas."
+    },
+    {
+      "id": 8,
+      "enunciado": "By the end of this year, the company _______ more than 500 people.",
+      "opciones": { "a": "employs", "b": "employed", "c": "will have employed", "d": "is employing" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El futuro perfecto ('will have employed') se utiliza para acciones que habrán finalizado antes de un momento determinado en el futuro ('by the end of this year')."
+    },
+    {
+      "id": 9,
+      "enunciado": "He is not used to _______ in such a large office.",
+      "opciones": { "a": "work", "b": "to work", "c": "working", "d": "worked" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La expresión 'be used to' va seguida de un verbo en gerundio (-ing) para indicar costumbre."
+    },
+    {
+      "id": 10,
+      "enunciado": "The project was delayed _______ technical difficulties.",
+      "opciones": { "a": "because", "b": "because of", "c": "however", "d": "although" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "'Because of' es una preposición que introduce una causa seguida de un sustantivo o sintagma nominal."
+    },
+    {
+      "id": 11,
+      "enunciado": "This is the factory _______ the parts are produced.",
+      "opciones": { "a": "who", "b": "where", "c": "which", "d": "whose" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El pronombre relativo 'where' se utiliza para referirse a un lugar (the factory)."
+    },
+    {
+      "id": 12,
+      "enunciado": "The manager said that the team _______ the task successfully.",
+      "opciones": { "a": "completed", "b": "had completed", "c": "completes", "d": "has completed" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En Reported Speech, si el verbo introductor está en pasado (said), el pasado simple ('completed') cambia a pasado perfecto ('had completed')."
+    },
+    {
+      "id": 13,
+      "enunciado": "The new policy is _______ strict than the old one.",
+      "opciones": { "a": "more", "b": "much", "c": "many", "d": "most" },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Para adjetivos de dos o más sílabas (strict), el comparativo de superioridad se forma con 'more + adjetivo + than'."
+    },
+    {
+      "id": 14,
+      "enunciado": "I wish the office _______ closer to my house.",
+      "opciones": { "a": "is", "b": "was", "c": "were", "d": "has been" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "En las expresiones de deseo con 'wish' sobre el presente, se utiliza el pasado simple. Con el verbo 'be', se suele utilizar 'were' para todas las personas en registros formales."
+    },
+    {
+      "id": 15,
+      "enunciado": "They suggested _______ a new database system.",
+      "opciones": { "a": "install", "b": "to install", "c": "installing", "d": "installed" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El verbo 'suggest' suele ir seguido de un gerundio (-ing) cuando no se especifica el sujeto de la acción sugerida."
+    },
+    {
+      "id": 16,
+      "enunciado": "The computers _______ by the technicians tomorrow morning.",
+      "opciones": { "a": "repair", "b": "repaired", "c": "will repair", "d": "will be repaired" },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Se trata de la voz pasiva en futuro simple ('will be repaired') porque la acción la realizarán los técnicos sobre los ordenadores."
+    },
+    {
+      "id": 17,
+      "enunciado": "She has been working here _______ six months.",
+      "opciones": { "a": "since", "b": "for", "c": "ago", "d": "during" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "'For' se utiliza para indicar la duración de un periodo de tiempo (six months) con tiempos perfectos."
+    },
+    {
+      "id": 18,
+      "enunciado": "Unless we leave now, we _______ late for the conference.",
+      "opciones": { "a": "are", "b": "were", "c": "will be", "d": "would be" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'Unless' significa 'a menos que' e introduce una condición. En una condicional de primer tipo, la cláusula principal va en futuro simple ('will be')."
+    },
+    {
+      "id": 19,
+      "enunciado": "He speaks English fluently, _______ he still makes small mistakes.",
+      "opciones": { "a": "because", "b": "so", "c": "although", "d": "however" },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "'However' se utiliza para introducir un contraste entre dos ideas. Aunque 'although' también indica contraste, 'however' suele ir separado por comas o punto y coma."
+    },
+    {
+      "id": 20,
+      "enunciado": "I am responsible _______ updating the website.",
+      "opciones": { "a": "in", "b": "on", "c": "for", "d": "at" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El adjetivo 'responsible' va seguido de la preposición 'for'."
+    },
+    {
+      "id": 21,
+      "enunciado": "The new software is one of _______ applications on the market.",
+      "opciones": { "a": "better", "b": "the better", "c": "best", "d": "the best" },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Se utiliza el superlativo de 'good' (the best) para comparar un elemento dentro de un grupo."
+    },
+    {
+      "id": 22,
+      "enunciado": "She admitted _______ the wrong file.",
+      "opciones": { "a": "send", "b": "to send", "c": "sending", "d": "sent" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El verbo 'admit' suele ir seguido de gerundio (-ing)."
+    },
+    {
+      "id": 23,
+      "enunciado": "We _______ for the bus when it started raining.",
+      "opciones": { "a": "waited", "b": "were waiting", "c": "wait", "d": "have waited" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El pasado continuo ('were waiting') se utiliza para una acción larga que estaba ocurriendo cuando otra acción puntual (started raining) la interrumpió."
+    },
+    {
+      "id": 24,
+      "enunciado": "If I were you, I _______ contact technical support.",
+      "opciones": { "a": "will", "b": "would", "c": "can", "d": "should to" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Se trata de la segunda condicional (Second Conditional) utilizada para dar consejos ('If I were you...'). La estructura es 'If + past simple, would + base form'."
+    },
+    {
+      "id": 25,
+      "enunciado": "The company has reduced costs _______ improving efficiency.",
+      "opciones": { "a": "by", "b": "for", "c": "with", "d": "from" },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La preposición 'by' seguida de gerundio indica el medio o el método por el cual se consigue algo."
+    },
+    {
+      "id": 26,
+      "enunciado": "He asked whether the documents _______ already.",
+      "opciones": { "a": "printed", "b": "had been printed", "c": "have printed", "d": "are printed" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En estilo indirecto, la pregunta original en presente perfecto pasivo ('Have they been printed?') cambia a pasado perfecto pasivo ('had been printed')."
+    },
+    {
+      "id": 27,
+      "enunciado": "The meeting _______ before we reached the office.",
+      "opciones": { "a": "starts", "b": "started", "c": "had started", "d": "has started" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El pasado perfecto ('had started') se utiliza para indicar que una acción ocurrió antes que otra acción en el pasado ('reached')."
+    },
+    {
+      "id": 28,
+      "enunciado": "She is interested _______ artificial intelligence.",
+      "opciones": { "a": "on", "b": "in", "c": "at", "d": "for" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El adjetivo 'interested' va seguido de la preposición 'in'."
+    },
+    {
+      "id": 29,
+      "enunciado": "Despite _______ very busy, he finished the report on time.",
+      "opciones": { "a": "be", "b": "to be", "c": "being", "d": "been" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La preposición 'despite' va seguida de un sustantivo o un gerundio (-ing)."
+    },
+    {
+      "id": 30,
+      "enunciado": "The training course was _______ useful than I expected.",
+      "opciones": { "a": "much more", "b": "more much", "c": "many more", "d": "most more" },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Se puede utilizar 'much' como intensificador delante de un comparativo ('much more useful') para indicar una gran diferencia."
+    }
+  ]
+}

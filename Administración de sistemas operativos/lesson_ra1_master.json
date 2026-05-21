@@ -1,0 +1,112 @@
+{
+  "asignatura": "Administración de sistemas operativos",
+  "codigo_archivo": "lesson_ra1_master",
+  "titulo": "MANUAL TÉCNICO MAESTRO: RA1 - Administración de Servicios de Directorio y Red",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "1. Arquitectura de Red en Windows Server",
+      "contenido": "<div class='lesson-card'>La administración profesional comienza por entender el despliegue lógico de la infraestructura.</div><p>Existen dos estados fundamentales para un servidor Windows:</p><ul><li><strong>Grupo de Trabajo (Workgroup):</strong> El estado 'Out-of-the-box'. La seguridad es local (SAM). Cada máquina es una isla.</li><li><strong>Dominio (Active Directory):</strong> Repositorio centralizado. Requiere la promoción del servidor a <strong>Controlador de Dominio (DC)</strong> mediante el rol AD DS.</li></ul><p class='diag-note'>🔍 <strong>Dato Técnico Crítico:</strong> Un servidor recién instalado <strong>NUNCA</strong> pertenece a un dominio por defecto. Pertenece al grupo de trabajo 'WORKGROUP'.</p>"
+    },
+    {
+      "id": 2,
+      "titulo": "2. Conectividad y Resolución de Nombres (DNS)",
+      "contenido": "<div class='lesson-card'>Sin resolución de nombres, el Servicio de Directorio no es funcional.</div><p>Para integrar un cliente (Windows 10/11) en un dominio, se deben cumplir tres requisitos innegociables:</p><ol><li><strong>Misma Red Lógica:</strong> IPs en el mismo segmento o enrutadas.</li><li><strong>DNS Preferido:</strong> El cliente <strong>DEBE</strong> apuntar a la IP del Servidor DNS (normalmente el DC). Sin esto, el error 'No se pudo contactar con el controlador de dominio' es inevitable.</li><li><strong>Credenciales:</strong> Se requiere una cuenta con privilegios de Administrador del Dominio para realizar la unión.</li></ol><p class='diag-note'>⚠️ <strong>Firewall:</strong> Por defecto, Windows bloquea el tráfico ICMP. Para 'verse' en red (ping), se debe habilitar la 'Detección de Redes' o crear una regla específica.</p>"
+    },
+    {
+      "id": 3,
+      "titulo": "3. Seguridad de Red y Protocolos Heredados",
+      "contenido": "<div class='lesson-card'>El endurecimiento (hardening) del servidor implica cerrar vectores de ataque innecesarios.</div><p><strong>NetBIOS sobre TCP/IP:</strong> Aunque antiguo, sigue presente por compatibilidad. Utiliza:</p><ul><li><strong>Puerto UDP 137:</strong> Servicio de nombres (Name Service).</li><li><strong>Puerto UDP 138:</strong> Servicio de datagramas (Datagram Service).</li><li><strong>Puerto TCP 139:</strong> Servicio de sesión (Session Service).</li></ul><p>En entornos modernos, deshabilitar NetBIOS mejora la seguridad al reducir el ruido en la red y la visibilidad ante herramientas de escaneo.</p>"
+    },
+    {
+      "id": 4,
+      "titulo": "4. Active Directory: Objetos y Jerarquías",
+      "contenido": "<div class='lesson-card'>Active Directory no es solo una base de datos; es una estructura jerárquica de confianza.</div><ul><li><strong>Bosque (Forest):</strong> Límite máximo de seguridad y replicación.</li><li><strong>Árbol (Tree):</strong> Jerarquía de dominios con nombres contiguos.</li><li><strong>Unidad Organizativa (OU):</strong> El objeto más importante para el administrador. Permite: <ul><li>Organizar usuarios/equipos lógicamente.</li><li>Delegar control administrativo a usuarios no-administradores.</li><li><strong>Vincular GPOs</strong> (Objetos de Directiva de Grupo).</li></ul></li></ul><p class='diag-note'>❌ <strong>Nota:</strong> Los contenedores por defecto como 'Users' o 'Computers' <strong>NO</strong> son OUs y no permiten vinculación directa de GPOs.</p>"
+    },
+    {
+      "id": 5,
+      "titulo": "5. Gestión de Identidades y Seguridad de Cuentas",
+      "contenido": "<div class='lesson-card'>La privacidad y el no-repudio son pilares de la administración de usuarios.</div><ul><li><strong>Almacenamiento de Contraseñas:</strong> AD utiliza hashes unidireccionales. Nadie (ni el Domain Admin) puede ver la contraseña en texto claro.</li><li><strong>Reset vs. Ver:</strong> Un administrador puede <strong>Resetear</strong> una clave, pero nunca visualizar la actual.</li><li><strong>Operadores de Cuentas:</strong> Grupo integrado que permite gestionar usuarios pero tiene restringida la gestión de grupos de seguridad de nivel superior.</li></ul><p class='diag-note'>🛡️ <strong>Buenas Prácticas:</strong> La contraseña debe ser conocida <strong>SOLO</strong> por el usuario para garantizar la responsabilidad de sus acciones.</p>"
+    },
+    {
+      "id": 6,
+      "titulo": "6. Permisos NTFS: El Poder de la ACL",
+      "contenido": "<div class='lesson-card'>NTFS es el sistema de archivos que permite la seguridad granular en Windows.</div><p><strong>La Pestaña de Seguridad:</strong> Solo está disponible si el volumen está formateado en <strong>NTFS</strong>. En FAT32/exFAT, esta pestaña no existe.</p><p><strong>Reglas de Resolución de Permisos:</strong></p><ul><li><strong>Permisos Acumulativos:</strong> Un usuario suma los permisos de todos los grupos a los que pertenece.</li><li><strong>Prevalencia del DENIEGO:</strong> Un 'Denegar' explícito siempre invalida cualquier 'Permitir'.</li><li><strong>Permisos Especiales:</strong> Como 'Tomar posesión' o 'Cambiar permisos'.</li></ul>"
+    },
+    {
+      "id": 7,
+      "titulo": "7. Atributos de Archivo y el Comando ATTRIB",
+      "contenido": "<div class='lesson-card'>A veces necesitamos proteger archivos a nivel de sistema, no solo de usuario.</div><p>Comando <code>ATTRIB</code> en CMD:</p><ul><li><code>+R</code>: Solo lectura (Read-only).</li><li><code>+H</code>: Oculto (Hidden).</li><li><code>+S</code>: Sistema (System). <strong>¡CUIDADO!</strong> No usar en archivos personales, ya que el SO los tratará como críticos.</li><li><code>+A</code>: Archivo (Archive) - para backups.</li></ul><p><em>Ejemplo: <code>attrib +R +H confidencial.txt</code> oculta y protege contra escritura un archivo.</em></p>"
+    },
+    {
+      "id": 8,
+      "titulo": "8. Administración de Linux: Gestión de Usuarios",
+      "contenido": "<div class='lesson-card'>El administrador de ASIR debe ser bilingüe (Windows/Linux).</div><p>Comandos de gestión en Ubuntu/Debian:</p><ul><li><code>sudo adduser usuario</code>: Crea usuario, carpeta home y solicita password (interactivo).</li><li><code>sudo userdel -r usuario</code>: Elimina usuario y su directorio <code>/home</code>.</li><li><code>cat /etc/passwd</code>: Lista todos los usuarios del sistema.</li><li><code>sudo addgroup grupo</code>: Crea un nuevo grupo.</li><li><code>cat /etc/group</code>: Lista los grupos existentes.</li><li><code>sudo groupmod -n nuevo viejo</code>: Renombra un grupo.</li></ul>"
+    },
+    {
+      "id": 9,
+      "titulo": "9. El Modelo de Permisos de Linux (Octal y Simbólico)",
+      "contenido": "<div class='lesson-card'>Linux divide los permisos en: Dueño (User), Grupo (Group) y Otros (Others).</div><p><strong>Valores Numéricos:</strong></p><ul><li><strong>4</strong> = Lectura (Read)</li><li><strong>2</strong> = Escritura (Write)</li><li><strong>1</strong> = Ejecución (Execute)</li></ul><p><strong>Cálculo Maestro:</strong></p><ul><li><code>chmod 777</code>: Todos hacen todo (Peligroso).</li><li><code>chmod 755</code>: Dueño todo, resto lee y ejecuta (Web servers).</li><li><code>chmod 700</code>: Privacidad total para el dueño.</li><li><code>chgrp</code>: Cambia el grupo propietario (ej: <code>chgrp medicos informe.txt</code>).</li></ul>"
+    },
+    {
+      "id": 10,
+      "titulo": "10. Laboratorio Práctico: Implementación de Seguridad",
+      "contenido": "<div class='lesson-card'>Aplicación de los conceptos anteriores en un escenario real.</div><p><strong>Requerimiento:</strong> Carpeta <code>/home/alta</code> donde el grupo <code>calpe</code> tenga control total, pero el dueño no tenga acceso y otros solo puedan entrar (ejecutar).</p><p><strong>Comandos Resultantes:</strong></p><pre>sudo mkdir /home/alta\nsudo chgrp calpe /home/alta\nsudo chmod 071 /home/alta</pre><p><strong>Análisis:</strong> 0 (Dueño nada), 7 (Grupo RWX), 1 (Otros X).</p>"
+    },
+    {
+      "id": 11,
+      "titulo": "11. Scripting Avanzado en Bash",
+      "contenido": "<div class='lesson-card'>La automatización es lo que diferencia a un administrador de un técnico.</div><p>Uso de <code>read</code> y <code>case</code> para menús interactivos:</p><pre>#!/bin/bash\nwhile [ \"$opcion\" != \"3\" ]\ndo\n  echo \"1. Crear Usuario\"\n  echo \"2. Listar Grupos\"\n  echo \"3. Salir\"\n  read opcion\n  case $opcion in\n    1) echo \"Nombre:\"; read u; sudo adduser $u ;;\n    2) cat /etc/group ;;\n  esac\ndone</pre><p>La orden <strong>read</strong> detiene la ejecución para capturar variables del teclado, esencial para scripts de gestión dinámica.</p>"
+    },
+    {
+      "id": 12,
+      "titulo": "12. Cálculo de Direccionamiento IP (Subnetting)",
+      "contenido": "<div class='lesson-card'>Dominar las máscaras CIDR es fundamental para el diseño de red.</div><p><strong>Análisis de Máscara /18:</strong></p><ul><li>32 bits totales - 18 bits red = <strong>14 bits de host</strong>.</li><li>Cálculo: 2^14 = <strong>16,384 direcciones totales</strong>.</li><li>Hosts útiles: 16,382 (restando Red y Broadcast).</li></ul><p><strong>Multi-homing:</strong> Capacidad de Windows de tener múltiples IPs (ej: 192.168.1.5 y 10.0.0.5) en la misma tarjeta física para saltar entre redes lógicas sin hardware adicional.</p>"
+    },
+    {
+      "id": 13,
+      "titulo": "13. EXAMEN DE CERTIFICACIÓN RA1 (Simulacro)",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Demuestra que has asimilado el 100% del contenido de la unidad.</div>",
+      "preguntas_test": [
+        {
+          "q": "¿Qué puertos utiliza NetBIOS y qué protocolo debemos vigilar para asegurar el servidor?",
+          "options": ["80, 443 (TCP)", "137, 138 (UDP) y 139 (TCP)", "53 (UDP) y 389 (TCP)", "445 (TCP) únicamente"],
+          "correct": 1,
+          "explicacion": "NetBIOS usa 137/138 para nombres/datagramas y 139 para sesión. SMB moderno usa 445."
+        },
+        {
+          "q": "Se desea que un archivo personal no sea visto por el sistema como crítico. ¿Qué atributo NO usar?",
+          "options": ["+R", "+H", "+S", "+A"],
+          "correct": 2,
+          "explicacion": "El atributo +S (Sistema) marca el archivo como parte del SO, lo que puede provocar que se oculte o proteja de forma especial."
+        },
+        {
+          "q": "En Linux, ¿cómo se cambia el nombre de un grupo existente?",
+          "options": ["groupmod -n nuevo viejo", "groupmod -new nuevo viejo", "rename-group viejo nuevo", "usermod -g nuevo viejo"],
+          "correct": 0,
+          "explicacion": "groupmod con el flag -n (new-name) es el estándar POSIX para esta operación."
+        },
+        {
+          "q": "¿Qué configuración DNS requiere un cliente para unirse a 'asir.local'?",
+          "options": ["DNS de Google (8.8.8.8)", "IP del Router (Gateway)", "IP del Controlador de Dominio", "Cualquier DNS con internet"],
+          "correct": 2,
+          "explicacion": "El DC tiene los registros SRV necesarios para localizar los servicios de Active Directory."
+        },
+        {
+          "q": "Calcula el total de direcciones IP para una red con máscara /18.",
+          "options": ["1024", "4096", "16384", "65536"],
+          "correct": 2,
+          "explicacion": "2^(32-18) = 2^14 = 16384."
+        },
+        {
+          "q": "¿Qué sucede si Carmen tiene 'Control Total' en una carpeta pero pertenece a un grupo con 'Sin Acceso'?",
+          "options": ["Accede por ser Administradora", "Accede porque Control Total es mayor", "No accede porque Deny manda", "Depende de la fecha de creación"],
+          "correct": 2,
+          "explicacion": "En NTFS, la denegación explícita siempre tiene prioridad sobre cualquier permiso permitido."
+        }
+      ]
+    }
+  ]
+}

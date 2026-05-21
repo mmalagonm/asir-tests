@@ -1,0 +1,252 @@
+{
+  "asignatura": "Servicios de red e Internet",
+  "codigo_archivo": "autoevaluacion_1_25-26",
+  "titulo": "1ª Autoevaluación curso 25/26",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿En IPV6, cual son los hextetos que se utilizan para conectividad con host de destino?",
+      "opciones": {
+        "a": "Los cuatro últimos",
+        "b": "Los cuatro primeros",
+        "c": "El cuarto hexteto",
+        "d": "El quinto y sexto"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "En una dirección IPv6 de 128 bits, los primeros 64 bits (primeros 4 hextetos) suelen representar el prefijo de red y la subred, mientras que los últimos 64 bits (últimos 4 hextetos) corresponden al Interface ID, que identifica de forma única al host en ese enlace."
+    },
+    {
+      "id": 2,
+      "enunciado": "En una Cloud-PT de Cisco ¿cual es el ultimo numero que nos deja escribir en el DLCI en los seriales de la interfaz de la propia Cloud?",
+      "opciones": {
+        "a": "1008",
+        "b": "1007",
+        "c": "1001",
+        "d": "1000"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En el entorno de simulación Cisco Packet Tracer, el objeto Cloud-PT tiene una limitación específica en el campo DLCI (Data Link Connection Identifier) para Frame Relay, permitiendo valores en el rango de 16 a 1007."
+    },
+    {
+      "id": 3,
+      "enunciado": "Nos encarga subnetear 15 ciudades, 15 oficinas y 30 departamentos para la Network 2000:AABB:BBAA::/48 ¿Qué IP le pertenece a la Ciudad 15, Oficina 14 y departamento 25?",
+      "opciones": {
+        "a": "2000:AABB:BBAA:FE0B::/60",
+        "b": "2000:AABB:BBAA:FE0A::/64",
+        "c": "2000:AABB:BBAA:FE0A::/60",
+        "d": "2000:AABB:BBAA:FE0B::/64"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Al subnetear un prefijo /48 en IPv6, el cuarto hexteto se utiliza para crear subredes. Siguiendo un esquema jerárquico de bits para ciudades, oficinas y departamentos, el cálculo del valor hexadecimal resultante para los índices proporcionados (15, 14, 25) lleva a la dirección con el prefijo :FE0A::/64."
+    },
+    {
+      "id": 4,
+      "enunciado": "Tenemos que dividir la red 192.168.1.0/24 en 50 subredes. ¿Cuál sería su nueva mascara?",
+      "opciones": {
+        "a": "255.255.255.240",
+        "b": "255.255.255.224",
+        "c": "255.255.255.252",
+        "d": "255.255.255.248"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Para obtener 50 subredes, necesitamos pedir prestados n bits de la parte de host tal que 2^n >= 50. En este caso, n=6 (2^6=64). La máscara original /24 pasa a ser /24+6 = /30. Una máscara /30 en formato decimal punteado es 255.255.255.252."
+    },
+    {
+      "id": 5,
+      "enunciado": "Enruta por estática del router de Malaga a Cadiz:",
+      "fichero_imagen": "autoevaluacion1_pregunta_5.jpg",
+      "opciones": {
+        "a": "ip route 192.168.3.0 255.255.255.192 192.168.20.2",
+        "b": "ip route 192.168.3.0 255.255.255.224 192.168.20.2",
+        "c": "ip route 192.168.3.0 255.255.255.224 192.168.20.2 255.255.255.0",
+        "d": "ip route 192.168.3.0 255.255.255.240 192.168.20.2"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La sintaxis de una ruta estática es 'ip route [red_destino] [mascara_destino] [ip_siguiente_salto]'. En este caso, para alcanzar la red 192.168.3.0 con máscara /27 (255.255.255.224) a través del siguiente salto 192.168.20.2."
+    },
+    {
+      "id": 6,
+      "enunciado": "¿En los router 2811 existe alguna VLAN que no puede utilizar el usuario?",
+      "opciones": {
+        "a": "9",
+        "b": "7",
+        "c": "1",
+        "d": "Se pueden utilizar todas las que se necesiten"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La VLAN 1 es la VLAN predeterminada de fábrica en los dispositivos Cisco. Aunque se puede usar, por razones de seguridad se recomienda no utilizarla para el tráfico de usuarios ni de gestión, y en muchos contextos se considera 'reservada' o restringida en su uso ideal."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿En IPV6, cuál es la parte que se utiliza para subnetear?",
+      "opciones": {
+        "a": "Se puede utilizar todos desde el 4 hexteto en adelante",
+        "b": "El cuarto hexteto",
+        "c": "El tercer hexteto",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En el esquema estándar de direccionamiento IPv6 (donde se recibe un /48 del ISP), el cuarto hexteto (bits 49 al 64) se designa específicamente como el ID de Subred, permitiendo crear hasta 65,536 subredes /64."
+    },
+    {
+      "id": 8,
+      "enunciado": "Enrutar del Router1 al Router2 por estática:",
+      "fichero_imagen": "autoevaluacion1_pregunta_8.jpg",
+      "opciones": {
+        "a": "ip route 192.168.40.0 255.255.255.192 30.0.0.2",
+        "b": "ip route 192.168.40.0 255.255.255.192 255.0.0.0",
+        "c": "ip route 192.168.40.0 255.255.255.192 30.0.0.1",
+        "d": "ip route 192.168.40.0 255.255.255.0 30.0.0.2"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Para enrutar a la red destino 192.168.40.0/26 (máscara 255.255.255.192), el Router1 debe enviar los paquetes a la IP de la interfaz del Router2 que está en su mismo enlace, que es la 30.0.0.2."
+    },
+    {
+      "id": 9,
+      "enunciado": "En un ASA 5505 no tenemos configurado ningún DNS, los PC de la zona 0 quieren acceder a servidores web de la zona 100. ¿Qué IP teclearán?",
+      "opciones": {
+        "a": "La IP de los servidores Web de la Zona de seguridad 100",
+        "b": "La IP de Default-Gateway de los PC de la zona de seguridad 0",
+        "c": "La IP de Default-Gateway de la zona de seguridad 100",
+        "d": "No podrán acceder"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En ciertas configuraciones de laboratorio con ASA, si no hay resolución de nombres, el tráfico se dirige a la interfaz del firewall (Gateway). El ASA, mediante sus reglas de inspección y políticas de seguridad, redirige la petición al destino correcto en la zona de mayor seguridad."
+    },
+    {
+      "id": 10,
+      "enunciado": "Enrutar del Router0 al Router2:",
+      "fichero_imagen": "autoevaluacion1_pregunta_10.jpg",
+      "opciones": {
+        "a": "ip route 10.0.0.0 255.224.0.0 16.0.0.2 y ip route 11.0.0.0 255.240.0.0 16.0.0.2",
+        "b": "ip route 10.0.0.0 255.224.0.0 16.0.0.2 255.255.255.252...",
+        "c": "ip route 10.0.0.0 255.224.0.0 15.0.0.2 255.255.255.252...",
+        "d": "ip route 10.0.0.0 255.224.0.0 15.0.0.2 e ip route 11.0.0.0 255.240.0.0 15.0.0.2"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Se definen dos rutas estáticas hacia las redes 10.0.0.0/11 y 11.0.0.0/12 respectivamente, utilizando como siguiente salto la IP 15.0.0.2 que corresponde a la interfaz del router adyacente en el camino hacia el destino."
+    },
+    {
+      "id": 11,
+      "enunciado": "En configuración de VLAN en IPV6 completa la línea que falta dentro de la encapsulación:",
+      "opciones": {
+        "a": "Ipv6 general-prefix variable 2001:1234:1234:1234::/64",
+        "b": "Ipv6 add 2001:1234:1234:1234::1/64",
+        "c": "ipv6 local pool variable 2001:1234:1234:1234::/40 64",
+        "d": "ipv6 unicast-routing"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Al configurar una subinterfaz para una VLAN (Router-on-a-stick) en IPv6, tras definir la encapsulación dot1q, se debe asignar la dirección IPv6 a la interfaz mediante el comando 'ipv6 address' (o 'ipv6 add' de forma abreviada)."
+    },
+    {
+      "id": 12,
+      "enunciado": "Enrutar por estática del router1 al Router2:",
+      "fichero_imagen": "autoevaluacion1_pregunta_12.jpg",
+      "opciones": {
+        "a": "ip route 192.168.40.0 255.255.255.128 30.0.0.2",
+        "b": "ip route 192.168.40.0 255.255.255.0 30.0.0.1",
+        "c": "ip route 192.168.40.0 255.255.255.192 30.0.0.2",
+        "d": "ip route 192.168.40.1 255.255.255.192 30.0.0.2"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La ruta correcta apunta a la dirección de red 192.168.40.0 con su máscara correspondiente de 26 bits (255.255.255.192) a través de la IP de siguiente salto 30.0.0.2."
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Existe alguna VLAN reservada para configuraciones en IPV4 en un router 2811 que no podamos utilizar nosotros?",
+      "opciones": {
+        "a": "2",
+        "b": "Ninguna es cierta",
+        "c": "No, se pueden utilizar tantas como necesitemos",
+        "d": "1"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Como se mencionó anteriormente, la VLAN 1 es la predeterminada en Cisco. Se utiliza para protocolos de control como CDP, VTP y STP. En entornos reales, se recomienda mover el tráfico de usuario a otras VLANs para mejorar la seguridad."
+    },
+    {
+      "id": 14,
+      "enunciado": "En una Cloud-PT de Cisco ¿cual es el ultimo numero que nos deja escribir en el DLCI?",
+      "opciones": {
+        "a": "1000",
+        "b": "1008",
+        "c": "1001",
+        "d": "1007"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Confirmación del límite superior para los identificadores DLCI en la interfaz Frame Relay de la nube de Packet Tracer (1007)."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Cuántos bits tiene la IPV6 '1995:A:B:C:D:E:FFFF::/'?",
+      "opciones": {
+        "a": "96",
+        "b": "112",
+        "c": "80",
+        "d": "La orden tiene errores"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Cada hexteto en IPv6 tiene 16 bits. En la dirección proporcionada, hay 7 hextetos definidos explícitamente (1995, A, B, C, D, E, FFFF). 7 * 16 = 112 bits. Los 16 bits restantes hasta los 128 totales están representados por el símbolo ::."
+    },
+    {
+      "id": 16,
+      "enunciado": "¿Encuentras algún error en el siguiente código? interface FastEthernet0/0.1, encapsulation dot1q 1, ip add 192.168.3.1 255.255.255.224",
+      "opciones": {
+        "a": "La IP y la mascara son incorrectas",
+        "b": "La IP es incorrecta",
+        "c": "La mascara es incorrecta",
+        "d": "No se puede utilizar 'interface FastEthernet0/0.1'"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Aunque técnicamente se pueden usar números bajos para subinterfaces, en muchas versiones de IOS o en el contexto de ciertos ejercicios de Packet Tracer, el uso de subinterfaces como .1 para la VLAN 1 (nativa) puede estar restringido o dar problemas, prefiriéndose configurar la IP directamente en la interfaz física o usar otros números."
+    },
+    {
+      "id": 17,
+      "enunciado": "Queremos configurar un DHCP con la Network 192.168.1.0/28 ¿Cuál seria su primera y ultima IP disponible?",
+      "opciones": {
+        "a": "Ninguna es cierta",
+        "b": "192.168.1.0 - 192.168.1.16",
+        "c": "192.168.1.1 - 192.168.1.14",
+        "d": "192.168.1.1 - 192.168.1.16"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Una subred /28 tiene 16 direcciones totales. Para la red 192.168.1.0: la dirección de red es .0, la de broadcast es .15. El rango de IPs útiles para hosts (y por tanto para el pool de DHCP) es desde la .1 hasta la .14."
+    },
+    {
+      "id": 18,
+      "enunciado": "Queremos configurar un DHCP con la Network 192.168.1.0/27 ¿Cuál seria su primera y ultima IP disponible?",
+      "opciones": {
+        "a": "192.168.1.1 - 192.168.1.30",
+        "b": "192.168.1.1 - 192.168.1.32",
+        "c": "192.168.1.0 - 192.18.1.32",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Una subred /27 tiene 32 direcciones totales. Para la red 192.168.1.0: la dirección de red es .0, la de broadcast es .31. El rango de IPs disponibles para asignar a dispositivos es de la .1 a la .30."
+    },
+    {
+      "id": 19,
+      "enunciado": "Nos encarga subnetear 15 ciudades, 15 oficinas y 30 departamentos para la Network 2000:AABB:BBAA::/48 ¿Qué IP le pertenece a la Ciudad 11 y oficina 13?",
+      "opciones": {
+        "a": "2000:AABB:BBAA:BD00::/56",
+        "b": "2000:AABB:BBAA:DB00::/60",
+        "c": "2000:AABB:BBAA:BD00::/64",
+        "d": "2000:AABB:BBAA:BD00::/60"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Utilizando los bits del cuarto hexteto para la jerarquía: los primeros bits para ciudades y los siguientes para oficinas. El índice de la ciudad 11 (B en hex) y la oficina 13 (D en hex) genera el prefijo :BD00::/56."
+    },
+    {
+      "id": 20,
+      "enunciado": "¿Qué mascara corresponde por OSPF a la Network 255.255.128.0?",
+      "opciones": {
+        "a": "0.0.127.255",
+        "b": "0.0.0.255",
+        "c": "0.0.31.255",
+        "d": "255.255.0.255"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "OSPF utiliza 'wildcard masks'. Para calcularla, se resta cada octeto de la máscara de subred a 255. 255.255.255.255 - 255.255.128.0 = 0.0.127.255."
+    }
+  ]
+}

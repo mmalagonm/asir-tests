@@ -1,0 +1,107 @@
+{
+  "asignatura": "Administración de sistemas operativos",
+  "codigo_archivo": "lesson_ra1_encyclopedia",
+  "titulo": "RA1: ENCICLOPEDIA MAESTRA - Hardware, Dispositivos y Servicios de Directorio",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "1.1 Introducción a Dispositivos Móviles y Movilidad",
+      "contenido": "<div class='lesson-card'>El RA1 comienza con la evolución del hardware hacia la movilidad total.</div><p><strong>Definición de Movilidad:</strong> Capacidad de acceder y procesar datos desde cualquier ubicación. La conectividad móvil está limitada solo por la disponibilidad de redes celulares o Wi-Fi.</p><ul><li><strong>Computadoras Portátiles:</strong> Ofrecen potencia total del SO (Windows, Linux) en un formato compacto. Integran pantalla, teclado y panel táctil.</li><li><strong>Smartphones:</strong> Dispositivos con SO específicos, GPS integrado y capacidades de 'anclaje a red' (compartir datos).</li><li><strong>Tablets:</strong> Similares a smartphones pero con pantallas táctiles más grandes, optimizadas para consumo de contenido.</li><li><strong>Wearables:</strong> Relojes inteligentes y rastreadores con microprocesadores y sensores biométricos.</li><li><strong>AR/VR:</strong> La Realidad Aumentada integra gráficos en el entorno real; la Realidad Virtual crea mundos 3D inmersivos.</li></ul>"
+    },
+    {
+      "id": 2,
+      "titulo": "1.2 Hardware Interno y Placas Base",
+      "contenido": "<div class='lesson-card'>Las restricciones de espacio definen el diseño de las portátiles.</div><ul><li><strong>Factor de Forma:</strong> A diferencia de las placas ATX/Micro-ATX de escritorio, las de portátiles son <strong>Patentadas</strong> y exclusivas de cada fabricante.</li><li><strong>Memoria RAM:</strong> Utilizan módulos <strong>SODIMM</strong> (Small Outline Dual In-line Memory Module).</li><li><strong>CPU:</strong> Diseñadas para consumir menos energía y generar menos calor (throttling activo).</li><li><strong>Unidades SATA:</strong> Unidades de 1.8\" o 2.5\". Las unidades <strong>SSD</strong> son preferibles por ser más rápidas, ligeras y resistentes a movimientos.</li></ul>"
+    },
+    {
+      "id": 3,
+      "titulo": "1.3 Pantallas y Tecnologías de Visualización",
+      "contenido": "<div class='lesson-card'>Análisis profundo de los subsistemas de video móvil.</div><ul><li><strong>Tipos de Pantalla:</strong> <ul><li><strong>LCD:</strong> Usa TN (barato/rápido) o IPS (mejores colores/ángulos).</li><li><strong>LED:</strong> Retroiluminación que consume menos energía y dura más.</li><li><strong>OLED:</strong> Pixeles auto-iluminados, negros perfectos, muy común en smartphones.</li></ul></li><li><strong>Componentes Críticos:</strong> <ul><li><strong>Inverter (Convertidor):</strong> Transforma CC de la placa en CA para las lámparas CCFL (fluorescentes).</li><li><strong>Retroiluminación:</strong> LED o CCFL.</li><li><strong>Digitalizador:</strong> Capa transparente que captura el toque.</li><li><strong>Antenas Wi-Fi:</strong> Ubicadas en el marco de la pantalla para máxima visibilidad de señal.</li></ul></li></ul>"
+    },
+    {
+      "id": 4,
+      "titulo": "1.4 Gestión de Energía Avanzada (ACPI)",
+      "contenido": "<div class='lesson-card'>La Interfaz Avanzada de Configuración y Energía (ACPI) es el puente entre Hardware y SO.</div><table class='lesson-table'><tr><th>Estado</th><th>Descripción Técnica</th></tr><tr><td>S0</td><td>PC encendido, CPU funcionando.</td></tr><tr><td>S1</td><td>CPU/RAM con energía, dispositivos no usados apagados.</td></tr><tr><td>S2</td><td>CPU apagada, RAM activa. Modo inferior a S1.</td></tr><tr><td>S3</td><td><strong>Suspender</strong>: Guardar en RAM. Consumo mínimo.</td></tr><tr><td>S4</td><td><strong>Hibernar</strong>: Guardar en Disco. Consumo cero.</td></tr><tr><td>S5</td><td>Apagado total.</td></tr></table><p class='diag-note'>Recuerda configurar el <strong>Wake on LAN (WOL)</strong> en la BIOS si necesitas encender equipos remotamente.</p>"
+    },
+    {
+      "id": 5,
+      "titulo": "1.5 Conectividad: Bluetooth, Wi-Fi y Celular",
+      "contenido": "<div class='lesson-card'>La comunicación inalámbrica es la columna vertebral del equipo móvil.</div><ul><li><strong>Bluetooth (IEEE 802.15):</strong> Redes de área personal (PAN). 10 metros de alcance. Autenticación por PIN y cifrado de 128 bits.</li><li><strong>Wi-Fi:</strong> Adaptadores Mini-PCI (802.11a/b/g) o Mini-PCIe/PCIe Micro (802.11n/ac).</li><li><strong>WAN Celular:</strong> Conexión a internet vía redes móviles. Permite crear 'Zonas Wi-Fi' portátiles.</li><li><strong>Puertos de Carga:</strong> Mini-USB, Micro-USB, USB-C (reversible) y Lightning (Apple).</li></ul>"
+    },
+    {
+      "id": 6,
+      "titulo": "1.6 Expansión y Reemplazo de Componentes",
+      "contenido": "<div class='lesson-card'>Diferenciación entre lo que el usuario puede y no debe tocar.</div><ul><li><strong>CRU (Customer Replaceable Unit):</strong> Batería, Memoria RAM (SODIMM).</li><li><strong>FRU (Field Replaceable Unit):</strong> Placa base, Pantalla, Teclado, Inverter. Requieren servicio técnico especializado.</li><li><strong>Ranuras de Expansión:</strong> <ul><li><strong>ExpressCard/34 y /54:</strong> Para tarjetas de red, sonido o seguridad.</li><li><strong>Smart Cards:</strong> Tarjetas con microprocesador (contacto o sin contacto) para control de acceso.</li><li><strong>Memoria Flash:</strong> SD, SDHC para expansión de datos.</li></ul></li></ul>"
+    },
+    {
+      "id": 7,
+      "titulo": "1.7 Mantenimiento Preventivo y Resolución de Problemas",
+      "contenido": "<div class='lesson-card'>Proteger la vida útil del equipo móvil.</div><p><strong>Cuidado del Equipo:</strong> Evitar humedad, derrames de líquidos y calor excesivo en espacios reducidos.</p><p><strong>Los 6 Pasos de la Resolución de Problemas:</strong></p><ol><li>Identificar el problema.</li><li>Establecer teoría de causas probables.</li><li>Probar la teoría para determinar la causa.</li><li>Establecer plan de acción e implementar solución.</li><li>Verificar funcionalidad total del sistema.</li><li>Registrar hallazgos, acciones y resultados.</li></ol>"
+    },
+    {
+      "id": 8,
+      "titulo": "2.1 Administración del Servicio de Directorio (Windows Server)",
+      "contenido": "<div class='lesson-card'>Pasamos al núcleo de la administración de red empresarial.</div><p><strong>Directorio Activo (AD):</strong> Servicio centralizado que almacena objetos y aplica políticas.</p><ul><li><strong>DNS:</strong> El cimiento. El cliente debe apuntar al DC para resolver el nombre del dominio.</li><li><strong>Unidades Organizativas (OU):</strong> Contenedores lógicos para delegar administración y aplicar GPOs.</li><li><strong>Objetos de Directiva de Grupo (GPO):</strong> Conjunto de reglas que configuran el entorno del usuario/equipo automáticamente.</li></ul><p class='diag-note'>⚠️ <em>Recuerda: Los contenedores 'Users' y 'Computers' NO aceptan OUs. Se debe crear una jerarquía propia.</em></p>"
+    },
+    {
+      "id": 9,
+      "titulo": "2.2 Seguridad de Datos y Permisos NTFS",
+      "contenido": "<div class='lesson-card'>Gestión del acceso a la información en Windows.</div><ul><li><strong>Sistema NTFS:</strong> Obligatorio para ver la pestaña 'Seguridad'.</li><li><strong>Prevalencia del Denegar:</strong> Si un usuario tiene 'Permitir' en un grupo y 'Denegar' en otro, se le <strong>DENEGARÁ</strong> el acceso.</li><li><strong>Atributos Especiales:</strong> El comando <code>attrib</code> gestiona +R (Lectura), +H (Oculto) y +S (Sistema).</li><li><strong>Seguridad de Contraseñas:</strong> AD almacena hashes. El administrador puede resetear, pero nunca leer la clave actual.</li></ul>"
+    },
+    {
+      "id": 10,
+      "titulo": "3.1 Administración en Linux (Ubuntu Server)",
+      "contenido": "<div class='lesson-card'>Dominio de la línea de comandos para la gestión de usuarios y grupos.</div><p><strong>Comandos Clave:</strong></p><ul><li><code>adduser / userdel -r</code>: Gestión de cuentas de usuario.</li><li><code>addgroup / groupdel</code>: Gestión de grupos de seguridad.</li><li><code>groupmod -n</code>: Renombrado de grupos.</li><li><code>chown / chgrp</code>: Cambio de propietario y grupo de archivos.</li><li><code>chmod</code>: Cambio de permisos (Modelo Octal).</li></ul><p><strong>Modelo Octal:</strong> Lectura (4), Escritura (2), Ejecución (1).<br/>Ejemplo: <code>754</code> = rwx (Dueño), r-x (Grupo), r-- (Otros).</p>"
+    },
+    {
+      "id": 11,
+      "titulo": "3.2 Scripting Avanzado para Administradores",
+      "contenido": "<div class='lesson-card'>Automatización de tareas en Linux mediante Bash.</div><p>Estructura de un menú de gestión:</p><pre>#!/bin/bash\nwhile true; do\n  echo \"1. Alta Usuario | 2. Salir\"\n  read opcion\n  case $opcion in\n    1) read user; sudo adduser $user ;;\n    2) break ;;\n  esac\ndone</pre><p>La orden <strong>read</strong> es la clave para la interacción, permitiendo que el script espere la entrada del administrador.</p>"
+    },
+    {
+      "id": 12,
+      "titulo": "EXAMEN MAESTRO RA1: HARDWARE Y DIRECTORIO",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Esta evaluación final cubre todo el espectro del RA1, desde hardware móvil hasta servicios de red.</div>",
+      "preguntas_test": [
+        {
+          "q": "¿Qué componente de la pantalla de una portátil convierte CC en CA para las luces de fondo CCFL?",
+          "options": ["Digitalizador", "Convertidor (Inverter)", "Placa Base", "Adaptador de CA"],
+          "correct": 1,
+          "explicacion": "El convertidor/inverter es necesario para las pantallas que usan lámparas fluorescentes (CCFL), a diferencia de las LED que usan CC directamente."
+        },
+        {
+          "q": "En el estándar ACPI, ¿cuál es el estado conocido como 'Hibernación'?",
+          "options": ["S1", "S3", "S4", "S5"],
+          "correct": 2,
+          "explicacion": "S4 es hibernación (guardar en disco), S3 es suspensión (guardar en RAM)."
+        },
+        {
+          "q": "¿Cuál es la principal diferencia entre una FRU y una CRU?",
+          "options": ["La FRU es más barata", "La CRU puede ser reemplazada por el cliente", "La FRU solo se usa en servidores", "No hay diferencia real"],
+          "correct": 1,
+          "explicacion": "Customer Replaceable Unit (CRU) son piezas sencillas (batería, RAM), mientras que Field Replaceable Unit (FRU) requieren un técnico."
+        },
+        {
+          "q": "Si un cliente Windows no puede unirse a un dominio, ¿qué es lo primero que debe verificar el administrador?",
+          "options": ["El Gateway", "El nombre del PC", "La configuración DNS apuntando al DC", "La versión de Windows"],
+          "correct": 2,
+          "explicacion": "Sin la resolución de nombres del DC, el cliente nunca encontrará los servicios de Active Directory."
+        },
+        {
+          "q": "¿Qué permiso octal en Linux otorga 'Lectura y Ejecución' a todos pero 'Escritura' solo al dueño?",
+          "options": ["755", "744", "655", "711"],
+          "correct": 0,
+          "explicacion": "7 (rwx) para dueño, 5 (r-x) para grupo y otros. Es el permiso estándar de directorios."
+        },
+        {
+          "q": "¿Qué comando usarías para ver todos los grupos creados en un sistema Linux?",
+          "options": ["ls /etc/users", "cat /etc/group", "groups -all", "show groups"],
+          "correct": 1,
+          "explicacion": "/etc/group es el archivo de configuración que almacena la base de datos de grupos local."
+        }
+      ]
+    }
+  ]
+}

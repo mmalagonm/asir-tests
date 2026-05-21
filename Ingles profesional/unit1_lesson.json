@@ -1,0 +1,121 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "unit1_lesson",
+  "titulo": "Unit 1: Present Tenses & Hardware Basics (RA1, RA2)",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Objectives & Context (RA1, RA2)",
+      "contenido": "<div class='lesson-card'>Welcome to Unit 1. This unit focuses on foundational IT skills and the grammar needed to describe current states and ongoing tasks.</div><ul><li><strong>RA1 & RA2:</strong> Recognizing hardware components and understanding technical documentation.</li><li><strong>Grammar Goals:</strong> Mastering the <strong>Present Simple</strong> and <strong>Present Continuous</strong> to talk about habits and current projects.</li><li><strong>Vocabulary:</strong> Essential hardware parts and actions like <em>troubleshooting</em> and <em>assembling</em>.</li></ul><p class='diag-note'>💡 <em>Nota: Esta unidad es el punto de partida para describir qué hace un sistema y en qué estás trabajando ahora mismo.</em></p>"
+    },
+    {
+      "id": 2,
+      "titulo": "Vocabulary: Core Hardware Components",
+      "contenido": "<div class='lesson-card'>Every ASIR technician must identify the internal parts of a computer system.</div><table><thead><tr><th>Component</th><th>Description</th></tr></thead><tbody><tr><td><strong>Motherboard</strong></td><td>The main printed circuit board (PCB) that connects all components.</td></tr><tr><td><strong>CPU (Processor)</strong></td><td>The 'brain' of the computer that executes instructions.</td></tr><tr><td><strong>RAM</strong></td><td>Volatile memory used for temporary data storage while the PC is on.</td></tr><tr><td><strong>Hard Drive (HDD/SSD)</strong></td><td>Non-volatile storage for permanent data.</td></tr><tr><td><strong>Power Supply (PSU)</strong></td><td>Converts electricity from the outlet to the components.</td></tr></tbody></table><p class='diag-note'>💡 <em>Nota: El disco duro almacena datos de forma permanente, a diferencia de la RAM.</em></p>"
+    },
+    {
+      "id": 3,
+      "titulo": "IT Actions: Verbs you need to know",
+      "contenido": "<div class='lesson-card'>In your daily work, you will perform these key actions.</div><ul><li><strong>Troubleshoot:</strong> To identify, locate, and fix problems in hardware or software.</li><li><strong>Assemble:</strong> To put together all the parts of a computer system.</li><li><strong>Upgrade:</strong> To improve a system by adding or replacing components (e.g., adding more RAM).</li><li><strong>Configure:</strong> To set up software or hardware to work in a specific way.</li></ul>"
+    },
+    {
+      "id": 4,
+      "titulo": "Grammar: Present Simple",
+      "contenido": "<div class='lesson-card'>Used for facts, permanent situations, and regular habits.</div><h3>Structure:</h3><p>Subject + Verb (adds <strong>-s</strong> for he/she/it)</p><h3>Examples:</h3><ul><li><em>\"The server <strong>runs</strong> 24/7.\"</em></li><li><em>\"My parents <strong>live</strong> in London.\"</em></li><li><em>\"She <strong>does not work</strong> on Sundays.\"</em></li></ul><p class='diag-note'>💡 <em>Nota: Usamos el Present Simple para cosas que son siempre verdad o rutinas.</em></p>"
+    },
+    {
+      "id": 5,
+      "titulo": "Grammar: Present Continuous",
+      "contenido": "<div class='lesson-card'>Used for actions happening <strong>now</strong> or around the present time (temporary).</div><h3>Structure:</h3><p>Subject + Am/Is/Are + Verb-ing</p><h3>Examples:</h3><ul><li><em>\"I <strong>am troubleshooting</strong> the network right now.\"</em></li><li><em>\"They <strong>are working</strong> on a new project this week.\"</em></li><li><em>\"The team <strong>is upgrading</strong> the servers this month.\"</em></li></ul><p class='diag-note'>💡 <em>Nota: Palabras como 'now', 'at the moment' o 'this week' suelen indicar Present Continuous.</em></p>"
+    },
+    {
+      "id": 6,
+      "titulo": "Grammar: Countable vs. Uncountable Nouns",
+      "contenido": "<div class='lesson-card'>Knowing the difference helps you use 'much/many' and 'a/an' correctly.</div><ul><li><strong>Countable:</strong> Things you can count. Have plural forms. (<em>Computer/Computers, Person/People</em>).</li><li><strong>Uncountable:</strong> Concepts or substances. No plural form. (<em>Information, Water, Furniture, Hardware, Software</em>).</li></ul><p class='diag-note'>💡 <em>Nota: En inglés, 'Information' y 'Software' NUNCA llevan 's'. No digas 'softwares'.</em></p>"
+    },
+    {
+      "id": 7,
+      "titulo": "Summary: Unit 1 Takeaways",
+      "contenido": "<div class='lesson-card'>Review these core concepts for Unit 1.</div><ul><li><strong>Hardware:</strong> CPU (brain), Motherboard (hub), RAM (temporary), HDD (permanent).</li><li><strong>Present Simple:</strong> For facts and routines (<em>\"He works every day\"</em>).</li><li><strong>Present Continuous:</strong> For temporary actions (<em>\"He is working today\"</em>).</li><li><strong>Countables:</strong> 'People' is countable. 'Information' is NOT.</li></ul>"
+    },
+    {
+      "id": 8,
+      "titulo": "Final Knowledge Assessment",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Complete this test to confirm you have mastered the Unit 1 content.</div>",
+      "preguntas_test": [
+        {
+          "q": "Which component stores information permanently on a computer?",
+          "options": ["RAM", "CPU", "Hard drive", "Motherboard"],
+          "correct": 2,
+          "explicacion": "El disco duro (Hard drive) es almacenamiento no volátil, guarda los datos incluso sin corriente.",
+          "ejemplo": "Ej: 'I saved the files on the <strong>Hard drive</strong>.'"
+        },
+        {
+          "q": "My parents __________ (live) in London.",
+          "options": ["living", "are living", "live", "lives"],
+          "correct": 2,
+          "explicacion": "Usamos Present Simple para situaciones permanentes. Con 'parents' (ellos), el verbo no lleva -s.",
+          "ejemplo": "Ej: 'They <strong>live</strong> in a big house.'"
+        },
+        {
+          "q": "What is the main responsibility of someone who 'troubleshoots' computers?",
+          "options": ["Designing new software", "Repairing hardware issues", "Testing network connections", "Providing IT support"],
+          "correct": 1,
+          "explicacion": "'Troubleshoot' significa identificar y resolver fallos técnicos.",
+          "ejemplo": "Ej: 'The technician is <strong>troubleshooting</strong> the printer.'"
+        },
+        {
+          "q": "They __________ (work) on the project this week.",
+          "options": ["are not working", "works", "work", "are working"],
+          "correct": 3,
+          "explicacion": "Acción temporal (this week) = Present Continuous.",
+          "ejemplo": "Ej: 'We <strong>are working</strong> hard lately.'"
+        },
+        {
+          "q": "Which word is countable?",
+          "options": ["Water", "Information", "Furniture", "People"],
+          "correct": 3,
+          "explicacion": "'People' es el plural de 'person' y se puede contar. Las otras son incontables.",
+          "ejemplo": "Ej: 'There are many <strong>people</strong> in the office.'"
+        },
+        {
+          "q": "What does it mean to 'assemble' a computer?",
+          "options": ["To upgrade parts", "To fix software", "To put together the parts", "To test a program"],
+          "correct": 2,
+          "explicacion": "'Assemble' es el proceso de montar el hardware físicamente.",
+          "ejemplo": "Ej: 'It takes an hour to <strong>assemble</strong> a PC.'"
+        },
+        {
+          "q": "She __________ (not work) on Sundays.",
+          "options": ["do not works", "does not work", "is not working", "not is working"],
+          "correct": 1,
+          "explicacion": "Negativo en Present Simple para 3ª persona: 'does not' + forma base.",
+          "ejemplo": "Ej: 'He <strong>does not work</strong> at night.'"
+        },
+        {
+          "q": "Which part is known as the 'brain' of the computer?",
+          "options": ["Motherboard", "RAM", "CPU", "PSU"],
+          "correct": 2,
+          "explicacion": "La CPU (Central Processing Unit) procesa todas las instrucciones.",
+          "ejemplo": "Ej: 'The <strong>CPU</strong> speed is measured in GHz.'"
+        },
+        {
+          "q": "Which task involves 'upgrading' a computer?",
+          "options": ["Removing files", "Installing antivirus", "Increasing speed/performance", "Replacing the motherboard"],
+          "correct": 3,
+          "explicacion": "'Upgrading' suele implicar mejorar el hardware físico.",
+          "ejemplo": "Ej: 'We are <strong>upgrading</strong> the RAM to 16GB.'"
+        },
+        {
+          "q": "The team __________ (work) on a new project this month.",
+          "options": ["is working", "work", "working", "works"],
+          "correct": 0,
+          "explicacion": "Acción temporal referida al equipo como entidad: Present Continuous.",
+          "ejemplo": "Ej: 'The team <strong>is working</strong> together.'"
+        }
+      ]
+    }
+  ]
+}

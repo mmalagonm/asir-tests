@@ -1,0 +1,133 @@
+{
+  "asignatura": "Administracion de sistemas operativos",
+  "codigo_archivo": "examen_ra3",
+  "titulo": "Examen Resultado de aprendizaje 3",
+  "tipo": "examen",
+  "ra": [3],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "Se necesita la orden Read para configurar la opción 5 en el script de la imagen:",
+      "fichero_imagen": "autoevaluacion1_pregunta_19.jpg",
+      "opciones": {
+        "a": "Sí, concretamente una variable",
+        "b": "Sí, concretamente tres variables",
+        "c": "Sí, concretamente dos variables",
+        "d": "No"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Para procesar una opción que requiere la entrada de un dato específico del usuario (como un nombre), se utiliza 'read variable_nombre'."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Es necesaria la orden Read en la lista 6 del script de la imagen?",
+      "fichero_imagen": "autoevaluacion1_pregunta_19.jpg",
+      "opciones": {
+        "a": "Sí, concretamente tres variables",
+        "b": "Sí, concretamente dos variables",
+        "c": "Sí, concretamente una variable",
+        "d": "No"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Al igual que en otras opciones del menú, la captura de la elección del usuario se realiza mediante el comando 'read' seguido de una variable."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Es necesaria la instrucción READ para la opción 10 (salir) del menú?",
+      "fichero_imagen": "autoevaluacion1_pregunta_19.jpg",
+      "opciones": {
+        "a": "Con la información de la imagen no se sabe",
+        "b": "Ninguna es cierta",
+        "c": "Sí",
+        "d": "No"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La opción de salida suele ser capturada en la estructura de control del bucle (como un 'until' o 'while') y no requiere un procesamiento de datos adicional tras ser seleccionada."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Cómo comienza un script en Windows (.bat)?",
+      "opciones": {
+        "a": "Ninguna es cierta",
+        "b": "echo off",
+        "c": "@echo off",
+        "d": "off echo"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'@echo off' evita que cada comando del script se muestre por pantalla antes de ejecutarse, haciendo que la salida sea más limpia para el usuario."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Cómo se ejecuta un script en Ubuntu (directorio actual)?",
+      "opciones": {
+        "a": "./nombre de archivo",
+        "b": "/. nombre de archivo",
+        "c": ".//nombre de archivo",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Por razones de seguridad, Linux no incluye el directorio actual en el PATH, por lo que es obligatorio especificar './' para indicar que el archivo está en la ubicación actual."
+    },
+    {
+      "id": 6,
+      "enunciado": "Un script correcto en Ubuntu no se abre al ejecutarlo. ¿Solución?",
+      "opciones": {
+        "a": "Otorgar permisos con chmod",
+        "b": "Abrir procesos con top",
+        "c": "Reiniciar terminal",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Tras crear un archivo de script en Linux, este no tiene permisos de ejecución por defecto. Es necesario usar 'chmod +x nombre_archivo.sh' para poder ejecutarlo."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Cuál es la extensión de un script en Ubuntu?",
+      "opciones": {
+        "a": "Ninguna es cierta",
+        "b": "ini",
+        "c": "system",
+        "d": "sh"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Aunque Linux no depende de las extensiones para ejecutar archivos (depende del shebang), '.sh' es la convención estándar para identificar scripts de shell."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Cuál es la extensión de un script en Windows?",
+      "opciones": {
+        "a": "sh",
+        "b": "system",
+        "c": "ini",
+        "d": "bat"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "'.bat' (o '.cmd') es la extensión utilizada por el procesador de comandos de Windows (CMD) para identificar y ejecutar archivos por lotes."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Cómo comienza (Shebang) un script en Ubuntu?",
+      "opciones": {
+        "a": "#/bin/bash",
+        "b": "!#/bin/bash",
+        "c": "#!/bin/bash",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La secuencia shebang '#!' indica al kernel la ruta absoluta del intérprete que debe procesar el resto del archivo. Para scripts de Bash, es /bin/bash."
+    },
+    {
+      "id": 10,
+      "enunciado": "Se necesita la orden Read para configurar la opción 1 (crear usuario) de la imagen:",
+      "fichero_imagen": "autoevaluacion1_pregunta_19.jpg",
+      "opciones": {
+        "a": "Sí, concretamente una variable",
+        "b": "Sí, concretamente dos variables",
+        "c": "Sí, concretamente tres variable",
+        "d": "No"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Para crear un usuario, el script necesita saber el nombre que se le asignará, lo cual se obtiene pidiéndoselo al usuario mediante 'read'."
+    }
+  ]
+}

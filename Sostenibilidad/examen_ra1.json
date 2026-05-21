@@ -1,0 +1,55 @@
+{
+  "titulo": "EXAMEN. Resultado de Aprendizaje 1",
+  "tipo": "examen",
+  "ra": ["RA 1"],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "El desarrollo sostenible se define como..",
+      "opciones": {
+        "a": "Utilización optima de los recursos. producir con los mínimos recursos posibles",
+        "b": "Al aumento del bienestar de los ciudadanos, sin poner en peligro el bienestar de las generaciones futuras",
+        "c": "Producción y consumo responsable, sin perjudicar a las generaciones futuras",
+        "d": "Los 5 grandes campos en los que las empresas se tienen que centrar a la hora de aplicar medidas"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El concepto clave del Desarrollo Sostenible es la equidad intergeneracional: asegurar que nuestro progreso actual no agote las posibilidades de vida y bienestar de quienes vendrán después."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Cuántas P existen dentro del desarrollo sostenible?",
+      "opciones": {
+        "a": "3",
+        "b": "5",
+        "c": "2",
+        "d": "4"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La Agenda 2030 se estructura en torno a 5 ejes centrales (las 5 P): Personas (social), Planeta (ambiental), Prosperidad (económico), Paz (justicia) y Partenariado (alianzas)."
+    },
+    {
+      "id": 3,
+      "enunciado": "Pasar de una economía lineal a una economía circular es una medida",
+      "opciones": {
+        "a": "Burocrática",
+        "b": "De Gobernanza",
+        "c": "Social",
+        "d": "Ambiental"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Aunque tiene implicaciones económicas y sociales, su objetivo directo es reducir el impacto ambiental mediante la gestión eficiente de recursos y la minimización de residuos."
+    },
+    {
+      "id": 4,
+      "enunciado": "La sostenibilidad se define como",
+      "opciones": {
+        "a": "Al aumento del bienestar de los ciudadanos, sin poner en peligro el bienestar de las generaciones futuras",
+        "b": "Los 5 grandes campos en los que las empresas se tienen que centrar a la hora de aplicar medidas, y así conseguir el desarrollo sostenible.",
+        "c": "Producción y consumo responsable, sin perjudicar a las generaciones futuras",
+        "d": "Utilización optima de los recursos. producir con los mínimos recursos posibles."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "En el contexto técnico/operativo, la sostenibilidad se enfoca en la eficiencia y la optimización del uso de recursos para mantener un sistema funcional a largo plazo."
+    }
+  ]
+}

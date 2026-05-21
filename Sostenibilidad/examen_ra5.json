@@ -1,0 +1,55 @@
+{
+  "titulo": "EXAMEN. Resultado de Aprendizaje 5",
+  "tipo": "examen",
+  "ra": ["RA 5"],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "La fases del ciclo de vida del producto son:",
+      "opciones": {
+        "a": "Ascenso, madurez, estancamiento y declive",
+        "b": "Introducción, crecimiento, estancamiento y bajada",
+        "c": "Introducción, crecimiento, madurez y declive",
+        "d": "Introducción, crecimiento, estancamiento y deterioro"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Tanto en marketing como en gestión ambiental, estas cuatro fases permiten analizar el impacto y el rendimiento de un producto desde que nace hasta que desaparece del mercado."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Dónde se tiran los brick de leche?",
+      "opciones": {
+        "a": "Contenedor rojo",
+        "b": "Contenedor amarillo",
+        "c": "Contenedor azul",
+        "d": "Contenedor verde"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Los bricks son envases complejos formados por cartón, plástico y aluminio. A pesar de contener cartón, deben ir al amarillo porque se gestionan como envases ligeros."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Dónde se tiran los plásticos?",
+      "opciones": {
+        "a": "Contenedor verde",
+        "b": "Contenedor Azul",
+        "c": "Contenedor amarillo",
+        "d": "Contenedor Naranja"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El contenedor amarillo es el destino de botellas de plástico, latas, bricks y otros envases plásticos del hogar."
+    },
+    {
+      "id": 4,
+      "enunciado": "La ley de residuos en España es:",
+      "opciones": {
+        "a": "Ley 7/2022",
+        "b": "Ley 7/2024",
+        "c": "Ley 7/1990",
+        "d": "Ley 7/2025"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una economía circular, introdujo novedades como el impuesto a los plásticos de un solo uso."
+    }
+  ]
+}

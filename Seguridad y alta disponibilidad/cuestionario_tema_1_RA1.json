@@ -1,0 +1,128 @@
+{
+  "asignatura": "Seguridad",
+  "codigo_archivo": "cuestionario_tema_1",
+  "titulo": "Cuestionario - Introducción",
+  "tipo": "cuestionario",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "Marca la opción que representa el concepto de FIABILIDAD:",
+      "opciones": {
+        "a": "Garantiza la participación de las partes en una comunicación.",
+        "b": "Busca asegurar qué en todo momento se podrá determinar quién hizo qué y en qué momento.",
+        "c": "Característica de los sistemas informáticos que mide el tiempo de funcionamiento sin fallos.",
+        "d": "Garantiza el acceso adecuado a la información."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La fiabilidad es la capacidad de un sistema para realizar su función prevista de manera constante y sin fallos durante un período de tiempo determinado. En informática, se suele medir mediante métricas como el MTBF (Mean Time Between Failures)."
+    },
+    {
+      "id": 2,
+      "enunciado": "Marca la opción que representa el concepto de CONFIDENCIALIDAD:",
+      "opciones": {
+        "a": "Garantiza que la información llega al destinatario con los permisos adecuados.",
+        "b": "Garantiza que las personas o sistemas autorizados para acceder a los datos, puedan hacerlo cuando lo necesiten.",
+        "c": "Garantiza que la información sólo puede ser modificada si se dispone de la autorización para ello.",
+        "d": "Garantiza que el acceso a la información no se produce de forma no autorizada."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La confidencialidad asegura que la información sea accesible únicamente por aquellos que están autorizados a conocerla. Se implementa mediante controles de acceso, cifrado y políticas de seguridad para evitar que personas ajenas vean datos sensibles."
+    },
+    {
+      "id": 3,
+      "enunciado": "Marca la opción que representa el concepto de INTEGRIDAD:",
+      "opciones": {
+        "a": "Garantiza que la información sólo puede ser modificada si se dispone de la autorización para ello.",
+        "b": "Garantiza el acceso adecuado a la información.",
+        "c": "Garantiza que el acceso a la información no se produce de forma no autorizada.",
+        "d": "Garantiza que las personas o sistemas autorizados para acceder a los datos, puedan hacerlo cuando lo necesiten."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La integridad garantiza que los datos no hayan sido alterados de forma no autorizada, ya sea por accidente o con intención maliciosa, desde su creación o última modificación legítima. Se suele verificar mediante firmas digitales y funciones hash."
+    },
+    {
+      "id": 4,
+      "enunciado": "Marca la opción que representa el concepto de NO REPUDIO:",
+      "opciones": {
+        "a": "Garantiza la participación de las partes en una comunicación.",
+        "b": "Característica de los sistemas informáticos que mide el tiempo de funcionamiento sin fallos.",
+        "c": "Busca asegurar qué en todo momento se podrá determinar quién hizo qué y en qué momento.",
+        "d": "Característica de los sistemas informáticos que busca evitar ser rechazado en las comunicaciones."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El no repudio es la capacidad de asegurar que ninguna de las partes involucradas en una comunicación pueda negar haber participado en ella. El 'no repudio en origen' evita que el emisor niegue el envío, y el 'no repudio en destino' evita que el receptor niegue la recepción."
+    },
+    {
+      "id": 5,
+      "enunciado": "Marca la opción que representa el concepto de ADMINISTRACION:",
+      "opciones": {
+        "a": "Define, mantiene y elimina las autorizaciones de los usuarios del sistema.",
+        "b": "Determina qué, cómo y cuándo, un usuario autenticado puede compartir los recursos de la organización.",
+        "c": "Determina qué, cómo y cuándo, un usuario autenticado puede utilizar los recursos de la organización.",
+        "d": "Busca verificar la identidad del usuario al acceder a los sistemas o información."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La administración de la seguridad se encarga de la gestión de identidades y permisos. Incluye tareas como el alta y baja de usuarios, la asignación de roles y la definición de las políticas que regirán el comportamiento del sistema."
+    },
+    {
+      "id": 6,
+      "enunciado": "Marca la opción que representa el concepto de TRAZABILIDAD:",
+      "opciones": {
+        "a": "Característica de los sistemas informáticos que busca detectar por dónde van pasando los paquetes en las comunicaciones.",
+        "b": "Característica de los sistemas informáticos que mide el tiempo de funcionamiento sin fallos.",
+        "c": "Garantiza la participación de las partes en una comunicación.",
+        "d": "Busca asegurar qué en todo momento se podrá determinar quién hizo qué y en qué momento."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La trazabilidad (o auditabilidad) es la capacidad de registrar y realizar el seguimiento de todas las acciones realizadas en un sistema. Permite reconstruir eventos pasados para identificar responsables de acciones específicas y detectar brechas de seguridad."
+    },
+    {
+      "id": 7,
+      "enunciado": "Marca la opción que representa el concepto de AUTENTICACION:",
+      "opciones": {
+        "a": "Establece el mecanismo por el que el usuario se va a identificar en el sistema",
+        "b": "Define, mantiene y elimina las autorizaciones de los usuarios del sistema.",
+        "c": "Determina qué, cómo y cuándo, un usuario autenticado puede utilizar los recursos de la organización.",
+        "d": "Busca verificar la identidad del usuario al acceder a los sistemas o información."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La autenticación es el proceso de verificar que alguien es quien dice ser. Se basa habitualmente en algo que el usuario sabe (contraseña), algo que tiene (token/tarjeta) o algo que es (biometría)."
+    },
+    {
+      "id": 8,
+      "enunciado": "Marca la opción que incluye los principios básicos de la Seguridad Informática:",
+      "opciones": {
+        "a": "Confidencialidad, Autenticación y Seguridad",
+        "b": "Confidencialidad, Integridad y Disponibilidad",
+        "c": "Confidencialidad, Integridad y Autorización",
+        "d": "Confidencialidad, Integridad y Autenticación"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Los tres pilares fundamentales de la seguridad de la información son la Confidencialidad, la Integridad y la Disponibilidad, conocidos como la 'Triada CIA'. Cualquier medida de seguridad busca proteger al menos uno de estos tres principios."
+    },
+    {
+      "id": 9,
+      "enunciado": "Marca la opción que representa el concepto de AUTORIZACIÓN:",
+      "opciones": {
+        "a": "Busca verificar la identidad del usuario al acceder a los sistemas o información.",
+        "b": "Define, mantiene y elimina las autorizaciones de los usuarios del sistema.",
+        "c": "Define, mantiene y elimina la administración de los permisos de los usuarios del sistema.",
+        "d": "Determina qué, cómo y cuándo, un usuario autenticado puede utilizar los recursos de la organización."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La autorización es el proceso posterior a la autenticación mediante el cual se determina a qué recursos específicos tiene acceso un usuario y qué acciones puede realizar sobre ellos (leer, escribir, ejecutar)."
+    },
+    {
+      "id": 10,
+      "enunciado": "Marca la opción que representa el concepto de DISPONIBILIDAD:",
+      "opciones": {
+        "a": "Garantiza que las personas o sistemas autorizados para acceder a los datos, puedan hacerlo cuando lo necesiten.",
+        "b": "Garantiza que el acceso a la información no se produce de forma no autorizada.",
+        "c": "Garantiza que la información sólo puede ser modificada si se dispone de la autorización para ello.",
+        "d": "Garantiza que el acceso a la información se realiza de forma controlada."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La disponibilidad asegura que los servicios y la información estén accesibles para los usuarios autorizados en el momento en que lo requieran. Se protege mediante redundancia, copias de seguridad y planes de recuperación ante desastres."
+    }
+  ]
+}

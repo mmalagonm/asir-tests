@@ -1,0 +1,218 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "test_1_grammar",
+  "titulo": "Grammar Review TEST 1 - OPTIONAL",
+  "tipo": "test",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "By the time the meeting started, the manager _______ all the reports.",
+      "opciones": { "a": "checked", "b": "had checked", "c": "has checked", "d": "was checking" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Se utiliza el pasado perfecto ('had checked') para una acción que ocurrió antes de otra acción en el pasado ('started')."
+    },
+    {
+      "id": 2,
+      "enunciado": "If the company _______ more staff, it would complete the project faster.",
+      "opciones": { "a": "hired", "b": "hires", "c": "had hired", "d": "would hire" },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Se trata de la segunda condicional (Second Conditional) para situaciones hipotéticas en el presente/futuro. Estructura: 'If + past simple, would + base form'."
+    },
+    {
+      "id": 3,
+      "enunciado": "The application _______ by the IT department next week.",
+      "opciones": { "a": "installs", "b": "installed", "c": "will be installed", "d": "will install" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Voz pasiva en futuro simple ('will be installed') para una acción que será realizada por un agente sobre un objeto en el futuro."
+    },
+    {
+      "id": 4,
+      "enunciado": "She has worked in cybersecurity _______ 2019.",
+      "opciones": { "a": "for", "b": "since", "c": "ago", "d": "during" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "'Since' se utiliza con tiempos perfectos para indicar el punto de inicio específico de una acción que continúa."
+    },
+    {
+      "id": 5,
+      "enunciado": "At this time tomorrow, we _______ the new software.",
+      "opciones": { "a": "test", "b": "tested", "c": "will be testing", "d": "have tested" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El futuro continuo ('will be testing') se usa para acciones que estarán en desarrollo en un momento concreto del futuro."
+    },
+    {
+      "id": 6,
+      "enunciado": "The technician, _______ repaired the server, is on holiday today.",
+      "opciones": { "a": "which", "b": "where", "c": "who", "d": "whose" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El pronombre relativo 'who' se utiliza para referirse a personas (the technician)."
+    },
+    {
+      "id": 7,
+      "enunciado": "They _______ the final version of the website yet.",
+      "opciones": { "a": "haven’t finished", "b": "didn’t finish", "c": "don’t finish", "d": "aren’t finishing" },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Se utiliza el presente perfecto ('haven't finished') con el adverbio 'yet' para acciones no terminadas en el presente."
+    },
+    {
+      "id": 8,
+      "enunciado": "If I had known about the meeting, I _______ earlier.",
+      "opciones": { "a": "would arrive", "b": "would have arrived", "c": "arrived", "d": "had arrived" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Tercera condicional (Third Conditional) para situaciones hipotéticas del pasado. Estructura: 'If + past perfect, would have + past participle'."
+    },
+    {
+      "id": 9,
+      "enunciado": "The new processor is _______ than the previous one.",
+      "opciones": { "a": "efficient", "b": "more efficient", "c": "most efficient", "d": "efficiently" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Comparativo de superioridad para adjetivos largos: 'more + adjetivo + than'."
+    },
+    {
+      "id": 10,
+      "enunciado": "She said that she _______ the email the day before.",
+      "opciones": { "a": "sent", "b": "had sent", "c": "has sent", "d": "sends" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En Reported Speech, el pasado simple ('sent') cambia a pasado perfecto ('had sent') cuando el verbo principal está en pasado."
+    },
+    {
+      "id": 11,
+      "enunciado": "We _______ dinner when the client called.",
+      "opciones": { "a": "had", "b": "have", "c": "were having", "d": "are having" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Pasado continuo ('were having') para una acción prolongada interrumpida por otra acción puntual en pasado ('called')."
+    },
+    {
+      "id": 12,
+      "enunciado": "Employees _______ wear their ID card at all times.",
+      "opciones": { "a": "must", "b": "should to", "c": "can to", "d": "must to" },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El verbo modal 'must' indica obligación fuerte y no lleva 'to' antes del verbo principal."
+    },
+    {
+      "id": 13,
+      "enunciado": "The office was closed _______ the public holiday.",
+      "opciones": { "a": "because", "b": "because of", "c": "although", "d": "however" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "'Because of' introduce la causa seguida de un sustantivo o grupo nominal."
+    },
+    {
+      "id": 14,
+      "enunciado": "This is the company _______ developed the security system.",
+      "opciones": { "a": "who", "b": "where", "c": "which", "d": "whose" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El pronombre relativo 'which' (o 'that') se utiliza para referirse a cosas o entidades (the company)."
+    },
+    {
+      "id": 15,
+      "enunciado": "He asked me _______ I could help him.",
+      "opciones": { "a": "what", "b": "if", "c": "where", "d": "why" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "'If' se utiliza en Reported Speech para introducir preguntas de tipo sí/no (indirect questions)."
+    },
+    {
+      "id": 16,
+      "enunciado": "We haven’t received _______ information about the new project.",
+      "opciones": { "a": "many", "b": "much", "c": "a few", "d": "several" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "'Much' se utiliza con sustantivos incontables (information) en frases negativas e interrogativas."
+    },
+    {
+      "id": 17,
+      "enunciado": "By next month, they _______ the new offices.",
+      "opciones": { "a": "open", "b": "opened", "c": "will have opened", "d": "are opening" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Futuro perfecto ('will have opened') para una acción que se habrá completado antes de un momento específico en el futuro ('By next month')."
+    },
+    {
+      "id": 18,
+      "enunciado": "She works very hard, _______ she often stays late at the office.",
+      "opciones": { "a": "because", "b": "so", "c": "although", "d": "but" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El conector 'so' se utiliza para indicar consecuencia o resultado."
+    },
+    {
+      "id": 19,
+      "enunciado": "I wish I _______ more experience in programming.",
+      "opciones": { "a": "have", "b": "had", "c": "will have", "d": "having" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Para expresar deseos sobre una situación presente que nos gustaría que fuera diferente, usamos 'wish + past simple'."
+    },
+    {
+      "id": 20,
+      "enunciado": "The meeting room _______ before we arrived.",
+      "opciones": { "a": "prepared", "b": "was prepared", "c": "had been prepared", "d": "has prepared" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Pasado perfecto pasivo ('had been prepared') para una acción pasiva completada antes de otra acción pasada ('arrived')."
+    },
+    {
+      "id": 21,
+      "enunciado": "The manager told us _______ be late.",
+      "opciones": { "a": "don’t", "b": "not to", "c": "not", "d": "to not" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En órdenes o peticiones indirectas (Reported Imperatives), la forma negativa es 'not + to + infinitivo'."
+    },
+    {
+      "id": 22,
+      "enunciado": "If the server crashes again, we _______ the backup system.",
+      "opciones": { "a": "use", "b": "used", "c": "will use", "d": "would use" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Primera condicional (First Conditional) para situaciones probables. Estructura: 'If + present simple, will + base form'."
+    },
+    {
+      "id": 23,
+      "enunciado": "The company has been successful _______ many years.",
+      "opciones": { "a": "since", "b": "for", "c": "ago", "d": "during" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "'For' se utiliza con periodos de tiempo (many years) en tiempos perfectos."
+    },
+    {
+      "id": 24,
+      "enunciado": "The software engineer is the person _______ office is next to mine.",
+      "opciones": { "a": "who", "b": "which", "c": "where", "d": "whose" },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Pronombre relativo de posesión 'whose' (cuya oficina)."
+    },
+    {
+      "id": 25,
+      "enunciado": "She is looking forward _______ the training course.",
+      "opciones": { "a": "attend", "b": "to attend", "c": "to attending", "d": "attending" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La expresión 'look forward to' es una preposición compuesta que debe ir seguida de un gerundio (-ing)."
+    },
+    {
+      "id": 26,
+      "enunciado": "The new system is _______ reliable than the old one.",
+      "opciones": { "a": "much", "b": "more", "c": "most", "d": "many" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Comparativo de superioridad para el adjetivo 'reliable'."
+    },
+    {
+      "id": 27,
+      "enunciado": "He denied _______ the confidential files.",
+      "opciones": { "a": "copy", "b": "to copy", "c": "copying", "d": "copied" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El verbo 'deny' va seguido de gerundio (-ing)."
+    },
+    {
+      "id": 28,
+      "enunciado": "The report _______ by Friday.",
+      "opciones": { "a": "must finish", "b": "must be finished", "c": "must finished", "d": "must be finish" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Voz pasiva con verbo modal: 'must + be + past participle'."
+    },
+    {
+      "id": 29,
+      "enunciado": "Although the problem was serious, the team _______ it quickly.",
+      "opciones": { "a": "solve", "b": "solved", "c": "has solved", "d": "solving" },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Se utiliza el pasado simple para una acción completada en el pasado en una narración."
+    },
+    {
+      "id": 30,
+      "enunciado": "We _______ in this office since January.",
+      "opciones": { "a": "work", "b": "worked", "c": "have worked", "d": "are working" },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Presente perfecto para una acción que empezó en el pasado y continúa en el presente, indicado por 'since'."
+    }
+  ]
+}

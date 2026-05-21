@@ -1,0 +1,54 @@
+{
+  "asignatura": "Administración de sistemas operativos",
+  "codigo_archivo": "lesson_ra3_automatizacion",
+  "titulo": "RA3: AUTOMATIZACIÓN DE TAREAS Y SCRIPTING",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "1. Fundamentos de la Automatización",
+      "contenido": "<div class='lesson-card'>La automatización permite reducir errores humanos y optimizar el tiempo del administrador.</div><p>Herramientas clave:</p><ul><li><strong>Tareas Programadas (Windows):</strong> Utiliza el Programador de Tareas para ejecutar .bat o scripts de PowerShell en intervalos definidos.</li><li><strong>Cron / Crontab (Linux):</strong> Demonio que ejecuta comandos según una tabla de tiempos definida (minuto, hora, día...).</li><li><strong>Scripts:</strong> Ficheros de texto con secuencias de comandos ejecutables por un intérprete (bash, cmd, powershell).</li></ul>"
+    },
+    {
+      "id": 2,
+      "titulo": "2. Scripting en Windows: Ficheros Batch (.bat)",
+      "contenido": "<div class='lesson-card'>El lenguaje de comandos de MS-DOS sigue siendo útil para tareas rápidas.</div><p><strong>Estructuras Maestras:</strong></p><ul><li><code>@echo off</code>: Oculta los comandos ejecutados, solo muestra los resultados.</li><li><code>set /p variable=Mensaje</code>: Captura la entrada del usuario.</li><li><code>if %variable% == 1 goto etiqueta</code>: Salto condicional de ejecución.</li><li><code>start url/programa</code>: Abre una aplicación o sitio web.</li></ul><p><em>Ejemplo de Menú en Windows:</em></p><pre>@echo off\necho 1. Ver IP\necho 2. Salir\nset /p op=Elige:\nif %op%==1 ipconfig\nif %op%==2 exit</pre>"
+    },
+    {
+      "id": 3,
+      "titulo": "3. Scripting en Linux: Bash Avanzado",
+      "contenido": "<div class='lesson-card'>Bash es el estándar de facto para la administración de sistemas Unix/Linux.</div><p><strong>Estructura Profesional:</strong></p><ul><li><strong>Shebang (<code>#!/bin/bash</code>):</strong> Indica al kernel qué intérprete usar.</li><li><strong>Bucle While:</strong> Ideal para menús persistentes que no terminan hasta que el usuario lo pide.</li><li><strong>Case:</strong> Estructura de control limpia para gestionar múltiples opciones.</li></ul><pre>#!/bin/bash\nwhile true; do\n  echo \"1. Alta | 2. Baja | 3. Salir\"\n  read opcion\n  case $opcion in\n    1) read u; sudo adduser $u ;;\n    2) read u; sudo userdel -r $u ;;\n    3) exit ;;\n    *) echo \"Opcion no valida\" ;;\n  esac\ndone</pre>"
+    },
+    {
+      "id": 4,
+      "titulo": "4. Comandos de Diagnóstico Automatizables",
+      "contenido": "<div class='lesson-card'>Integrar herramientas de diagnóstico en scripts ahorra tiempo.</div><p><strong>Comandos útiles para reportes:</strong></p><ul><li><code>ipconfig /all</code> (Windows) / <code>ifconfig</code> o <code>ip a</code> (Linux): Red.</li><li><code>systeminfo</code> (Windows) / <code>uname -a</code> (Linux): Info sistema.</li><li><code>attrib</code> (Windows) / <code>ls -l</code> (Linux): Atributos y permisos.</li><li><code>getmac</code> (Windows): Obtener dirección física.</li><li><code>tree</code>: Visualización jerárquica de carpetas.</li></ul>"
+    },
+    {
+      "id": 5,
+      "titulo": "QUIZ RA3: AUTOMATIZACIÓN",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Evalúa tu capacidad de automatizar tareas.</div>",
+      "preguntas_test": [
+        {
+          "q": "¿Qué símbolo se usa en scripts .bat para acceder al valor de una variable creada con 'set'?",
+          "options": ["$variable", "%variable%", "&variable", "#variable"],
+          "correct": 1,
+          "explicacion": "En Batch (Windows), las variables se envuelven entre porcentajes."
+        },
+        {
+          "q": "En un script Bash, ¿para qué sirve el comando 'read'?",
+          "options": ["Para leer el contenido de un archivo", "Para imprimir texto en pantalla", "Para pausar el script y esperar una entrada de teclado", "Para cerrar el script"],
+          "correct": 2,
+          "explicacion": "read captura la entrada estándar y la guarda en una variable."
+        },
+        {
+          "q": "¿Cuál es la función del 'Shebang' (#!/bin/bash) al inicio de un script?",
+          "options": ["Es un comentario de autor", "Define el nombre del script", "Indica la ruta del intérprete de comandos", "Oculta el código del script"],
+          "correct": 2,
+          "explicacion": "Permite al sistema saber con qué ejecutable procesar el resto del archivo."
+        }
+      ]
+    }
+  ]
+}

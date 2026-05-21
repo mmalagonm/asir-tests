@@ -1,0 +1,248 @@
+{
+  "asignatura": "Seguridad",
+  "codigo_archivo": "autoevaluacion_3_25-26",
+  "titulo": "3ª Autoevaluación Curso 2025/2026",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "Marca la afirmación correcta asociada al RAID 5: ",
+      "opciones": {
+        "a": "No se desaprovecha ningún disco exclusivamente para almacenar códigos de paridad.",
+        "b": "Es la arquitectura más rápida que presenta tolerancia a fallos.",
+        "c": "Todas son correctas.",
+        "d": "Con un mínimo de dos discos es suficiente."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: No se desaprovecha ningún disco exclusivamente para almacenar códigos de paridad."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Dónde debería ubicarse un servidor que contiene información confidencial de sus empleados y al que sólo deben acceder el personal intermo de la empresa?",
+      "opciones": {
+        "a": "En una VPN, para garantizar su seguridad.",
+        "b": "En un servidor web para acceder cómodamente.",
+        "c": "En la Zona Desmilitarizada.",
+        "d": "En la red interna, donde solo los empleados puedan acceder."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La respuesta correcta es: En la red interna, donde solo los empleados puedan acceder."
+    },
+    {
+      "id": 3,
+      "enunciado": "Marca la afirmación correcta asociada al concepto de RAID:",
+      "opciones": {
+        "a": "Tecnología que permite optimizar el espacio compartido entre varios discos duros.",
+        "b": "Tecnología que permite optimizar el uso de los discos duros en servidores.",
+        "c": "Tecnología que permite combinar varios discos duros para mejorar el rendimiento y la redundancia de datos.",
+        "d": "Todas son correctas."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La respuesta correcta es: Tecnología que permite combinar varios discos duros para mejorar el rendimiento y la redundancia de datos."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Cuál es la herramienta de seguridad que intenta detectar o monitorizar los eventos ocurridos en un determinado sistema informático en busca de intentos de comprometer la seguridad de dicho sistema? ",
+      "opciones": {
+        "a": "IPS",
+        "b": "IDS",
+        "c": "Cortafuegos",
+        "d": "ISD"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La respuesta correcta es: IDS"
+    },
+    {
+      "id": 5,
+      "enunciado": "Un falso positivo se puede definir como: ",
+      "opciones": {
+        "a": "Una alerta que indica actividad nefasta en un sistema que, tras una inspección más profunda, resulta ser una actividad nefasta.",
+        "b": "Ninguna es cierta.",
+        "c": "La falta de una alerta de actividad nefasta.",
+        "d": "Una alerta que indica actividad nefasta en un sistema que, tras una inspección más detallada, resulta representar tráfico o comportamiento legítimo de la red. "
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La respuesta correcta es: Una alerta que indica actividad nefasta en un sistema que, tras una inspección más detallada, resulta representar tráfico o comportamiento legítimo de la red. "
+    },
+    {
+      "id": 6,
+      "enunciado": "Marca la opción que corresponde a los cortafuegos de aplicación:",
+      "opciones": {
+        "a": "Filtrado de circuitos: comprueban las IPs, los puertos, la información de la sesión y los números de secuencia de los paquetes enviados.",
+        "b": "Filtrado de paquetes: seleccionan la información que dejan pasar en función de la información contenida en cada paquete recibido/enviado.",
+        "c": "Todas son correctas.",
+        "d": "Filtrado de aplicaciones: interceptan los mensajes entre aplicaciones y bloquean las aplicaciones no permitidas."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La respuesta correcta es: Filtrado de aplicaciones: interceptan los mensajes entre aplicaciones y bloquean las aplicaciones no permitidas."
+    },
+    {
+      "id": 7,
+      "enunciado": "Marca la opción que no corresponde a ningún tipo de cortafuegos:",
+      "opciones": {
+        "a": "Filtrado de equipos/usuarios: permiten filtrar los accesos de equipos y/o usuarios no permitidos de forma eficiente.",
+        "b": "Filtrado de aplicaciones: interceptan los mensajes entre aplicaciones y bloquean las aplicaciones no permitidas.",
+        "c": "Filtrado de paquetes: seleccionan la información que dejan pasar en función de la información contenida en cada paquete recibido/enviado.",
+        "d": "Filtrado de circuitos: comprueban las IPs, los puertos, la información de la sesión y los números de secuencia de los paquetes enviados"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: Filtrado de equipos/usuarios: permiten filtrar los accesos de equipos y/o usuarios no permitidos de forma eficiente."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Cuál de las siguientes afirmaciones define una subred protegida débil?",
+      "opciones": {
+        "a": "Tiene un equipo bastión sin proteger.",
+        "b": "Sitúa a la DMZ detrás de un router, sin utilizar cortafuegos.",
+        "c": "Ninguna es correcta.",
+        "d": "Sitúa a la DMZ entre dos cortafuegos."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La respuesta correcta es: Sitúa a la DMZ detrás de un router, sin utilizar cortafuegos."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Qué hace este comando iptables −A INPUT −s 0.0.0.0/0 −p tcp −dport 1:1024 −j DROP?",
+      "opciones": {
+        "a": "Es una instrucción no válida, tiene errores.",
+        "b": "Deshabilita la salida a los puertos del 1 al 1024 para las IPs exteriores.",
+        "c": "Deshabilita los puertos del 1 al 1024.",
+        "d": "Deshabilita el acceso a los puertos del 1 al 1024 para las IPs exteriores."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La respuesta correcta es: Deshabilita el acceso a los puertos del 1 al 1024 para las IPs exteriores."
+    },
+    {
+      "id": 10,
+      "enunciado": "Un IPS es:",
+      "opciones": {
+        "a": "Software que tiene el propósito de detectar y eliminar programas perjudiciales.",
+        "b": "Elemento de un sistema diseñado para bloquear el acceso no autorizado de los usuarios, permitiendo al mismo tiempo comunicaciones autorizadas.",
+        "c": "Elemento que ejerce el control en una red informática para detectar y prevenir los procesos de acceso a los sistemas de ataques y abusos.",
+        "d": "Sistema configurado y conectado a una red para que pueda ser sondeado, atacado e incluso comprometido por intrusos."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La respuesta correcta es: Elemento que ejerce el control en una red informática para detectar y prevenir los procesos de acceso a los sistemas de ataques y abusos."
+    },
+    {
+      "id": 11,
+      "enunciado": "¿Cuál es la política más aconsejable para disponer de máxima seguridad al configurar un cortafuegos?",
+      "opciones": {
+        "a": "La más aconsejable sería DENEGAR, siempre y cuando sepamos configurar correctamente el sistema y sin caer en la tentación de empezar a meter reglas excesivamente permisivas.",
+        "b": "La más aconsejable sería ACEPTAR. Es la más sencilla y segura de ambas, puesto que DENEGAR limita excesivamente el acceso, y es imprescindible una compleja configuración para su correcto funcionamiento.",
+        "c": "Denegarlo todo sería lo más seguro.",
+        "d": "Tanto ACEPTAR, como DENEGAR cumplen la integridad total de la información, y aseguran la seguridad del sistema."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: La más aconsejable sería DENEGAR, siempre y cuando sepamos configurar correctamente el sistema y sin caer en la tentación de empezar a meter reglas excesivamente permisivas."
+    },
+    {
+      "id": 12,
+      "enunciado": "¿Dónde debería ubicarse un servidor que contiene información confidencial de sus empleados y al que sólo deben acceder el personal intermo de la empresa?",
+      "opciones": {
+        "a": "En la Zona Desmilitarizada.",
+        "b": "En un servidor web para acceder cómodamente.",
+        "c": "En la red interna, donde solo los empleados puedan acceder.",
+        "d": "En una VPN, para garantizar su seguridad."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La respuesta correcta es: En la red interna, donde solo los empleados puedan acceder."
+    },
+    {
+      "id": 13,
+      "enunciado": "Marca la opción que no corresponde a ningún tipo de cortafuegos:",
+      "opciones": {
+        "a": "Filtrado de equipos/usuarios:  permiten filtrar los accesos de equipos y/o usuarios no permitidos de forma eficiente.",
+        "b": "Filtrado de circuitos: comprueban las IPs, los puertos, la información de la sesión y los números de secuencia de los paquetes enviados.",
+        "c": "Filtrado de paquetes: seleccionan la información que dejan pasar en función de la información contenida en cada paquete recibido/enviado.",
+        "d": "Ninguna es correcta."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: Filtrado de equipos/usuarios:  permiten filtrar los accesos de equipos y/o usuarios no permitidos de forma eficiente."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Dónde se coloca comúnmente un IPS en una red?",
+      "opciones": {
+        "a": "Detrás del firewall, en la parte de la red interior.",
+        "b": "Delante del firewall, en la parte de la red exterior.",
+        "c": "En el dispositivo de los usuarios finales.",
+        "d": "En coordinación con el cortafuegos."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: Detrás del firewall, en la parte de la red interior."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Cuál es la política más aconsejable para disponer de máxima seguridad al configurar un cortafuegos?",
+      "opciones": {
+        "a": "La más aconsejable sería DENEGAR, siempre y cuando sepamos configurar correctamente el sistema y sin caer en la tentación de empezar a meter reglas excesivamente permisivas.",
+        "b": "Tanto ACEPTAR, como DENEGAR cumplen la integridad total de la información, y aseguran la seguridad del sistema.",
+        "c": "La más aconsejable sería ACEPTAR. Es la más sencilla y segura de ambas, puesto que DENEGAR limita excesivamente el acceso, y es imprescindible una compleja configuración para su correcto funcionamiento.",
+        "d": "Denegarlo todo sería lo más seguro."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: La más aconsejable sería DENEGAR, siempre y cuando sepamos configurar correctamente el sistema y sin caer en la tentación de empezar a meter reglas excesivamente permisivas."
+    },
+    {
+      "id": 16,
+      "enunciado": "Si detecta una amenaza, un IPS puede:  ",
+      "opciones": {
+        "a": "Informar de la amenaza a los administradores de seguridad.",
+        "b": "Registrar los detalles de la amenaza",
+        "c": "Todas las demás son ciertas.",
+        "d": "Tomar medidas preventivas para detener la amenaza. "
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La respuesta correcta es: Todas las demás son ciertas."
+    },
+    {
+      "id": 17,
+      "enunciado": "¿Qué hace este comando iptables −A INPUT -i eth0 −p tcp −-dport 80 −j DROP?",
+      "opciones": {
+        "a": "Cerrar todas las conexiones desde eth0 y hacia el puerto (local) 80",
+        "b": "Cerrar las conexiones entrantes por el interfaz eth0 y hacia el puerto (local) 80",
+        "c": "Cerrar todas las conexiones excepto desde eth0 hasta el puerto (local) 80",
+        "d": "Ninguna es correcta."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La respuesta correcta es: Cerrar las conexiones entrantes por el interfaz eth0 y hacia el puerto (local) 80"
+    },
+    {
+      "id": 18,
+      "enunciado": "Las reglas de filtrado de iptables se organizan en:",
+      "opciones": {
+        "a": "INPUT, OUTPUT, FORWARD, PREROUTING y POSTROUTING",
+        "b": "Ninguna es correcta.",
+        "c": "INPUT, OUTPUT y FORWARD.",
+        "d": "INPUT y OUTPUT."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La respuesta correcta es: INPUT, OUTPUT y FORWARD."
+    },
+    {
+      "id": 19,
+      "enunciado": "Cuando se habla de IDS / IPS, ¿qué es una firma?  ",
+      "opciones": {
+        "a": "Comportamiento normal de la red de referencia. ",
+        "b": "Ninguna es cierta.",
+        "c": "Una firma electrónica utilizada para autenticar la identidad de un usuario en la red.",
+        "d": "Patrones de actividad o código correspondiente a ataques."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La respuesta correcta es: Patrones de actividad o código correspondiente a ataques."
+    },
+    {
+      "id": 20,
+      "enunciado": "¿Qué tipo de cortafuegos se ha de utilizar para filtrar ataques a una aplicación web?",
+      "opciones": {
+        "a": "Cortafuegos de capa de aplicación.",
+        "b": "Cortafuegos de capa de red.",
+        "c": "No se utiliza un cortafuegos, se utiliza un IDS.",
+        "d": "Cortafuegos específico web."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La respuesta correcta es: Cortafuegos de capa de aplicación."
+    }
+  ]
+}

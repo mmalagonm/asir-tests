@@ -1,0 +1,126 @@
+{
+  "asignatura": "Seguridad",
+  "codigo_archivo": "cuestionario_tema_4_RA7",
+  "titulo": "Cuestionario Tema 4 - RA7 (Disponibilidad y Recuperación)",
+  "tipo": "cuestionario",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "Un SAI permite seguir trabajando con normalidad durante un apagón (corto período de tiempo):",
+      "opciones": {
+        "a": "Verdadero",
+        "b": "Falso"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Un SAI (Sistema de Alimentación Ininterrumpida) o UPS proporciona energía eléctrica mediante baterías durante un corte de suministro, permitiendo mantener la operatividad por un tiempo limitado o realizar un apagado controlado."
+    },
+    {
+      "id": 2,
+      "enunciado": "Las controladoras RAID 5 permiten:",
+      "opciones": {
+        "a": "Dividir la información entre dos discos duros y tener uno más para la redundancia, de forma que se van rotando los tres discos mínimos",
+        "b": "Disponer de dos copias en tiempo real en dos discos duros",
+        "c": "Dividir la información de cada archivo entre dos discos duros consiguiendo más velocidad",
+        "d": "Ninguna es correcta"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El RAID 5 utiliza distribución de datos por bloques con paridad distribuida entre todos los discos del conjunto (mínimo 3). Esto proporciona un equilibrio entre rendimiento, capacidad y redundancia."
+    },
+    {
+      "id": 3,
+      "enunciado": "Las controladoras RAID 0 permiten:",
+      "opciones": {
+        "a": "Disponer de dos copias en tiempo real en dos discos duros",
+        "b": "Ninguna es correcta",
+        "c": "Disponer de dos discos completos extendidos en capacidad",
+        "d": "Dividir la información de cada archivo entre dos discos duros consiguiendo más velocidad"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "RAID 0 (Striping) divide los datos equitativamente entre dos o más discos sin información de paridad ni redundancia, lo que aumenta significativamente la velocidad de lectura/escritura pero aumenta el riesgo de pérdida de datos."
+    },
+    {
+      "id": 4,
+      "enunciado": "Las controladoras RAID 1 permiten:",
+      "opciones": {
+        "a": "Disponer de dos discos completos extendidos en capacidad",
+        "b": "Dividir la información de cada archivo entre dos discos duros consiguiendo más velocidad",
+        "c": "Disponer de dos copias en tiempo real en dos discos duros",
+        "d": "Ninguna es correcta"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "RAID 1 (Mirroring) crea una copia exacta (espejo) de los datos en dos o más discos. Si un disco falla, el sistema sigue funcionando con el otro, ofreciendo alta disponibilidad."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Un CPD debe tener previsto y seguir funcionando ante un apagón general?",
+      "opciones": {
+        "a": "No necesariamente, dependerá del objetivo empresarial y del nivel crítico de los datos a proteger.",
+        "b": "Sí, siempre debe disponer de un generador eléctrico industrial.",
+        "c": "Con disponer de un SAI potente sería suficiente.",
+        "d": "No, en ningún caso."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La necesidad de continuidad absoluta depende del análisis de riesgos y los objetivos de negocio. No todos los CPD requieren el mismo nivel de redundancia (Tiers), aunque los más críticos sí deben soportar apagones prolongados."
+    },
+    {
+      "id": 6,
+      "enunciado": "Marca los problemas que creas que soluciona un SAI:",
+      "opciones": {
+        "a": "Prolongado corte de suministro",
+        "b": "Calentamiento excesivo de la CPU",
+        "c": "Calentamiento excesivo de la fuente de alimentación",
+        "d": "Breve corte de suministro"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Un SAI soluciona micro-cortes, picos de tensión y breves cortes de suministro. Para cortes prolongados, su función suele ser dar tiempo a que arranquen los generadores o cerrar el sistema ordenadamente."
+    },
+    {
+      "id": 7,
+      "enunciado": "Para mantener constante la temperatura, ¿podemos abrir las ventanas de la habitación dónde se encuentren los equipos?",
+      "opciones": {
+        "a": "Sí, si la temperatura del CPD así lo aconseja.",
+        "b": "No, en ningún caso.",
+        "c": "Sí, porque conseguiremos que baje la temperatura.",
+        "d": "Sólo si hace calor."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En un CPD (Centro de Procesamiento de Datos), el ambiente debe estar estrictamente controlado (humedad, polvo, temperatura). Abrir ventanas introduciría contaminantes y desequilibraría el sistema de climatización de precisión."
+    },
+    {
+      "id": 8,
+      "enunciado": "En referencia a las copias de seguridad de un Sistema Operativo, restaurar una imagen significa:",
+      "opciones": {
+        "a": "Recuperar una copia de seguridad de archivos y documentos.",
+        "b": "Recuperar todos los controladores al estado de fábrica.",
+        "c": "Restaurar el S.O. mediante un archivo de imagen creado anteriormente.",
+        "d": "Restaurar un archivo de la Papelera de Reciclaje"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Restaurar una imagen de sistema implica volcar un archivo que contiene el estado exacto del sistema (particiones, S.O., programas y configuración) en un momento dado, permitiendo una recuperación rápida tras un fallo grave."
+    },
+    {
+      "id": 9,
+      "enunciado": "Marca cual es el concepto correcto de clonar un disco completo:",
+      "opciones": {
+        "a": "Se copian todas las particiones existentes en el disco duro y la tabla de particiones, pudiendo utilizar el disco clonado de forma similar al original",
+        "b": "Se copian todas las particiones existentes en el disco duro y la tabla de particiones, pero no se puede utilizar el disco clonado de forma similar al original",
+        "c": "Se copian todas las particiones existentes en el disco duro pero no se copia la tabla de particiones",
+        "d": "Ninguna es correcta"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La clonación crea una réplica bit a bit del disco original en otro soporte, incluyendo el MBR/GPT y todas las particiones, resultando en un disco inmediatamente arrancable y funcional."
+    },
+    {
+      "id": 10,
+      "enunciado": "Una copia de seguridad o backup es:",
+      "opciones": {
+        "a": "Copiar todos los archivos en otro dispositivo.",
+        "b": "Ninguna es correcta",
+        "c": "Realizar el borrado de archivos importantes del sistema operativo.",
+        "d": "Un respaldo de la información que tenemos en un archivo."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Un backup es un duplicado de los datos que se guarda en un lugar seguro para poder recuperarlos en caso de pérdida, borrado accidental o corrupción de los datos originales."
+    }
+  ]
+}

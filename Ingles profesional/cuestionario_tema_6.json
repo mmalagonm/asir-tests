@@ -1,0 +1,18 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "cuestionario_tema_6",
+  "titulo": "UNIT 6. Quiz - compulsory",
+  "tipo": "cuestionario",
+  "preguntas": [
+    { "id": 1, "enunciado": "If they ___ more carefully, they wouldn't have missed the deadline.", "opciones": { "a": "were working", "b": "had worked", "c": "worked", "d": "have worked" }, "respuesta_correcta": "b", "retroalimentacion": "Se trata de una condicional de tercer tipo (imposible en el pasado). La estructura es 'If' + pasado perfecto, 'would have' + participio." },
+    { "id": 2, "enunciado": "If he ___ more experienced, he would have got the job.", "opciones": { "a": "is", "b": "was", "c": "had been", "d": "were" }, "respuesta_correcta": "c", "retroalimentacion": "Condicional de tercer tipo: se refiere a algo que no ocurrió en el pasado. Requiere el pasado perfecto ('had been') en la cláusula con 'if'." },
+    { "id": 3, "enunciado": "We wish it _____ raining so we could go for a walk.", "opciones": { "a": "would stop", "b": "had stopped", "c": "stops", "d": "stopped" }, "respuesta_correcta": "a", "retroalimentacion": "Utilizamos 'wish' + 'would' para expresar el deseo de que algo cambie o deje de ocurrir en el futuro (especialmente si es molesto)." },
+    { "id": 4, "enunciado": "If I ___ you, I would have apologized.", "opciones": { "a": "had been", "b": "have been", "c": "were", "d": "am" }, "respuesta_correcta": "c", "retroalimentacion": "En condicionales de segundo tipo y consejos, se utiliza 'were' para todas las personas en el subjuntivo ('If I were you')." },
+    { "id": 5, "enunciado": "She wishes she _____ to the party last night.", "opciones": { "a": "went", "b": "goes", "c": "had gone", "d": "has gone" }, "respuesta_correcta": "c", "retroalimentacion": "Para expresar arrepentimiento sobre una acción pasada, utilizamos 'wish' + pasado perfecto ('had gone')." },
+    { "id": 6, "enunciado": "If you ___ the instructions, you wouldn't have made that mistake.", "opciones": { "a": "have followed", "b": "will follow", "c": "had followed", "d": "would follow" }, "respuesta_correcta": "c", "retroalimentacion": "Otra condicional de tercer tipo que lamenta algo que ya sucedió. Requiere 'had followed'." },
+    { "id": 7, "enunciado": "I wish I _____ more time to finish the project.", "opciones": { "a": "have", "b": "would have", "c": "will have", "d": "had" }, "respuesta_correcta": "d", "retroalimentacion": "Para expresar un deseo sobre una situación presente que nos gustaría que fuera distinta, usamos 'wish' + pasado simple ('had')." },
+    { "id": 8, "enunciado": "She would go to the party if she ___ invited.", "opciones": { "a": "has been", "b": "was", "c": "were", "d": "had been" }, "respuesta_correcta": "c", "retroalimentacion": "Condicional de segundo tipo (situación hipotética presente). Se usa pasado simple (o 'were' como subjuntivo) tras 'if'." },
+    { "id": 9, "enunciado": "He wishes he _____ so much junk food yesterday.", "opciones": { "a": "doesn't eat", "b": "hadn't eaten", "c": "hadn't eat", "d": "didn't eat" }, "respuesta_correcta": "b", "retroalimentacion": "Se utiliza 'wish' + pasado perfecto negativo para lamentar algo hecho en el pasado ('hadn't eaten')." },
+    { "id": 10, "enunciado": "They wish they _____ travel more often.", "opciones": { "a": "could", "b": "would", "c": "can", "d": "will" }, "respuesta_correcta": "a", "retroalimentacion": "Usamos 'wish' + 'could' para expresar el deseo de tener una capacidad o posibilidad que actualmente no tenemos." }
+  ]
+}

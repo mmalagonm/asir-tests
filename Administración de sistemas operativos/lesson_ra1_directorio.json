@@ -1,0 +1,96 @@
+{
+  "asignatura": "Administración de sistemas operativos",
+  "codigo_archivo": "lesson_ra1_directorio",
+  "titulo": "RA1: Administración del Servicio de Directorio y Red",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Introducción y Fundamentos de Windows Server",
+      "contenido": "<div class='lesson-card'>El primer paso en la administración de sistemas es entender cómo se organizan los equipos en una red empresarial.</div><p>Existen dos modelos principales de organización en Windows:</p><ul><li><strong>Grupo de Trabajo (Workgroup):</strong> Modelo descentralizado donde cada equipo gestiona sus propios usuarios y recursos. Es el modo por defecto tras la instalación.</li><li><strong>Dominio:</strong> Modelo centralizado gestionado por un <strong>Controlador de Dominio (DC)</strong> que utiliza <strong>Active Directory</strong> para almacenar identidades y aplicar políticas.</li></ul><p class='diag-note'>⚠️ <em>Importante: Para unir un equipo a un dominio, el paso crítico es configurar el <strong>DNS preferido</strong> del cliente con la IP del Servidor. Sin resolución DNS, el dominio no será localizado.</em></p>"
+    },
+    {
+      "id": 2,
+      "titulo": "Servicios de Red y Seguridad Inicial",
+      "contenido": "<div class='lesson-card'>La comunicación y el descubrimiento de red dependen de protocolos específicos y configuraciones de seguridad.</div><p>Conceptos clave de red en el servidor:</p><ul><li><strong>NetBIOS:</strong> Utiliza los puertos <strong>137 (Nombres), 138 (Datagramas) y 139 (Sesión)</strong>. Deshabilitarlos es una práctica común para endurecer la seguridad.</li><li><strong>Multi-homing:</strong> Windows permite asignar múltiples IPs de diferentes subredes a una sola tarjeta de red física, permitiendo comunicación con redes lógicas distintas simultáneamente.</li><li><strong>Detección de Red:</strong> Por defecto, Windows 10 bloquea el tráfico ICMP (ping) por el Firewall. Se debe configurar el perfil como 'Privado' para permitir visibilidad básica.</li></ul>"
+    },
+    {
+      "id": 3,
+      "titulo": "Administración de Usuarios y Grupos en Active Directory",
+      "contenido": "<div class='lesson-card'>Active Directory (AD) es la base de datos de objetos (usuarios, grupos, equipos) de la red.</div><p>Aspectos fundamentales de gestión:</p><ul><li><strong>Seguridad de Contraseñas:</strong> Las contraseñas se almacenan como <strong>hashes</strong>. Ni siquiera el Administrador puede verlas, solo resetearlas.</li><li><strong>Ámbitos de Grupo:</strong> <ul><li><em>Globales:</em> Para organizar usuarios con roles similares.</li><li><em>Locales de Dominio:</em> Para asignar permisos a recursos.</li><li><em>Universales:</em> Para entornos con múltiples dominios (bosques).</li></ul></li><li><strong>Operadores de Cuentas:</strong> Rol con permisos para crear y gestionar cuentas, pero con las mismas restricciones de visibilidad de seguridad que otros administradores.</li></ul>"
+    },
+    {
+      "id": 4,
+      "titulo": "Gestión de Permisos NTFS y Atributos",
+      "contenido": "<div class='lesson-card'>El sistema de archivos NTFS permite un control granular sobre quién accede a qué.</div><p>Reglas de oro de los permisos:</p><ul><li><strong>Prevalencia del Denegar:</strong> Un permiso de 'Denegar' (Deny) siempre gana a cualquier permiso de 'Permitir' (Allow), sin importar la pertenencia a grupos.</li><li><strong>Pestaña Seguridad:</strong> Solo aparece en particiones formateadas en <strong>NTFS</strong>. No existe en FAT32 o exFAT.</li><li><strong>Comando Attrib:</strong> Permite gestionar atributos básicos (+R lectura, +H oculto, +S sistema). <em>No se debe usar +S (Sistema) para archivos personales.</em></li></ul><p class='diag-note'>💡 <em>Ejemplo: 'attrib +R archivo.txt' lo protege contra escritura accidental.</em></p>"
+    },
+    {
+      "id": 5,
+      "titulo": "Administración de Sistemas Linux (Ubuntu)",
+      "contenido": "<div class='lesson-card'>En entornos híbridos, el administrador debe dominar la CLI de Linux para gestionar usuarios y archivos.</div><p>Comandos esenciales de administración:</p><ul><li><code>adduser / userdel:</code> Gestión de usuarios. <code>userdel -r</code> borra también su carpeta personal.</li><li><code>addgroup / groupdel:</code> Gestión de grupos.</li><li><code>groupmod -n nuevo_nombre viejo:</code> Cambia el nombre de un grupo.</li><li><code>uname -a:</code> Muestra información detallada del sistema y kernel.</li><li><code>less / cat:</code> Visualización de archivos. <code>less</code> permite navegación por páginas sin editar.</li><li><code>touch:</code> Crea un archivo vacío o actualiza su marca de tiempo.</li></ul>"
+    },
+    {
+      "id": 6,
+      "titulo": "Permisos en Linux: El Modelo Octal",
+      "contenido": "<div class='lesson-card'>Linux utiliza un sistema de permisos simple pero potente basado en Dueño, Grupo y Otros.</div><p>Cálculo de permisos (chmod):</p><ul><li><strong>R (Read) = 4</strong></li><li><strong>W (Write) = 2</strong></li><li><strong>X (Execute) = 1</strong></li></ul><p>Ejemplos comunes:</p><ul><li><code>chmod 771:</code> Dueño (7=RWX), Grupo (7=RWX), Otros (1=X).</li><li><code>chmod 644:</code> Dueño (6=RW), Grupo (4=R), Otros (4=R).</li><li><code>chgrp:</code> Cambia el grupo propietario de un archivo o directorio.</li></ul>"
+    },
+    {
+      "id": 7,
+      "titulo": "Automatización con Scripts (Bash)",
+      "contenido": "<div class='lesson-card'>La creación de scripts permite automatizar tareas repetitivas de administración.</div><p>Un script típico de gestión de usuarios en Ubuntu utiliza estructuras <code>case</code> y la orden <code>read</code>:</p><pre>#!/bin/bash\necho \"1. Crear usuario\"\necho \"2. Salir\"\nread opcion\ncase $opcion in\n  1) read user; adduser $user ;;\n  2) exit ;;\nesac</pre><p>La orden <strong>read</strong> es fundamental para capturar la entrada del usuario y almacenarla en variables para su procesamiento posterior.</p>"
+    },
+    {
+      "id": 8,
+      "titulo": "Cálculos de Red y Subnetting",
+      "contenido": "<div class='lesson-card'>El administrador debe ser capaz de dimensionar las redes lógicas correctamente.</div><p>Cálculo de Hosts con máscaras CIDR:</p><ul><li><strong>Máscara /18:</strong> <ul><li>Bits de red: 18</li><li>Bits de host: 32 - 18 = 14</li><li>Total direcciones: 2^14 = <strong>16.384</strong></li></ul></li><li><strong>Máscara /24:</strong> 2^8 = 256 direcciones (254 útiles).</li></ul><p class='diag-note'>Recuerda: El número de hosts útiles siempre es (2^n) - 2 (restando dirección de red y broadcast).</p>"
+    },
+    {
+      "id": 9,
+      "titulo": "Jerarquía y Objetos en Active Directory",
+      "contenido": "<div class='lesson-card'>La estructura lógica de AD permite organizar miles de recursos de forma jerárquica.</div><ul><li><strong>Bosque (Forest):</strong> El contenedor de nivel superior que agrupa todos los dominios.</li><li><strong>Árbol (Tree):</strong> Colección de uno o más dominios que comparten un espacio de nombres contiguo.</li><li><strong>Unidad Organizativa (OU):</strong> El contenedor más pequeño al que se pueden aplicar <strong>Directivas de Grupo (GPOs)</strong>. Se usan para delegar administración.</li><li><strong>Contenedores por Defecto:</strong> 'Users' y 'Computers' son contenedores, no OUs, por lo que no se les pueden asignar GPOs directamente.</li></ul>"
+    },
+    {
+      "id": 10,
+      "titulo": "Resolución de Problemas (Troubleshooting)",
+      "contenido": "<div class='lesson-card'>Identificar la causa raíz es vital para minimizar el tiempo de inactividad.</div><p>Escenarios comunes:</p><ul><li><strong>El cliente no se une al dominio:</strong> <ul><li><em>Causa:</em> DNS incorrecto o el equipo no llega al DC.</li><li><em>Solución:</em> Hacer ping a la IP del DC y verificar 'nslookup' del nombre de dominio.</li></ul></li><li><strong>Un usuario no tiene permiso pese a estar en el grupo:</strong> <ul><li><em>Causa:</em> Denegación explícita en otro grupo o el usuario no ha reiniciado sesión para actualizar su token de seguridad.</li></ul></li><li><strong>La pestaña 'Seguridad' no aparece:</strong> <ul><li><em>Causa:</em> El volumen es FAT32 o el usuario no tiene privilegios de administrador local.</li></ul></li></ul>"
+    },
+    {
+      "id": 11,
+      "titulo": "Autoevaluación Final RA1",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Comprueba tu nivel de maestría en los temas del Resultado de Aprendizaje 1.</div>",
+      "preguntas_test": [
+        {
+          "q": "Para unir un Windows 10 a un dominio, ¿qué configuración es la más crítica?",
+          "options": ["El Gateway", "El DNS preferido apuntando al DC", "La IP debe ser estática obligatoriamente", "El nombre del PC debe ser 'Client1'"],
+          "correct": 1,
+          "explicacion": "Sin el DNS correcto, el cliente no puede resolver el nombre del dominio ni localizar los registros SRV del servicio de directorio."
+        },
+        {
+          "q": "¿Qué sucede si a un usuario se le asigna 'Control Total' (Allow) y 'Sin Acceso' (Deny) a través de dos grupos distintos?",
+          "options": ["Prevalece el Control Total", "Se hace una media de permisos", "Prevalece el 'Sin Acceso' (Deny)", "Windows da un error de conflicto"],
+          "correct": 2,
+          "explicacion": "En el modelo NTFS, las denegaciones explícitas siempre tienen prioridad sobre los permisos permitidos."
+        },
+        {
+          "q": "¿Qué valor octal corresponde a los permisos 'RWX R-X R--'?",
+          "options": ["764", "754", "654", "751"],
+          "correct": 1,
+          "explicacion": "RWX = 4+2+1=7; R-X = 4+0+1=5; R-- = 4+0+0=4. Resultado: 754."
+        },
+        {
+          "q": "¿Cuál es el propósito del comando 'uname -a' en Linux?",
+          "options": ["Cambiar el nombre de usuario", "Listar los usuarios conectados", "Mostrar información del kernel y sistema", "Actualizar el sistema"],
+          "correct": 2,
+          "explicacion": "Uname proporciona detalles técnicos sobre el sistema operativo y el hardware sobre el que corre el kernel."
+        },
+        {
+          "q": "En un bloque de red con máscara /18, ¿cuántas direcciones IP totales existen?",
+          "options": ["512", "16.384", "8.192", "32.768"],
+          "correct": 1,
+          "explicacion": "2 elevado a la potencia de los bits de host restantes (32-18=14). 2^14 = 16.384."
+        }
+      ]
+    }
+  ]
+}

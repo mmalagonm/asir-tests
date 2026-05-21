@@ -1,0 +1,105 @@
+{
+  "asignatura": "Implantacion de aplicaciones web",
+  "codigo_archivo": "examen_ra2",
+  "titulo": "Examen Enero 2026 Resultado de aprendizaje 2",
+  "tipo": "examen",
+  "ra": [2],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "JavaScript realiza con los tipos de datos en las variables lo que se denomina:",
+      "opciones": {
+        "a": "Ninguna es correcta",
+        "b": "Conversión explícita",
+        "c": "Conversión implícita",
+        "d": "No realiza ninguna conversión"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "JavaScript realiza conversiones automáticas (coerción) para intentar que las operaciones tengan sentido, como convertir un número a texto cuando se suma con una cadena."
+    },
+    {
+      "id": 2,
+      "enunciado": "En el siguiente bloque, ¿qué valor tiene i al salir del bucle? for(i=0;i<array.length;i++){...}",
+      "opciones": {
+        "a": "i tiene que ser menor que la longitud del array",
+        "b": "i alcanza el valor de array.length",
+        "c": "Ninguna es correcta",
+        "d": "i tiene que ser igual que la longitud del array"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El bucle for sigue incrementando i mientras i < longitud. Cuando i llega a ser igual a la longitud, la condición falla y el bucle termina, dejando a i con ese valor final."
+    },
+    {
+      "id": 3,
+      "enunciado": "En JavaScript si queremos almacenar un único carácter, ¿qué tipo de dato utilizamos?",
+      "opciones": {
+        "a": "charat",
+        "b": "String",
+        "c": "chart",
+        "d": "char"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "A diferencia de lenguajes como C o Java, JavaScript no tiene un tipo 'char'. Un solo carácter es simplemente un objeto de tipo String con longitud 1."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Qué representa un nodo en el DOM?",
+      "opciones": {
+        "a": "Una operación matemática",
+        "b": "Ninguna de las opciones es correcta",
+        "c": "Una acción TOGGLECLASS",
+        "d": "Una entidad en la estructura jerárquica de un documento HTML"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El Document Object Model (DOM) organiza el HTML como un árbol de objetos, donde cada componente (etiqueta, texto, atributo) se denomina genéricamente 'nodo'."
+    },
+    {
+      "id": 5,
+      "enunciado": "Un evento es:",
+      "opciones": {
+        "a": "Una instrucción if",
+        "b": "Una acción sobre un elemento de nuestro sitio web",
+        "c": "Un tipo de bucle",
+        "d": "Una función"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Los eventos representan interacciones o sucesos del sistema (clic, carga, envío de formulario) que el programador puede interceptar para ejecutar código."
+    },
+    {
+      "id": 6,
+      "enunciado": "Cuando se declara una variable en JavaScript, es necesario:",
+      "opciones": {
+        "a": "No es necesario especificar el tipo de datos",
+        "b": "Especificar el tipo de dato y el ámbito",
+        "c": "Especificar el tipo de datos",
+        "d": "Declarar el ámbito de la variable"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "JavaScript determina el tipo de la variable basándose en el valor que se le asigne en cada momento, permitiendo que una misma variable guarde un número y luego un texto."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Qué puede pasar en un bucle for?",
+      "opciones": {
+        "a": "Nunca se entra en un bucle for",
+        "b": "Por lo menos se ejecuta una vez (si se cumple la condición)",
+        "c": "Por defecto, son bucles infinitos",
+        "d": "Siempre se ejecuta varias veces"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La ejecución del bloque interno depende totalmente del resultado de la expresión condicional definida en la cabecera del bucle."
+    },
+    {
+      "id": 8,
+      "enunciado": "Evento para la carga completa de la estructura HTML en addEventListener:",
+      "opciones": {
+        "a": "DOMContentLoaded",
+        "b": "Click",
+        "c": "load",
+        "d": "Loaded"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Es el evento preferido para inicializar scripts, ya que asegura que todos los elementos HTML están disponibles para ser manipulados sin esperar a la descarga de recursos externos."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "cuestionario_tema_2",
+  "titulo": "UNIT 2. Quiz - MANDATORY",
+  "tipo": "cuestionario",
+  "preguntas": [
+    { "id": 1, "enunciado": "To get to the main office, you need to __________ (turn) left at the next intersection.", "opciones": { "a": "turning", "b": "turned", "c": "turn", "d": "turns" }, "respuesta_correcta": "c", "retroalimentacion": "Después de 'need to' utilizamos el infinitivo del verbo ('turn'). Se utiliza para dar instrucciones o direcciones." },
+    { "id": 2, "enunciado": "We are __________ (plan) to upgrade the network next month.", "opciones": { "a": "plans", "b": "planned", "c": "planing", "d": "planning" }, "respuesta_correcta": "d", "retroalimentacion": "El presente continuo ('are planning') requiere el gerundio. Recuerda doblar la 'n' en 'planning' (consonante-vocal-consonante)." },
+    { "id": 3, "enunciado": "The data center is __________ to the security office.", "opciones": { "a": "opposites", "b": "opposite", "c": "nexts", "d": "in front" }, "respuesta_correcta": "b", "retroalimentacion": "'Opposite' es una preposición de lugar que significa 'enfrente de'. No lleva 'to' (a diferencia de 'next to')." },
+    { "id": 4, "enunciado": "They __________ (install) the new software when the system crashed.", "opciones": { "a": "installs", "b": "were installing", "c": "install", "d": "was installing" }, "respuesta_correcta": "b", "retroalimentacion": "El pasado continuo ('were installing') se usa para una acción larga en el pasado que es interrumpida por otra acción puntual ('crashed')." },
+    { "id": 5, "enunciado": "The flight was __________ (hold up) due to technical issues.", "opciones": { "a": "held up", "b": "hold up", "c": "holding up", "d": "holds up" }, "respuesta_correcta": "a", "retroalimentacion": "'Held up' es el participio pasado del phrasal verb 'hold up', usado aquí en voz pasiva para indicar un retraso." },
+    { "id": 6, "enunciado": "She __________ (use) to work as a network administrator before switching to software development.", "opciones": { "a": "was using", "b": "uses", "c": "used", "d": "use" }, "respuesta_correcta": "c", "retroalimentacion": "La estructura 'used to' se utiliza para hablar de hábitos o estados que eran ciertos en el pasado pero ya no lo son." },
+    { "id": 7, "enunciado": "We will __________ (set off) on our business trip early tomorrow morning.", "opciones": { "a": "setted off", "b": "sets off", "c": "setting off", "d": "set off" }, "respuesta_correcta": "d", "retroalimentacion": "'Set off' es un phrasal verb que significa 'partir' o 'comenzar un viaje'. Después de 'will', el verbo va en forma base." },
+    { "id": 8, "enunciado": "Make sure to __________ (check in) at the hotel by 3 PM.", "opciones": { "a": "checks in", "b": "check in", "c": "checked in", "d": "checking in" }, "respuesta_correcta": "b", "retroalimentacion": "'Check in' es el phrasal verb que se utiliza para registrarse en un hotel o aeropuerto." },
+    { "id": 9, "enunciado": "While the team __________ (test) the new software, they found several bugs.", "opciones": { "a": "was testing", "b": "tests", "c": "test", "d": "tested" }, "respuesta_correcta": "a", "retroalimentacion": "Se utiliza el pasado continuo ('was testing') con 'while' para describir una acción que estaba en desarrollo en el pasado." },
+    { "id": 10, "enunciado": "The IT team __________ (backup) all the files before the system update.", "opciones": { "a": "backup", "b": "backups", "c": "backed up", "d": "backing up" }, "respuesta_correcta": "c", "retroalimentacion": "'Backed up' es el pasado simple de 'back up' (hacer una copia de seguridad), indicando una acción completada." }
+  ]
+}

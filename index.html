@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASIR Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="time-machine">
+        <!-- SIDEBAR -->
+        <aside id="dashboard">
+            <div id="tip-box" class="tip-box">
+                <div class="tip-header">CONSEJOS TÉCNICOS</div>
+                <div id="tip-subject" class="tip-subject">Cargando...</div>
+                <div id="tip-ra" class="tip-ra"></div>
+                <div id="tip-text" class="tip-text"></div>
+            </div>
+
+            <div class="control-panel">
+                <h2>SELECCIÓN DE TEMARIO</h2>
+                
+                <div class="nav-group">
+                    <label>ASIGNATURA</label>
+                    <select id="subject-select" class="digital-select">
+                        <option value="">SELECCIONA ASIGNATURA...</option>
+                    </select>
+                </div>
+
+                <div class="nav-group">
+                    <label>EVALUACIONES (TESTS)</label>
+                    <select id="test-select" class="digital-select" disabled>
+                        <option value="">ESPERANDO...</option>
+                    </select>
+                    <button id="start-test-btn" class="circuit-btn" style="margin-top: 5px;" disabled>INICIAR EVALUACIÓN</button>
+                </div>
+
+                <div class="nav-group">
+                    <label>MATERIAL DE ESTUDIO (LECCIONES)</label>
+                    <select id="lesson-select" class="digital-select" disabled>
+                        <option value="">ESPERANDO...</option>
+                    </select>
+                    <button id="start-lesson-btn" class="circuit-btn" style="margin-top: 5px;" disabled>ABRIR LECCIÓN</button>
+                </div>
+            </div>
+
+            <div class="dashboard-footer">
+                <button id="finish-btn" class="abort-btn hidden">FINALIZAR</button>
+            </div>
+        </aside>
+
+        <main id="temporal-display">
+            <div id="flux-status-bar">
+                <div id="progress-bar"></div>
+            </div>
+
+            <div id="display-readout">
+                <!-- Pantalla Inicial -->
+                <div id="welcome-screen" class="lcd-panel">
+                    <h2 class="neon-text-orange">Bienvenido al Panel de ASIR</h2>
+                    <p>Selecciona una asignatura y un recurso en el panel lateral para comenzar.</p>
+                </div>
+
+                <!-- Test Activo -->
+                <div id="quiz-container" class="hidden">
+                    <div class="time-circuits">
+                        <div class="circuit red">
+                            <label>PREGUNTA ACTUAL</label>
+                            <span id="question-counter" class="lcd-text">01</span>
+                        </div>
+                        <div class="circuit orange">
+                            <label>PUNTUACIÓN</label>
+                            <span id="score-display" class="lcd-text">00</span>
+                        </div>
+                    </div>
+
+                    <div id="question-readout" class="lcd-panel">
+                        <h3 id="question-text"></h3>
+                        <div id="image-container" class="hidden">
+                            <img id="question-image" src="" alt="DATOS VISUALES">
+                        </div>
+                        <div id="options-container"></div>
+                    </div>
+                </div>
+
+                <!-- Lección Activa -->
+                <div id="lesson-container" class="hidden">
+                    <div class="time-circuits">
+                        <div class="circuit red">
+                            <label>PÁGINA</label>
+                            <select id="lesson-page-select" class="digital-select" style="border:none; background:transparent; font-size:1.2rem; font-weight:bold; color:var(--red-danger); width:auto; -webkit-appearance:none; text-align:center;">
+                                <!-- Options injected by JS -->
+                            </select>
+                        </div>
+                        <div class="circuit orange">
+                            <label>PÁGINAS TOTALES</label>
+                            <span id="total-pages" class="lcd-text">00</span>
+                        </div>
+                    </div>
+
+                    <div id="lesson-readout" class="lcd-panel">
+                        <h3 id="lesson-title" class="neon-text-orange" style="margin-bottom: 1.5rem;"></h3>
+                        <div id="lesson-visual" class="lesson-visual" title="Click para ampliar"></div>
+                        <div id="lesson-content" style="line-height: 1.6; font-size: 1.1rem;"></div>
+                    </div>
+
+                    <footer class="temporal-nav">
+                        <button id="prev-page-btn" class="nav-btn">ANTERIOR</button>
+                        <button id="next-page-btn" class="nav-btn next">SIGUIENTE</button>
+                    </footer>
+                </div>
+
+                <!-- Modal for Enlarge Images -->
+                <div id="image-modal" class="hidden" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:1000; display:flex; justify-content:center; align-items:center; cursor:zoom-out;">
+                    <img id="modal-img" src="" style="max-width:95%; max-height:95%; border:2px solid var(--blue-accent);">
+                </div>
+
+                <!-- Resultados -->
+                <div id="results-screen" class="hidden">
+                    <div class="final-readout">
+                        <div class="grade-box">
+                            <label>CALIFICACIÓN FINAL</label>
+                            <h2 id="final-grade" class="lcd-text-big">00.0</h2>
+                        </div>
+                        
+                        <div class="stats-display">
+                            <div class="stat"><label>TOTAL</label><span id="total-questions" class="lcd-text">0</span></div>
+                            <div class="stat success"><label>ACIERTOS</label><span id="correct-answers" class="lcd-text">0</span></div>
+                            <div class="stat danger"><label>ERRORES</label><span id="wrong-answers" class="lcd-text">0</span></div>
+                        </div>
+                    </div>
+
+                    <div id="review-section">
+                        <h3 class="neon-text-green">REVISIÓN DEL EXAMEN</h3>
+                        <div id="review-list"></div>
+                    </div>
+
+                    <button id="restart-btn" class="circuit-btn">VOLVER AL INICIO</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="tips.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

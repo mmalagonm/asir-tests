@@ -1,0 +1,18 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "cuestionario_tema_3",
+  "titulo": "UNIT 3. Quiz - compulsory",
+  "tipo": "cuestionario",
+  "preguntas": [
+    { "id": 1, "enunciado": "He __________ (work) at the company for five years before he resigned.", "opciones": { "a": "worked", "b": "had worked", "c": "work", "d": "works" }, "respuesta_correcta": "b", "retroalimentacion": "Se utiliza el pasado perfecto ('had worked') para una acción que ocurrió y se completó antes de otro momento o acción en el pasado ('resigned')." },
+    { "id": 2, "enunciado": "The new software was installed __________ all the computers.", "opciones": { "a": "on", "b": "inside", "c": "in", "d": "at" }, "respuesta_correcta": "a", "retroalimentacion": "Se utiliza la preposición 'on' para indicar que el software está instalado en un sistema o dispositivo ('on a computer')." },
+    { "id": 3, "enunciado": "We __________ (monitor) the network traffic since the last upgrade.", "opciones": { "a": "monitors", "b": "have been monitoring", "c": "had monitored", "d": "monitor" }, "respuesta_correcta": "b", "retroalimentacion": "El presente perfecto continuo ('have been monitoring') se usa para acciones que empezaron en el pasado y continúan en el presente, resaltando la duración." },
+    { "id": 4, "enunciado": "The printer is __________ the corner of the office.", "opciones": { "a": "at", "b": "on", "c": "in", "d": "inside" }, "respuesta_correcta": "c", "retroalimentacion": "Se usa 'in the corner' para referirse a una esquina dentro de una habitación o espacio cerrado." },
+    { "id": 5, "enunciado": "The system __________ (run) smoothly until the power outage.", "opciones": { "a": "runs", "b": "had been running", "c": "have running", "d": "run" }, "respuesta_correcta": "b", "retroalimentacion": "El pasado perfecto continuo ('had been running') describe una acción que estuvo en progreso hasta un punto determinado del pasado ('until the power outage')." },
+    { "id": 6, "enunciado": "The team __________ (finish) the project before the deadline.", "opciones": { "a": "was finishing", "b": "finishes", "c": "finish", "d": "had finished" }, "respuesta_correcta": "d", "retroalimentacion": "Se emplea el pasado perfecto ('had finished') para enfatizar que la tarea se completó antes de un límite de tiempo pasado." },
+    { "id": 7, "enunciado": "The main office is __________ the corner of 5th Avenue and Main Street.", "opciones": { "a": "in", "b": "at", "c": "on", "d": "inside" }, "respuesta_correcta": "b", "retroalimentacion": "Se usa 'at the corner' para referirse a la intersección de dos calles, viéndolo como un punto geográfico." },
+    { "id": 8, "enunciado": "By the time the technician arrived, the server __________ (crash).", "opciones": { "a": "crash", "b": "had crashed", "c": "crashes", "d": "was crashing" }, "respuesta_correcta": "b", "retroalimentacion": "Pasado perfecto ('had crashed') para indicar que el fallo ocurrió antes de la llegada del técnico." },
+    { "id": 9, "enunciado": "The files are stored __________ a secure server.", "opciones": { "a": "on", "b": "at", "c": "inside", "d": "in" }, "respuesta_correcta": "a", "retroalimentacion": "Habitualmente se utiliza 'on' para referirse a datos almacenados en servidores o soportes digitales." },
+    { "id": 10, "enunciado": "The IT team __________ (implement) new features gradually over the past few months.", "opciones": { "a": "has been implementing", "b": "implemented", "c": "implements", "d": "was implementing" }, "respuesta_correcta": "a", "retroalimentacion": "El presente perfecto continuo ('has been implementing') es ideal para procesos graduales que han estado ocurriendo recientemente." }
+  ]
+}

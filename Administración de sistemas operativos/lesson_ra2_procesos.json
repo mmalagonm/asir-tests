@@ -1,0 +1,54 @@
+{
+  "asignatura": "Administración de sistemas operativos",
+  "codigo_archivo": "lesson_ra2_procesos",
+  "titulo": "RA2: ADMINISTRACIÓN DE PROCESOS Y RECURSOS COMPARTIDOS",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "1. Gestión de Procesos en el Sistema",
+      "contenido": "<div class='lesson-card'>Un administrador debe monitorizar y controlar la ejecución de programas para asegurar la eficiencia del sistema.</div><p><strong>Conceptos Fundamentales:</strong></p><ul><li><strong>Proceso:</strong> Programa en ejecución que consume recursos (CPU, RAM).</li><li><strong>Prioridad:</strong> Determina cuánto tiempo de CPU recibe un proceso. En Windows se gestiona desde el Administrador de Tareas (Tiempo real, Alta, Normal, Baja).</li><li><strong>Servicios/Demonios:</strong> Procesos que corren en segundo plano sin interfaz de usuario directa.</li></ul><p class='diag-note'>💡 <em>Tip: En Linux, el comando 'top' o 'htop' permite ver procesos en tiempo real, mientras que 'ps -ef' lista todos los procesos estáticamente.</em></p>"
+    },
+    {
+      "id": 2,
+      "titulo": "2. Interoperabilidad: Red Híbrida Windows-Ubuntu",
+      "contenido": "<div class='lesson-card'>La integración de sistemas distintos es una tarea clave en entornos ASIR.</div><p><strong>Requisitos de Conectividad:</strong></p><ol><li><strong>Configuración IP:</strong> Ambos sistemas deben estar en el mismo segmento de red (ej: 192.168.1.x).</li><li><strong>Prueba de Ping:</strong> Verificar que existe comunicación bidireccional básica.</li><li><strong>Firewall:</strong> En Windows, habilitar 'Uso compartido de archivos e impresoras' en perfiles privados.</li></ol><p class='diag-note'>⚠️ <em>Seguridad: Para pruebas de laboratorio se suele desactivar el 'Uso compartido con protección por contraseña' en Windows, pero en producción DEBE estar activo.</em></p>"
+    },
+    {
+      "id": 3,
+      "titulo": "3. Servidor de Archivos con Samba en Linux",
+      "contenido": "<div class='lesson-card'>Samba permite que Linux comparta carpetas usando el protocolo SMB/CIFS de Windows.</div><p><strong>Instalación y Configuración:</strong></p><ul><li><code>sudo apt install samba</code>: Instalación del servicio.</li><li><code>mkdir /home/usuario/compartida</code>: Creación de la carpeta física.</li><li><strong>Fichero /etc/samba/smb.conf:</strong> Se añade la sección del recurso:</li></ul><pre>[NombreRecurso]\n  path = /home/usuario/compartida\n  read only = no\n  browsable = yes</pre><p><strong>Gestión de Usuarios:</strong> <code>sudo smbpasswd -a usuario</code> define la contraseña específica para el acceso desde red.</p>"
+    },
+    {
+      "id": 4,
+      "titulo": "4. Acceso y Verificación desde Windows",
+      "contenido": "<div class='lesson-card'>Validación del acceso a los recursos remotos.</div><p>Pasos para conectar:</p><ol><li>Abrir el Explorador de Archivos de Windows.</li><li>En la barra de direcciones, escribir <code>\\\\IP_DE_LINUX</code> (ej: \\\\192.168.1.10).</li><li>Introducir las credenciales creadas con <code>smbpasswd</code>.</li></ol><p><strong>Comandos de reinicio:</strong> Si cambias la configuración en Linux, debes reiniciar los servicios:</p><pre>sudo systemctl restart smbd nmbd</pre>"
+    },
+    {
+      "id": 5,
+      "titulo": "QUIZ RA2: PROCESOS Y REDES",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Verifica tus conocimientos sobre interoperabilidad y procesos.</div>",
+      "preguntas_test": [
+        {
+          "q": "¿Qué comando de Linux se utiliza para asignar una contraseña de red a un usuario de Samba?",
+          "options": ["passwd", "smbpasswd -a", "userpasswd", "samba-set"],
+          "correct": 1,
+          "explicacion": "smbpasswd gestiona la base de datos de contraseñas de Samba, independiente de la del sistema."
+        },
+        {
+          "q": "¿En qué archivo se definen los recursos compartidos en un servidor Samba?",
+          "options": ["/etc/samba/samba.cfg", "/etc/samba/smb.conf", "/etc/exports", "/var/lib/samba.conf"],
+          "correct": 1,
+          "explicacion": "smb.conf es el archivo maestro de configuración de Samba."
+        },
+        {
+          "q": "Para acceder desde Windows a una carpeta en Linux, ¿qué sintaxis se usa en el explorador?",
+          "options": ["http://IP_LINUX", "ftp://IP_LINUX", "\\\\IP_LINUX", "//IP_LINUX"],
+          "correct": 2,
+          "explicacion": "La doble barra invertida (UNC path) es el estándar de Windows para acceder a recursos SMB."
+        }
+      ]
+    }
+  ]
+}

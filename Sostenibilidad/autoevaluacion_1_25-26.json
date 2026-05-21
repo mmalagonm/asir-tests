@@ -1,0 +1,246 @@
+{
+  "titulo": "1ª Autoevaluación curso 25/26",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "La sostenibilidad busca:",
+      "opciones": {
+        "a": "Maximizar beneficios sin importar los recursos.",
+        "b": "Producir y consumir sin afectar a generaciones futuras.",
+        "c": "Usar más energía y materiales.",
+        "d": "Fomentar el uso de productos desechables."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La sostenibilidad es el equilibrio entre el crecimiento económico, el cuidado del medio ambiente y el bienestar social, asegurando que las actividades actuales no comprometan la capacidad de las futuras generaciones para satisfacer sus propias necesidades."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Cuál de los siguientes NO es un beneficio social de la economía circular?",
+      "opciones": {
+        "a": "Reducción de desigualdades.",
+        "b": "Creación de empleo verde.",
+        "c": "Aumento de la contaminación del agua.",
+        "d": "Inclusión de grupos vulnerables."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La economía circular busca precisamente lo contrario: minimizar el impacto ambiental. Sus beneficios sociales incluyen la creación de nuevos puestos de trabajo especializados (empleos verdes) y el fomento de una economía más equitativa y local."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Cuál es la primera fase del modelo de economía lineal?",
+      "opciones": {
+        "a": "Producción.",
+        "b": "Extracción de recursos naturales.",
+        "c": "Consumo.",
+        "d": "Eliminación de residuos."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El modelo lineal sigue la secuencia 'extraer-fabricar-consumir-eliminar'. Comienza con la extracción masiva de materias primas de la naturaleza, lo que conlleva al agotamiento de recursos si no se gestiona de forma circular."
+    },
+    {
+      "id": 4,
+      "enunciado": "Un ejemplo de energía renovable es:",
+      "opciones": {
+        "a": "Gas natural.",
+        "b": "Energía solar.",
+        "c": "Carbón.",
+        "d": "Petróleo."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Las energías renovables son aquellas que se obtienen de fuentes naturales virtualmente inagotables. La solar, eólica e hidráulica son ejemplos clave, a diferencia de los combustibles fósiles (carbón, petróleo, gas) que son finitos y contaminantes."
+    },
+    {
+      "id": 5,
+      "enunciado": "El modelo de economía circular propone:",
+      "opciones": {
+        "a": "Eliminar los productos tras su uso.",
+        "b": "Acelerar el consumo.",
+        "c": "Producir, usar y reciclar.",
+        "d": "Incrementar la extracción de recursos."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La economía circular rompe el ciclo lineal promoviendo que los materiales se mantengan en el ciclo productivo el mayor tiempo posible a través del rediseño, la reutilización, la reparación y, finalmente, el reciclaje."
+    },
+    {
+      "id": 6,
+      "enunciado": "El ecodiseño se centra en:",
+      "opciones": {
+        "a": "Crear productos de corta duración.",
+        "b": "Aumentar el consumo.",
+        "c": "Diseñar productos sostenibles desde su creación.",
+        "d": "Maximizar el uso de materiales tóxicos."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El ecodiseño integra criterios ambientales en la fase de diseño de un producto, buscando reducir su impacto ambiental a lo largo de todo su ciclo de vida, desde la elección de materiales hasta su disposición final."
+    },
+    {
+      "id": 7,
+      "enunciado": "En el ámbito económico, una ventaja de la economía circular es:",
+      "opciones": {
+        "a": "Fomentar el desperdicio.",
+        "b": "Aumentar la dependencia de recursos escasos.",
+        "c": "Incrementar los costes de materias primas.",
+        "d": "Reducir el coste de eliminación de residuos."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Al reaprovechar materiales, las empresas reducen la necesidad de comprar materias primas vírgenes y ahorran significativamente en las tasas y procesos asociados a la gestión y eliminación de desechos."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Cuál es el primer principio de la economía verde?",
+      "opciones": {
+        "a": "Impulsar el consumo masivo.",
+        "b": "Promover las energías renovables.",
+        "c": "Eliminar el transporte público.",
+        "d": "Reducir las emisiones de gases de efecto invernadero."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La economía verde busca mejorar el bienestar humano y la equidad social, reduciendo significativamente los riesgos ambientales. Su prioridad es la descarbonización para frenar el calentamiento global."
+    },
+    {
+      "id": 9,
+      "enunciado": "En la economía circular, el diseño para la circularidad significa:",
+      "opciones": {
+        "a": "Diseñar productos pensando en su reciclaje.",
+        "b": "Diseñar productos de un solo uso.",
+        "c": "Diseñar productos que no se puedan reparar.",
+        "d": "Crear productos de bajo coste."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Consiste en proyectar productos de manera que sus componentes puedan ser fácilmente separados, reparados o reciclados al final de su vida útil, evitando que se conviertan en basura irrecuperable."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Qué empresa convierte residuos del mar en ropa sostenible?",
+      "opciones": {
+        "a": "Lush.",
+        "b": "Gocycle.",
+        "c": "Ecoalf.",
+        "d": "NaturGreen."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Ecoalf es un referente español en economía circular que recupera redes de pesca, botellas de plástico y otros residuos marinos para fabricar tejidos de alta calidad, demostrando que los residuos pueden ser recursos."
+    },
+    {
+      "id": 11,
+      "enunciado": "Una de las principales consecuencias del modelo lineal es:",
+      "opciones": {
+        "a": "Reducción de la eficiencia energética.",
+        "b": "Disminución de residuos.",
+        "c": "Aumento de la biodiversidad.",
+        "d": "Aumento de residuos y contaminación."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El modelo 'tomar-hacer-desechar' genera una cantidad insostenible de residuos y emisiones contaminantes, ya que no contempla el fin de vida del producto como una oportunidad de recuperación."
+    },
+    {
+      "id": 12,
+      "enunciado": "La economía verde busca principalmente:",
+      "opciones": {
+        "a": "Generar empleos verdes y promover energías limpias.",
+        "b": "Reducir el uso de energías renovables.",
+        "c": "Aumentar las emisiones de CO₂.",
+        "d": "Mantener el modelo de producción lineal."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Se enfoca en transformar la economía para que sea baja en carbono, eficiente en recursos y socialmente inclusiva, impulsando sectores como las energías limpias y la rehabilitación ecológica."
+    },
+    {
+      "id": 13,
+      "enunciado": "Una ventaja ambiental de la economía circular es:",
+      "opciones": {
+        "a": "Aumento de residuos.",
+        "b": "Incremento de emisiones contaminantes.",
+        "c": "Mayor consumo energético.",
+        "d": "Reducción de la extracción de recursos naturales."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Al utilizar materiales reciclados o reutilizados, se reduce drásticamente la presión sobre los ecosistemas naturales, ya que se extraen menos minerales, madera o combustibles fósiles de la tierra."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Qué caracteriza a la economía lineal?",
+      "opciones": {
+        "a": "Reducir, reutilizar y regenerar.",
+        "b": "Reutilizar, reparar y reciclar.",
+        "c": "Producir, usar y tirar.",
+        "d": "Producir, usar y reciclar."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Es el modelo tradicional basado en el consumo masivo y la disposición final rápida. No considera el valor remanente de los objetos una vez que cumplen su función inicial."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Qué empresa diseña bicicletas eléctricas reciclables?",
+      "opciones": {
+        "a": "Ecoalf.",
+        "b": "Gocycle.",
+        "c": "IKEA.",
+        "d": "Lush."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Gocycle es conocida por aplicar principios de ingeniería y diseño sostenible en sus bicicletas eléctricas, facilitando que muchos de sus componentes sean reciclables y eficientes."
+    },
+    {
+      "id": 16,
+      "enunciado": "En la economía circular, el reciclaje y regeneración permiten:",
+      "opciones": {
+        "a": "Generar más vertederos.",
+        "b": "Aumentar la obsolescencia.",
+        "c": "Evitar el uso de materias primas nuevas.",
+        "d": "Eliminar la reutilización."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El objetivo es 'cerrar el círculo'. Si un residuo se convierte en materia prima (materia prima secundaria), dejamos de depender de la extracción de recursos vírgenes de la naturaleza."
+    },
+    {
+      "id": 17,
+      "enunciado": "Un beneficio ambiental del ecodiseño es:",
+      "opciones": {
+        "a": "Reducción de residuos y contaminación.",
+        "b": "Menor durabilidad del producto.",
+        "c": "Incremento del consumo energético.",
+        "d": "Aumento del uso de plásticos."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Al diseñar pensando en el fin de vida y en la eficiencia, se utilizan menos materiales tóxicos, se facilita la separación de piezas y se alarga la vida útil, reduciendo la carga ambiental del producto."
+    },
+    {
+      "id": 18,
+      "enunciado": "¿Cuál NO es un objetivo del ecodiseño?",
+      "opciones": {
+        "a": "Facilitar el reciclaje.",
+        "b": "Aumentar la contaminación.",
+        "c": "Usar menos materias primas.",
+        "d": "Reducir residuos."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El ecodiseño es una herramienta preventiva. Su meta es la mejora ambiental del producto, por lo que aumentar la contaminación es lo opuesto a sus principios fundamentales."
+    },
+    {
+      "id": 19,
+      "enunciado": "¿Qué son los empleos verdes?",
+      "opciones": {
+        "a": "Empleos en industrias fósiles.",
+        "b": "Trabajos que aumentan la contaminación.",
+        "c": "Trabajos sin formación técnica.",
+        "d": "Puestos relacionados con la protección ambiental."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Son empleos en sectores como las energías renovables, la gestión de residuos, la eficiencia energética o la agricultura ecológica, que contribuyen a preservar o restaurar el medio ambiente."
+    },
+    {
+      "id": 20,
+      "enunciado": "La obsolescencia programada consiste en:",
+      "opciones": {
+        "a": "Ampliar la vida útil de los productos.",
+        "b": "Diseñar productos con vida útil limitada.",
+        "c": "Diseñar productos para que duren más.",
+        "d": "Reutilizar materiales en nuevos productos."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Es la determinación deliberada del fin de la vida útil de un producto por parte del fabricante, para que este se vuelva inútil tras un tiempo y el consumidor se vea obligado a comprar uno nuevo."
+    }
+  ]
+}

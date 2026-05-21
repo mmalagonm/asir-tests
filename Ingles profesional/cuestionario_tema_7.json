@@ -1,0 +1,18 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "cuestionario_tema_7",
+  "titulo": "UNIT 7. Quiz - compulsory",
+  "tipo": "cuestionario",
+  "preguntas": [
+    { "id": 1, "enunciado": "The new policy _____ (announce) in the next company meeting.", "opciones": { "a": "has been announced", "b": "is announced", "c": "will be announced", "d": "was announced" }, "respuesta_correcta": "c", "retroalimentacion": "Se utiliza la voz pasiva en futuro ('will be announced') porque la política recibirá la acción en un momento futuro determinado ('next meeting')." },
+    { "id": 2, "enunciado": "Can you explain how a problem _____ (troubleshoot) in a complex IT environment?", "opciones": { "a": "is troubled", "b": "is troubleshot", "c": "was troubleshot", "d": "troubleshoots" }, "respuesta_correcta": "b", "retroalimentacion": "Voz pasiva en presente simple para describir un proceso general. 'Troubleshot' es el participio pasado irregular de 'troubleshoot'." },
+    { "id": 3, "enunciado": "The report _____ (submit) to the manager yesterday.", "opciones": { "a": "has been submitted", "b": "is submitted", "c": "will be submitted", "d": "was submitted" }, "respuesta_correcta": "d", "retroalimentacion": "Voz pasiva en pasado simple ('was submitted') para una acción completada en un tiempo definido en el pasado ('yesterday')." },
+    { "id": 4, "enunciado": "I had the technician _____ (fix) the server issue yesterday.", "opciones": { "a": "fix", "b": "fixes", "c": "fixed", "d": "fixing" }, "respuesta_correcta": "a", "retroalimentacion": "Estructura causativa: 'have' + persona + verbo en forma base. Se usa cuando delegas una tarea en alguien." },
+    { "id": 5, "enunciado": "The manager had the team _____ (complete) the project ahead of schedule.", "opciones": { "a": "completes", "b": "completing", "c": "completed", "d": "complete" }, "respuesta_correcta": "d", "retroalimentacion": "Nuevamente, estructura causativa con 'have' + objeto (the team) + verbo en infinitivo sin 'to'." },
+    { "id": 6, "enunciado": "The software _____ (develop) by the team last year.", "opciones": { "a": "was developed", "b": "is developed", "c": "will be developed", "d": "has been developed" }, "respuesta_correcta": "a", "retroalimentacion": "Voz pasiva en pasado simple ('was developed') para indicar quién realizó la acción en el pasado." },
+    { "id": 7, "enunciado": "What programming languages _____ (use) in your previous projects?", "opciones": { "a": "are used", "b": "used", "c": "will be used", "d": "were used" }, "respuesta_correcta": "d", "retroalimentacion": "Pregunta en voz pasiva en pasado simple. Al ser plural ('languages'), se utiliza 'were' + participio." },
+    { "id": 8, "enunciado": "She made her assistant _____ (prepare) the presentation for the client.", "opciones": { "a": "prepares", "b": "prepare", "c": "preparing", "d": "prepared" }, "respuesta_correcta": "b", "retroalimentacion": "Estructura causativa con 'make' + persona + forma base. Significa obligar o encargar a alguien que haga algo." },
+    { "id": 9, "enunciado": "The system _____ (update) every month to ensure security.", "opciones": { "a": "was updated", "b": "will be updated", "c": "updates", "d": "is updated" }, "respuesta_correcta": "d", "retroalimentacion": "Voz pasiva en presente simple ('is updated') para describir una acción habitual o programada periódicamente." },
+    { "id": 10, "enunciado": "The issue _____ (resolve) by the IT department by next week.", "opciones": { "a": "is resolved", "b": "resolves", "c": "was resolved", "d": "will be resolved" }, "respuesta_correcta": "d", "retroalimentacion": "Voz pasiva en futuro ('will be resolved') para indicar una resolución que ocurrirá más adelante." }
+  ]
+}

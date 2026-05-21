@@ -1,0 +1,249 @@
+{
+  "asignatura": "Servicios de red e Internet",
+  "codigo_archivo": "autoevaluacion_2_25-26",
+  "titulo": "2ª Autoevaluación curso 2025-2026",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Qué intervalo admite \"router ospf ?\"",
+      "opciones": {
+        "a": "de 1 hasta 65535",
+        "b": "de 1 a 1048576",
+        "c": "de 1.1.1.1. hasta F.F.F.F",
+        "d": "de 1 a 1007"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El ID de proceso de OSPF es un valor numérico local al router que puede ir de 1 a 65535. No tiene por qué coincidir con el de los routers vecinos, aunque suele hacerse por consistencia."
+    },
+    {
+      "id": 2,
+      "enunciado": "Cuando enrutamos por OSPF y queremos conectividad total con el resto de router es necesario que coincida ....",
+      "opciones": {
+        "a": "El area",
+        "b": "Ninguna es cierta",
+        "c": "Es necesario que coincida tanto el area como el numero que se escribe después de router OSPF",
+        "d": "el numero que se escribe después de router OSPF"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Para que dos routers OSPF establezcan una adyacencia y compartan rutas, deben estar configurados en la misma Área (por ejemplo, Área 0 para el backbone). Si las áreas no coinciden, no intercambiarán información de enrutamiento."
+    },
+    {
+      "id": 3,
+      "enunciado": "Necesitamos conectividad entre el router 1 y el router 2 por OSPF ¿observas algún error? (Router-id 1.1.1.1 en ambos)",
+      "opciones": {
+        "a": "Ninguna es cierta",
+        "b": "Sí, Router OSPF no coincide el valor",
+        "c": "Sí, Router-id 1.1.1.1 no puede ser igual en ambos router",
+        "d": "No, no existe ningún error"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El Router-ID es un identificador único para cada router en el dominio OSPF. Si dos routers tienen el mismo Router-ID, se producirán conflictos en la base de datos de estado de enlace (LSDB) y no podrán intercambiar rutas correctamente."
+    },
+    {
+      "id": 4,
+      "enunciado": "Necesitamos conectividad entre el router 1 y el router 2 por OSPF en IPv6 ¿observas algún error? (Router-id 1.1.1.1 en ambos)",
+      "opciones": {
+        "a": "Sí, existe un error Router-id 1.1.1.1 no puede tener el mismo valor",
+        "b": "Sí, existe un error Ipv6 router ospf 2 no puede ser diferente",
+        "c": "No existe ningún error",
+        "d": "Todas son cierta"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Incluso en OSPFv3 (para IPv6), se sigue utilizando un identificador de 32 bits en formato decimal punteado como Router-ID, y este debe seguir siendo único en toda la red."
+    },
+    {
+      "id": 5,
+      "enunciado": "Enruta por OSPF el router 2 basándote en la imagen adjunta:",
+      "fichero_imagen": "autoevaluacion2_pregunta_5.jpg",
+      "opciones": {
+        "a": "Network 11.0.0.2 0.255.255.255 area 0...",
+        "b": "Network 192.168.3.0 255.255.255.0 area 0...",
+        "c": "router ospf 1, router-id 3.3.3.3, Network 192.168.3.0 0.0.0.255 area 0, Network 11.0.0.0 0.255.255.255 area 0, Network 12.0.0.0 0.255.255.255 area 0",
+        "d": "Network 192.168.3.1 0.0.0.255 area 0..."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La configuración completa implica entrar en el proceso OSPF, asignar un ID único al router, y declarar las redes directamente conectadas usando sus direcciones de red y máscaras wildcard correspondientes, todas dentro del mismo área."
+    },
+    {
+      "id": 6,
+      "enunciado": "Que mascara le corresponde por OSPF a la Network 192.168.1.0/30",
+      "opciones": {
+        "a": "0.0.0.3",
+        "b": "255.0.0.3",
+        "c": "0.0.0.255",
+        "d": "0.0.0.4"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Una máscara /30 es 255.255.255.252. La máscara wildcard se calcula restándola de 255.255.255.255, lo que da como resultado 0.0.0.3."
+    },
+    {
+      "id": 7,
+      "enunciado": "Que mascara le corresponde por OSPF a la Network 10.0.0.0/11",
+      "opciones": {
+        "a": "255.0.0.31",
+        "b": "0.31.0.0",
+        "c": "0.31.255.255",
+        "d": "0.32.255.255"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Un prefijo /11 corresponde a una máscara de subred 255.224.0.0. La wildcard asociada es 0.31.255.255."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Cuándo enrutamos por OSPF es obligatorio escribir un valor para Router-id?",
+      "opciones": {
+        "a": "Es completamente obligatorio",
+        "b": "Obligatorio para alfanuméricos",
+        "c": "Obligatorio para numéricos",
+        "d": "No es obligatorio, aunque si recomendable, si no escribimos ningún valor el propio sistema nos escribe uno"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Si no se configura manualmente, el router elige un Router-ID automáticamente siguiendo este orden: 1) La IP más alta en interfaces Loopback activas. 2) La IP más alta en interfaces físicas activas."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Cuál es el valor mas alto que podemos asignar en una Pt-cloud en la línea DLCI de los seriales?",
+      "opciones": {
+        "a": "1007",
+        "b": "Ninguna es cierta",
+        "c": "1008",
+        "d": "Cualquier valor que no supere 65535"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Se reitera el límite del simulador Packet Tracer para la configuración de DLCI en el dispositivo Cloud, siendo 1007 el valor máximo permitido."
+    },
+    {
+      "id": 10,
+      "enunciado": "Observas algún error en el siguiente código: int fa0/0, Ip add 192.168.1.0 255.255.255.248, No shut",
+      "opciones": {
+        "a": "La mascara es incorrecta",
+        "b": "La IP es incorrecta",
+        "c": "Ninguna es cierta",
+        "d": "La IP y la Mascara son incorrectas"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En Cisco IOS, no se puede asignar una dirección de red (como la 192.168.1.0/29) a una interfaz; se debe asignar una dirección de host válida dentro de ese rango (por ejemplo, de la .1 a la .6)."
+    },
+    {
+      "id": 11,
+      "enunciado": "Cuál es el resultado de sumarizar las siguientes Network: 192.168.91.0, 192.168.59.0, 192.168.39.0",
+      "opciones": {
+        "a": "192.168.0.0 255.255.128.0",
+        "b": "Ninguna es cierta",
+        "c": "192.168.0.0 255.255.255.0",
+        "d": "192.168.10.0 255.255.128.0"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Para sumarizar, buscamos los bits comunes en el tercer octeto. Al analizar 91, 59 y 39 en binario, el bit más significativo común es el de valor 128 (todos son 0). La red sumarizada más ajustada que engloba a todas es la 192.168.0.0/17 (máscara 255.255.128.0)."
+    },
+    {
+      "id": 12,
+      "enunciado": "Cual es el resultado de sumarizar las siguientes Network: 2000:A:A:F::/64, 2000:A:A:C::/64, 2000:A:A:E::/64",
+      "opciones": {
+        "a": "2000:A:A:E:/60",
+        "b": "2000:A:A:F:/60",
+        "c": "2000:A:A:C::/61",
+        "d": "2000:A:A:C::/62"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "En el cuarto hexteto, los valores son C (1100), E (1110) y F (1111). Los dos primeros bits son comunes (11), lo que nos da un prefijo de 62 bits (64 - 2). El valor base es C."
+    },
+    {
+      "id": 13,
+      "enunciado": "Que mascara le corresponde por OSPF a la Network 172.172.0.0/17",
+      "opciones": {
+        "a": "255.255.128.0",
+        "b": "0.0.128.255",
+        "c": "Ninguna es cierta",
+        "d": "0.0.127.255"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Un /17 es 255.255.128.0. La resta 255.255.255.255 - 255.255.128.0 da la wildcard 0.0.127.255."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Encuentras algún error en el siguiente código para VLAN? int range fa0/1-23, Switchport access vlan 1, Switchport mode access",
+      "opciones": {
+        "a": "Únicamente es incorrecta la línea del Swtichport mode access",
+        "b": "Únicamente la línea int range fa0/1-23 es incorrecta",
+        "c": "Únicamente es incorrecta la línea Switchport access vlan 1",
+        "d": "Las tres líneas de código son incorrectas"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "No es necesario (y a veces el sistema da error o lo ignora) asignar explícitamente puertos a la VLAN 1 mediante 'switchport access vlan 1', ya que todos los puertos pertenecen a ella por defecto."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Encuentras algo error en el siguiente código? Interface FastEthernet1/1.10, encapsulation dot1Q 10, IP address 192.168.1.1 255.255.255.128",
+      "opciones": {
+        "a": "Únicamente la línea de encapsulation es incorrecta",
+        "b": "Todas las líneas de código son incorrectas",
+        "c": "Únicamente la línea IP add es incorrecta",
+        "d": "No existe ningún error"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El código muestra la configuración estándar y correcta de una subinterfaz para el enrutamiento entre VLANs (Router-on-a-Stick): creación de subinterfaz, definición de tag VLAN y asignación de IP."
+    },
+    {
+      "id": 16,
+      "enunciado": "¿Encuentras algún error en el siguiente código? dial-peer voice 50 voip, destination-pattern 2..., session target ipv4:192.168.2.1 port 1000",
+      "opciones": {
+        "a": "No existe ningún error",
+        "b": "El port es incorrecto",
+        "c": "destination-pattern 2... es incorrecto",
+        "d": "dial-peer voice 50 voip es incorrecto"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En la configuración de VoIP en Cisco, el puerto de destino para la señalización (SIP/SCCP) suele ser el 2000 o 5060. El puerto 1000 no es el estándar para estas comunicaciones de voz."
+    },
+    {
+      "id": 17,
+      "enunciado": "Que mascara le corresponde por OSPF a la Network 10.0.0.0/30",
+      "opciones": {
+        "a": "0.0.0.4",
+        "b": "0.0.0.3",
+        "c": "No se puede asignar por OSPF a una Network de clase A 30 bits",
+        "d": "255.0.0.0"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Independientemente de la 'clase' de la red, OSPF soporta VLSM (Variable Length Subnet Masking). Una máscara /30 siempre tendrá la wildcard 0.0.0.3."
+    },
+    {
+      "id": 18,
+      "enunciado": "Cual es el hexteto que se utiliza para subnetear en IPV6",
+      "opciones": {
+        "a": "Ninguna es cierta",
+        "b": "El quinto",
+        "c": "El cuarto",
+        "d": "Es indiferente mientras que no sean los 3 primeros"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Se confirma que el cuarto hexteto es el estándar para el campo de ID de Subred en una dirección Global Unicast."
+    },
+    {
+      "id": 19,
+      "enunciado": "Que mascara le corresponde por OSPF a la Network 192.0.0.0/26",
+      "opciones": {
+        "a": "0.0.0.63",
+        "b": "255.255.255.63",
+        "c": "255.255.255.64",
+        "d": "0.0.0.64"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Una máscara /26 es 255.255.255.192. Al restarla de 255.255.255.255 obtenemos la wildcard 0.0.0.63."
+    },
+    {
+      "id": 20,
+      "enunciado": "Desde el punto de vista de seguridad es seguro enrutar así: ip route 0.0.0.0 0.0.0.0 s0/0/0",
+      "opciones": {
+        "a": "Completamente seguro",
+        "b": "El sistema no permite enrutar asi",
+        "c": "No, no es nada seguro",
+        "d": "Ninguna es cierta"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Configurar una ruta por defecto apuntando a una interfaz de salida en lugar de a una IP de siguiente salto puede causar problemas de rendimiento (exceso de ARP en interfaces Ethernet) y es menos seguro ya que el router asume que todos los destinos son alcanzables por ese enlace."
+    }
+  ]
+}

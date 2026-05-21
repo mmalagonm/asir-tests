@@ -1,0 +1,131 @@
+{
+  "asignatura": "Ingles profesional",
+  "codigo_archivo": "unit7_lesson",
+  "titulo": "Unit 7: Databases & Passive Voice (RA1, RA2, RA3, RA5)",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Objectives & Learning Outcomes (RA)",
+      "contenido": "<div class='lesson-card'>This unit covers several <strong>Learning Outcomes (RA)</strong> essential for your technical profile in ASIR.</div><ul><li><strong>RA1 & RA2:</strong> Understanding technical documentation and reading comprehension in IT environments.</li><li><strong>RA3:</strong> Effective communication in professional and social settings (Interviews).</li><li><strong>RA5:</strong> Mastering complex grammatical structures (Passive Voice & Causatives) to write objective reports.</li></ul><p class='diag-note'>💡 <em>Nota: Esta lección integra los resultados de aprendizaje RA1, RA2, RA3 y RA5, enfocándose en bases de datos y gramática avanzada.</em></p>"
+    },
+    {
+      "id": 2,
+      "titulo": "Introduction: IT Tools & DBMS",
+      "contenido": "<div class='lesson-card'>Every computer user must master office applications (spreadsheets, presentations, databases) to organize information efficiently.</div><h3>Key Concepts:</h3><ul><li><strong>DBMS (Database Management System):</strong> Specialized software used to handle large and complex databases.</li><li><strong>DBA (Database Administrator):</strong> The IT specialist responsible for organizing and protecting data.</li><li><strong>MySQL:</strong> A popular open-source DBMS known for its stability and web compatibility.</li></ul><p class='diag-note'>💡 <em>Nota: Un DBA es la persona, mientras que el DBMS es el software (ej. MySQL).</em></p>"
+    },
+    {
+      "id": 3,
+      "titulo": "Vocabulary: Database Fundamentals",
+      "contenido": "<div class='lesson-card'>Mastering these terms is vital for managing SQL tables and data structures.</div><table><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody><tr><td><strong>Table</strong></td><td>The basic structure used to organize data into rows and columns.</td></tr><tr><td><strong>Record</strong></td><td>A complete set of fields describing one item (a row).</td></tr><tr><td><strong>Field</strong></td><td>A single category of information (a column).</td></tr><tr><td><strong>Primary Key</strong></td><td>A unique value for each record (no duplicates).</td></tr><tr><td><strong>Cell</strong></td><td>The intersection of a row and a column.</td></tr><tr><td><strong>Type</strong></td><td>The kind of data a field can contain (text, number, date).</td></tr></tbody></table>"
+    },
+    {
+      "id": 4,
+      "titulo": "Grammar: Identify the Passive Voice",
+      "contenido": "<div class='lesson-card'>The Passive Voice shifts focus from the <strong>doer</strong> to the <strong>action</strong> or the recipient.</div><ul><li><strong>Structure:</strong> Subject + Be + Past Participle.</li><li><strong>Formal Tone:</strong> Essential for incident reports and technical audits.</li><li><strong>\"Get\" Passive:</strong> More informal, often used for unexpected events (<em>\"The server got hacked\"</em>).</li></ul><p class='diag-note'>💡 <em>Nota: Usamos la pasiva cuando el 'quién' lo hizo no es importante o se quiere ser más objetivo.</em></p>"
+    },
+    {
+      "id": 5,
+      "titulo": "Passive Voice: Tense Overview",
+      "contenido": "<div class='lesson-card'>Observe how the verb 'to be' changes according to the timeframe.</div><table><thead><tr><th>Tense</th><th>Active</th><th>Passive</th></tr></thead><tbody><tr><td><strong>Present Simple</strong></td><td>I process backups.</td><td>Backups <strong>are processed</strong>.</td></tr><tr><td><strong>Past Simple</strong></td><td>I tested the code.</td><td>The code <strong>was tested</strong>.</td></tr><tr><td><strong>Future Simple</strong></td><td>I will install software.</td><td>Software <strong>will be installed</strong>.</td></tr><tr><td><strong>Present Perfect</strong></td><td>I have sent the logs.</td><td>Logs <strong>have been sent</strong>.</td></tr><tr><td><strong>Modals</strong></td><td>I should check logs.</td><td>Logs <strong>should be checked</strong>.</td></tr></tbody></table>"
+    },
+    {
+      "id": 6,
+      "titulo": "Grammar: Causative Verbs",
+      "contenido": "<div class='lesson-card'>Causatives indicate that one person causes another to do something.</div><ul><li><strong>LET:</strong> To permit/allow. <em>\"My boss lets me work from home.\"</em></li><li><strong>MAKE:</strong> To force/pressure. <em>\"The admin made us change passwords.\"</em></li><li><strong>GET:</strong> To convince/request (indirect). <em>\"I got them to fix the router.\"</em></li><li><strong>HAVE:</strong> To convince/encourage. <em>\"I'll have the technician sign the report.\"</em></li><li><strong>HELP:</strong> To aid someone. <em>\"I helped him to update the server.\"</em></li></ul><p class='diag-note'>💡 <em>Nota: El causativo 'Have something done' es muy común en servicios externos (ej. 'Have my car repaired').</em></p>"
+    },
+    {
+      "id": 7,
+      "titulo": "Context: Health & Support",
+      "contenido": "<div class='lesson-card'>Technical support often involves human interaction where clarity is key.</div><h3>Dialogue Key Terms:</h3><ul><li><strong>Appointment:</strong> Citación o cita programada.</li><li><strong>Symptoms:</strong> Indicadores de un problema (médico o técnico).</li><li><strong>Medication / Treatment:</strong> Solución aplicada para corregir el estado.</li><li><strong>Pharmacist:</strong> El especialista que provee la solución.</li></ul><p class='diag-note'>💡 <em>Nota: En IT usamos 'Troubleshooting' de forma similar a un diagnóstico médico.</em></p>"
+    },
+    {
+      "id": 8,
+      "titulo": "Interview Preparation (RA3)",
+      "contenido": "<div class='lesson-card'>Preparing for a technical interview is part of RA3. Master these common questions:</div><ul><li><strong>\"Can you describe your experience with DBMS?\"</strong> (Use specific names like MySQL).</li><li><strong>\"How do you handle data security?\"</strong> (Talk about backups and primary keys).</li><li><strong>\"Describe a situation where you had to lead a project.\"</strong> (Use clear, structured English).</li></ul>"
+    },
+    {
+      "id": 9,
+      "titulo": "Summary: Unit 7 Takeaways",
+      "contenido": "<div class='lesson-card'>Review these core concepts for Unit 7 (RA1, 2, 3, 5).</div><ul><li><strong>DB Basics:</strong> Tables store records (rows) and fields (columns). PKs are unique.</li><li><strong>Passive:</strong> Focuses on the system action. Essential for professional reports.</li><li><strong>Causatives:</strong> Used to delegate or allow actions (Let, Make, Get, Have).</li><li><strong>Roles:</strong> DBAs manage the DBMS to ensure data integrity and security.</li></ul>"
+    },
+    {
+      "id": 10,
+      "titulo": "Final Knowledge Assessment",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Complete this test to confirm you have mastered the Unit 7 content.</div>",
+      "preguntas_test": [
+        {
+          "q": "Data backups ___ by the server every night. (Present Passive)",
+          "options": ["processes", "is processed", "are processed", "processing"],
+          "correct": 2,
+          "explicacion": "Como 'Backups' es plural, usamos 'are' + el participio 'processed'.",
+          "ejemplo": "Ej: 'Daily logs <strong>are generated</strong> automatically.'"
+        },
+        {
+          "q": "The new software ___ by the IT team next week.",
+          "options": ["installs", "is installed", "installed", "will be installed"],
+          "correct": 3,
+          "explicacion": "Para el futuro en pasiva usamos 'will be' + participio.",
+          "ejemplo": "Ej: 'The system <strong>will be updated</strong> tomorrow.'"
+        },
+        {
+          "q": "What is a 'DBA' in an IT context?",
+          "options": ["Data Business Analyst", "Database Administrator", "Digital Backup Assistant", "Data Board Architect"],
+          "correct": 1,
+          "explicacion": "DBA son las siglas de Database Administrator, el responsable de gestionar los datos.",
+          "ejemplo": "Ej: 'The <strong>DBA</strong> recovered the database after the crash.'"
+        },
+        {
+          "q": "Which database term refers to a vertical group of cells (a column)?",
+          "options": ["Record", "Field", "Row", "Table"],
+          "correct": 1,
+          "explicacion": "En bases de datos, 'Field' (campo) representa una columna de información específica.",
+          "ejemplo": "Ej: 'The \"Email\" <strong>field</strong> must be unique.'"
+        },
+        {
+          "q": "The virus ___ from the network yesterday.",
+          "options": ["removes", "was removed", "is removed", "will be removed"],
+          "correct": 1,
+          "explicacion": "Usamos el pasado simple en pasiva ('was' + participio) por la marca temporal 'yesterday'.",
+          "ejemplo": "Ej: 'The bug <strong>was fixed</strong> last night.'"
+        },
+        {
+          "q": "Causative: 'I am going ________ at the new hairdresser's.'",
+          "options": ["to cut my hair", "to get my hair cut", "cutting hair", "to hair cut"],
+          "correct": 1,
+          "explicacion": "Usamos la estructura causative 'get/have + object + past participle' cuando alguien hace algo por nosotros.",
+          "ejemplo": "Ej: 'I need to <strong>get my laptop fixed</strong>.'"
+        },
+        {
+          "q": "Which verb means to force or pressure someone to do something?",
+          "options": ["Let", "Make", "Get", "Help"],
+          "correct": 1,
+          "explicacion": "'Make' se usa en causativa para indicar obligación o presión.",
+          "ejemplo": "Ej: 'The policy <strong>makes</strong> all users change passwords.'"
+        },
+        {
+          "q": "What is the intersection of a row and a column in a table?",
+          "options": ["Field", "Record", "Cell", "Type"],
+          "correct": 2,
+          "explicacion": "Una celda ('Cell') es el punto exacto donde se cruzan una fila y una columna.",
+          "ejemplo": "Ej: 'Click on the <strong>cell</strong> to edit the value.'"
+        },
+        {
+          "q": "Relative Pronouns: 'The server, ___ was upgraded, is down again.'",
+          "options": ["who", "whose", "which", "whom"],
+          "correct": 2,
+          "explicacion": "Usamos 'which' para referirnos a objetos (el servidor).",
+          "ejemplo": "Ej: 'The app <strong>which</strong> I downloaded is buggy.'"
+        },
+        {
+          "q": "Which causative verb means 'to allow or permit'?",
+          "options": ["Let", "Make", "Have", "Get"],
+          "correct": 0,
+          "explicacion": "'Let' se utiliza para dar permiso.",
+          "ejemplo": "Ej: 'The admin <strong>lets</strong> us access the server room.'"
+        }
+      ]
+    }
+  ]
+}

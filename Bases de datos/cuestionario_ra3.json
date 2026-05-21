@@ -1,0 +1,128 @@
+{
+  "asignatura": "Bases de datos",
+  "codigo_archivo": "cuestionario_ra3",
+  "titulo": "Cuestionario RA3",
+  "tipo": "cuestionario",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿El permiso CREATE USER es del tipo…?",
+      "opciones": {
+        "a": "Estructura.",
+        "b": "Gestión.",
+        "c": "Datos.",
+        "d": "Administración."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "CREATE USER es un privilegio de administración (o de sistema) ya que afecta a la gestión global de la base de datos y no a objetos específicos de datos o estructura de tablas."
+    },
+    {
+      "id": 2,
+      "enunciado": "Dado un usuario de la Base de Datos, ¿se le pueden asignar distintos permisos sobre una tabla?",
+      "opciones": {
+        "a": "Sí, pero sólo es posible lanzando una sentencia GRANT para cada uno de los permisos.",
+        "b": "Sí, indicando los diferentes permisos separados por comas en la cláusula GRANT",
+        "c": "No, no se puede.",
+        "d": "Ninguna es correcta."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La sintaxis de GRANT permite especificar múltiples privilegios en una sola sentencia, por ejemplo: GRANT SELECT, INSERT, UPDATE ON tabla TO usuario."
+    },
+    {
+      "id": 3,
+      "enunciado": "Una tabla lógica (no física) que se base en otras tablas es:",
+      "opciones": {
+        "a": "Una consulta.",
+        "b": "Una transacción",
+        "c": "Una vista.",
+        "d": "Un trigger"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Las vistas son tablas virtuales o lógicas cuya definición se basa en una consulta SELECT sobre tablas físicas u otras vistas."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Con qué instrucción podemos quitarle los permisos o privilegios a un usuario?",
+      "opciones": {
+        "a": "REVOKE",
+        "b": "DELETE",
+        "c": "DROP",
+        "d": "GRANT"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "REVOKE es la sentencia estándar de SQL para retirar privilegios previamente concedidos con GRANT."
+    },
+    {
+      "id": 5,
+      "enunciado": "Sentencia que se utiliza por si la vista ya estuviera creada anteriormente. En ese caso, la sustituye por la nueva definición:",
+      "opciones": {
+        "a": "NOT FORCE",
+        "b": "Ninguna opción es correcta.",
+        "c": "FORCE",
+        "d": "OR REPLACE"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La cláusula OR REPLACE (usada como CREATE OR REPLACE VIEW) permite actualizar la definición de una vista existente sin tener que eliminarla primero."
+    },
+    {
+      "id": 6,
+      "enunciado": "La sentencia correcta para ver la estructura de una vista es:",
+      "opciones": {
+        "a": "Ninguna opción es correcta.",
+        "b": "DESC nombre_vista;",
+        "c": "SHOW DESC nombre_vista;",
+        "d": "SHOW nombre_vista;"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "DESC o DESCRIBE seguido del nombre del objeto (tabla o vista) muestra la definición de sus columnas en la mayoría de los SGBD como MySQL u Oracle."
+    },
+    {
+      "id": 7,
+      "enunciado": "Marca la opción que no es una restricción cuando trabajamos con vistas:",
+      "opciones": {
+        "a": "Podemos asociar una vista a un disparador.",
+        "b": "La sentencia SELECT no puede contener una subconsulta en su cláusula FROM.",
+        "c": "Cualquier tabla o vista referenciada por la definición debe existir. ",
+        "d": "La sentencia SELECT no puede hacer referencia a variables del sistema o del usuario."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "En muchos SGBD modernos (como MySQL), no se pueden asociar disparadores (triggers) directamente a las vistas, sino a las tablas base."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Qué sentencia permite denegar a un usuario la posibilidad de acceder, manipular o ejecutar objetos concretos?",
+      "opciones": {
+        "a": "DELETE",
+        "b": "DROP",
+        "c": "DENIED",
+        "d": "REVOKE"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Al igual que en la pregunta 4, REVOKE se utiliza para retirar (y por tanto denegar el acceso previamente permitido) privilegios sobre objetos."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Para qué sirven las vistas en bases de datos?",
+      "opciones": {
+        "a": "Simplificar consultas complejas.",
+        "b": "Conseguir más seguridad en el acceso a los datos.",
+        "c": "Reusabilidad de las consultas.",
+        "d": "Todas las demás son correctas."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Las vistas ofrecen múltiples beneficios, incluyendo la simplificación de la estructura para el usuario, la ocultación de columnas sensibles (seguridad) y la reutilización de lógica compleja."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Con qué instrucción podemos añadir los permisos a los usuarios?",
+      "opciones": {
+        "a": "ACCESS",
+        "b": "GRANT",
+        "c": "REVOKE",
+        "d": "ALLOW"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "GRANT es la sentencia SQL utilizada para conceder privilegios a usuarios o roles."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "titulo": "CUESTIONARIO UNIDAD 2. CONTRIBUCIÓN DE LAS EMPRESAS CON EL DESARROLLO SOSTENIBLE",
+  "tipo": "autoevaluacion",
+  "ra": ["RA 1"],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Cuál de estas opciones pertenece al pilar “Personas” de las 5 P?",
+      "opciones": {
+        "a": "Alianzas internacionales",
+        "b": "Políticas anticorrupción",
+        "c": "Igualdad de oportunidades",
+        "d": "Economía circular"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El pilar 'Personas' de los ODS busca poner fin a la pobreza y al hambre en todas sus formas y asegurar la dignidad e igualdad de todos los seres humanos en un entorno saludable."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Qué acuerdo internacional estableció 17 objetivos globales?",
+      "opciones": {
+        "a": "Marco Europeo 2019",
+        "b": "Acuerdo de París",
+        "c": "Agenda 2030",
+        "d": "Agenda 21"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La Agenda 2030, aprobada por la ONU en 2015, contiene los 17 Objetivos de Desarrollo Sostenible (ODS) que abarcan retos económicos, sociales y ambientales a nivel mundial."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Qué grupo pertenece a los stakeholders?",
+      "opciones": {
+        "a": "Proveedores",
+        "b": "Competidores externos",
+        "c": "Empresas de otro mercado",
+        "d": "Fabricantes ajenos al sector"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Los proveedores son un stakeholder clave porque forman parte de la cadena de valor. La sostenibilidad de una empresa también depende de las prácticas éticas y ambientales de quienes le suministran materiales."
+    },
+    {
+      "id": 4,
+      "enunciado": "La conciliación laboral es una medida del criterio:",
+      "opciones": {
+        "a": "Ambiental",
+        "b": "Gobernanza",
+        "c": "Social",
+        "d": "Económico"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El criterio Social (S de ASG/ESG) se refiere a la gestión del capital humano y el impacto en la sociedad, incluyendo la flexibilidad horaria, la salud laboral y la igualdad de género."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Qué indicador mide los gases de efecto invernadero emitidos por una empresa?",
+      "opciones": {
+        "a": "Kilómetros recorridos",
+        "b": "Huella de carbono",
+        "c": "Consumo de agua",
+        "d": "Condiciones laborales"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La huella de carbono calcula la totalidad de gases de efecto invernadero emitidos por efecto directo o indirecto de un individuo, organización o producto, expresado en toneladas de CO2 equivalente."
+    },
+    {
+      "id": 6,
+      "enunciado": "La economía circular se relaciona con la P de:",
+      "opciones": {
+        "a": "Prosperidad",
+        "b": "Personas",
+        "c": "Paz",
+        "d": "Planeta"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El pilar 'Planeta' se centra en proteger los recursos naturales y el clima para las generaciones futuras, lo cual es el objetivo central de la economía circular (consumo y producción sostenibles)."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Qué documento definió por primera vez el desarrollo sostenible?",
+      "opciones": {
+        "a": "Acuerdo de París",
+        "b": "Informe Brundtland",
+        "c": "Pacto Mundial",
+        "d": "Agenda 2030"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El informe 'Nuestro Futuro Común' (1987), liderado por Gro Harlem Brundtland, fue el primero en popularizar el término, vinculando el medio ambiente con el desarrollo económico y social."
+    },
+    {
+      "id": 8,
+      "enunciado": "“Actuar de forma ética respetando derechos humanos y medio ambiente” describe al:",
+      "opciones": {
+        "a": "Pacto Mundial de la ONU",
+        "b": "Agenda 21",
+        "c": "Acuerdo de París",
+        "d": "Marco Estratégico de Energía y Clima"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El Pacto Mundial (Global Compact) es una iniciativa voluntaria basada en 10 principios relacionados con derechos humanos, trabajo, medio ambiente y lucha contra la corrupción."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Cuál de los criterios ASG se centra en el uso de materias primas?",
+      "opciones": {
+        "a": "Social",
+        "b": "Logístico",
+        "c": "Gobernanza",
+        "d": "Ambiental"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El criterio Ambiental (A de ASG) analiza cómo la empresa gestiona el entorno, lo que incluye la gestión de residuos, el uso de agua, la eficiencia energética y la procedencia de los recursos naturales."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Qué tipo de inversión busca financiar proyectos medioambientales?",
+      "opciones": {
+        "a": "Bonos sociales",
+        "b": "Capital riesgo social",
+        "c": "Bonos verdes",
+        "d": "Fondos convencionales"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Los bonos verdes son una herramienta financiera diseñada específicamente para recaudar fondos para proyectos que contribuyan positivamente al medio ambiente (energías limpias, transporte eco, etc.)."
+    }
+  ]
+}

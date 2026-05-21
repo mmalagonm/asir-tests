@@ -1,0 +1,224 @@
+{
+  "asignatura": "Seguridad",
+  "codigo_archivo": "autoevaluacion_2_25-26",
+  "titulo": "2ª Autoevaluación Curso 2025/2026",
+  "tipo": "autoevaluacion",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "De las siguientes afirmaciones indica cuál corresponde a un ataque activo de interceptación:",
+      "opciones": {
+        "a": "Puede provocar que un objeto del sistema se pierda, quede no utilizable o no disponible.",
+        "b": "Consigue un objeto similar al atacado de forma que no resulte sencillo distinguir entre el objeto original y el fabricado.",
+        "c": "Sucede cuando hay un acceso no autorizado que cambia el entorno para su beneficio.",
+        "d": "Ocurre si un elemento no autorizado consigue un acceso a un determinado objeto del sistema."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Un ataque de interceptación ocurre cuando una parte no autorizada logra acceder a un recurso del sistema (como interceptar datos en tránsito), atentando contra la confidencialidad."
+    },
+    {
+      "id": 2,
+      "enunciado": "Si una persona A envía un mensaje a una persona B usando cifrado asimétrico, ¿qué clave utilizará B para descifrarlo?",
+      "opciones": {
+        "a": "Utilizará la clave pública de B para descifrarlo.",
+        "b": "Utilizará la clave privada de B para descifrarlo.",
+        "c": "Utilizará la clave privada de A para descifrarlo.",
+        "d": "Utilizará la clave pública de A para descifrarlo."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En el cifrado asimétrico, el emisor cifra con la clave pública del receptor. Solo el receptor, mediante su propia clave privada (que es secreta), puede descifrar ese mensaje."
+    },
+    {
+      "id": 3,
+      "enunciado": "La firma digital y el certificado digital se caracterizan porque:",
+      "opciones": {
+        "a": "El certificado digital contiene una firma digital.",
+        "b": "La firma digital contiene un certificado digital.",
+        "c": "El certificado digital tiene funciones similares a las de la firma autógrafa.",
+        "d": "La firma verifica la identidad del firmante."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Un certificado digital es un documento electrónico que vincula una identidad con una clave pública y está firmado digitalmente por una Autoridad de Certificación (CA) de confianza."
+    },
+    {
+      "id": 4,
+      "enunciado": "Marca la secuencia correcta de intercambio de flags que se realiza en el proceso de 'Three-way handshake':",
+      "opciones": {
+        "a": "SYN - SYN/ACK - OK/SYN",
+        "b": "SYN - SYN/ACK - ACK",
+        "c": "SYN - SYN/ACK - OK",
+        "d": "SYN - SYN/ACK - FIN"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El saludo de tres vías de TCP consiste en: 1. El cliente envía SYN. 2. El servidor responde con SYN/ACK. 3. El cliente confirma con ACK para establecer la conexión."
+    },
+    {
+      "id": 5,
+      "enunciado": "Si A quiere enviar un mensaje a B, con cifrado asimétrico, de forma que B sepa que el mensaje es de A:",
+      "opciones": {
+        "a": "A deberá usar su clave privada para firmar el mensaje.",
+        "b": "A deberá usar su clave pública para firmar el mensaje.",
+        "c": "A deberá usar la clave privada de B para cifrar el mensaje.",
+        "d": "A deberá usar la clave pública de B para cifrar el mensaje."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Para garantizar la autenticidad (firma), el emisor utiliza su propia clave privada para generar la firma digital. Cualquier persona puede verificarla usando la clave pública del emisor."
+    },
+    {
+      "id": 6,
+      "enunciado": "La estenografía permite:",
+      "opciones": {
+        "a": "Cifrar la imagen por píxel.",
+        "b": "Cifrar la imagen por bloques",
+        "c": "Firmar una imagen.",
+        "d": "Transmitir información camuflándola en otra información."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La esteganografía busca ocultar la existencia misma de la comunicación, camuflando el mensaje secreto dentro de un medio portador inofensivo como una imagen o un audio."
+    },
+    {
+      "id": 7,
+      "enunciado": "La función hash aplicada a determinada información:",
+      "opciones": {
+        "a": "Genera un resumen o huella digital.",
+        "b": "Cifra todo el mensaje.",
+        "c": "Genera un nuevo objeto con la información cifrada.",
+        "d": "Su longitud depende del tamaño del mensaje."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Una función hash toma una entrada de cualquier tamaño y produce una salida de longitud fija (resumen) única. Se usa para verificar la integridad, ya que si cambia el mensaje, el hash cambia."
+    },
+    {
+      "id": 9,
+      "enunciado": "Marca la opción que refleja la técnica de escaneo XMAS:",
+      "opciones": {
+        "a": "Envía los flags FIN - URG - PUSH",
+        "b": "Ninguna es correcta.",
+        "c": "Envía los flags SYN - ACK - OK",
+        "d": "Envía los flags ACK - URG - XMS"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El escaneo XMAS (Navidad) envía paquetes con los flags FIN, URG y PUSH activados simultáneamente, 'iluminando' el paquete como un árbol de Navidad para ver cómo responde el sistema."
+    },
+    {
+      "id": 10,
+      "enunciado": "En la fase de reconocimiento de un ataque indicar que herramienta se suele utilizar.",
+      "opciones": {
+        "a": "Herramientas de filtrado de paquetes.",
+        "b": "Herramientas de monitorización de logs.",
+        "c": "Herramientas de eliminación de la caché y las cookies.",
+        "d": "Herramientas capturadoras de paquetes de red."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Los capturadores de paquetes (sniffers) como Wireshark o tcpdump permiten analizar el tráfico de red para obtener información sobre dispositivos, protocolos y servicios activos."
+    },
+    {
+      "id": 11,
+      "enunciado": "Marca la definición que corresponde al escaneo de puertos:",
+      "opciones": {
+        "a": "Procedimiento para identificar los dispositivos activos en una red.",
+        "b": "Procedimiento para verificar los servicios o aplicaciones que están corriendo en un sistema objetivo o víctima.",
+        "c": "Método usado para detectar posibles amenazas y determinar si un sistema puede ser 'explotado'.",
+        "d": "Ninguno es correcto."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El escaneo de puertos permite determinar qué puertos están abiertos (escuchando) en una máquina, lo que revela qué servicios (web, ssh, bd) están disponibles para ser atacados."
+    },
+    {
+      "id": 12,
+      "enunciado": "De las siguientes afirmaciones indica cuál corresponde a un ataque activo de interrupción:",
+      "opciones": {
+        "a": "Consigue un objeto similar al atacado de forma que no resulte sencillo distinguir entre el objeto original y el fabricado.",
+        "b": "Puede provocar que un objeto del sistema se pierda, quede no utilizable o no disponible.",
+        "c": "Sucede cuando hay un acceso no autorizado que cambia el entorno para su beneficio.",
+        "d": "Ocurre si un elemento no autorizado consigue un acceso a un determinado objeto del sistema."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La interrupción es un ataque a la disponibilidad, impidiendo que los usuarios autorizados accedan a los recursos (ej. borrar un archivo crítico)."
+    },
+    {
+      "id": 14,
+      "enunciado": "Marca la respuesta que no es un sistema utilizado para el password cracking:",
+      "opciones": {
+        "a": "Ataque de ajuste de contraseñas.",
+        "b": "Ataque por fuerza bruta",
+        "c": "Ataque con rainbow tables",
+        "d": "Ataque de diccionario."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El 'ajuste de contraseñas' no es una técnica de cracking. Las habituales son: Fuerza Bruta (probar todas), Diccionario (probar palabras comunes) y Rainbow Tables (hashes precalculados)."
+    },
+    {
+      "id": 15,
+      "enunciado": "En los algoritmos de clave pública:",
+      "opciones": {
+        "a": "El conocimiento de la clave pública equivale a haber roto el algoritmo.",
+        "b": "El conocimiento de la clave pública permite deducir la correspondiente clave privada.",
+        "c": "El conocimiento de la clave pública no permite obtener ninguna información sobre la correspondiente clave privada.",
+        "d": "El conocimiento de la clave pública permite descifrar el texto con ella cifrado."
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La seguridad de la criptografía asimétrica se basa en que es computacionalmente imposible obtener la clave privada a partir de la pública, a pesar de su relación matemática."
+    },
+    {
+      "id": 16,
+      "enunciado": "Marca la definición que corresponde al concepto de puerto",
+      "opciones": {
+        "a": "Programas o aplicaciones cargadas por el propio sistema operativo.",
+        "b": "Dirección asociada a un programa para comunicarse a través de una red.",
+        "c": "Procedimiento para identificar los servicios activos en un dispositivo informático.",
+        "d": "Ninguno es correcto."
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Un puerto es una interfaz lógica que permite que múltiples aplicaciones utilicen los recursos de red de un host de forma simultánea, identificando a qué servicio va dirigido cada paquete."
+    },
+    {
+      "id": 17,
+      "enunciado": "La autenticación multimodal es:",
+      "opciones": {
+        "a": "Combinación de varios métodos de autenticación distintos.",
+        "b": "Todas son ciertas.",
+        "c": "Sistema de autenticación que permite identificar a los usuarios de diferentes formas.",
+        "d": "Modo de autenticación basado en sistemas biométricos."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La autenticación multimodal (o multifactor) mejora la seguridad al requerir al menos dos factores distintos (ej. algo que sabes + algo que tienes)."
+    },
+    {
+      "id": 18,
+      "enunciado": "Si una persona A quiere descifrar un mensaje que le ha enviado otra persona B con cifrado asimétrico:",
+      "opciones": {
+        "a": "Utilizará la clave privada de B para descifrarlo.",
+        "b": "Utilizará la clave pública de A para descifrarlo.",
+        "c": "Utilizará su clave pública de B para descifrarlo.",
+        "d": "Utilizará la clave privada de A para descifrarlo."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Si el mensaje fue cifrado para A, se hizo usando la clave pública de A. Por tanto, solo A puede descifrarlo usando su correspondiente clave privada."
+    },
+    {
+      "id": 19,
+      "enunciado": "La herramienta netstat de los sistemas operativos permite:",
+      "opciones": {
+        "a": "Mostrar los puertos y servicios abiertos en nuestro equipo.",
+        "b": "Vincular una dirección MAC con una dirección IP.",
+        "c": "Saber si una máquina está conectada a nivel de capa 3.",
+        "d": "Localizar la ruta de acceso a un equipo a nivel de capa 4."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Netstat es un comando multiplataforma que muestra las conexiones de red activas, las tablas de rutas y las estadísticas de los interfaces, incluyendo puertos a la escucha."
+    },
+    {
+      "id": 20,
+      "enunciado": "La firma digital:",
+      "opciones": {
+        "a": "Todas son correctas.",
+        "b": "Necesita del uso de la clave pública del usuario.",
+        "c": "Es lo mismo que el certificado digital.",
+        "d": "Necesita del uso de la clave privada del usuario."
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La firma digital garantiza la autenticidad e integridad. El firmante debe usar su clave privada para crearla, lo cual vincula el documento inequívocamente con él."
+    }
+  ]
+}

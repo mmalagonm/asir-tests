@@ -1,0 +1,96 @@
+{
+  "asignatura": "Seguridad",
+  "codigo_archivo": "leccion_1_ra1",
+  "titulo": "Lección 1: Fundamentos de la Seguridad Informática (RA1)",
+  "tipo": "leccion",
+  "paginas": [
+    {
+      "id": 1,
+      "titulo": "Objetivos e Introducción",
+      "contenido": "<div class='lesson-card'>Bienvenidos a la Unidad 1. Esta unidad establece los cimientos de la seguridad informática y la protección de datos en entornos empresariales.</div><ul><li><strong>RA1:</strong> Adoptar pautas de seguridad informática identificando amenazas y aplicando medidas preventivas.</li><li><strong>Objetivos:</strong> Conocer los conceptos asociados a la seguridad, diferenciar los principios básicos (CIA) y entender el concepto de alta disponibilidad.</li></ul><p class='diag-note'>💡 <em>Nota: Actualmente, casi todo está controlado por sistemas informáticos (bancos, energía, satélites, sanidad), lo que hace que su protección sea crítica.</em></p>"
+    },
+    {
+      "id": 2,
+      "titulo": "Conceptos Iniciales: El Sistema Informático",
+      "contenido": "<div class='lesson-card'>Un sistema informático no es solo hardware y software. Se compone de tres elementos fundamentales:</div><ul><li><strong>Elementos físicos:</strong> Hardware, dispositivos periféricos y conexiones (redes).</li><li><strong>Elementos lógicos:</strong> Sistemas operativos, aplicaciones, protocolos y datos.</li><li><strong>Elementos humanos:</strong> Personal experto que maneja el sistema y usuarios finales.</li></ul><p>Un <strong>Sistema de Información</strong> es el conjunto de estos elementos organizados para facilitar el funcionamiento global de una organización.</p>"
+    },
+    {
+      "id": 3,
+      "titulo": "Activos de Información",
+      "contenido": "<div class='lesson-card'>Los activos son todos los recursos de la organización que tienen valor y deben ser protegidos.</div><h3>Tipos de activos:</h3><ul><li><strong>Activos tangibles:</strong> <ul><li>Relacionados con el entorno: Personal, edificios, instalaciones.</li><li>Relacionados con las TIC: Equipos hardware, componentes de comunicaciones.</li><li>Relacionados con la información: Datos y documentos.</li></ul></li><li><strong>Activos intangibles:</strong> Imagen de la organización, credibilidad, patentes, etc.</li></ul>"
+    },
+    {
+      "id": 4,
+      "titulo": "Concepto de Seguridad Informática",
+      "contenido": "<div class='lesson-card'>La seguridad absoluta es un concepto utópico; no existe un sistema 100% seguro.</div><h3>Diferencias clave:</h3><ul><li><strong>Seguridad de la información:</strong> Conjunto de medidas técnicas, organizativas y legales para asegurar la CIA del sistema de información. (Nivel Estratégico).</li><li><strong>Seguridad informática (IT Security):</strong> Implantación de medidas técnicas destinadas a preservar la CIA, autenticidad, fiabilidad y no repudio. (Nivel Táctico/Operacional).</li></ul><p class='diag-note'>💡 <em>Nota: La estrategia actual es adoptar medidas preventivas para adelantarse al atacante.</em></p>"
+    },
+    {
+      "id": 5,
+      "titulo": "Los Tres Pilares: La Tríada CIA",
+      "contenido": "<div class='lesson-card'>Cualquier sistema seguro debe garantizar estos tres principios fundamentales:</div><ul><li><strong>Confidencialidad (Confidentiality):</strong> Garantiza que la información solo es accesible por personas autorizadas. Evita la divulgación no autorizada.</li><li><strong>Integridad (Integrity):</strong> Garantiza que la información solo puede ser modificada por personas autorizadas y que no ha sido alterada.</li><li><strong>Disponibilidad (Availability):</strong> Garantiza que el sistema y los datos están accesibles cuando los usuarios autorizados los necesiten.</li></ul><p class='diag-note'>💡 <em>Nota: En resumen, la CIA busca: Persona correcta (C), Información correcta (I), en el Momento adecuado (A).</em></p>"
+    },
+    {
+      "id": 6,
+      "titulo": "Otras Características de Seguridad",
+      "contenido": "<div class='lesson-card'>Además de la tríada CIA, existen otras propiedades esenciales:</div><ul><li><strong>No repudio:</strong> Permite probar la participación de las partes en una comunicación. <ul><li><em>En origen:</em> El emisor no puede negar el envío.</li><li><em>En destino:</em> El receptor no puede negar la recepción.</li></ul></li><li><strong>Fiabilidad:</strong> Tiempo de funcionamiento sin fallos del sistema (uptime).</li><li><strong>Autenticidad:</strong> Asegura que el origen de los datos es quien dice ser.</li></ul>"
+    },
+    {
+      "id": 7,
+      "titulo": "Principios Básicos de Gestión",
+      "contenido": "<div class='lesson-card'>Estrategias fundamentales para mantener una infraestructura segura:</div><ul><li><strong>Mínimo privilegio:</strong> Los usuarios deben tener solo los permisos estrictamente necesarios para su trabajo.</li><li><strong>Eslabón más débil:</strong> La seguridad del sistema es tan fuerte como su punto más vulnerable (a menudo el factor humano).</li><li><strong>Proporcionalidad:</strong> Las medidas de seguridad deben ser proporcionales al valor de lo que se protege y al riesgo.</li><li><strong>Dinamismo:</strong> La seguridad es un proceso continuo que debe actualizarse ante nuevas amenazas.</li></ul>"
+    },
+    {
+      "id": 8,
+      "titulo": "Alta Disponibilidad (High Availability)",
+      "contenido": "<div class='lesson-card'>La alta disponibilidad busca minimizar el tiempo de inactividad del sistema.</div><h3>La regla de los 'Cinco Nueves':</h3><p>Se considera un sistema de alta disponibilidad extrema aquel que ofrece un <strong>99,999%</strong> de tiempo de actividad (solo ~5 minutos de inactividad al año).</p><h3>Estrategias clave:</h3><ul><li><strong>Redundancia:</strong> Duplicar componentes críticos (servidores, discos, fuentes).</li><li><strong>Tolerancia a fallos:</strong> Capacidad de seguir operando tras un fallo (ej. RAID).</li><li><strong>Tiempo de recuperación rápido:</strong> Minimizar el impacto tras un incidente.</li></ul>"
+    },
+    {
+      "id": 9,
+      "titulo": "Resumen de la Lección",
+      "contenido": "<div class='lesson-card'>Puntos clave para recordar:</div><ul><li>Un sistema informático incluye <strong>Hardware, Software y Personas</strong>.</li><li>La seguridad busca proteger <strong>Activos</strong> (tangibles e intangibles).</li><li>La Tríada <strong>CIA</strong> es el núcleo de la seguridad.</li><li>El <strong>No Repudio</strong> evita que alguien niegue haber realizado una acción.</li><li>La <strong>Alta Disponibilidad</strong> se basa en la redundancia para evitar paradas de servicio.</li></ul>"
+    },
+    {
+      "id": 10,
+      "titulo": "Evaluación Final de Conocimientos",
+      "tipo_pagina": "quiz_interno",
+      "contenido": "<div class='lesson-card'>Responde a las siguientes preguntas para comprobar lo aprendido en esta lección.</div>",
+      "preguntas_test": [
+        {
+          "q": "¿Qué principio garantiza que la información no ha sido modificada de forma no autorizada?",
+          "options": ["Confidencialidad", "Integridad", "Disponibilidad", "No repudio"],
+          "correct": 1,
+          "explicacion": "La integridad asegura que los datos se mantienen exactos y completos tal como fueron creados.",
+          "ejemplo": "Ej: El uso de funciones 'hash' permite verificar la integridad de un archivo."
+        },
+        {
+          "q": "Un sistema que ofrece un 99,999% de disponibilidad se conoce como la regla de:",
+          "options": ["Los tres nueves", "Los cinco nueves", "El 1% de fallo", "Disponibilidad absoluta"],
+          "correct": 1,
+          "explicacion": "La regla de los cinco nueves (99,999%) permite solo unos 5 minutos de parada total al año.",
+          "ejemplo": "Ej: Los grandes centros de datos Tier IV aspiran a este nivel de disponibilidad."
+        },
+        {
+          "q": "El principio de 'mínimo privilegio' establece que:",
+          "options": ["Todos deben ser administradores", "Los usuarios no deben tener contraseñas", "Cada usuario tiene solo los permisos necesarios para su tarea", "La seguridad es responsabilidad de una sola persona"],
+          "correct": 2,
+          "explicacion": "Limitar los accesos reduce el impacto en caso de que una cuenta se vea comprometida.",
+          "ejemplo": "Ej: Un becario no debería tener permisos para borrar bases de datos de producción."
+        },
+        {
+          "q": "¿Cuál de estos es un activo intangible?",
+          "options": ["Un servidor NAS", "El cableado de red", "La reputación de la empresa", "El personal de seguridad"],
+          "correct": 2,
+          "explicacion": "La reputación o imagen de marca es un valor que no se puede tocar pero es vital para el negocio.",
+          "ejemplo": "Ej: Una filtración de datos daña gravemente la imagen (activo intangible) de una empresa."
+        },
+        {
+          "q": "El servicio que impide que un emisor niegue haber enviado un mensaje se llama:",
+          "options": ["Autenticación", "No repudio en origen", "Fiabilidad", "Cifrado"],
+          "correct": 1,
+          "explicacion": "El no repudio en origen aporta una prueba infalsificable de quién envió la información.",
+          "ejemplo": "Ej: La firma electrónica proporciona no repudio legal."
+        }
+      ]
+    }
+  ]
+}

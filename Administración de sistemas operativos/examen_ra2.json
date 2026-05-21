@@ -1,0 +1,129 @@
+{
+  "asignatura": "Administracion de sistemas operativos",
+  "codigo_archivo": "examen_ra2",
+  "titulo": "Examen Resultado de aprendizaje 2",
+  "tipo": "examen",
+  "ra": [2],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "Según la gestión de procesos, los SO pueden ser:",
+      "opciones": {
+        "a": "Monousuario, multiusuario y servidores",
+        "b": "Monotarea y multitarea",
+        "c": "Centralizado y distribuido",
+        "d": "Todas son ciertas"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Según la capacidad para gestionar procesos simultáneamente, los SO se clasifican en monotarea (solo un proceso a la vez) y multitarea (varios procesos que parecen ejecutarse a la vez mediante compartición de CPU)."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿A quién pertenece ANDROID?",
+      "opciones": {
+        "a": "Apple",
+        "b": "Unix",
+        "c": "Linux",
+        "d": "Google"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Android fue desarrollado originalmente por Android Inc., empresa que Google compró en 2005. Es un sistema basado en el núcleo Linux orientado a dispositivos móviles."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Qué licencia utiliza Android?",
+      "opciones": {
+        "a": "Java Script",
+        "b": "Project",
+        "c": "Java",
+        "d": "Apache"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Aunque el kernel es GPL, la mayor parte del código de Android (AOSP) se distribuye bajo la licencia Apache 2.0, que es más permisiva para fabricantes de hardware."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Cuál es el sistema de archivos estándar de Ubuntu?",
+      "opciones": {
+        "a": "ext4",
+        "b": "FAT32",
+        "c": "FAT16",
+        "d": "NTFS"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "'ext4' (Fourth Extended Filesystem) es el sistema de archivos por defecto en la mayoría de distribuciones Linux modernas como Ubuntu, ofreciendo mejoras en rendimiento y límites de almacenamiento sobre ext3."
+    },
+    {
+      "id": 5,
+      "enunciado": "El creador del núcleo Linux es:",
+      "opciones": {
+        "a": "R. Stallman",
+        "b": "Linus Torvalds",
+        "c": "Paul Allen",
+        "d": "Bell AT&T"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Linus Torvalds inició el desarrollo del kernel Linux en 1991 como un proyecto personal mientras estudiaba en la Universidad de Helsinki."
+    },
+    {
+      "id": 6,
+      "enunciado": "Orden para visualizar procesos desde la consola de Windows:",
+      "opciones": {
+        "a": "Control + Mayúsculas",
+        "b": "Tasklist",
+        "c": "Ninguna es cierta",
+        "d": "Tlist"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "'tasklist' muestra una lista de todas las aplicaciones y servicios ejecutándose actualmente en el equipo local o remoto, incluyendo el ID de proceso (PID) y el uso de memoria."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Cómo se visualizan los procesos en tiempo real en Ubuntu?",
+      "opciones": {
+        "a": "Top",
+        "b": "Ninguna es cierta",
+        "c": "Gedit",
+        "d": "Less"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "'top' proporciona una vista dinámica y en tiempo real de los procesos activos, mostrando el uso de CPU, memoria y otros recursos por cada proceso."
+    },
+    {
+      "id": 8,
+      "enunciado": "Proteger un archivo como lectura y oculto en Windows (consola):",
+      "opciones": {
+        "a": "Attrib +s +r",
+        "b": "Attrib +r +a",
+        "c": "Attrib +r +s",
+        "d": "Attrib +r +h"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "En la consola de Windows, el comando 'attrib' gestiona los atributos. '+r' activa el atributo de Solo Lectura (Read-only) y '+h' activa el atributo de Oculto (Hidden)."
+    },
+    {
+      "id": 9,
+      "enunciado": "Significado y valor de '-R-- --X -W-' en Linux:",
+      "opciones": {
+        "a": "Archivo, lectura dueño (4), ejecución grupo (1), escritura otros (2). Valor 412",
+        "b": "Archivo, lectura/escritura dueño, ejecución grupo, escritura otros. Valor 712",
+        "c": "Ninguna es cierta",
+        "d": "Directorio, lectura dueño, ejecución grupo, escritura otros. Valor 412"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El primer guion indica que es un archivo regular. Los grupos de tres son: Dueño (R-- = 4), Grupo (--X = 1) y Otros (-W- = 2). Valor total octal: 412."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Qué valor numérico corresponde a '-RW- --X -W-'?",
+      "opciones": {
+        "a": "712",
+        "b": "622",
+        "c": "612",
+        "d": "714"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Dueño (RW-) = 4+2=6; Grupo (--X) = 1; Otros (-W-) = 2. El valor octal resultante es 612."
+    }
+  ]
+}

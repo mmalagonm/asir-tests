@@ -1,0 +1,489 @@
+{
+  "asignatura": "Implantacion de aplicaciones web",
+  "codigo_archivo": "test_final",
+  "titulo": "Examen Final de Implantación de Aplicaciones Web",
+  "tipo": "examen",
+  "ra": [1, 2, 3],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "¿Qué tipo de lenguaje es JavaScript?",
+      "opciones": {
+        "a": "Lenguaje compilado",
+        "b": "Lenguaje de marcas",
+        "c": "Lenguaje de scripting interpretado",
+        "d": "Lenguaje de bases de datos"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "JavaScript es un lenguaje interpretado (scripting), lo que significa que el código se ejecuta directamente línea a línea en tiempo de ejecución sin necesidad de un paso de compilación previo."
+    },
+    {
+      "id": 2,
+      "enunciado": "¿Dónde se ejecuta principalmente JavaScript?",
+      "opciones": {
+        "a": "En el servidor",
+        "b": "En el navegador",
+        "c": "En la base de datos",
+        "d": "En el sistema operativo"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Aunque JavaScript hoy en día también se puede ejecutar en servidores (gracias a Node.js), su entorno de ejecución principal e histórico es el navegador web (lado del cliente)."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Cuál es la forma correcta de declarar una variable?",
+      "opciones": {
+        "a": "variable x;",
+        "b": "var x;",
+        "c": "int x;",
+        "d": "x := 5;"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En JavaScript las variables se declaran utilizando las palabras clave 'var', 'let' o 'const'. De las opciones presentadas, 'var x;' es la única sintaxis válida."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Qué muestra este código?\n\nconsole.log(typeof 5);",
+      "opciones": {
+        "a": "number",
+        "b": "int",
+        "c": "string",
+        "d": "float"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El operador 'typeof' en JavaScript devuelve una cadena con el tipo del operando. Para cualquier número (entero o decimal), devuelve 'number'."
+    },
+    {
+      "id": 5,
+      "enunciado": "¿Qué significa DOM?",
+      "opciones": {
+        "a": "Document Oriented Model",
+        "b": "Data Object Model",
+        "c": "Document Object Model",
+        "d": "Dynamic Object Model"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "DOM responde a las siglas 'Document Object Model' (Modelo de Objetos del Documento), que representa la estructura jerárquica de la página web."
+    },
+    {
+      "id": 6,
+      "enunciado": "¿Para qué sirve el DOM?",
+      "opciones": {
+        "a": "Validar HTML",
+        "b": "Aplicar estilos CSS",
+        "c": "Acceder y modificar la estructura HTML",
+        "d": "Crear bases de datos"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El DOM proporciona una interfaz de programación que permite a JavaScript acceder, modificar, añadir o eliminar de forma dinámica el contenido, la estructura y los estilos de un documento HTML."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Qué devuelve document.getElementById()?",
+      "opciones": {
+        "a": "Un array",
+        "b": "Un elemento HTML",
+        "c": "Una cadena",
+        "d": "Un nodo de texto"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Devuelve un único objeto Element que representa el elemento HTML cuyo atributo 'id' coincide con el parámetro indicado."
+    },
+    {
+      "id": 8,
+      "enunciado": "Si el id no existe, getElementById() devuelve:",
+      "opciones": {
+        "a": "false",
+        "b": "\"\"",
+        "c": "null",
+        "d": "undefined"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Si no existe ningún elemento con el identificador proporcionado en el documento HTML actual, la función devuelve el valor especial 'null'."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Qué método crea un nuevo elemento HTML?",
+      "opciones": {
+        "a": "createNode()",
+        "b": "newElement()",
+        "c": "createElement()",
+        "d": "addElement()"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El método 'document.createElement(nombreEtiqueta)' crea un elemento HTML con el nombre de la etiqueta especificado (por ejemplo, 'div', 'p', 'span')."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Qué crea document.createTextNode()?",
+      "opciones": {
+        "a": "Un elemento HTML",
+        "b": "Un nodo de texto",
+        "c": "Un comentario",
+        "d": "Un atributo"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Crea un nodo de tipo texto independiente (Text node), que sirve para contener texto plano y luego asociarlo o insertarlo dentro de un elemento HTML."
+    },
+    {
+      "id": 11,
+      "enunciado": "¿Cuál es el orden correcto para añadir un nodo al DOM?",
+      "opciones": {
+        "a": "create \u2192 append \u2192 select",
+        "b": "create \u2192 append",
+        "c": "append \u2192 create \u2192 select",
+        "d": "select \u2192 append \u2192 create"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El orden lógico y correcto para incorporar un elemento nuevo es primero crearlo (create) y luego añadirlo al nodo correspondiente del DOM (append). Recuerda que siempre después de crear un nodo (create) hay que añadirlo al DOM (hacer un append)."
+    },
+    {
+      "id": 12,
+      "enunciado": "¿Qué método inserta un nodo como hijo?",
+      "opciones": {
+        "a": "add()",
+        "b": "push()",
+        "c": "appendChild()",
+        "d": "insert()"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El método 'appendChild()' agrega un nodo al final de la lista de hijos de un nodo padre especificado. Cuando creamos un nodo y hacemos el append, este se realiza en referencia al nodo padre; pero si no está contenido en otro, hace referencia al body."
+    },
+    {
+      "id": 13,
+      "enunciado": "¿Qué hace setAttribute()?",
+      "opciones": {
+        "a": "Elimina un atributo",
+        "b": "Lee un atributo",
+        "c": "Establece un atributo",
+        "d": "Crea un nodo"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'setAttribute()' establece o modifica el valor de un atributo en el elemento HTML indicado. El método setAttribute nos permite acceder a un atributo HTML (si quisiéramos modificar estilos directamente desde CSS, usaríamos por ejemplo la propiedad '.style...')."
+    },
+    {
+      "id": 14,
+      "enunciado": "¿Cuál es el uso correcto de setAttribute()?",
+      "opciones": {
+        "a": "element.setAttribute(id= \"caja\")",
+        "b": "setAttribute(\"id\",\"caja\")",
+        "c": "element.setAttribute(\"id\",\"caja\")",
+        "d": "element.addAttribute(\"id\",\"caja\")"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La sintaxis correcta para utilizar este método sobre un objeto del DOM es 'elemento.setAttribute(\"nombreAtributo\", \"valorAtributo\")'."
+    },
+    {
+      "id": 15,
+      "enunciado": "¿Qué método obtiene el valor de un atributo?",
+      "opciones": {
+        "a": "getValue()",
+        "b": "getAttribute()",
+        "c": "readAttribute()",
+        "d": "value()"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El método 'getAttribute(\"nombreAtributo\")' se usa para leer y devolver el valor del atributo especificado en ese elemento HTML."
+    },
+    {
+      "id": 16,
+      "enunciado": "¿Qué significa JSON?",
+      "opciones": {
+        "a": "Java Source Object Notation",
+        "b": "JavaScript Object Notation",
+        "c": "Java Structured Object Network",
+        "d": "JavaScript Oriented Network"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "JSON son las siglas de 'JavaScript Object Notation' (Notación de Objetos de JavaScript)."
+    },
+    {
+      "id": 17,
+      "enunciado": "¿Cuál es un JSON válido?",
+      "opciones": {
+        "a": "{nombre: \"Ana\"}",
+        "b": "{ \"nombre\": \"Ana\" }",
+        "c": "{ 'nombre': 'Ana' }",
+        "d": "( \"nombre\": \"Ana\" )"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En la especificación formal de JSON, tanto las claves (propiedades) como los valores de tipo cadena deben estar encerrados obligatoriamente entre comillas dobles (\")."
+    },
+    {
+      "id": 18,
+      "enunciado": "¿Qué método convierte JSON a objeto JavaScript?",
+      "opciones": {
+        "a": "JSON.stringify()",
+        "b": "JSON.convert()",
+        "c": "JSON.parse()",
+        "d": "JSON.object()"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El método 'JSON.parse()' toma una cadena de texto que representa una estructura JSON y la transforma en el objeto o valor correspondiente en JavaScript."
+    },
+    {
+      "id": 19,
+      "enunciado": "¿Qué método convierte un objeto a JSON?",
+      "opciones": {
+        "a": "JSON.parse()",
+        "b": "JSON.stringify()",
+        "c": "JSON.encode()",
+        "d": "toJSON()"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El método 'JSON.stringify()' convierte un objeto o valor de JavaScript en una cadena de texto en formato JSON."
+    },
+    {
+      "id": 20,
+      "enunciado": "¿Para qué se usa principalmente JSON?",
+      "opciones": {
+        "a": "Crear estilos",
+        "b": "Mostrar datos",
+        "c": "Intercambio de datos",
+        "d": "Validar HTML"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "JSON se utiliza principalmente como un formato ligero y estándar para el intercambio de datos estructurados entre un cliente (como un navegador) y un servidor web."
+    },
+    {
+      "id": 21,
+      "enunciado": "¿Para qué sirve XMLHttpRequest?",
+      "opciones": {
+        "a": "Validar XML",
+        "b": "Crear JSON",
+        "c": "Enviar y recibir datos con un servidor",
+        "d": "Crear nodos DOM"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "'XMLHttpRequest' es el objeto tradicional que permite realizar peticiones HTTP de forma asíncrona a un servidor, permitiendo cargar datos sin recargar la página completa."
+    },
+    {
+      "id": 22,
+      "enunciado": "¿Qué hace esta línea?\n\nlet xhr = new XMLHttpRequest();",
+      "opciones": {
+        "a": "Envía datos",
+        "b": "Crea una petición",
+        "c": "Recibe datos",
+        "d": "Ejecuta el servidor"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Esta línea instancia el objeto 'XMLHttpRequest', preparando y creando el objeto de petición para su posterior configuración y envío."
+    },
+    {
+      "id": 23,
+      "enunciado": "¿Qué método configura la petición de los datos del archivo?",
+      "opciones": {
+        "a": "send()",
+        "b": "open()",
+        "c": "request()",
+        "d": "connect()"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El método 'open(método, url, asíncrono)' inicializa o configura los parámetros esenciales de la petición HTTP antes de enviarla."
+    },
+    {
+      "id": 24,
+      "enunciado": "¿Qué método envía la petición?",
+      "opciones": {
+        "a": "open()",
+        "b": "send()",
+        "c": "get()",
+        "d": "post()"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El método 'send()' es el encargado de transmitir formalmente la petición HTTP configurada hacia el servidor."
+    },
+    {
+      "id": 25,
+      "enunciado": "¿Qué valor indica que la respuesta está lista?",
+      "opciones": {
+        "a": "readyState = 2",
+        "b": "readyState = 3",
+        "c": "readyState = 4",
+        "d": "readyState = 5"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El valor 'readyState = 4' (DONE) representa que la petición HTTP se ha completado correctamente y toda la respuesta del servidor ya está disponible para su lectura."
+    },
+    {
+      "id": 26,
+      "enunciado": "¿Qué significa XML?",
+      "opciones": {
+        "a": "Extra Markup Language",
+        "b": "Extensible Markup Language",
+        "c": "Example Markup Language",
+        "d": "External Markup Language"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "XML corresponde a las siglas de 'Extensible Markup Language' (Lenguaje de Marcado Extensible)."
+    },
+    {
+      "id": 27,
+      "enunciado": "¿Cuál es una estructura XML correcta?",
+      "opciones": {
+        "a": "<nombre>Ana</nombre>",
+        "b": "<nombre>Ana<nombre>",
+        "c": "<nombre>Ana</>",
+        "d": "nombre Ana nombre"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "En XML, cada etiqueta abierta debe cerrarse de forma idéntica, usando el prefijo de barra diagonal: '<etiqueta>contenido</etiqueta>'."
+    },
+    {
+      "id": 28,
+      "enunciado": "En XML, las etiquetas deben:",
+      "opciones": {
+        "a": "Estar en mayúsculas",
+        "b": "Cerrarse correctamente",
+        "c": "Llevar atributos",
+        "d": "No tener texto"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "XML es muy estricto con las reglas sintácticas de 'bien formado', requiriendo obligatoriamente que todas las etiquetas que se abran sean cerradas en el orden correcto."
+    },
+    {
+      "id": 29,
+      "enunciado": "¿XML distingue entre mayúsculas y minúsculas?",
+      "opciones": {
+        "a": "No",
+        "b": "Depende del navegador",
+        "c": "Sí",
+        "d": "Solo en atributos"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Sí, XML es sensible a mayúsculas y minúsculas (case-sensitive). Por ejemplo, '<Dato>' y '<dato>' se consideran etiquetas completamente diferentes."
+    },
+    {
+      "id": 30,
+      "enunciado": "¿Cuántos elementos raíz puede tener un XML?",
+      "opciones": {
+        "a": "Ninguno",
+        "b": "Uno es conveniente.",
+        "c": "Dos",
+        "d": "Los que quiera"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "En un archivo XML válido, es obligatorio tener exactamente un único elemento raíz que contenga a todos los demás. La opción 'Uno es conveniente' representa esta necesidad de estructura jerárquica de único nodo raíz en el test."
+    },
+    {
+      "id": 31,
+      "enunciado": "Resultado del código:\n\nlet x = document.getElementById(\"caja\");",
+      "opciones": {
+        "a": "Un array",
+        "b": "Un elemento",
+        "c": "Un texto",
+        "d": "Un número"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Este método devuelve el elemento del DOM correspondiente (un objeto del tipo Element HTML) que tenga ese id, o null en caso de no encontrarse."
+    },
+    {
+      "id": 32,
+      "enunciado": "¿Qué hace este código?\n\ndiv.appendChild(texto);",
+      "opciones": {
+        "a": "Elimina texto",
+        "b": "Inserta texto dentro del div",
+        "c": "Borra el div",
+        "d": "Cambia el id"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El método 'appendChild(nodo)' inserta el nodo especificado (en este caso, un nodo con contenido de texto) como el último de los hijos del elemento 'div'."
+    },
+    {
+      "id": 33,
+      "enunciado": "¿Qué objeto se usa para trabajar con JSON en JavaScript?",
+      "opciones": {
+        "a": "Object",
+        "b": "JSON",
+        "c": "Data",
+        "d": "Ajax"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El objeto global 'JSON' nativo de JavaScript proporciona métodos estáticos como 'JSON.parse()' y 'JSON.stringify()' para procesar datos en dicho formato."
+    },
+    {
+      "id": 34,
+      "enunciado": "¿Qué devuelve JSON.parse() si el texto no es válido?",
+      "opciones": {
+        "a": "null",
+        "b": "false",
+        "c": "Error",
+        "d": "Objeto vacío"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Si se pasa un texto que no cumple con el formato estándar de JSON, el analizador lanzará una excepción (SyntaxError), interrumpiendo la ejecución con un Error."
+    },
+    {
+      "id": 35,
+      "enunciado": "¿En qué formato suele recibirse una respuesta AJAX moderna?",
+      "opciones": {
+        "a": "TXT",
+        "b": "HTML",
+        "c": "JSON",
+        "d": "CSV"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Aunque las siglas de AJAX hacían referencia a XML (Asynchronous JavaScript and XML), en el desarrollo moderno el formato predominante y estándar para las respuestas es JSON por su ligereza y facilidad de integración."
+    },
+    {
+      "id": 36,
+      "enunciado": "¿En un listado de elementos html, si solamente queremos seleccionar el primer elemento qué método usamos?",
+      "opciones": {
+        "a": "getElementById()",
+        "b": "querySelector()",
+        "c": "queryAll()",
+        "d": "getElementsByClass()"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El método 'querySelector()' devuelve el primer elemento del documento que coincida con el grupo de selectores CSS especificados. Si queremos todos, usamos 'querySelectorAll()'."
+    },
+    {
+      "id": 37,
+      "enunciado": "¿Qué se modifica con innerText o textContent?",
+      "opciones": {
+        "a": "Estilos",
+        "b": "Atributos",
+        "c": "Contenido de texto",
+        "d": "Eventos"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Ambas propiedades permiten leer o establecer directamente el contenido textual de un elemento HTML, omitiendo cualquier etiqueta de marcado interna."
+    },
+    {
+      "id": 38,
+      "enunciado": "¿Qué método elimina un elemento del DOM?",
+      "opciones": {
+        "a": "remove()",
+        "b": "delete()",
+        "c": "cut()",
+        "d": "clear()"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El método 'remove()' es la forma moderna y directa de borrar un nodo del árbol del DOM sobre el cual se invoca."
+    },
+    {
+      "id": 39,
+      "enunciado": "¿Qué ventaja tiene XML frente a HTML?",
+      "opciones": {
+        "a": "Da estilo",
+        "b": "Es más flexible para datos",
+        "c": "Es más visual",
+        "d": "Es más rápido"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "La gran ventaja de XML es que permite al programador crear sus propias etiquetas según sus necesidades de negocio, haciéndolo ideal para la estructuración, almacenamiento y transporte de cualquier tipo de datos."
+    },
+    {
+      "id": 40,
+      "enunciado": "¿Qué tienen en común JSON y XML?",
+      "opciones": {
+        "a": "Usan CSS",
+        "b": "Son lenguajes de programación",
+        "c": "Sirven para intercambiar datos",
+        "d": "Se ejecutan en el navegador"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Tanto JSON como XML son formatos basados en texto plano que sirven para representar información de forma estructurada e independiente del lenguaje o plataforma, haciéndolos perfectos para el intercambio de datos."
+    }
+  ]
+}

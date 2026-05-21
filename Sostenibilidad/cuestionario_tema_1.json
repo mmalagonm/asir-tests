@@ -1,0 +1,127 @@
+{
+  "titulo": "CUESTIONARIO TEMA 1. LA ECONOMÍA LINEAL Y CIRCULAR",
+  "tipo": "cuestionario",
+  "ra": ["RA 4", "RA 5"],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "Una de las principales desventajas de la economía lineal es:",
+      "opciones": {
+        "a": "Reducción de residuos",
+        "b": "Mayor durabilidad de los productos",
+        "c": "Uso eficiente de energía",
+        "d": "Agotamiento de recursos naturales"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La economía lineal se basa en la extracción ilimitada de recursos en un planeta con recursos finitos, lo que conduce inevitablemente al agotamiento de materias primas y a la degradación de los ecosistemas."
+    },
+    {
+      "id": 2,
+      "enunciado": "El ecodiseño busca principalmente:",
+      "opciones": {
+        "a": "Usar materiales caros y duraderos",
+        "b": "Aumentar la vida útil y reducir residuos",
+        "c": "Reducir costes sin importar el impacto ambiental",
+        "d": "Diseñar productos desechables"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El ecodiseño considera el impacto ambiental desde la fase de concepción, priorizando la durabilidad, la reparabilidad y la facilidad de reciclaje para minimizar la generación de basura."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Qué empresa transforma residuos marinos en tejidos sostenibles?",
+      "opciones": {
+        "a": "Ikea",
+        "b": "Ecoalf",
+        "c": "Lush",
+        "d": "Tesla"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Ecoalf es una marca española pionera que utiliza residuos recogidos del fondo marino (redes de pesca, plásticos) para crear moda de alta calidad, promoviendo la limpieza de los océanos."
+    },
+    {
+      "id": 4,
+      "enunciado": "¿Qué principio de la economía verde busca frenar el cambio climático?",
+      "opciones": {
+        "a": "Reducir las emisiones de CO₂",
+        "b": "Promover energías renovables",
+        "c": "Reutilizar materiales",
+        "d": "Generar empleos verdes"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La reducción de emisiones de dióxido de carbono (CO₂) es la medida directa para frenar el efecto invernadero antropogénico y limitar el aumento de la temperatura global."
+    },
+    {
+      "id": 5,
+      "enunciado": "En la fase de madurez del ciclo de vida del producto se recomienda:",
+      "opciones": {
+        "a": "Destruir los excedentes",
+        "b": "Implementar programas de reciclaje",
+        "c": "Invertir solo en promoción",
+        "d": "Reducir la producción"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Durante la madurez, cuando las ventas son estables, las empresas deben prepararse para la circularidad estableciendo sistemas de logística inversa y reciclaje para los productos que pronto llegarán al final de su uso."
+    },
+    {
+      "id": 6,
+      "enunciado": "En la fase de declive del ciclo de vida del producto se debe:",
+      "opciones": {
+        "a": "Reutilizar o reciclar materiales",
+        "b": "Bajar los precios sin más",
+        "c": "Incrementar la publicidad",
+        "d": "Aumentar la producción"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Al finalizar el ciclo de vida, la prioridad es recuperar el valor de los materiales para que no acaben en vertederos, reintroduciéndolos como materias primas para nuevos procesos."
+    },
+    {
+      "id": 7,
+      "enunciado": "La economía circular propone:",
+      "opciones": {
+        "a": "Producir, usar y tirar",
+        "b": "Vender, consumir y desechar",
+        "c": "Extraer, fabricar y eliminar",
+        "d": "Producir, usar y reciclar"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "La circularidad imita a la naturaleza donde nada se desperdicia: los residuos de un proceso se convierten en el alimento o recurso del siguiente, cerrando los ciclos de materiales."
+    },
+    {
+      "id": 8,
+      "enunciado": "¿Qué caracteriza a la economía lineal?",
+      "opciones": {
+        "a": "Uso de energías renovables",
+        "b": "Producción, uso y eliminación de residuos",
+        "c": "Producción, uso y reciclaje",
+        "d": "Producción y consumo responsable"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Es el modelo convencional de 'tomar-hacer-desechar' que asume que los recursos son infinitos y que el medio ambiente tiene una capacidad ilimitada de absorber desechos."
+    },
+    {
+      "id": 9,
+      "enunciado": "¿Qué fase NO pertenece a la economía circular?",
+      "opciones": {
+        "a": "Diseño para la circularidad",
+        "b": "Reutilización",
+        "c": "Eliminación directa de residuos",
+        "d": "Reciclaje"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La eliminación directa en vertederos es el último recurso (y lo que se busca evitar) en la economía circular. Se prioriza cualquier otra opción que mantenga el valor del producto."
+    },
+    {
+      "id": 10,
+      "enunciado": "¿Cuál es la última fase del modelo de economía lineal?",
+      "opciones": {
+        "a": "Eliminación de residuos",
+        "b": "Consumo",
+        "c": "Distribución",
+        "d": "Producción"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "La fase final del modelo lineal es el desecho. Una vez que el producto pierde su utilidad, se convierte en residuo sin ningún tipo de recuperación de energía o materia."
+    }
+  ]
+}

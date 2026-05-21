@@ -1,0 +1,128 @@
+{
+  "asignatura": "Bases de datos",
+  "codigo_archivo": "cuestionario_ra1",
+  "titulo": "Cuestionario RA1",
+  "tipo": "cuestionario",
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "Dentro de las funciones de los SGBD, la gestión de la información en las tablas se realiza mediante el lenguaje:",
+      "opciones": {
+        "a": "DQL",
+        "b": "DDL",
+        "c": "DML",
+        "d": "DCL"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El DML (Data Manipulation Language) es el lenguaje utilizado para gestionar los datos (insertar, modificar, borrar) dentro de las tablas."
+    },
+    {
+      "id": 2,
+      "enunciado": "Para mejorar las búsquedas en una BD, se deben crear muchos índices en cada tabla:",
+      "opciones": {
+        "a": "Verdadero, pero no mejorará la velocidad",
+        "b": "Falso, hay que estudiar cada situación",
+        "c": "Verdadero, mejorará considerablemente la velocidad",
+        "d": "Falso, no se puede crear más de un índice en cada tabla"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "Crear demasiados índices puede ralentizar las operaciones de inserción y actualización, por lo que su uso debe ser analizado cuidadosamente."
+    },
+    {
+      "id": 3,
+      "enunciado": "¿Qué información no gestiona un Sistema Gestor de Bases de Datos?",
+      "opciones": {
+        "a": "El cumplimiento de la Ley de Protección de Datos",
+        "b": "Las relaciones entre los datos",
+        "c": "Los permisos de acceso de los usuarios",
+        "d": "La concurrencia"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El cumplimiento legal es una responsabilidad organizativa y humana, aunque el SGBD proporcione herramientas (como control de acceso) para ayudar a cumplirla."
+    },
+    {
+      "id": 4,
+      "enunciado": "Dentro de las funciones de los SGBD, la explotación de las mismas con las consultas se realiza mediante el lenguaje:",
+      "opciones": {
+        "a": "DML",
+        "b": "DCL",
+        "c": "DDL",
+        "d": "DQL"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "El DQL (Data Query Language) es el componente de SQL encargado de realizar consultas y recuperar información."
+    },
+    {
+      "id": 5,
+      "enunciado": "Si hablamos de las personas que tienen acceso a gestionar los accesos y permisos en una base de datos, ¿cuál de estos perfiles es uno de ellos?",
+      "opciones": {
+        "a": "Administrador",
+        "b": "Programador",
+        "c": "Diseñador",
+        "d": "Usuario final"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "El Administrador de la Base de Datos (DBA) es el responsable de gestionar la seguridad, accesos y permisos."
+    },
+    {
+      "id": 6,
+      "enunciado": "Marca la opción que es una ventaja de la implantación de un SGBD:",
+      "opciones": {
+        "a": "Complejidad",
+        "b": "Tamaño del gestor",
+        "c": "Control centralizado",
+        "d": "Coste económico"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "El control centralizado permite una gestión unificada de los datos, mejorando la integridad y seguridad."
+    },
+    {
+      "id": 7,
+      "enunciado": "¿Qué tipo de datos se pueden gestionar con el lenguaje SQL?",
+      "opciones": {
+        "a": "Todos son correctos.",
+        "b": "Valores alfanuméricos.",
+        "c": "Números enteros y decimales.",
+        "d": "Fechas y horas."
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "SQL es un lenguaje versátil que soporta una amplia variedad de tipos de datos: numéricos, cadenas de texto, temporales, etc."
+    },
+    {
+      "id": 8,
+      "enunciado": "Dentro de las funciones de los SGBD, la definición de las estructuras de las bases de datos y tablas, se realiza mediante el lenguaje:",
+      "opciones": {
+        "a": "DML",
+        "b": "DDL",
+        "c": "DCL",
+        "d": "DQL"
+      },
+      "respuesta_correcta": "b",
+      "retroalimentacion": "El DDL (Data Definition Language) se utiliza para definir o modificar la estructura de los objetos de la base de datos (tablas, índices, etc.)."
+    },
+    {
+      "id": 9,
+      "enunciado": "A los ficheros temporales que almacenan datos de una aplicación que no pueden ser mantenidos en memoria principal por falta de espacio, se les denomina:",
+      "opciones": {
+        "a": "Ninguna es correcta",
+        "b": "Ficheros maestros",
+        "c": "Ficheros históricos",
+        "d": "Ficheros de maniobras"
+      },
+      "respuesta_correcta": "d",
+      "retroalimentacion": "Los ficheros de maniobras son utilizados por el sistema para almacenar temporalmente resultados intermedios que no caben en la RAM."
+    },
+    {
+      "id": 10,
+      "enunciado": "Marca la opción que no es una característica de un SGBD:",
+      "opciones": {
+        "a": "Redundancia de la información",
+        "b": "Mantenimiento de la integridad",
+        "c": "Flexibilidad",
+        "d": "Control de la concurrencia"
+      },
+      "respuesta_correcta": "a",
+      "retroalimentacion": "Una de las principales ventajas de un SGBD es precisamente la reducción o eliminación de la redundancia innecesaria de los datos."
+    }
+  ]
+}

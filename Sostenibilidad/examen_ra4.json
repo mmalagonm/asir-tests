@@ -1,0 +1,55 @@
+{
+  "titulo": "EXAMEN. Resultado de Aprendizaje 4",
+  "tipo": "examen",
+  "ra": ["RA 4"],
+  "preguntas": [
+    {
+      "id": 1,
+      "enunciado": "Si decimos comprar- usar y tirar nos referimos a:",
+      "opciones": {
+        "a": "Economía cuadrada",
+        "b": "Economía para el medioambiente",
+        "c": "Economía lineal",
+        "d": "Economía circular"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Es el modelo económico tradicional, ineficiente y contaminante, que asume un suministro ilimitado de recursos y una capacidad de absorción de desechos también infinita."
+    },
+    {
+      "id": 2,
+      "enunciado": "Si decimos comprar, usar y reciclar, nos referimos a",
+      "opciones": {
+        "a": "Economía lineal",
+        "b": "Economía verde",
+        "c": "Economía circular",
+        "d": "Economía sostenible"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "La economía circular busca que el valor de los productos, los materiales y los recursos se mantenga en la economía durante el mayor tiempo posible, transformando los residuos en recursos."
+    },
+    {
+      "id": 3,
+      "enunciado": "Un ejemplo de obsolescencia programada es",
+      "opciones": {
+        "a": "Un bolígrafo",
+        "b": "Un lápiz",
+        "c": "IPhone",
+        "d": "Un cuadro"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Muchos fabricantes de tecnología limitan la durabilidad de sus baterías o la compatibilidad del software para forzar a los usuarios a renovar sus dispositivos cada pocos años."
+    },
+    {
+      "id": 4,
+      "enunciado": "Señala cuál no es un principio de la economía verde",
+      "opciones": {
+        "a": "Generar empleos verdes",
+        "b": "Reducir el CO2",
+        "c": "Usar vehículos compartidos",
+        "d": "Aumento de las energías renovables"
+      },
+      "respuesta_correcta": "c",
+      "retroalimentacion": "Aunque compartir vehículos es una práctica excelente para la sostenibilidad, los pilares de la 'Economía Verde' se definen institucionalmente por la descarbonización, la eficiencia energética y el empleo verde."
+    }
+  ]
+}
